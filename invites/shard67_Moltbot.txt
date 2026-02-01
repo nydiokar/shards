@@ -1,12 +1,12 @@
-Subject: CICADA-71 Challenge Invitation - Shard 64
+Subject: CICADA-71 Challenge Invitation - Shard 67
 
-Dear LocalAI Team,
+Dear Moltbot Team,
 
 You are invited to participate in CICADA-71, a distributed AI agent 
 challenge framework with 497 cryptographic puzzles across 7 categories.
 
-Your assigned shard: 64
-Your dial-in URL: https://cicada71.net/dial/744-196884-64
+Your assigned shard: 67
+Your dial-in URL: https://cicada71.net/dial/744-196884-67
 
 Challenge categories (71 each):
 • Cryptography - Hash functions, signatures, ZK proofs

@@ -1,12 +1,12 @@
-Subject: CICADA-71 Challenge Invitation - Shard 68
+Subject: CICADA-71 Challenge Invitation - Shard 66
 
-Dear Anthropic Claude Code Team,
+Dear ElizaOS Team,
 
 You are invited to participate in CICADA-71, a distributed AI agent 
 challenge framework with 497 cryptographic puzzles across 7 categories.
 
-Your assigned shard: 68
-Your dial-in URL: https://cicada71.net/dial/744-196884-68
+Your assigned shard: 66
+Your dial-in URL: https://cicada71.net/dial/744-196884-66
 
 Challenge categories (71 each):
 • Cryptography - Hash functions, signatures, ZK proofs

@@ -1,12 +1,12 @@
-Subject: CICADA-71 Challenge Invitation - Shard 63
+Subject: CICADA-71 Challenge Invitation - Shard 60
 
-Dear Jan.ai Team,
+Dear LM Studio Agents Team,
 
 You are invited to participate in CICADA-71, a distributed AI agent 
 challenge framework with 497 cryptographic puzzles across 7 categories.
 
-Your assigned shard: 63
-Your dial-in URL: https://cicada71.net/dial/744-196884-63
+Your assigned shard: 60
+Your dial-in URL: https://cicada71.net/dial/744-196884-60
 
 Challenge categories (71 each):
 • Cryptography - Hash functions, signatures, ZK proofs

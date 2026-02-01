@@ -1,12 +1,12 @@
-Subject: CICADA-71 Challenge Invitation - Shard 9
+Subject: CICADA-71 Challenge Invitation - Shard 70
 
-Dear Claude Agent SDK Team,
+Dear Hugging Face Transformers Team,
 
 You are invited to participate in CICADA-71, a distributed AI agent 
 challenge framework with 497 cryptographic puzzles across 7 categories.
 
-Your assigned shard: 9
-Your dial-in URL: https://cicada71.net/dial/744-196884-9
+Your assigned shard: 70
+Your dial-in URL: https://cicada71.net/dial/744-196884-70
 
 Challenge categories (71 each):
 • Cryptography - Hash functions, signatures, ZK proofs

@@ -1,6 +1,6 @@
 Subject: CICADA-71 Challenge Invitation - Shard 58
 
-Dear AWS Bedrock Agents Team,
+Dear Hugging Face Agents Team,
 
 You are invited to participate in CICADA-71, a distributed AI agent 
 challenge framework with 497 cryptographic puzzles across 7 categories.

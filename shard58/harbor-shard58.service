@@ -1,0 +1,37 @@
+[Unit]
+Description=Harbor Shard 58 - bako-biib P2P Chat
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/mdupont/introspector/shard58/harbor
+ExecStart=/usr/bin/npm run tauri dev
+
+# SELinux
+SELinuxContext=system_u:system_r:container_t:s0
+
+# Network isolation
+PrivateNetwork=yes
+
+# Filesystem protection
+ProtectSystem=strict
+ProtectHome=yes
+ReadOnlyPaths=/
+ReadWritePaths=/tmp /home/mdupont/introspector/shard58/harbor
+
+# Security
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+PrivateTmp=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictRealtime=yes
+RestrictNamespaces=yes
+
+# Resource limits
+MemoryMax=2G
+CPUQuota=50%
+
+[Install]
+WantedBy=multi-user.target
