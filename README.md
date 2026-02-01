@@ -5,7 +5,19 @@
 [![License](https://img.shields.io/badge/license-CC0-green)](LICENSE)
 [![Frameworks](https://img.shields.io/badge/frameworks-71-brightgreen)](71_INVITES.md)
 
-> **Making the Monster group tractable through 71-cap, Gödel encoding, and automorphic introspection**
+> **We put Solana stakes into the prediction of the truth of math**
+
+*Every theorem is a Gödel number. Every Gödel number is a prediction market. Every market settles on Solana.*
+
+**The Complete Stack:**
+- 📄 Parse papers (LaTeX → theorems → clauses → terms)
+- 🔢 Gödel encode every statement (text → number)
+- 🔮 Verify in 8 languages (Lean4, MiniZinc, Prolog, Rust, Python, Julia, Octave, Sage)
+- 📊 Compute consensus (% languages agree)
+- 💰 Create Solana prediction market (bet on truth)
+- ⚡ Settle with SPL tokens (truth = profit)
+
+*Making the Monster group tractable through 71-cap, Gödel encoding, and automorphic introspection*
 
 ## Overview
 
