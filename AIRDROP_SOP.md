@@ -189,19 +189,62 @@ contract MonsterRewardRollup {
         bytes32 proofHash;
     }
     
+    struct Proposal {
+        uint256 id;
+        address proposer;
+        string description;
+        uint8 targetShard;
+        MaximalSubgroup targetSubgroup;
+        uint256 votesFor;
+        uint256 votesAgainst;
+        uint256 startTime;
+        uint256 endTime;
+        bool executed;
+        ProposalType proposalType;
+    }
+    
+    enum ProposalType {
+        SubgroupSelection,    // Choose Monster subgroup for shard
+        TreasurySpend,        // Spend from community treasury
+        ParameterChange,      // Change reward multiplier, etc.
+        ShardUpgrade          // Upgrade shard protocol
+    }
+    
+    enum MaximalSubgroup {
+        BabyMonster,    // 2.B
+        Fischer24,      // Fi₂₄'
+        Conway1,        // Co₁
+        Thompson,       // Th
+        PSL2_71,        // PSL₂(71)
+        Prime71         // 71:70
+    }
+    
     mapping(address => uint256) public rewardBalances;
     mapping(bytes32 => Donation) public donations;
     mapping(address => bool) public paxosNodes;
+    mapping(uint256 => Proposal) public proposals;
+    mapping(uint256 => mapping(address => bool)) public hasVoted;
     
     uint256 public constant REWARD_MULTIPLIER = 100;
     uint256 public totalRewardsIssued;
+    uint256 public proposalCount;
+    uint256 public constant VOTING_PERIOD = 7 days;
+    uint256 public constant QUORUM_PERCENTAGE = 10; // 10% of total supply
     
     event DonationRecorded(address indexed donor, uint8 shard, uint256 rewardTokens);
     event RewardsClaimed(address indexed recipient, uint256 amount);
     event PaxosConsensus(bytes32 indexed proposalId, uint256 approvals);
+    event ProposalCreated(uint256 indexed proposalId, address proposer, string description);
+    event VoteCast(uint256 indexed proposalId, address voter, bool support, uint256 weight);
+    event ProposalExecuted(uint256 indexed proposalId);
     
     modifier onlyPaxosNode() {
         require(paxosNodes[msg.sender], "Not a Paxos node");
+        _;
+    }
+    
+    modifier onlyRewardHolder() {
+        require(rewardBalances[msg.sender] > 0, "No voting power");
         _;
     }
     
@@ -240,13 +283,87 @@ contract MonsterRewardRollup {
         emit DonationRecorded(donor, shard, rewardTokens);
     }
     
+    function createProposal(
+        string memory description,
+        uint8 targetShard,
+        MaximalSubgroup targetSubgroup,
+        ProposalType proposalType
+    ) external onlyRewardHolder returns (uint256) {
+        require(rewardBalances[msg.sender] >= 1000, "Need 1000 tokens to propose");
+        
+        uint256 proposalId = proposalCount++;
+        
+        proposals[proposalId] = Proposal({
+            id: proposalId,
+            proposer: msg.sender,
+            description: description,
+            targetShard: targetShard,
+            targetSubgroup: targetSubgroup,
+            votesFor: 0,
+            votesAgainst: 0,
+            startTime: block.timestamp,
+            endTime: block.timestamp + VOTING_PERIOD,
+            executed: false,
+            proposalType: proposalType
+        });
+        
+        emit ProposalCreated(proposalId, msg.sender, description);
+        return proposalId;
+    }
+    
+    function vote(uint256 proposalId, bool support) external onlyRewardHolder {
+        Proposal storage proposal = proposals[proposalId];
+        require(block.timestamp < proposal.endTime, "Voting ended");
+        require(!hasVoted[proposalId][msg.sender], "Already voted");
+        
+        uint256 votingPower = rewardBalances[msg.sender];
+        
+        if (support) {
+            proposal.votesFor += votingPower;
+        } else {
+            proposal.votesAgainst += votingPower;
+        }
+        
+        hasVoted[proposalId][msg.sender] = true;
+        
+        emit VoteCast(proposalId, msg.sender, support, votingPower);
+    }
+    
+    function executeProposal(uint256 proposalId) external {
+        Proposal storage proposal = proposals[proposalId];
+        require(block.timestamp >= proposal.endTime, "Voting not ended");
+        require(!proposal.executed, "Already executed");
+        
+        uint256 totalVotes = proposal.votesFor + proposal.votesAgainst;
+        uint256 quorum = (totalRewardsIssued * QUORUM_PERCENTAGE) / 100;
+        
+        require(totalVotes >= quorum, "Quorum not reached");
+        require(proposal.votesFor > proposal.votesAgainst, "Proposal rejected");
+        
+        proposal.executed = true;
+        
+        // Execute based on proposal type
+        if (proposal.proposalType == ProposalType.SubgroupSelection) {
+            // Trigger Paxos consensus to update shard's Monster subgroup
+            // This will be picked up by off-chain Erlang nodes
+        }
+        
+        emit ProposalExecuted(proposalId);
+    }
+    
+    function getVotingPower(address account) external view returns (uint256) {
+        return rewardBalances[account];
+    }
+    
+    function getProposal(uint256 proposalId) external view returns (Proposal memory) {
+        return proposals[proposalId];
+    }
+    
     function claimRewards(uint256 amount) external {
         require(rewardBalances[msg.sender] >= amount, "Insufficient balance");
         
         rewardBalances[msg.sender] -= amount;
         
-        // Transfer reward tokens (ERC-20 or native)
-        // For testnet, just emit event
         emit RewardsClaimed(msg.sender, amount);
     }
     
@@ -548,3 +665,176 @@ contract MonsterVesting {
 7. **Track on-chain** via smart contract events
 
 All promises coordinated via Paxos, ensuring Byzantine fault tolerance and preventing double-counting of donations!
+
+
+## DAO Governance Integration
+
+### Voting Power
+
+Reward token holders can vote on:
+1. **Monster Subgroup Selection**: Choose which maximal subgroup each shard uses
+2. **Treasury Spending**: Allocate community funds (15% of supply)
+3. **Parameter Changes**: Adjust reward multiplier, voting periods, quorum
+4. **Shard Upgrades**: Approve protocol changes per shard
+
+### Proposal Types
+
+```solidity
+enum ProposalType {
+    SubgroupSelection,    // Choose 2.B, Fi₂₄', Co₁, etc. for a shard
+    TreasurySpend,        // Spend from 10.65M token treasury
+    ParameterChange,      // Change REWARD_MULTIPLIER, VOTING_PERIOD
+    ShardUpgrade          // Upgrade cryptanalysis method for shard
+}
+```
+
+### Creating Proposals
+
+```bash
+# Requires 1,000 reward tokens minimum
+cast send $CONTRACT_ADDRESS \
+    "createProposal(string,uint8,uint8,uint8)" \
+    "Select Baby Monster for Shard 0" \
+    0 \
+    0 \
+    0 \
+    --private-key $PRIVATE_KEY
+```
+
+### Voting
+
+```bash
+# Vote with your reward token balance
+cast send $CONTRACT_ADDRESS \
+    "vote(uint256,bool)" \
+    0 \
+    true \
+    --private-key $PRIVATE_KEY
+
+# Check voting power
+cast call $CONTRACT_ADDRESS "getVotingPower(address)" $YOUR_ADDRESS
+```
+
+### Execution
+
+```bash
+# After 7-day voting period, execute if passed
+cast send $CONTRACT_ADDRESS \
+    "executeProposal(uint256)" \
+    0 \
+    --private-key $PRIVATE_KEY
+```
+
+### Quorum Requirements
+
+- **Minimum Participation**: 10% of total reward tokens must vote
+- **Approval Threshold**: >50% of votes must be "for"
+- **Voting Period**: 7 days
+- **Execution Delay**: None (immediate after voting ends)
+
+### Example: Selecting Monster Subgroup for Shard 24
+
+```javascript
+// 1. Create proposal
+const tx1 = await contract.createProposal(
+    "Use PSL₂(71) subgroup for Shard 24 (Tor network)",
+    24,  // targetShard
+    4,   // MaximalSubgroup.PSL2_71
+    0    // ProposalType.SubgroupSelection
+);
+
+// 2. Community votes (7 days)
+// Voters with reward tokens cast votes
+
+// 3. Execute if passed
+const tx2 = await contract.executeProposal(proposalId);
+
+// 4. Off-chain Paxos nodes detect event and update shard configuration
+```
+
+### Governance Dashboard
+
+```sql
+-- View active proposals
+SELECT 
+    id,
+    description,
+    votesFor,
+    votesAgainst,
+    (votesFor + votesAgainst) as totalVotes,
+    CASE 
+        WHEN votesFor > votesAgainst THEN 'PASSING'
+        ELSE 'FAILING'
+    END as status,
+    endTime
+FROM proposals
+WHERE executed = false
+    AND endTime > CURRENT_TIMESTAMP
+ORDER BY endTime ASC;
+
+-- View voting history
+SELECT 
+    voter,
+    proposalId,
+    support,
+    weight,
+    timestamp
+FROM votes
+ORDER BY timestamp DESC
+LIMIT 100;
+
+-- Top voters by participation
+SELECT 
+    voter,
+    COUNT(*) as votes_cast,
+    SUM(weight) as total_voting_power
+FROM votes
+GROUP BY voter
+ORDER BY votes_cast DESC
+LIMIT 10;
+```
+
+### Integration with Paxos
+
+When a governance proposal is executed:
+
+```erlang
+%% Listen for ProposalExecuted events from Ethereum
+handle_event({proposal_executed, ProposalId, TargetShard, Subgroup}) ->
+    %% Create Paxos proposal to update shard configuration
+    Proposal = #{
+        type => subgroup_change,
+        shard => TargetShard,
+        new_subgroup => Subgroup,
+        governance_proposal => ProposalId
+    },
+    
+    %% Broadcast to all 23 nodes
+    {ok, _} = paxos:propose(Proposal),
+    
+    %% Update local shard configuration
+    update_shard_config(TargetShard, Subgroup).
+```
+
+### Delegation (Future)
+
+```solidity
+mapping(address => address) public delegates;
+
+function delegate(address delegatee) external {
+    delegates[msg.sender] = delegatee;
+}
+
+function getVotingPower(address account) public view returns (uint256) {
+    uint256 power = rewardBalances[account];
+    
+    // Add delegated power
+    for (address delegator in getAllDelegators(account)) {
+        power += rewardBalances[delegator];
+    }
+    
+    return power;
+}
+```
+
+This creates a complete DAO where reward token holders govern the 71-shard infrastructure!

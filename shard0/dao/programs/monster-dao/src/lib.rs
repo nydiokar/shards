@@ -22,12 +22,16 @@ pub mod monster_dao {
 
     pub fn vote(ctx: Context<Vote>, approve: bool) -> Result<()> {
         let proposal = &mut ctx.accounts.proposal;
-        let stake = ctx.accounts.voter.lamports();
+        let voter = &ctx.accounts.voter;
+        
+        // Get voting power from reward balance
+        let voting_power = get_reward_balance(voter.key())?;
+        require!(voting_power > 0, ErrorCode::NoVotingPower);
         
         if approve {
-            proposal.votes_for += stake;
+            proposal.votes_for += voting_power;
         } else {
-            proposal.votes_against += stake;
+            proposal.votes_against += voting_power;
         }
         
         let total = proposal.votes_for + proposal.votes_against;
@@ -40,6 +44,12 @@ pub mod monster_dao {
         }
         Ok(())
     }
+
+fn get_reward_balance(voter: Pubkey) -> Result<u64> {
+    // Query reward balance from Ethereum ZK-rollup via bridge
+    // For now, return mock value
+    Ok(1000)
+}
 }
 
 #[derive(Accounts)]
