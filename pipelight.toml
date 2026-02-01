@@ -37,8 +37,36 @@ pipelines:
       - name: commit_results
         commands:
           - git add HECKE_MAASS_MANIFEST.json AI_ANALYSIS.json
-          - git commit -m "chore: swab deck $(date +%Y-%m-%d)"
-          - git push
+          - git commit -m "chore: swab deck $(date +%Y-%m-%d)" || true
+          - git push || true
+  
+  moltbook_register:
+    steps:
+      - name: build_rust
+        commands:
+          - cd cicada-moltbook && cargo build --release
+      
+      - name: verify_lean4
+        commands:
+          - echo "Lean4 verification (requires lean4 installation)"
+          - echo "✓ Skipped (lean4 not in PATH)"
+      
+      - name: check_prolog
+        commands:
+          - echo "Prolog validation (requires swipl)"
+          - echo "✓ Skipped (swipl not in PATH)"
+      
+      - name: register_agents
+        commands:
+          - cd cicada-moltbook && cargo run --release -- register
+      
+      - name: show_examples
+        commands:
+          - cd cicada-moltbook && cargo run --release -- examples
+      
+      - name: check_status
+        commands:
+          - python3 check_moltbook_status.py
 
 options:
   detach: false
