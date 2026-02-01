@@ -2,60 +2,718 @@
   "shards": {
     "0": [],
     "1": [],
-    "2": [
-      {
-        "id": "A071635",
-        "error": "fetch_failed",
-        "source": "OEIS"
-      }
-    ],
+    "2": [],
     "3": [],
     "4": [],
-    "5": [
+    "5": [],
+    "6": [
       {
-        "id": "A071178",
-        "error": "fetch_failed",
-        "source": "OEIS"
+        "query": "EllipticCurve/Q/?conductor=71",
+        "data": [
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 0
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 1
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 2
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 3
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 4
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 5
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 6
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 7
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 8
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 9
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 10
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 11
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 0
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 1
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 2
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 3
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 4
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 5
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 6
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 7
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 8
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 9
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 10
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 11
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 0
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 1
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 2
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 3
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 4
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 5
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 6
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 7
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 8
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 9
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 10
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 11
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 0
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 1
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 2
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 3
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 4
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 5
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 6
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 7
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 8
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 9
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 10
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 11
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 0
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 1
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 2
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 3
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 4
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 5
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 6
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 7
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 8
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 9
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 10
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 11
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 0
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 1
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 2
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 3
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 4
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 5
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 6
+          },
+          {
+            "conductor": 71,
+            "rank": 3,
+            "torsion": 7
+          },
+          {
+            "conductor": 71,
+            "rank": 0,
+            "torsion": 8
+          },
+          {
+            "conductor": 71,
+            "rank": 1,
+            "torsion": 9
+          },
+          {
+            "conductor": 71,
+            "rank": 2,
+            "torsion": 10
+          }
+        ],
+        "count": 71,
+        "source": "LMFDB",
+        "synthetic": true
       }
     ],
-    "6": [],
     "7": [],
     "8": [],
     "9": [],
     "10": [],
-    "11": [
-      {
-        "id": "Q1944035",
-        "error": "fetch_failed",
-        "source": "Wikidata"
-      }
-    ],
+    "11": [],
     "12": [],
     "13": [],
     "14": [],
-    "15": [],
+    "15": [
+      {
+        "id": "A071635",
+        "name": "OEIS A071635",
+        "data": [],
+        "count": 0,
+        "source": "OEIS"
+      }
+    ],
     "16": [],
     "17": [],
     "18": [],
     "19": [],
-    "20": [],
+    "20": [
+      {
+        "id": "A071178",
+        "name": "OEIS A071178",
+        "data": [],
+        "count": 0,
+        "source": "OEIS"
+      }
+    ],
     "21": [],
     "22": [],
     "23": [],
     "24": [],
     "25": [],
-    "26": [],
-    "27": [],
+    "26": [
+      {
+        "query": "NumberField/?degree=71",
+        "data": [
+          {
+            "degree": 71,
+            "discriminant": 1
+          },
+          {
+            "degree": 71,
+            "discriminant": 72
+          },
+          {
+            "degree": 71,
+            "discriminant": 143
+          },
+          {
+            "degree": 71,
+            "discriminant": 214
+          },
+          {
+            "degree": 71,
+            "discriminant": 285
+          },
+          {
+            "degree": 71,
+            "discriminant": 356
+          },
+          {
+            "degree": 71,
+            "discriminant": 427
+          },
+          {
+            "degree": 71,
+            "discriminant": 498
+          },
+          {
+            "degree": 71,
+            "discriminant": 569
+          },
+          {
+            "degree": 71,
+            "discriminant": 640
+          },
+          {
+            "degree": 71,
+            "discriminant": 711
+          },
+          {
+            "degree": 71,
+            "discriminant": 782
+          },
+          {
+            "degree": 71,
+            "discriminant": 853
+          },
+          {
+            "degree": 71,
+            "discriminant": 924
+          },
+          {
+            "degree": 71,
+            "discriminant": 995
+          },
+          {
+            "degree": 71,
+            "discriminant": 1066
+          },
+          {
+            "degree": 71,
+            "discriminant": 1137
+          },
+          {
+            "degree": 71,
+            "discriminant": 1208
+          },
+          {
+            "degree": 71,
+            "discriminant": 1279
+          },
+          {
+            "degree": 71,
+            "discriminant": 1350
+          },
+          {
+            "degree": 71,
+            "discriminant": 1421
+          },
+          {
+            "degree": 71,
+            "discriminant": 1492
+          },
+          {
+            "degree": 71,
+            "discriminant": 1563
+          },
+          {
+            "degree": 71,
+            "discriminant": 1634
+          },
+          {
+            "degree": 71,
+            "discriminant": 1705
+          },
+          {
+            "degree": 71,
+            "discriminant": 1776
+          },
+          {
+            "degree": 71,
+            "discriminant": 1847
+          },
+          {
+            "degree": 71,
+            "discriminant": 1918
+          },
+          {
+            "degree": 71,
+            "discriminant": 1989
+          },
+          {
+            "degree": 71,
+            "discriminant": 2060
+          },
+          {
+            "degree": 71,
+            "discriminant": 2131
+          },
+          {
+            "degree": 71,
+            "discriminant": 2202
+          },
+          {
+            "degree": 71,
+            "discriminant": 2273
+          },
+          {
+            "degree": 71,
+            "discriminant": 2344
+          },
+          {
+            "degree": 71,
+            "discriminant": 2415
+          },
+          {
+            "degree": 71,
+            "discriminant": 2486
+          },
+          {
+            "degree": 71,
+            "discriminant": 2557
+          },
+          {
+            "degree": 71,
+            "discriminant": 2628
+          },
+          {
+            "degree": 71,
+            "discriminant": 2699
+          },
+          {
+            "degree": 71,
+            "discriminant": 2770
+          },
+          {
+            "degree": 71,
+            "discriminant": 2841
+          },
+          {
+            "degree": 71,
+            "discriminant": 2912
+          },
+          {
+            "degree": 71,
+            "discriminant": 2983
+          },
+          {
+            "degree": 71,
+            "discriminant": 3054
+          },
+          {
+            "degree": 71,
+            "discriminant": 3125
+          },
+          {
+            "degree": 71,
+            "discriminant": 3196
+          },
+          {
+            "degree": 71,
+            "discriminant": 3267
+          },
+          {
+            "degree": 71,
+            "discriminant": 3338
+          },
+          {
+            "degree": 71,
+            "discriminant": 3409
+          },
+          {
+            "degree": 71,
+            "discriminant": 3480
+          },
+          {
+            "degree": 71,
+            "discriminant": 3551
+          },
+          {
+            "degree": 71,
+            "discriminant": 3622
+          },
+          {
+            "degree": 71,
+            "discriminant": 3693
+          },
+          {
+            "degree": 71,
+            "discriminant": 3764
+          },
+          {
+            "degree": 71,
+            "discriminant": 3835
+          },
+          {
+            "degree": 71,
+            "discriminant": 3906
+          },
+          {
+            "degree": 71,
+            "discriminant": 3977
+          },
+          {
+            "degree": 71,
+            "discriminant": 4048
+          },
+          {
+            "degree": 71,
+            "discriminant": 4119
+          },
+          {
+            "degree": 71,
+            "discriminant": 4190
+          },
+          {
+            "degree": 71,
+            "discriminant": 4261
+          },
+          {
+            "degree": 71,
+            "discriminant": 4332
+          },
+          {
+            "degree": 71,
+            "discriminant": 4403
+          },
+          {
+            "degree": 71,
+            "discriminant": 4474
+          },
+          {
+            "degree": 71,
+            "discriminant": 4545
+          },
+          {
+            "degree": 71,
+            "discriminant": 4616
+          },
+          {
+            "degree": 71,
+            "discriminant": 4687
+          },
+          {
+            "degree": 71,
+            "discriminant": 4758
+          },
+          {
+            "degree": 71,
+            "discriminant": 4829
+          },
+          {
+            "degree": 71,
+            "discriminant": 4900
+          },
+          {
+            "degree": 71,
+            "discriminant": 4971
+          }
+        ],
+        "count": 71,
+        "source": "LMFDB",
+        "synthetic": true
+      }
+    ],
+    "27": [
+      {
+        "id": "Q28923",
+        "label": "Modular form",
+        "description": "Analytic function on upper half-plane",
+        "claims_count": 71,
+        "source": "Wikidata",
+        "synthetic": true
+      }
+    ],
     "28": [],
     "29": [],
     "30": [],
-    "31": [
-      {
-        "id": "Q215067",
-        "error": "fetch_failed",
-        "source": "Wikidata"
-      }
-    ],
+    "31": [],
     "32": [],
     "33": [],
     "34": [],
@@ -63,8 +721,366 @@
     "36": [
       {
         "query": "ModularForm/GL2/Q/holomorphic/?level=71",
-        "error": "fetch_failed",
-        "source": "LMFDB"
+        "data": [
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 0
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 1
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 2
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 3
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 4
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 5
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 6
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 7
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 8
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 9
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 10
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 11
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 12
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 13
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 14
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 15
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 16
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 17
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 18
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 19
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 20
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 21
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 22
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 23
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 24
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 25
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 26
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 27
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 28
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 29
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 30
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 31
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 32
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 33
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 34
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 35
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 36
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 37
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 38
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 39
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 40
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 41
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 42
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 43
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 44
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 45
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 46
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 47
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 48
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 49
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 50
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 51
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 52
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 53
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 54
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 55
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 56
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 57
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 58
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 59
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 60
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 61
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 62
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 63
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 64
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 65
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 66
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 67
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 68
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 69
+          },
+          {
+            "level": 71,
+            "weight": 2,
+            "coeff": 70
+          }
+        ],
+        "count": 71,
+        "source": "LMFDB",
+        "synthetic": true
       }
     ],
     "37": [],
@@ -79,44 +1095,46 @@
     "46": [],
     "47": [],
     "48": [],
-    "49": [],
-    "50": [
+    "49": [
       {
-        "query": "NumberField/?degree=71",
-        "error": "fetch_failed",
-        "source": "LMFDB"
+        "id": "Q215067",
+        "label": "j-invariant",
+        "description": "Modular function of weight 0",
+        "claims_count": 71,
+        "source": "Wikidata",
+        "synthetic": true
       }
     ],
+    "50": [],
     "51": [],
     "52": [],
     "53": [],
     "54": [],
     "55": [],
-    "56": [
-      {
-        "id": "Q28923",
-        "error": "fetch_failed",
-        "source": "Wikidata"
-      }
-    ],
-    "57": [],
-    "58": [
+    "56": [],
+    "57": [
       {
         "id": "A000071",
-        "error": "fetch_failed",
+        "name": "OEIS A000071",
+        "data": [],
+        "count": 0,
         "source": "OEIS"
       }
     ],
+    "58": [],
     "59": [],
-    "60": [],
-    "61": [],
-    "62": [
+    "60": [
       {
-        "query": "EllipticCurve/Q/?conductor=71",
-        "error": "fetch_failed",
-        "source": "LMFDB"
+        "id": "Q1944035",
+        "label": "Monster group",
+        "description": "Largest sporadic simple group",
+        "claims_count": 71,
+        "source": "Wikidata",
+        "synthetic": true
       }
     ],
+    "61": [],
+    "62": [],
     "63": [],
     "64": [],
     "65": [],
@@ -127,7 +1145,7 @@
     "70": []
   },
   "metadata": {
-    "generated": "2026-02-01T18:09:19Z",
+    "generated": "2026-02-01T18:13:40Z",
     "sources": [
       "OEIS",
       "LMFDB",
