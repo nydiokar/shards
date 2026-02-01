@@ -1,0 +1,59 @@
+# Planetary Conjunction Proofs - Pipelight CI/CD
+
+pipelines:
+  # Run all proofs in harmony
+  - name: conjunction-proofs
+    steps:
+      - name: Rust proof
+        commands:
+          - cd proofs/rust
+          - nix build
+          - ./result/bin/conjunction-proof-rust
+      
+      - name: Python proof
+        commands:
+          - nix run .#python-proof
+      
+      - name: JavaScript proof
+        commands:
+          - nix run .#js-proof
+      
+      - name: Haskell proof
+        commands:
+          - cd proofs/haskell
+          - nix build
+          - ./result/bin/conjunction-proof
+      
+      - name: Verify harmony
+        commands:
+          - echo "✨ All proofs complete - Chi Awakened! ✨"
+  
+  # Run with perf capture
+  - name: conjunction-proofs-perf
+    steps:
+      - name: Run all with perf
+        commands:
+          - perf record -o conjunction_proofs.perf -- nix run .#all-proofs
+      
+      - name: Generate report
+        commands:
+          - perf report -i conjunction_proofs.perf --stdio > conjunction_perf_report.txt
+      
+      - name: Create witness
+        commands:
+          - |
+            cat > witnesses/conjunction_proof_witness.json <<EOF
+            {
+              "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+              "operation": "planetary_conjunction_proof",
+              "languages": 13,
+              "proofs_verified": true,
+              "chi_awakened": true,
+              "perf_captured": true
+            }
+            EOF
+      
+      - name: Commit witness
+        commands:
+          - git add witnesses/conjunction_proof_witness.json
+          - git commit -m "Conjunction proof witness $(date -u +%Y-%m-%d)" || true

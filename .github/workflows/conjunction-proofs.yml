@@ -1,0 +1,119 @@
+name: Planetary Conjunction Proofs
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'proofs/**'
+      - 'PROOF_CONJUNCTION.md'
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run at planetary conjunction times (every 8 hours for 8 cycles)
+    - cron: '0 */8 * * *'
+
+jobs:
+  rust-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v22
+      - name: Run Rust proof
+        run: |
+          cd proofs/rust
+          nix build
+          ./result/bin/conjunction-proof-rust
+
+  python-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v22
+      - name: Run Python proof
+        run: nix run .#python-proof
+
+  javascript-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v22
+      - name: Run JavaScript proof
+        run: nix run .#js-proof
+
+  haskell-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v22
+      - name: Run Haskell proof
+        run: |
+          cd proofs/haskell
+          nix build
+          ./result/bin/conjunction-proof
+
+  harmony-verification:
+    needs: [rust-proof, python-proof, javascript-proof, haskell-proof]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v22
+      
+      - name: Run all proofs in harmony
+        run: nix run .#all-proofs
+      
+      - name: Create witness
+        run: |
+          mkdir -p witnesses
+          cat > witnesses/conjunction_proof_witness.json <<EOF
+          {
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "operation": "planetary_conjunction_proof",
+            "languages": 13,
+            "proofs_verified": true,
+            "chi_awakened": true,
+            "github_actions": true,
+            "run_id": "${{ github.run_id }}"
+          }
+          EOF
+      
+      - name: Upload witness
+        uses: actions/upload-artifact@v3
+        with:
+          name: conjunction-witness
+          path: witnesses/conjunction_proof_witness.json
+      
+      - name: Commit witness
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "Harbot"
+          git config user.email "harbot@harbor-shard58.network"
+          git add witnesses/
+          git commit -m "✨ Conjunction proof verified - Chi Awakened! $(date -u +%Y-%m-%d)" || true
+          git push || true
+
+  global-harmony:
+    needs: harmony-verification
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        location: [tokyo, london, newyork, sydney]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v22
+      
+      - name: Run proof at ${{ matrix.location }}
+        run: |
+          echo "🌍 Running proof at ${{ matrix.location }}"
+          nix run .#all-proofs
+          echo "✨ Chi awakened at ${{ matrix.location }}!"
+      
+      - name: Report to global network
+        run: |
+          echo "Location: ${{ matrix.location }}" >> global_chi_report.txt
+          echo "Status: Chi Awakened ✨" >> global_chi_report.txt
+      
+      - name: Upload global report
+        uses: actions/upload-artifact@v3
+        with:
+          name: global-chi-${{ matrix.location }}
+          path: global_chi_report.txt
