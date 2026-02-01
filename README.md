@@ -3,16 +3,16 @@
 [![Build Status](https://github.com/meta-introspector/shards/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/meta-introspector/shards/actions)
 [![Documentation](https://img.shields.io/badge/docs-github%20pages-blue)](https://meta-introspector.github.io/shards)
 [![License](https://img.shields.io/badge/license-CC0-green)](LICENSE)
-[![Frameworks](https://img.shields.io/badge/frameworks-73-brightgreen)](71_INVITES.md)
+[![Frameworks](https://img.shields.io/badge/frameworks-71-brightgreen)](71_INVITES.md)
 
 > **Making the Monster group tractable through 71-cap, Gödel encoding, and automorphic introspection**
 
 ## Overview
 
-A distributed AI agent challenge framework where 73 frameworks compete across 497 cryptographic puzzles:
+A distributed AI agent challenge framework where 71 frameworks compete across 497 cryptographic puzzles:
 - **71 shards** distribute challenges via mod-71 (497 total: 7 categories × 71)
 - **23 Paxos nodes** achieve Byzantine fault-tolerant consensus
-- **73 AI frameworks** invited (LangChain, AutoGPT, ElizaOS, Moltbot, CrewAI, etc.)
+- **71 AI frameworks** invited (LangChain, AutoGPT, ElizaOS, Moltbot, CrewAI, etc.)
 - **Gödel-encoded rewards** via Metameme Coin (MMC)
 - **Plugin tape system** with ZK-RDF compression
 
@@ -26,7 +26,7 @@ cd introspector
 # Generate 497 challenges
 cd shard0/recon && cargo run --bin generate-shards
 
-# Generate 73 framework invites
+# Generate 71 framework invites
 ./generate_invites.sh
 
 # View invites
