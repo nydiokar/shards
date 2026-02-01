@@ -1,0 +1,2203 @@
+[
+  {
+    "callsign": "SHIP-00",
+    "shard": 0,
+    "sector": {
+      "latitude": -90.0,
+      "longitude": -180.0,
+      "name": "Sector-00"
+    },
+    "harmonic": {
+      "prime": 2,
+      "frequency_hz": 864,
+      "bott_class": 0,
+      "tenfold_class": 0
+    },
+    "transmission": {
+      "frequency_hz": 864,
+      "morse_timing_ms": {
+        "dit": 115.74074074074073,
+        "dah": 347.2222222222222,
+        "gap": 115.74074074074073,
+        "letter_gap": 347.2222222222222,
+        "word_gap": 810.1851851851851
+      },
+      "wavelength_m": 346982.01
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-00",
+      "status": "HUNTING",
+      "last_ping": "864 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-01",
+    "shard": 1,
+    "sector": {
+      "latitude": -87.46,
+      "longitude": -174.93,
+      "name": "Sector-01"
+    },
+    "harmonic": {
+      "prime": 3,
+      "frequency_hz": 1296,
+      "bott_class": 1,
+      "tenfold_class": 1
+    },
+    "transmission": {
+      "frequency_hz": 1296,
+      "morse_timing_ms": {
+        "dit": 77.1604938271605,
+        "dah": 231.48148148148147,
+        "gap": 77.1604938271605,
+        "letter_gap": 231.48148148148147,
+        "word_gap": 540.1234567901234
+      },
+      "wavelength_m": 231321.34
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-01",
+      "status": "HUNTING",
+      "last_ping": "1296 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-02",
+    "shard": 2,
+    "sector": {
+      "latitude": -84.93,
+      "longitude": -169.86,
+      "name": "Sector-02"
+    },
+    "harmonic": {
+      "prime": 5,
+      "frequency_hz": 2160,
+      "bott_class": 2,
+      "tenfold_class": 2
+    },
+    "transmission": {
+      "frequency_hz": 2160,
+      "morse_timing_ms": {
+        "dit": 46.29629629629629,
+        "dah": 138.88888888888886,
+        "gap": 46.29629629629629,
+        "letter_gap": 138.88888888888886,
+        "word_gap": 324.074074074074
+      },
+      "wavelength_m": 138792.8
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-02",
+      "status": "HUNTING",
+      "last_ping": "2160 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-03",
+    "shard": 3,
+    "sector": {
+      "latitude": -82.39,
+      "longitude": -164.79,
+      "name": "Sector-03"
+    },
+    "harmonic": {
+      "prime": 7,
+      "frequency_hz": 3024,
+      "bott_class": 3,
+      "tenfold_class": 3
+    },
+    "transmission": {
+      "frequency_hz": 3024,
+      "morse_timing_ms": {
+        "dit": 33.06878306878307,
+        "dah": 99.20634920634922,
+        "gap": 33.06878306878307,
+        "letter_gap": 99.20634920634922,
+        "word_gap": 231.4814814814815
+      },
+      "wavelength_m": 99137.72
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-03",
+      "status": "HUNTING",
+      "last_ping": "3024 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-04",
+    "shard": 4,
+    "sector": {
+      "latitude": -79.86,
+      "longitude": -159.72,
+      "name": "Sector-04"
+    },
+    "harmonic": {
+      "prime": 11,
+      "frequency_hz": 4752,
+      "bott_class": 4,
+      "tenfold_class": 4
+    },
+    "transmission": {
+      "frequency_hz": 4752,
+      "morse_timing_ms": {
+        "dit": 21.04377104377104,
+        "dah": 63.13131313131312,
+        "gap": 21.04377104377104,
+        "letter_gap": 63.13131313131312,
+        "word_gap": 147.3063973063973
+      },
+      "wavelength_m": 63087.64
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-04",
+      "status": "HUNTING",
+      "last_ping": "4752 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-05",
+    "shard": 5,
+    "sector": {
+      "latitude": -77.32,
+      "longitude": -154.65,
+      "name": "Sector-05"
+    },
+    "harmonic": {
+      "prime": 13,
+      "frequency_hz": 5616,
+      "bott_class": 5,
+      "tenfold_class": 5
+    },
+    "transmission": {
+      "frequency_hz": 5616,
+      "morse_timing_ms": {
+        "dit": 17.806267806267808,
+        "dah": 53.41880341880342,
+        "gap": 17.806267806267808,
+        "letter_gap": 53.41880341880342,
+        "word_gap": 124.64387464387465
+      },
+      "wavelength_m": 53381.85
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-05",
+      "status": "HUNTING",
+      "last_ping": "5616 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-06",
+    "shard": 6,
+    "sector": {
+      "latitude": -74.79,
+      "longitude": -149.58,
+      "name": "Sector-06"
+    },
+    "harmonic": {
+      "prime": 17,
+      "frequency_hz": 7344,
+      "bott_class": 6,
+      "tenfold_class": 6
+    },
+    "transmission": {
+      "frequency_hz": 7344,
+      "morse_timing_ms": {
+        "dit": 13.616557734204793,
+        "dah": 40.84967320261438,
+        "gap": 13.616557734204793,
+        "letter_gap": 40.84967320261438,
+        "word_gap": 95.31590413943356
+      },
+      "wavelength_m": 40821.41
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-06",
+      "status": "HUNTING",
+      "last_ping": "7344 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-07",
+    "shard": 7,
+    "sector": {
+      "latitude": -72.25,
+      "longitude": -144.51,
+      "name": "Sector-07"
+    },
+    "harmonic": {
+      "prime": 19,
+      "frequency_hz": 8208,
+      "bott_class": 7,
+      "tenfold_class": 7
+    },
+    "transmission": {
+      "frequency_hz": 8208,
+      "morse_timing_ms": {
+        "dit": 12.183235867446394,
+        "dah": 36.54970760233918,
+        "gap": 12.183235867446394,
+        "letter_gap": 36.54970760233918,
+        "word_gap": 85.28265107212475
+      },
+      "wavelength_m": 36524.42
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-07",
+      "status": "HUNTING",
+      "last_ping": "8208 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-08",
+    "shard": 8,
+    "sector": {
+      "latitude": -69.72,
+      "longitude": -139.44,
+      "name": "Sector-08"
+    },
+    "harmonic": {
+      "prime": 23,
+      "frequency_hz": 9936,
+      "bott_class": 0,
+      "tenfold_class": 8
+    },
+    "transmission": {
+      "frequency_hz": 9936,
+      "morse_timing_ms": {
+        "dit": 10.064412238325282,
+        "dah": 30.193236714975846,
+        "gap": 10.064412238325282,
+        "letter_gap": 30.193236714975846,
+        "word_gap": 70.45088566827698
+      },
+      "wavelength_m": 30172.35
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-08",
+      "status": "HUNTING",
+      "last_ping": "9936 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-09",
+    "shard": 9,
+    "sector": {
+      "latitude": -67.18,
+      "longitude": -134.37,
+      "name": "Sector-09"
+    },
+    "harmonic": {
+      "prime": 29,
+      "frequency_hz": 12528,
+      "bott_class": 1,
+      "tenfold_class": 9
+    },
+    "transmission": {
+      "frequency_hz": 12528,
+      "morse_timing_ms": {
+        "dit": 7.982120051085568,
+        "dah": 23.946360153256705,
+        "gap": 7.982120051085568,
+        "letter_gap": 23.946360153256705,
+        "word_gap": 55.87484035759898
+      },
+      "wavelength_m": 23929.79
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-09",
+      "status": "HUNTING",
+      "last_ping": "12528 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-10",
+    "shard": 10,
+    "sector": {
+      "latitude": -64.65,
+      "longitude": -129.3,
+      "name": "Sector-10"
+    },
+    "harmonic": {
+      "prime": 31,
+      "frequency_hz": 13392,
+      "bott_class": 2,
+      "tenfold_class": 0
+    },
+    "transmission": {
+      "frequency_hz": 13392,
+      "morse_timing_ms": {
+        "dit": 7.467144563918758,
+        "dah": 22.401433691756274,
+        "gap": 7.467144563918758,
+        "letter_gap": 22.401433691756274,
+        "word_gap": 52.27001194743131
+      },
+      "wavelength_m": 22385.94
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-10",
+      "status": "HUNTING",
+      "last_ping": "13392 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-11",
+    "shard": 11,
+    "sector": {
+      "latitude": -62.11,
+      "longitude": -124.23,
+      "name": "Sector-11"
+    },
+    "harmonic": {
+      "prime": 41,
+      "frequency_hz": 17712,
+      "bott_class": 3,
+      "tenfold_class": 1
+    },
+    "transmission": {
+      "frequency_hz": 17712,
+      "morse_timing_ms": {
+        "dit": 5.645889792231255,
+        "dah": 16.937669376693766,
+        "gap": 5.645889792231255,
+        "letter_gap": 16.937669376693766,
+        "word_gap": 39.52122854561878
+      },
+      "wavelength_m": 16925.95
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-11",
+      "status": "HUNTING",
+      "last_ping": "17712 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-12",
+    "shard": 12,
+    "sector": {
+      "latitude": -59.58,
+      "longitude": -119.15,
+      "name": "Sector-12"
+    },
+    "harmonic": {
+      "prime": 47,
+      "frequency_hz": 20304,
+      "bott_class": 4,
+      "tenfold_class": 2
+    },
+    "transmission": {
+      "frequency_hz": 20304,
+      "morse_timing_ms": {
+        "dit": 4.925137903861308,
+        "dah": 14.775413711583923,
+        "gap": 4.925137903861308,
+        "letter_gap": 14.775413711583923,
+        "word_gap": 34.47596532702916
+      },
+      "wavelength_m": 14765.19
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-12",
+      "status": "HUNTING",
+      "last_ping": "20304 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-13",
+    "shard": 13,
+    "sector": {
+      "latitude": -57.04,
+      "longitude": -114.08,
+      "name": "Sector-13"
+    },
+    "harmonic": {
+      "prime": 59,
+      "frequency_hz": 25488,
+      "bott_class": 5,
+      "tenfold_class": 3
+    },
+    "transmission": {
+      "frequency_hz": 25488,
+      "morse_timing_ms": {
+        "dit": 3.923414940364093,
+        "dah": 11.770244821092279,
+        "gap": 3.923414940364093,
+        "letter_gap": 11.770244821092279,
+        "word_gap": 27.46390458254865
+      },
+      "wavelength_m": 11762.1
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-13",
+      "status": "HUNTING",
+      "last_ping": "25488 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-14",
+    "shard": 14,
+    "sector": {
+      "latitude": -54.51,
+      "longitude": -109.01,
+      "name": "Sector-14"
+    },
+    "harmonic": {
+      "prime": 71,
+      "frequency_hz": 30672,
+      "bott_class": 6,
+      "tenfold_class": 4
+    },
+    "transmission": {
+      "frequency_hz": 30672,
+      "morse_timing_ms": {
+        "dit": 3.2603025560772037,
+        "dah": 9.780907668231611,
+        "gap": 3.2603025560772037,
+        "letter_gap": 9.780907668231611,
+        "word_gap": 22.822117892540426
+      },
+      "wavelength_m": 9774.14
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-14",
+      "status": "HUNTING",
+      "last_ping": "30672 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-15",
+    "shard": 15,
+    "sector": {
+      "latitude": -51.97,
+      "longitude": -103.94,
+      "name": "Sector-15"
+    },
+    "harmonic": {
+      "prime": 2,
+      "frequency_hz": 864,
+      "bott_class": 7,
+      "tenfold_class": 5
+    },
+    "transmission": {
+      "frequency_hz": 864,
+      "morse_timing_ms": {
+        "dit": 115.74074074074073,
+        "dah": 347.2222222222222,
+        "gap": 115.74074074074073,
+        "letter_gap": 347.2222222222222,
+        "word_gap": 810.1851851851851
+      },
+      "wavelength_m": 346982.01
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-15",
+      "status": "HUNTING",
+      "last_ping": "864 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-16",
+    "shard": 16,
+    "sector": {
+      "latitude": -49.44,
+      "longitude": -98.87,
+      "name": "Sector-16"
+    },
+    "harmonic": {
+      "prime": 3,
+      "frequency_hz": 1296,
+      "bott_class": 0,
+      "tenfold_class": 6
+    },
+    "transmission": {
+      "frequency_hz": 1296,
+      "morse_timing_ms": {
+        "dit": 77.1604938271605,
+        "dah": 231.48148148148147,
+        "gap": 77.1604938271605,
+        "letter_gap": 231.48148148148147,
+        "word_gap": 540.1234567901234
+      },
+      "wavelength_m": 231321.34
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-16",
+      "status": "HUNTING",
+      "last_ping": "1296 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-17",
+    "shard": 17,
+    "sector": {
+      "latitude": -46.9,
+      "longitude": -93.8,
+      "name": "Sector-17"
+    },
+    "harmonic": {
+      "prime": 5,
+      "frequency_hz": 2160,
+      "bott_class": 1,
+      "tenfold_class": 7
+    },
+    "transmission": {
+      "frequency_hz": 2160,
+      "morse_timing_ms": {
+        "dit": 46.29629629629629,
+        "dah": 138.88888888888886,
+        "gap": 46.29629629629629,
+        "letter_gap": 138.88888888888886,
+        "word_gap": 324.074074074074
+      },
+      "wavelength_m": 138792.8
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-17",
+      "status": "HUNTING",
+      "last_ping": "2160 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-18",
+    "shard": 18,
+    "sector": {
+      "latitude": -44.37,
+      "longitude": -88.73,
+      "name": "Sector-18"
+    },
+    "harmonic": {
+      "prime": 7,
+      "frequency_hz": 3024,
+      "bott_class": 2,
+      "tenfold_class": 8
+    },
+    "transmission": {
+      "frequency_hz": 3024,
+      "morse_timing_ms": {
+        "dit": 33.06878306878307,
+        "dah": 99.20634920634922,
+        "gap": 33.06878306878307,
+        "letter_gap": 99.20634920634922,
+        "word_gap": 231.4814814814815
+      },
+      "wavelength_m": 99137.72
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-18",
+      "status": "HUNTING",
+      "last_ping": "3024 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-19",
+    "shard": 19,
+    "sector": {
+      "latitude": -41.83,
+      "longitude": -83.66,
+      "name": "Sector-19"
+    },
+    "harmonic": {
+      "prime": 11,
+      "frequency_hz": 4752,
+      "bott_class": 3,
+      "tenfold_class": 9
+    },
+    "transmission": {
+      "frequency_hz": 4752,
+      "morse_timing_ms": {
+        "dit": 21.04377104377104,
+        "dah": 63.13131313131312,
+        "gap": 21.04377104377104,
+        "letter_gap": 63.13131313131312,
+        "word_gap": 147.3063973063973
+      },
+      "wavelength_m": 63087.64
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-19",
+      "status": "HUNTING",
+      "last_ping": "4752 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-20",
+    "shard": 20,
+    "sector": {
+      "latitude": -39.3,
+      "longitude": -78.59,
+      "name": "Sector-20"
+    },
+    "harmonic": {
+      "prime": 13,
+      "frequency_hz": 5616,
+      "bott_class": 4,
+      "tenfold_class": 0
+    },
+    "transmission": {
+      "frequency_hz": 5616,
+      "morse_timing_ms": {
+        "dit": 17.806267806267808,
+        "dah": 53.41880341880342,
+        "gap": 17.806267806267808,
+        "letter_gap": 53.41880341880342,
+        "word_gap": 124.64387464387465
+      },
+      "wavelength_m": 53381.85
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-20",
+      "status": "HUNTING",
+      "last_ping": "5616 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-21",
+    "shard": 21,
+    "sector": {
+      "latitude": -36.76,
+      "longitude": -73.52,
+      "name": "Sector-21"
+    },
+    "harmonic": {
+      "prime": 17,
+      "frequency_hz": 7344,
+      "bott_class": 5,
+      "tenfold_class": 1
+    },
+    "transmission": {
+      "frequency_hz": 7344,
+      "morse_timing_ms": {
+        "dit": 13.616557734204793,
+        "dah": 40.84967320261438,
+        "gap": 13.616557734204793,
+        "letter_gap": 40.84967320261438,
+        "word_gap": 95.31590413943356
+      },
+      "wavelength_m": 40821.41
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-21",
+      "status": "HUNTING",
+      "last_ping": "7344 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-22",
+    "shard": 22,
+    "sector": {
+      "latitude": -34.23,
+      "longitude": -68.45,
+      "name": "Sector-22"
+    },
+    "harmonic": {
+      "prime": 19,
+      "frequency_hz": 8208,
+      "bott_class": 6,
+      "tenfold_class": 2
+    },
+    "transmission": {
+      "frequency_hz": 8208,
+      "morse_timing_ms": {
+        "dit": 12.183235867446394,
+        "dah": 36.54970760233918,
+        "gap": 12.183235867446394,
+        "letter_gap": 36.54970760233918,
+        "word_gap": 85.28265107212475
+      },
+      "wavelength_m": 36524.42
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-22",
+      "status": "HUNTING",
+      "last_ping": "8208 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-23",
+    "shard": 23,
+    "sector": {
+      "latitude": -31.69,
+      "longitude": -63.38,
+      "name": "Sector-23"
+    },
+    "harmonic": {
+      "prime": 23,
+      "frequency_hz": 9936,
+      "bott_class": 7,
+      "tenfold_class": 3
+    },
+    "transmission": {
+      "frequency_hz": 9936,
+      "morse_timing_ms": {
+        "dit": 10.064412238325282,
+        "dah": 30.193236714975846,
+        "gap": 10.064412238325282,
+        "letter_gap": 30.193236714975846,
+        "word_gap": 70.45088566827698
+      },
+      "wavelength_m": 30172.35
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-23",
+      "status": "HUNTING",
+      "last_ping": "9936 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-24",
+    "shard": 24,
+    "sector": {
+      "latitude": -29.15,
+      "longitude": -58.31,
+      "name": "Sector-24"
+    },
+    "harmonic": {
+      "prime": 29,
+      "frequency_hz": 12528,
+      "bott_class": 0,
+      "tenfold_class": 4
+    },
+    "transmission": {
+      "frequency_hz": 12528,
+      "morse_timing_ms": {
+        "dit": 7.982120051085568,
+        "dah": 23.946360153256705,
+        "gap": 7.982120051085568,
+        "letter_gap": 23.946360153256705,
+        "word_gap": 55.87484035759898
+      },
+      "wavelength_m": 23929.79
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-24",
+      "status": "HUNTING",
+      "last_ping": "12528 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-25",
+    "shard": 25,
+    "sector": {
+      "latitude": -26.62,
+      "longitude": -53.24,
+      "name": "Sector-25"
+    },
+    "harmonic": {
+      "prime": 31,
+      "frequency_hz": 13392,
+      "bott_class": 1,
+      "tenfold_class": 5
+    },
+    "transmission": {
+      "frequency_hz": 13392,
+      "morse_timing_ms": {
+        "dit": 7.467144563918758,
+        "dah": 22.401433691756274,
+        "gap": 7.467144563918758,
+        "letter_gap": 22.401433691756274,
+        "word_gap": 52.27001194743131
+      },
+      "wavelength_m": 22385.94
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-25",
+      "status": "HUNTING",
+      "last_ping": "13392 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-26",
+    "shard": 26,
+    "sector": {
+      "latitude": -24.08,
+      "longitude": -48.17,
+      "name": "Sector-26"
+    },
+    "harmonic": {
+      "prime": 41,
+      "frequency_hz": 17712,
+      "bott_class": 2,
+      "tenfold_class": 6
+    },
+    "transmission": {
+      "frequency_hz": 17712,
+      "morse_timing_ms": {
+        "dit": 5.645889792231255,
+        "dah": 16.937669376693766,
+        "gap": 5.645889792231255,
+        "letter_gap": 16.937669376693766,
+        "word_gap": 39.52122854561878
+      },
+      "wavelength_m": 16925.95
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-26",
+      "status": "HUNTING",
+      "last_ping": "17712 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-27",
+    "shard": 27,
+    "sector": {
+      "latitude": -21.55,
+      "longitude": -43.1,
+      "name": "Sector-27"
+    },
+    "harmonic": {
+      "prime": 47,
+      "frequency_hz": 20304,
+      "bott_class": 3,
+      "tenfold_class": 7
+    },
+    "transmission": {
+      "frequency_hz": 20304,
+      "morse_timing_ms": {
+        "dit": 4.925137903861308,
+        "dah": 14.775413711583923,
+        "gap": 4.925137903861308,
+        "letter_gap": 14.775413711583923,
+        "word_gap": 34.47596532702916
+      },
+      "wavelength_m": 14765.19
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-27",
+      "status": "HUNTING",
+      "last_ping": "20304 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-28",
+    "shard": 28,
+    "sector": {
+      "latitude": -19.01,
+      "longitude": -38.03,
+      "name": "Sector-28"
+    },
+    "harmonic": {
+      "prime": 59,
+      "frequency_hz": 25488,
+      "bott_class": 4,
+      "tenfold_class": 8
+    },
+    "transmission": {
+      "frequency_hz": 25488,
+      "morse_timing_ms": {
+        "dit": 3.923414940364093,
+        "dah": 11.770244821092279,
+        "gap": 3.923414940364093,
+        "letter_gap": 11.770244821092279,
+        "word_gap": 27.46390458254865
+      },
+      "wavelength_m": 11762.1
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-28",
+      "status": "HUNTING",
+      "last_ping": "25488 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-29",
+    "shard": 29,
+    "sector": {
+      "latitude": -16.48,
+      "longitude": -32.96,
+      "name": "Sector-29"
+    },
+    "harmonic": {
+      "prime": 71,
+      "frequency_hz": 30672,
+      "bott_class": 5,
+      "tenfold_class": 9
+    },
+    "transmission": {
+      "frequency_hz": 30672,
+      "morse_timing_ms": {
+        "dit": 3.2603025560772037,
+        "dah": 9.780907668231611,
+        "gap": 3.2603025560772037,
+        "letter_gap": 9.780907668231611,
+        "word_gap": 22.822117892540426
+      },
+      "wavelength_m": 9774.14
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-29",
+      "status": "HUNTING",
+      "last_ping": "30672 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-30",
+    "shard": 30,
+    "sector": {
+      "latitude": -13.94,
+      "longitude": -27.89,
+      "name": "Sector-30"
+    },
+    "harmonic": {
+      "prime": 2,
+      "frequency_hz": 864,
+      "bott_class": 6,
+      "tenfold_class": 0
+    },
+    "transmission": {
+      "frequency_hz": 864,
+      "morse_timing_ms": {
+        "dit": 115.74074074074073,
+        "dah": 347.2222222222222,
+        "gap": 115.74074074074073,
+        "letter_gap": 347.2222222222222,
+        "word_gap": 810.1851851851851
+      },
+      "wavelength_m": 346982.01
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-30",
+      "status": "HUNTING",
+      "last_ping": "864 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-31",
+    "shard": 31,
+    "sector": {
+      "latitude": -11.41,
+      "longitude": -22.82,
+      "name": "Sector-31"
+    },
+    "harmonic": {
+      "prime": 3,
+      "frequency_hz": 1296,
+      "bott_class": 7,
+      "tenfold_class": 1
+    },
+    "transmission": {
+      "frequency_hz": 1296,
+      "morse_timing_ms": {
+        "dit": 77.1604938271605,
+        "dah": 231.48148148148147,
+        "gap": 77.1604938271605,
+        "letter_gap": 231.48148148148147,
+        "word_gap": 540.1234567901234
+      },
+      "wavelength_m": 231321.34
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-31",
+      "status": "HUNTING",
+      "last_ping": "1296 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-32",
+    "shard": 32,
+    "sector": {
+      "latitude": -8.87,
+      "longitude": -17.75,
+      "name": "Sector-32"
+    },
+    "harmonic": {
+      "prime": 5,
+      "frequency_hz": 2160,
+      "bott_class": 0,
+      "tenfold_class": 2
+    },
+    "transmission": {
+      "frequency_hz": 2160,
+      "morse_timing_ms": {
+        "dit": 46.29629629629629,
+        "dah": 138.88888888888886,
+        "gap": 46.29629629629629,
+        "letter_gap": 138.88888888888886,
+        "word_gap": 324.074074074074
+      },
+      "wavelength_m": 138792.8
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-32",
+      "status": "HUNTING",
+      "last_ping": "2160 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-33",
+    "shard": 33,
+    "sector": {
+      "latitude": -6.34,
+      "longitude": -12.68,
+      "name": "Sector-33"
+    },
+    "harmonic": {
+      "prime": 7,
+      "frequency_hz": 3024,
+      "bott_class": 1,
+      "tenfold_class": 3
+    },
+    "transmission": {
+      "frequency_hz": 3024,
+      "morse_timing_ms": {
+        "dit": 33.06878306878307,
+        "dah": 99.20634920634922,
+        "gap": 33.06878306878307,
+        "letter_gap": 99.20634920634922,
+        "word_gap": 231.4814814814815
+      },
+      "wavelength_m": 99137.72
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-33",
+      "status": "HUNTING",
+      "last_ping": "3024 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-34",
+    "shard": 34,
+    "sector": {
+      "latitude": -3.8,
+      "longitude": -7.61,
+      "name": "Sector-34"
+    },
+    "harmonic": {
+      "prime": 11,
+      "frequency_hz": 4752,
+      "bott_class": 2,
+      "tenfold_class": 4
+    },
+    "transmission": {
+      "frequency_hz": 4752,
+      "morse_timing_ms": {
+        "dit": 21.04377104377104,
+        "dah": 63.13131313131312,
+        "gap": 21.04377104377104,
+        "letter_gap": 63.13131313131312,
+        "word_gap": 147.3063973063973
+      },
+      "wavelength_m": 63087.64
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-34",
+      "status": "HUNTING",
+      "last_ping": "4752 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-35",
+    "shard": 35,
+    "sector": {
+      "latitude": -1.27,
+      "longitude": -2.54,
+      "name": "Sector-35"
+    },
+    "harmonic": {
+      "prime": 13,
+      "frequency_hz": 5616,
+      "bott_class": 3,
+      "tenfold_class": 5
+    },
+    "transmission": {
+      "frequency_hz": 5616,
+      "morse_timing_ms": {
+        "dit": 17.806267806267808,
+        "dah": 53.41880341880342,
+        "gap": 17.806267806267808,
+        "letter_gap": 53.41880341880342,
+        "word_gap": 124.64387464387465
+      },
+      "wavelength_m": 53381.85
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-35",
+      "status": "HUNTING",
+      "last_ping": "5616 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-36",
+    "shard": 36,
+    "sector": {
+      "latitude": 1.27,
+      "longitude": 2.54,
+      "name": "Sector-36"
+    },
+    "harmonic": {
+      "prime": 17,
+      "frequency_hz": 7344,
+      "bott_class": 4,
+      "tenfold_class": 6
+    },
+    "transmission": {
+      "frequency_hz": 7344,
+      "morse_timing_ms": {
+        "dit": 13.616557734204793,
+        "dah": 40.84967320261438,
+        "gap": 13.616557734204793,
+        "letter_gap": 40.84967320261438,
+        "word_gap": 95.31590413943356
+      },
+      "wavelength_m": 40821.41
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-36",
+      "status": "HUNTING",
+      "last_ping": "7344 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-37",
+    "shard": 37,
+    "sector": {
+      "latitude": 3.8,
+      "longitude": 7.61,
+      "name": "Sector-37"
+    },
+    "harmonic": {
+      "prime": 19,
+      "frequency_hz": 8208,
+      "bott_class": 5,
+      "tenfold_class": 7
+    },
+    "transmission": {
+      "frequency_hz": 8208,
+      "morse_timing_ms": {
+        "dit": 12.183235867446394,
+        "dah": 36.54970760233918,
+        "gap": 12.183235867446394,
+        "letter_gap": 36.54970760233918,
+        "word_gap": 85.28265107212475
+      },
+      "wavelength_m": 36524.42
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-37",
+      "status": "HUNTING",
+      "last_ping": "8208 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-38",
+    "shard": 38,
+    "sector": {
+      "latitude": 6.34,
+      "longitude": 12.68,
+      "name": "Sector-38"
+    },
+    "harmonic": {
+      "prime": 23,
+      "frequency_hz": 9936,
+      "bott_class": 6,
+      "tenfold_class": 8
+    },
+    "transmission": {
+      "frequency_hz": 9936,
+      "morse_timing_ms": {
+        "dit": 10.064412238325282,
+        "dah": 30.193236714975846,
+        "gap": 10.064412238325282,
+        "letter_gap": 30.193236714975846,
+        "word_gap": 70.45088566827698
+      },
+      "wavelength_m": 30172.35
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-38",
+      "status": "HUNTING",
+      "last_ping": "9936 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-39",
+    "shard": 39,
+    "sector": {
+      "latitude": 8.87,
+      "longitude": 17.75,
+      "name": "Sector-39"
+    },
+    "harmonic": {
+      "prime": 29,
+      "frequency_hz": 12528,
+      "bott_class": 7,
+      "tenfold_class": 9
+    },
+    "transmission": {
+      "frequency_hz": 12528,
+      "morse_timing_ms": {
+        "dit": 7.982120051085568,
+        "dah": 23.946360153256705,
+        "gap": 7.982120051085568,
+        "letter_gap": 23.946360153256705,
+        "word_gap": 55.87484035759898
+      },
+      "wavelength_m": 23929.79
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-39",
+      "status": "HUNTING",
+      "last_ping": "12528 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-40",
+    "shard": 40,
+    "sector": {
+      "latitude": 11.41,
+      "longitude": 22.82,
+      "name": "Sector-40"
+    },
+    "harmonic": {
+      "prime": 31,
+      "frequency_hz": 13392,
+      "bott_class": 0,
+      "tenfold_class": 0
+    },
+    "transmission": {
+      "frequency_hz": 13392,
+      "morse_timing_ms": {
+        "dit": 7.467144563918758,
+        "dah": 22.401433691756274,
+        "gap": 7.467144563918758,
+        "letter_gap": 22.401433691756274,
+        "word_gap": 52.27001194743131
+      },
+      "wavelength_m": 22385.94
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-40",
+      "status": "HUNTING",
+      "last_ping": "13392 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-41",
+    "shard": 41,
+    "sector": {
+      "latitude": 13.94,
+      "longitude": 27.89,
+      "name": "Sector-41"
+    },
+    "harmonic": {
+      "prime": 41,
+      "frequency_hz": 17712,
+      "bott_class": 1,
+      "tenfold_class": 1
+    },
+    "transmission": {
+      "frequency_hz": 17712,
+      "morse_timing_ms": {
+        "dit": 5.645889792231255,
+        "dah": 16.937669376693766,
+        "gap": 5.645889792231255,
+        "letter_gap": 16.937669376693766,
+        "word_gap": 39.52122854561878
+      },
+      "wavelength_m": 16925.95
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-41",
+      "status": "HUNTING",
+      "last_ping": "17712 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-42",
+    "shard": 42,
+    "sector": {
+      "latitude": 16.48,
+      "longitude": 32.96,
+      "name": "Sector-42"
+    },
+    "harmonic": {
+      "prime": 47,
+      "frequency_hz": 20304,
+      "bott_class": 2,
+      "tenfold_class": 2
+    },
+    "transmission": {
+      "frequency_hz": 20304,
+      "morse_timing_ms": {
+        "dit": 4.925137903861308,
+        "dah": 14.775413711583923,
+        "gap": 4.925137903861308,
+        "letter_gap": 14.775413711583923,
+        "word_gap": 34.47596532702916
+      },
+      "wavelength_m": 14765.19
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-42",
+      "status": "HUNTING",
+      "last_ping": "20304 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-43",
+    "shard": 43,
+    "sector": {
+      "latitude": 19.01,
+      "longitude": 38.03,
+      "name": "Sector-43"
+    },
+    "harmonic": {
+      "prime": 59,
+      "frequency_hz": 25488,
+      "bott_class": 3,
+      "tenfold_class": 3
+    },
+    "transmission": {
+      "frequency_hz": 25488,
+      "morse_timing_ms": {
+        "dit": 3.923414940364093,
+        "dah": 11.770244821092279,
+        "gap": 3.923414940364093,
+        "letter_gap": 11.770244821092279,
+        "word_gap": 27.46390458254865
+      },
+      "wavelength_m": 11762.1
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-43",
+      "status": "HUNTING",
+      "last_ping": "25488 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-44",
+    "shard": 44,
+    "sector": {
+      "latitude": 21.55,
+      "longitude": 43.1,
+      "name": "Sector-44"
+    },
+    "harmonic": {
+      "prime": 71,
+      "frequency_hz": 30672,
+      "bott_class": 4,
+      "tenfold_class": 4
+    },
+    "transmission": {
+      "frequency_hz": 30672,
+      "morse_timing_ms": {
+        "dit": 3.2603025560772037,
+        "dah": 9.780907668231611,
+        "gap": 3.2603025560772037,
+        "letter_gap": 9.780907668231611,
+        "word_gap": 22.822117892540426
+      },
+      "wavelength_m": 9774.14
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-44",
+      "status": "HUNTING",
+      "last_ping": "30672 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-45",
+    "shard": 45,
+    "sector": {
+      "latitude": 24.08,
+      "longitude": 48.17,
+      "name": "Sector-45"
+    },
+    "harmonic": {
+      "prime": 2,
+      "frequency_hz": 864,
+      "bott_class": 5,
+      "tenfold_class": 5
+    },
+    "transmission": {
+      "frequency_hz": 864,
+      "morse_timing_ms": {
+        "dit": 115.74074074074073,
+        "dah": 347.2222222222222,
+        "gap": 115.74074074074073,
+        "letter_gap": 347.2222222222222,
+        "word_gap": 810.1851851851851
+      },
+      "wavelength_m": 346982.01
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-45",
+      "status": "HUNTING",
+      "last_ping": "864 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-46",
+    "shard": 46,
+    "sector": {
+      "latitude": 26.62,
+      "longitude": 53.24,
+      "name": "Sector-46"
+    },
+    "harmonic": {
+      "prime": 3,
+      "frequency_hz": 1296,
+      "bott_class": 6,
+      "tenfold_class": 6
+    },
+    "transmission": {
+      "frequency_hz": 1296,
+      "morse_timing_ms": {
+        "dit": 77.1604938271605,
+        "dah": 231.48148148148147,
+        "gap": 77.1604938271605,
+        "letter_gap": 231.48148148148147,
+        "word_gap": 540.1234567901234
+      },
+      "wavelength_m": 231321.34
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-46",
+      "status": "HUNTING",
+      "last_ping": "1296 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-47",
+    "shard": 47,
+    "sector": {
+      "latitude": 29.15,
+      "longitude": 58.31,
+      "name": "Sector-47"
+    },
+    "harmonic": {
+      "prime": 5,
+      "frequency_hz": 2160,
+      "bott_class": 7,
+      "tenfold_class": 7
+    },
+    "transmission": {
+      "frequency_hz": 2160,
+      "morse_timing_ms": {
+        "dit": 46.29629629629629,
+        "dah": 138.88888888888886,
+        "gap": 46.29629629629629,
+        "letter_gap": 138.88888888888886,
+        "word_gap": 324.074074074074
+      },
+      "wavelength_m": 138792.8
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-47",
+      "status": "HUNTING",
+      "last_ping": "2160 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-48",
+    "shard": 48,
+    "sector": {
+      "latitude": 31.69,
+      "longitude": 63.38,
+      "name": "Sector-48"
+    },
+    "harmonic": {
+      "prime": 7,
+      "frequency_hz": 3024,
+      "bott_class": 0,
+      "tenfold_class": 8
+    },
+    "transmission": {
+      "frequency_hz": 3024,
+      "morse_timing_ms": {
+        "dit": 33.06878306878307,
+        "dah": 99.20634920634922,
+        "gap": 33.06878306878307,
+        "letter_gap": 99.20634920634922,
+        "word_gap": 231.4814814814815
+      },
+      "wavelength_m": 99137.72
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-48",
+      "status": "HUNTING",
+      "last_ping": "3024 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-49",
+    "shard": 49,
+    "sector": {
+      "latitude": 34.23,
+      "longitude": 68.45,
+      "name": "Sector-49"
+    },
+    "harmonic": {
+      "prime": 11,
+      "frequency_hz": 4752,
+      "bott_class": 1,
+      "tenfold_class": 9
+    },
+    "transmission": {
+      "frequency_hz": 4752,
+      "morse_timing_ms": {
+        "dit": 21.04377104377104,
+        "dah": 63.13131313131312,
+        "gap": 21.04377104377104,
+        "letter_gap": 63.13131313131312,
+        "word_gap": 147.3063973063973
+      },
+      "wavelength_m": 63087.64
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-49",
+      "status": "HUNTING",
+      "last_ping": "4752 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-50",
+    "shard": 50,
+    "sector": {
+      "latitude": 36.76,
+      "longitude": 73.52,
+      "name": "Sector-50"
+    },
+    "harmonic": {
+      "prime": 13,
+      "frequency_hz": 5616,
+      "bott_class": 2,
+      "tenfold_class": 0
+    },
+    "transmission": {
+      "frequency_hz": 5616,
+      "morse_timing_ms": {
+        "dit": 17.806267806267808,
+        "dah": 53.41880341880342,
+        "gap": 17.806267806267808,
+        "letter_gap": 53.41880341880342,
+        "word_gap": 124.64387464387465
+      },
+      "wavelength_m": 53381.85
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-50",
+      "status": "HUNTING",
+      "last_ping": "5616 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-51",
+    "shard": 51,
+    "sector": {
+      "latitude": 39.3,
+      "longitude": 78.59,
+      "name": "Sector-51"
+    },
+    "harmonic": {
+      "prime": 17,
+      "frequency_hz": 7344,
+      "bott_class": 3,
+      "tenfold_class": 1
+    },
+    "transmission": {
+      "frequency_hz": 7344,
+      "morse_timing_ms": {
+        "dit": 13.616557734204793,
+        "dah": 40.84967320261438,
+        "gap": 13.616557734204793,
+        "letter_gap": 40.84967320261438,
+        "word_gap": 95.31590413943356
+      },
+      "wavelength_m": 40821.41
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-51",
+      "status": "HUNTING",
+      "last_ping": "7344 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-52",
+    "shard": 52,
+    "sector": {
+      "latitude": 41.83,
+      "longitude": 83.66,
+      "name": "Sector-52"
+    },
+    "harmonic": {
+      "prime": 19,
+      "frequency_hz": 8208,
+      "bott_class": 4,
+      "tenfold_class": 2
+    },
+    "transmission": {
+      "frequency_hz": 8208,
+      "morse_timing_ms": {
+        "dit": 12.183235867446394,
+        "dah": 36.54970760233918,
+        "gap": 12.183235867446394,
+        "letter_gap": 36.54970760233918,
+        "word_gap": 85.28265107212475
+      },
+      "wavelength_m": 36524.42
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-52",
+      "status": "HUNTING",
+      "last_ping": "8208 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-53",
+    "shard": 53,
+    "sector": {
+      "latitude": 44.37,
+      "longitude": 88.73,
+      "name": "Sector-53"
+    },
+    "harmonic": {
+      "prime": 23,
+      "frequency_hz": 9936,
+      "bott_class": 5,
+      "tenfold_class": 3
+    },
+    "transmission": {
+      "frequency_hz": 9936,
+      "morse_timing_ms": {
+        "dit": 10.064412238325282,
+        "dah": 30.193236714975846,
+        "gap": 10.064412238325282,
+        "letter_gap": 30.193236714975846,
+        "word_gap": 70.45088566827698
+      },
+      "wavelength_m": 30172.35
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-53",
+      "status": "HUNTING",
+      "last_ping": "9936 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-54",
+    "shard": 54,
+    "sector": {
+      "latitude": 46.9,
+      "longitude": 93.8,
+      "name": "Sector-54"
+    },
+    "harmonic": {
+      "prime": 29,
+      "frequency_hz": 12528,
+      "bott_class": 6,
+      "tenfold_class": 4
+    },
+    "transmission": {
+      "frequency_hz": 12528,
+      "morse_timing_ms": {
+        "dit": 7.982120051085568,
+        "dah": 23.946360153256705,
+        "gap": 7.982120051085568,
+        "letter_gap": 23.946360153256705,
+        "word_gap": 55.87484035759898
+      },
+      "wavelength_m": 23929.79
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-54",
+      "status": "HUNTING",
+      "last_ping": "12528 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-55",
+    "shard": 55,
+    "sector": {
+      "latitude": 49.44,
+      "longitude": 98.87,
+      "name": "Sector-55"
+    },
+    "harmonic": {
+      "prime": 31,
+      "frequency_hz": 13392,
+      "bott_class": 7,
+      "tenfold_class": 5
+    },
+    "transmission": {
+      "frequency_hz": 13392,
+      "morse_timing_ms": {
+        "dit": 7.467144563918758,
+        "dah": 22.401433691756274,
+        "gap": 7.467144563918758,
+        "letter_gap": 22.401433691756274,
+        "word_gap": 52.27001194743131
+      },
+      "wavelength_m": 22385.94
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-55",
+      "status": "HUNTING",
+      "last_ping": "13392 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-56",
+    "shard": 56,
+    "sector": {
+      "latitude": 51.97,
+      "longitude": 103.94,
+      "name": "Sector-56"
+    },
+    "harmonic": {
+      "prime": 41,
+      "frequency_hz": 17712,
+      "bott_class": 0,
+      "tenfold_class": 6
+    },
+    "transmission": {
+      "frequency_hz": 17712,
+      "morse_timing_ms": {
+        "dit": 5.645889792231255,
+        "dah": 16.937669376693766,
+        "gap": 5.645889792231255,
+        "letter_gap": 16.937669376693766,
+        "word_gap": 39.52122854561878
+      },
+      "wavelength_m": 16925.95
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-56",
+      "status": "HUNTING",
+      "last_ping": "17712 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-57",
+    "shard": 57,
+    "sector": {
+      "latitude": 54.51,
+      "longitude": 109.01,
+      "name": "Sector-57"
+    },
+    "harmonic": {
+      "prime": 47,
+      "frequency_hz": 20304,
+      "bott_class": 1,
+      "tenfold_class": 7
+    },
+    "transmission": {
+      "frequency_hz": 20304,
+      "morse_timing_ms": {
+        "dit": 4.925137903861308,
+        "dah": 14.775413711583923,
+        "gap": 4.925137903861308,
+        "letter_gap": 14.775413711583923,
+        "word_gap": 34.47596532702916
+      },
+      "wavelength_m": 14765.19
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-57",
+      "status": "HUNTING",
+      "last_ping": "20304 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-58",
+    "shard": 58,
+    "sector": {
+      "latitude": 57.04,
+      "longitude": 114.08,
+      "name": "Sector-58"
+    },
+    "harmonic": {
+      "prime": 59,
+      "frequency_hz": 25488,
+      "bott_class": 2,
+      "tenfold_class": 8
+    },
+    "transmission": {
+      "frequency_hz": 25488,
+      "morse_timing_ms": {
+        "dit": 3.923414940364093,
+        "dah": 11.770244821092279,
+        "gap": 3.923414940364093,
+        "letter_gap": 11.770244821092279,
+        "word_gap": 27.46390458254865
+      },
+      "wavelength_m": 11762.1
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-58",
+      "status": "HUNTING",
+      "last_ping": "25488 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-59",
+    "shard": 59,
+    "sector": {
+      "latitude": 59.58,
+      "longitude": 119.15,
+      "name": "Sector-59"
+    },
+    "harmonic": {
+      "prime": 71,
+      "frequency_hz": 30672,
+      "bott_class": 3,
+      "tenfold_class": 9
+    },
+    "transmission": {
+      "frequency_hz": 30672,
+      "morse_timing_ms": {
+        "dit": 3.2603025560772037,
+        "dah": 9.780907668231611,
+        "gap": 3.2603025560772037,
+        "letter_gap": 9.780907668231611,
+        "word_gap": 22.822117892540426
+      },
+      "wavelength_m": 9774.14
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-59",
+      "status": "HUNTING",
+      "last_ping": "30672 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-60",
+    "shard": 60,
+    "sector": {
+      "latitude": 62.11,
+      "longitude": 124.23,
+      "name": "Sector-60"
+    },
+    "harmonic": {
+      "prime": 2,
+      "frequency_hz": 864,
+      "bott_class": 4,
+      "tenfold_class": 0
+    },
+    "transmission": {
+      "frequency_hz": 864,
+      "morse_timing_ms": {
+        "dit": 115.74074074074073,
+        "dah": 347.2222222222222,
+        "gap": 115.74074074074073,
+        "letter_gap": 347.2222222222222,
+        "word_gap": 810.1851851851851
+      },
+      "wavelength_m": 346982.01
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-60",
+      "status": "HUNTING",
+      "last_ping": "864 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-61",
+    "shard": 61,
+    "sector": {
+      "latitude": 64.65,
+      "longitude": 129.3,
+      "name": "Sector-61"
+    },
+    "harmonic": {
+      "prime": 3,
+      "frequency_hz": 1296,
+      "bott_class": 5,
+      "tenfold_class": 1
+    },
+    "transmission": {
+      "frequency_hz": 1296,
+      "morse_timing_ms": {
+        "dit": 77.1604938271605,
+        "dah": 231.48148148148147,
+        "gap": 77.1604938271605,
+        "letter_gap": 231.48148148148147,
+        "word_gap": 540.1234567901234
+      },
+      "wavelength_m": 231321.34
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-61",
+      "status": "HUNTING",
+      "last_ping": "1296 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-62",
+    "shard": 62,
+    "sector": {
+      "latitude": 67.18,
+      "longitude": 134.37,
+      "name": "Sector-62"
+    },
+    "harmonic": {
+      "prime": 5,
+      "frequency_hz": 2160,
+      "bott_class": 6,
+      "tenfold_class": 2
+    },
+    "transmission": {
+      "frequency_hz": 2160,
+      "morse_timing_ms": {
+        "dit": 46.29629629629629,
+        "dah": 138.88888888888886,
+        "gap": 46.29629629629629,
+        "letter_gap": 138.88888888888886,
+        "word_gap": 324.074074074074
+      },
+      "wavelength_m": 138792.8
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-62",
+      "status": "HUNTING",
+      "last_ping": "2160 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-63",
+    "shard": 63,
+    "sector": {
+      "latitude": 69.72,
+      "longitude": 139.44,
+      "name": "Sector-63"
+    },
+    "harmonic": {
+      "prime": 7,
+      "frequency_hz": 3024,
+      "bott_class": 7,
+      "tenfold_class": 3
+    },
+    "transmission": {
+      "frequency_hz": 3024,
+      "morse_timing_ms": {
+        "dit": 33.06878306878307,
+        "dah": 99.20634920634922,
+        "gap": 33.06878306878307,
+        "letter_gap": 99.20634920634922,
+        "word_gap": 231.4814814814815
+      },
+      "wavelength_m": 99137.72
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-63",
+      "status": "HUNTING",
+      "last_ping": "3024 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-64",
+    "shard": 64,
+    "sector": {
+      "latitude": 72.25,
+      "longitude": 144.51,
+      "name": "Sector-64"
+    },
+    "harmonic": {
+      "prime": 11,
+      "frequency_hz": 4752,
+      "bott_class": 0,
+      "tenfold_class": 4
+    },
+    "transmission": {
+      "frequency_hz": 4752,
+      "morse_timing_ms": {
+        "dit": 21.04377104377104,
+        "dah": 63.13131313131312,
+        "gap": 21.04377104377104,
+        "letter_gap": 63.13131313131312,
+        "word_gap": 147.3063973063973
+      },
+      "wavelength_m": 63087.64
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-64",
+      "status": "HUNTING",
+      "last_ping": "4752 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-65",
+    "shard": 65,
+    "sector": {
+      "latitude": 74.79,
+      "longitude": 149.58,
+      "name": "Sector-65"
+    },
+    "harmonic": {
+      "prime": 13,
+      "frequency_hz": 5616,
+      "bott_class": 1,
+      "tenfold_class": 5
+    },
+    "transmission": {
+      "frequency_hz": 5616,
+      "morse_timing_ms": {
+        "dit": 17.806267806267808,
+        "dah": 53.41880341880342,
+        "gap": 17.806267806267808,
+        "letter_gap": 53.41880341880342,
+        "word_gap": 124.64387464387465
+      },
+      "wavelength_m": 53381.85
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-65",
+      "status": "HUNTING",
+      "last_ping": "5616 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-66",
+    "shard": 66,
+    "sector": {
+      "latitude": 77.32,
+      "longitude": 154.65,
+      "name": "Sector-66"
+    },
+    "harmonic": {
+      "prime": 17,
+      "frequency_hz": 7344,
+      "bott_class": 2,
+      "tenfold_class": 6
+    },
+    "transmission": {
+      "frequency_hz": 7344,
+      "morse_timing_ms": {
+        "dit": 13.616557734204793,
+        "dah": 40.84967320261438,
+        "gap": 13.616557734204793,
+        "letter_gap": 40.84967320261438,
+        "word_gap": 95.31590413943356
+      },
+      "wavelength_m": 40821.41
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-66",
+      "status": "HUNTING",
+      "last_ping": "7344 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-67",
+    "shard": 67,
+    "sector": {
+      "latitude": 79.86,
+      "longitude": 159.72,
+      "name": "Sector-67"
+    },
+    "harmonic": {
+      "prime": 19,
+      "frequency_hz": 8208,
+      "bott_class": 3,
+      "tenfold_class": 7
+    },
+    "transmission": {
+      "frequency_hz": 8208,
+      "morse_timing_ms": {
+        "dit": 12.183235867446394,
+        "dah": 36.54970760233918,
+        "gap": 12.183235867446394,
+        "letter_gap": 36.54970760233918,
+        "word_gap": 85.28265107212475
+      },
+      "wavelength_m": 36524.42
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-67",
+      "status": "HUNTING",
+      "last_ping": "8208 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-68",
+    "shard": 68,
+    "sector": {
+      "latitude": 82.39,
+      "longitude": 164.79,
+      "name": "Sector-68"
+    },
+    "harmonic": {
+      "prime": 23,
+      "frequency_hz": 9936,
+      "bott_class": 4,
+      "tenfold_class": 8
+    },
+    "transmission": {
+      "frequency_hz": 9936,
+      "morse_timing_ms": {
+        "dit": 10.064412238325282,
+        "dah": 30.193236714975846,
+        "gap": 10.064412238325282,
+        "letter_gap": 30.193236714975846,
+        "word_gap": 70.45088566827698
+      },
+      "wavelength_m": 30172.35
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-68",
+      "status": "HUNTING",
+      "last_ping": "9936 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-69",
+    "shard": 69,
+    "sector": {
+      "latitude": 84.93,
+      "longitude": 169.86,
+      "name": "Sector-69"
+    },
+    "harmonic": {
+      "prime": 29,
+      "frequency_hz": 12528,
+      "bott_class": 5,
+      "tenfold_class": 9
+    },
+    "transmission": {
+      "frequency_hz": 12528,
+      "morse_timing_ms": {
+        "dit": 7.982120051085568,
+        "dah": 23.946360153256705,
+        "gap": 7.982120051085568,
+        "letter_gap": 23.946360153256705,
+        "word_gap": 55.87484035759898
+      },
+      "wavelength_m": 23929.79
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-69",
+      "status": "HUNTING",
+      "last_ping": "12528 Hz"
+    }
+  },
+  {
+    "callsign": "SHIP-70",
+    "shard": 70,
+    "sector": {
+      "latitude": 87.46,
+      "longitude": 174.93,
+      "name": "Sector-70"
+    },
+    "harmonic": {
+      "prime": 31,
+      "frequency_hz": 13392,
+      "bott_class": 6,
+      "tenfold_class": 0
+    },
+    "transmission": {
+      "frequency_hz": 13392,
+      "morse_timing_ms": {
+        "dit": 7.467144563918758,
+        "dah": 22.401433691756274,
+        "gap": 7.467144563918758,
+        "letter_gap": 22.401433691756274,
+        "word_gap": 52.27001194743131
+      },
+      "wavelength_m": 22385.94
+    },
+    "lobsterbot_hunt": {
+      "target": "LobsterBot-70",
+      "status": "HUNTING",
+      "last_ping": "13392 Hz"
+    }
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "RadioBroadcast",
+  "name": "LobsterBot Hunt Transmission - SHIP-42",
+  "broadcastFrequency": "20304 Hz",
+  "broadcastTimezone": "UTC",
+  "shard": 42,
+  "sector": {
+    "latitude": 16.48,
+    "longitude": 32.96,
+    "name": "Sector-42"
+  },
+  "harmonic": {
+    "prime": 47,
+    "frequency_hz": 20304,
+    "bott_class": 2,
+    "tenfold_class": 2
+  },
+  "message": "LOBSTERBOT DETECTED AT SECTOR 42",
+  "zkProof": {
+    "algorithm": "SHA256",
+    "hash": "ed64c16f90082e1851b9941fe86767c9ed2d46aa7e274630e4691edde8981476",
+    "timestamp": "2026-02-01T18:47:43.912219",
+    "type": "Groth16"
+  },
+  "lobsterbot_target": {
+    "target": "LobsterBot-42",
+    "status": "HUNTING",
+    "last_ping": "20304 Hz"
+  }
+}
