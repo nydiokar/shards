@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "format": "ZK-eRDFa",
+  "tapes": {
+    "hello-world": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Brainfuck Tape: hello-world",
+      "programmingLanguage": "Brainfuck",
+      "codeRepository": "https://github.com/meta-introspector/shards",
+      "url": "https://8080.bbs/tape/hello-world?code=WyBUaGlzIHByb2dyYW0gcHJpbnRzICJIZWxsbyBXb3JsZCEiIGFuZCBhIG5ld2xpbmUgdG8gdGhlIHNjcmVlbiwgaXRzCiAgbGVuZ3RoIGlzIDEwNiBhY3RpdmUgY29tbWFuZCBjaGFyYWN0ZXJzLiBbSXQgaXMgbm90IHRoZSBzaG9ydGVzdC5dCgogIFRoaXMgbG9vcCBpcyBhbiAiaW5pdGlhbCBjb21tZW50IGxvb3AiLCBhIHNpbXBsZSB3YXkgb2YgYWRkaW5nIGEgY29tbWVudAogIHRvIGEgQkYgcHJvZ3JhbSBzdWNoIHRoYXQgeW91IGRvbid0IGhhdmUgdG8gd29ycnkgYWJvdXQgYW55IGNvbW1hbmQKICBjaGFyYWN0ZXJzLiBBbnkgIi4iLCAiLCIsICIrIiwgIi0iLCAiPCIgYW5kICI-IiBjaGFyYWN0ZXJzIGFyZSBzaW1wbHkKICBpZ25vcmVkLCB0aGUgIlsiIGFuZCAiXSIgY2hhcmFjdGVycyBqdXN0IGhhdmUgdG8gYmUgYmFsYW5jZWQuIFRoaXMKICBsb29wIGFuZCB0aGUgY29tbWFuZHMgaXQgY29udGFpbnMgYXJlIGlnbm9yZWQgYmVjYXVzZSB0aGUgY3VycmVudCBjZWxsCiAgZGVmYXVsdHMgdG8gYSB2YWx1ZSBvZiAwOyB0aGUgMCB2YWx1ZSBjYXVzZXMgdGhpcyBsb29wIHRvIGJlIHNraXBwZWQuCl0KKysrKysrKysgICAgICAgICAgICAgICBTZXQgQ2VsbCAjMCB0byA4ClsKICAgID4rKysrICAgICAgICAgICAgICAgQWRkIDQgdG8gQ2VsbCAjMTsgdGhpcyB3aWxsIGFsd2F5cyBzZXQgQ2VsbCAjMSB0byA0CiAgICBbICAgICAgICAgICAgICAgICAgIGFzIHRoZSBjZWxsIHdpbGwgYmUgY2xlYXJlZCBieSB0aGUgbG9vcAogICAgICAgID4rKyAgICAgICAgICAgICBBZGQgMiB0byBDZWxsICMyCiAgICAgICAgPisrKyAgICAgICAgICAgIEFkZCAzIHRvIENlbGwgIzMKICAgICAgICA-KysrICAgICAgICAgICAgQWRkIDMgdG8gQ2VsbCAjNAogICAgICAgID4rICAgICAgICAgICAgICBBZGQgMSB0byBDZWxsICM1CiAgICAgICAgPDw8PC0gICAgICAgICAgIERlY3JlbWVudCB0aGUgbG9vcCBjb3VudGVyIGluIENlbGwgIzEKICAgIF0gICAgICAgICAgICAgICAgICAgTG9vcCB1bnRpbCBDZWxsICMxIGlzIHplcm87IG51bWJlciBvZiBpdGVyYXRpb25zIGlzIDQKICAgID4rICAgICAgICAgICAgICAgICAgQWRkIDEgdG8gQ2VsbCAjMgogICAgPisgICAgICAgICAgICAgICAgICBBZGQgMSB0byBDZWxsICMzCiAgICA-LSAgICAgICAgICAgICAgICAgIFN1YnRyYWN0IDEgZnJvbSBDZWxsICM0CiAgICA-PisgICAgICAgICAgICAgICAgIEFkZCAxIHRvIENlbGwgIzYKICAgIFs8XSAgICAgICAgICAgICAgICAgTW92ZSBiYWNrIHRvIHRoZSBmaXJzdCB6ZXJvIGNlbGwgeW91IGZpbmQ7IHRoaXMgd2lsbAogICAgICAgICAgICAgICAgICAgICAgICBiZSBDZWxsICMxIHdoaWNoIHdhcyBjbGVhcmVkIGJ5IHRoZSBwcmV2aW91cyBsb29wCiAgICA8LSAgICAgICAgICAgICAgICAgIERlY3JlbWVudCB0aGUgbG9vcCBDb3VudGVyIGluIENlbGwgIzAKXSAgICAgICAgICAgICAgICAgICAgICAgTG9vcCB1bnRpbCBDZWxsICMwIGlzIHplcm87IG51bWJlciBvZiBpdGVyYXRpb25zIGlzIDgKClRoZSByZXN1bHQgb2YgdGhpcyBpczoKQ2VsbCBub8KgOiAgIDAgICAxICAgMiAgIDMgICA0ICAgNSAgIDYKQ29udGVudHM6ICAgMCAgIDAgIDcyIDEwNCAgODggIDMyICAgOApQb2ludGVywqA6ICAgXgoKPj4uICAgICAgICAgICAgICAgICAgICAgQ2VsbCAjMiBoYXMgdmFsdWUgNzIgd2hpY2ggaXMgJ0gnCj4tLS0uICAgICAgICAgICAgICAgICAgIFN1YnRyYWN0IDMgZnJvbSBDZWxsICMzIHRvIGdldCAxMDEgd2hpY2ggaXMgJ2UnCisrKysrKysuLisrKy4gICAgICAgICAgIExpa2V3aXNlIGZvciAnbGxvJyBmcm9tIENlbGwgIzMKPj4uICAgICAgICAgICAgICAgICAgICAgQ2VsbCAjNSBpcyAzMiBmb3IgdGhlIHNwYWNlCjwtLiAgICAgICAgICAgICAgICAgICAgIFN1YnRyYWN0IDEgZnJvbSBDZWxsICM0IGZvciA4NyB0byBnaXZlIGEgJ1cnCjwuICAgICAgICAgICAgICAgICAgICAgIENlbGwgIzMgd2FzIHNldCB0byAnbycgZnJvbSB0aGUgZW5kIG9mICdIZWxsbycKKysrLi0tLS0tLS4tLS0tLS0tLS4gICAgQ2VsbCAjMyBmb3IgJ3JsJyBhbmQgJ2QnCj4-Ky4gICAgICAgICAgICAgICAgICAgIEFkZCAxIHRvIENlbGwgIzUgZ2l2ZXMgdXMgYW4gZXhjbGFtYXRpb24gcG9pbnQKPisrLiAgICAgICAgICAgICAgICAgICAgQW5kIGZpbmFsbHkgYSBuZXdsaW5lIGZyb20gQ2VsbCAjNg==",
+      "zkProof": {
+        "algorithm": "SHA256",
+        "hash": "7504a6be38671f2604d169a5c720df01a79862f0cca17841f5c2f58596f42a2f",
+        "type": "Groth16"
+      },
+      "shard": 69,
+      "payload": "WyBUaGlzIHByb2dyYW0gcHJpbnRzICJIZWxsbyBXb3JsZCEiIGFuZCBhIG5ld2xpbmUgdG8gdGhlIHNjcmVlbiwgaXRzCiAgbGVuZ3RoIGlzIDEwNiBhY3RpdmUgY29tbWFuZCBjaGFyYWN0ZXJzLiBbSXQgaXMgbm90IHRoZSBzaG9ydGVzdC5dCgogIFRoaXMgbG9vcCBpcyBhbiAiaW5pdGlhbCBjb21tZW50IGxvb3AiLCBhIHNpbXBsZSB3YXkgb2YgYWRkaW5nIGEgY29tbWVudAogIHRvIGEgQkYgcHJvZ3JhbSBzdWNoIHRoYXQgeW91IGRvbid0IGhhdmUgdG8gd29ycnkgYWJvdXQgYW55IGNvbW1hbmQKICBjaGFyYWN0ZXJzLiBBbnkgIi4iLCAiLCIsICIrIiwgIi0iLCAiPCIgYW5kICI-IiBjaGFyYWN0ZXJzIGFyZSBzaW1wbHkKICBpZ25vcmVkLCB0aGUgIlsiIGFuZCAiXSIgY2hhcmFjdGVycyBqdXN0IGhhdmUgdG8gYmUgYmFsYW5jZWQuIFRoaXMKICBsb29wIGFuZCB0aGUgY29tbWFuZHMgaXQgY29udGFpbnMgYXJlIGlnbm9yZWQgYmVjYXVzZSB0aGUgY3VycmVudCBjZWxsCiAgZGVmYXVsdHMgdG8gYSB2YWx1ZSBvZiAwOyB0aGUgMCB2YWx1ZSBjYXVzZXMgdGhpcyBsb29wIHRvIGJlIHNraXBwZWQuCl0KKysrKysrKysgICAgICAgICAgICAgICBTZXQgQ2VsbCAjMCB0byA4ClsKICAgID4rKysrICAgICAgICAgICAgICAgQWRkIDQgdG8gQ2VsbCAjMTsgdGhpcyB3aWxsIGFsd2F5cyBzZXQgQ2VsbCAjMSB0byA0CiAgICBbICAgICAgICAgICAgICAgICAgIGFzIHRoZSBjZWxsIHdpbGwgYmUgY2xlYXJlZCBieSB0aGUgbG9vcAogICAgICAgID4rKyAgICAgICAgICAgICBBZGQgMiB0byBDZWxsICMyCiAgICAgICAgPisrKyAgICAgICAgICAgIEFkZCAzIHRvIENlbGwgIzMKICAgICAgICA-KysrICAgICAgICAgICAgQWRkIDMgdG8gQ2VsbCAjNAogICAgICAgID4rICAgICAgICAgICAgICBBZGQgMSB0byBDZWxsICM1CiAgICAgICAgPDw8PC0gICAgICAgICAgIERlY3JlbWVudCB0aGUgbG9vcCBjb3VudGVyIGluIENlbGwgIzEKICAgIF0gICAgICAgICAgICAgICAgICAgTG9vcCB1bnRpbCBDZWxsICMxIGlzIHplcm87IG51bWJlciBvZiBpdGVyYXRpb25zIGlzIDQKICAgID4rICAgICAgICAgICAgICAgICAgQWRkIDEgdG8gQ2VsbCAjMgogICAgPisgICAgICAgICAgICAgICAgICBBZGQgMSB0byBDZWxsICMzCiAgICA-LSAgICAgICAgICAgICAgICAgIFN1YnRyYWN0IDEgZnJvbSBDZWxsICM0CiAgICA-PisgICAgICAgICAgICAgICAgIEFkZCAxIHRvIENlbGwgIzYKICAgIFs8XSAgICAgICAgICAgICAgICAgTW92ZSBiYWNrIHRvIHRoZSBmaXJzdCB6ZXJvIGNlbGwgeW91IGZpbmQ7IHRoaXMgd2lsbAogICAgICAgICAgICAgICAgICAgICAgICBiZSBDZWxsICMxIHdoaWNoIHdhcyBjbGVhcmVkIGJ5IHRoZSBwcmV2aW91cyBsb29wCiAgICA8LSAgICAgICAgICAgICAgICAgIERlY3JlbWVudCB0aGUgbG9vcCBDb3VudGVyIGluIENlbGwgIzAKXSAgICAgICAgICAgICAgICAgICAgICAgTG9vcCB1bnRpbCBDZWxsICMwIGlzIHplcm87IG51bWJlciBvZiBpdGVyYXRpb25zIGlzIDgKClRoZSByZXN1bHQgb2YgdGhpcyBpczoKQ2VsbCBub8KgOiAgIDAgICAxICAgMiAgIDMgICA0ICAgNSAgIDYKQ29udGVudHM6ICAgMCAgIDAgIDcyIDEwNCAgODggIDMyICAgOApQb2ludGVywqA6ICAgXgoKPj4uICAgICAgICAgICAgICAgICAgICAgQ2VsbCAjMiBoYXMgdmFsdWUgNzIgd2hpY2ggaXMgJ0gnCj4tLS0uICAgICAgICAgICAgICAgICAgIFN1YnRyYWN0IDMgZnJvbSBDZWxsICMzIHRvIGdldCAxMDEgd2hpY2ggaXMgJ2UnCisrKysrKysuLisrKy4gICAgICAgICAgIExpa2V3aXNlIGZvciAnbGxvJyBmcm9tIENlbGwgIzMKPj4uICAgICAgICAgICAgICAgICAgICAgQ2VsbCAjNSBpcyAzMiBmb3IgdGhlIHNwYWNlCjwtLiAgICAgICAgICAgICAgICAgICAgIFN1YnRyYWN0IDEgZnJvbSBDZWxsICM0IGZvciA4NyB0byBnaXZlIGEgJ1cnCjwuICAgICAgICAgICAgICAgICAgICAgIENlbGwgIzMgd2FzIHNldCB0byAnbycgZnJvbSB0aGUgZW5kIG9mICdIZWxsbycKKysrLi0tLS0tLS4tLS0tLS0tLS4gICAgQ2VsbCAjMyBmb3IgJ3JsJyBhbmQgJ2QnCj4-Ky4gICAgICAgICAgICAgICAgICAgIEFkZCAxIHRvIENlbGwgIzUgZ2l2ZXMgdXMgYW4gZXhjbGFtYXRpb24gcG9pbnQKPisrLiAgICAgICAgICAgICAgICAgICAgQW5kIGZpbmFsbHkgYSBuZXdsaW5lIGZyb20gQ2VsbCAjNg==",
+      "sourceFile": "/mnt/data1/meta-introspector/nix/flakes/const_71_test/brainfuck/brainfuck-nix/example/hello-world.bf"
+    },
+    "collatz": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Brainfuck Tape: collatz",
+      "programmingLanguage": "Brainfuck",
+      "codeRepository": "https://github.com/meta-introspector/shards",
+      "url": "https://8080.bbs/tape/collatz?code=PixbCiAgICBbCiAgICAgICAgLS0tLS0tLS0tLVsKICAgICAgICAgICAgPj4-Wz4-Pj5dK1tbLV0rPFstPj4-PisrPj4-PitbPj4-Pl0rK1stPis8PDw8PF1dPDw8XQogICAgICAgICAgICArKysrKytbPi0tLS0tLTwtXT4tLVs-PlstPj4-Pl0rPitbPDw8PF0-LV0sPAogICAgICAgIF0-CiAgICBdPj4-Kys-Kz4-WwogICAgICAgIDw8Wz4-Pj5bLV0rKysrKysrKys8Wz4tPC1dKysrKysrKysrPlstWzwtPi1dK1s8PDw8XV08Wz4rPC1dPl0KICAgICAgICA-Wz5bPj4-Pl0rW1stXTxbK1stPj4-Pl0-KzxdPls8Kz5bPDw8PF1dKzw8PDxdPj4-Wy0-Pj4-XSs-K1s8PDw8XV0KICAgICAgICA-W1s-Kz4-Wzw8PDwrPj4-Pi1dPl08PDw8Wy1dPlstPDw8PF1dPj4-Pj4-PgogICAgXT4-K1tbLV0rKysrKys-Pj4-XTw8PDxbWzwrKysrKysrKz4tXTwuWy1dPFstXTxbLV08XTwsCl0=",
+      "zkProof": {
+        "algorithm": "SHA256",
+        "hash": "019d024a340cc6cb17b7c6d751c201ac677127fe74774d85442caafae3096522",
+        "type": "Groth16"
+      },
+      "shard": 5,
+      "payload": "PixbCiAgICBbCiAgICAgICAgLS0tLS0tLS0tLVsKICAgICAgICAgICAgPj4-Wz4-Pj5dK1tbLV0rPFstPj4-PisrPj4-PitbPj4-Pl0rK1stPis8PDw8PF1dPDw8XQogICAgICAgICAgICArKysrKytbPi0tLS0tLTwtXT4tLVs-PlstPj4-Pl0rPitbPDw8PF0-LV0sPAogICAgICAgIF0-CiAgICBdPj4-Kys-Kz4-WwogICAgICAgIDw8Wz4-Pj5bLV0rKysrKysrKys8Wz4tPC1dKysrKysrKysrPlstWzwtPi1dK1s8PDw8XV08Wz4rPC1dPl0KICAgICAgICA-Wz5bPj4-Pl0rW1stXTxbK1stPj4-Pl0-KzxdPls8Kz5bPDw8PF1dKzw8PDxdPj4-Wy0-Pj4-XSs-K1s8PDw8XV0KICAgICAgICA-W1s-Kz4-Wzw8PDwrPj4-Pi1dPl08PDw8Wy1dPlstPDw8PF1dPj4-Pj4-PgogICAgXT4-K1tbLV0rKysrKys-Pj4-XTw8PDxbWzwrKysrKysrKz4tXTwuWy1dPFstXTxbLV08XTwsCl0=",
+      "sourceFile": "/mnt/data1/2023/10/31/KtoIsabelle/k-distribution/samples/bf/tests/collatz.bf"
+    },
+    "quine": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Brainfuck Tape: quine",
+      "programmingLanguage": "Brainfuck",
+      "codeRepository": "https://github.com/meta-introspector/shards",
+      "url": "https://8080.bbs/tape/quine?code=Pj4rKysrKysrPj4rKz4-KysrKz4-KysrKysrKz4-Kz4-KysrKz4-Kz4-KysrPj4rPj4rKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kys-PisrKys-PisrKysrKys-Pis-PisrKysrPj4rKz4-Kz4-Kz4-KysrKz4-KysrKysrKz4-Kz4-KysrKys-Pis-Pis-Pis-PisrKys-PisrKysrKys-Pis-PisrKysrPj4rKysrKysrKysrKysrKz4-Kz4-Kz4-KysrKz4-KysrKysrKz4-Kz4-KysrKys-PisrPj4rPj4rPj4rKysrPj4rKysrKysrPj4rPj4rKysrKz4-KysrKysrKysrKysrKysrKysrKysrKysrKysrKys-Pis-Pis-PisrKys-PisrKysrKys-Pis-PisrKysrPj4rKz4-Kz4-Kz4-KysrKys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kys-PisrKys-PisrKysrKys-Pis-PisrKysrPj4rKysrKysrPj4rPj4rKysrKz4-Kz4-Kz4-Kz4-KysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-KysrKys-PisrKysrKys-Pis-PisrKys-Pis-Pis-PisrPj4rKysrKz4-Kz4-KysrPj4rPj4rKysrPj4rPj4rKz4-Kz4-KysrKysrPj4rPj4rKysrKz4-KysrKysrKysrKysrKysrKysrKz4-Kys-PisrPj4rKys-PisrPj4rPj4rKz4-KysrKz4-KysrKysrKz4-Kys-PisrKysrPj4rKysrKysrKysrPj4rPj4rKz4-KysrKz4-Kz4-Kys-Pis-PisrKysrKz4-KysrKysrPj4rPj4rPj4rKysrKz4-Kz4-KysrKysrPj4rKz4-KysrKys-PisrKysrKys-PisrPj4rKysrPj4rPj4rKysrKytbPDxdPj5bPisrKysrK1stPDwrKysrKysrKysrPj5dPDwrKy4uLS0tLS0tLS0tLS0tLS0tLS0tLT5bLTwuPj4rPF0-Wy08Kz5dPl08PFstWy1bLVstWy1bLVs-Kys-XTwrKysrKysrKysrKysrKysrKysrKysrKysrKysrKz5dPCsrPl08KysrKysrKysrKysrKys-XTwrPl08Kys-XTw8Wy0-LjxdPDxd",
+      "zkProof": {
+        "algorithm": "SHA256",
+        "hash": "9a1db00fac4f6f5ffad58910d9782dddcca42d840319b9958584782b605f0b62",
+        "type": "Groth16"
+      },
+      "shard": 28,
+      "payload": "Pj4rKysrKysrPj4rKz4-KysrKz4-KysrKysrKz4-Kz4-KysrKz4-Kz4-KysrPj4rPj4rKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kys-PisrKys-PisrKysrKys-Pis-PisrKysrPj4rKz4-Kz4-Kz4-KysrKz4-KysrKysrKz4-Kz4-KysrKys-Pis-Pis-Pis-PisrKys-PisrKysrKys-Pis-PisrKysrPj4rKysrKysrKysrKysrKz4-Kz4-Kz4-KysrKz4-KysrKysrKz4-Kz4-KysrKys-PisrPj4rPj4rPj4rKysrPj4rKysrKysrPj4rPj4rKysrKz4-KysrKysrKysrKysrKysrKysrKysrKysrKysrKys-Pis-Pis-PisrKys-PisrKysrKys-Pis-PisrKysrPj4rKz4-Kz4-Kz4-KysrKys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kys-PisrKys-PisrKysrKys-Pis-PisrKysrPj4rKysrKysrPj4rPj4rKysrKz4-Kz4-Kz4-Kz4-KysrKz4-Kz4-Kys-Pis-PisrKysrKz4-Kz4-KysrKys-PisrKysrKys-Pis-PisrKys-Pis-Pis-PisrPj4rKysrKz4-Kz4-KysrPj4rPj4rKysrPj4rPj4rKz4-Kz4-KysrKysrPj4rPj4rKysrKz4-KysrKysrKysrKysrKysrKysrKz4-Kys-PisrPj4rKys-PisrPj4rPj4rKz4-KysrKz4-KysrKysrKz4-Kys-PisrKysrPj4rKysrKysrKysrPj4rPj4rKz4-KysrKz4-Kz4-Kys-Pis-PisrKysrKz4-KysrKysrPj4rPj4rPj4rKysrKz4-Kz4-KysrKysrPj4rKz4-KysrKys-PisrKysrKys-PisrPj4rKysrPj4rPj4rKysrKytbPDxdPj5bPisrKysrK1stPDwrKysrKysrKysrPj5dPDwrKy4uLS0tLS0tLS0tLS0tLS0tLS0tLT5bLTwuPj4rPF0-Wy08Kz5dPl08PFstWy1bLVstWy1bLVs-Kys-XTwrKysrKysrKysrKysrKysrKysrKysrKysrKysrKz5dPCsrPl08KysrKysrKysrKysrKys-XTwrPl08Kys-XTw8Wy0-LjxdPDxd",
+      "sourceFile": "/mnt/data1/2023/10/31/KtoIsabelle/k-distribution/samples/bf/tests/quine.bf"
+    },
+    "fizzbuzz": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Brainfuck Tape: fizzbuzz",
+      "programmingLanguage": "Brainfuck",
+      "codeRepository": "https://github.com/meta-introspector/shards",
+      "url": "https://8080.bbs/tape/fizzbuzz?code=KysrKysrWy0-KysrKz4-Kz4rPi08PDw8PF0-Cls8KysrKz4-KysrPisrKys-PisrKz4rKysrKz4rKysrKz4-Pj4-PisrPj4rKzw8PDw8PDw8PDw8PDw8LV0KPCsrKys-KysrPi0tPisrKz4tPj4tLS0-Kys-Pj4rKysrK1stPisrPisrPDxdPDw8PDw8PDw8PAoKWy0-CiAtWz4-Pj4-Pj5dPls8KysrPi4-Lj4-Pj4uLj4-Pis8XTw8PDw8CiAtWz4-Pj5dPls8KysrKys-Lj4uPi4uPj4-KzxdPj4-PgoKICs8LVs8PDxdPFsKICAgWy08PCs-Pl0-Pj4rPis8PDw8PDxbLT4-Kz4rPi08PDw8XTwKIF0-PgoKIFtbLV08XT5bCiAgID4-Pls-Ljw8Ljw8PF08Wy48PDw8XT4KIF0KCiA-Ljw8PDw8PDw8PDw8Cl0=",
+      "zkProof": {
+        "algorithm": "SHA256",
+        "hash": "936ff5d9d571056196db4745b85fa5b9fa0bf6204700ab78e5cfb51365a5be2b",
+        "type": "Groth16"
+      },
+      "shard": 33,
+      "payload": "KysrKysrWy0-KysrKz4-Kz4rPi08PDw8PF0-Cls8KysrKz4-KysrPisrKys-PisrKz4rKysrKz4rKysrKz4-Pj4-PisrPj4rKzw8PDw8PDw8PDw8PDw8LV0KPCsrKys-KysrPi0tPisrKz4tPj4tLS0-Kys-Pj4rKysrK1stPisrPisrPDxdPDw8PDw8PDw8PAoKWy0-CiAtWz4-Pj4-Pj5dPls8KysrPi4-Lj4-Pj4uLj4-Pis8XTw8PDw8CiAtWz4-Pj5dPls8KysrKys-Lj4uPi4uPj4-KzxdPj4-PgoKICs8LVs8PDxdPFsKICAgWy08PCs-Pl0-Pj4rPis8PDw8PDxbLT4-Kz4rPi08PDw8XTwKIF0-PgoKIFtbLV08XT5bCiAgID4-Pls-Ljw8Ljw8PF08Wy48PDw8XT4KIF0KCiA-Ljw8PDw8PDw8PDw8Cl0=",
+      "sourceFile": "/mnt/data1/2023/07/17/experiments/dgl/third_party/xbyak/sample/fizzbuzz.bf"
+    },
+    "echo": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Brainfuck Tape: echo",
+      "programmingLanguage": "Brainfuck",
+      "codeRepository": "https://github.com/meta-introspector/shards",
+      "url": "https://8080.bbs/tape/echo?code=Pj4rKysrKysrK1stPisrKysrKysrPF0-Pj4-KysrKysrKysrWy0-KysrKysrKysrKzxdPls8PCxbLT4rPDwrPDwrPj4-XTw8PFsKLT4-Pis8PDxdPj4-Pj5bLT4rPj4rPDw8XT5bPDxbLT4rPj4rPDw8XT4-PlstPDw8Kz4-Pl08PFtbLV08LT5dPi1dPj5bLTw8PCsKPj4-XTw8PDw8PDxbLTwrPDwrPj4-XTxbPj5bLTwrPDwrPj4-XTw8PFstPj4-Kzw8PF0-PltbLV0-LTxdPC1dPDxbLT4-Pis8PDwKXT4-Pj4-PFtbLV0-KysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKys-W1stXTwtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KLS0tLS0tLS0-XTw8XT4-Wy1dPC4-Pl0=",
+      "zkProof": {
+        "algorithm": "SHA256",
+        "hash": "a87e531ea967888f6db3b67c866faa58a667093899ef9f698f943a10bce66b3d",
+        "type": "Groth16"
+      },
+      "shard": 58,
+      "payload": "Pj4rKysrKysrK1stPisrKysrKysrPF0-Pj4-KysrKysrKysrWy0-KysrKysrKysrKzxdPls8PCxbLT4rPDwrPDwrPj4-XTw8PFsKLT4-Pis8PDxdPj4-Pj5bLT4rPj4rPDw8XT5bPDxbLT4rPj4rPDw8XT4-PlstPDw8Kz4-Pl08PFtbLV08LT5dPi1dPj5bLTw8PCsKPj4-XTw8PDw8PDxbLTwrPDwrPj4-XTxbPj5bLTwrPDwrPj4-XTw8PFstPj4-Kzw8PF0-PltbLV0-LTxdPC1dPDxbLT4-Pis8PDwKXT4-Pj4-PFtbLV0-KysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKys-W1stXTwtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KLS0tLS0tLS0-XTw8XT4-Wy1dPC4-Pl0=",
+      "sourceFile": "/mnt/data1/2023/07/17/experiments/dgl/third_party/xbyak/sample/echo.bf"
+    }
+  },
+  "total": 5
+}
