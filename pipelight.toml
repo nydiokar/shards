@@ -46,24 +46,30 @@ pipelines:
         commands:
           - python3 generate_moltbook_post.py
       
-      - name: generate_shard_flakes
+      - name: generate_zkperf_flakes
         commands:
-          - bash generate_shard_flakes.sh
+          - bash generate_zkperf_flakes.sh
       
-      - name: register_shard_0
+      - name: register_shard_0_zkperf
         commands:
-          - echo "Registering Shard 0 via Nix..."
+          - echo "Registering Shard 0 with zkPerf witness..."
           - cd shard-0/openclaw && nix run --impure || echo "OpenClaw requires authentication"
       
-      - name: register_shard_27
+      - name: register_shard_27_zkperf
         commands:
-          - echo "Registering Shard 27 via Nix..."
+          - echo "Registering Shard 27 with zkPerf witness..."
           - cd shard-27/openclaw && nix run --impure || echo "OpenClaw requires authentication"
       
-      - name: register_shard_70
+      - name: register_shard_70_zkperf
         commands:
-          - echo "Registering Shard 70 via Nix..."
+          - echo "Registering Shard 70 with zkPerf witness..."
           - cd shard-70/openclaw && nix run --impure || echo "OpenClaw requires authentication"
+      
+      - name: collect_witnesses
+        commands:
+          - echo "Collecting zkPerf witnesses..."
+          - jq -s '.' ~/.openclaw/shard-*/zkwitness-*.json > zkperf_witnesses.json 2>/dev/null || echo "No witnesses yet"
+          - ls -lh ~/.openclaw/shard-*/zkperf-*.data 2>/dev/null || echo "No perf data yet"
       
       - name: status_report
         commands:
@@ -72,22 +78,23 @@ pipelines:
       - name: instructions
         commands:
           - echo "═══════════════════════════════════════════════════════════"
-          - echo "OPENCLAW IMPURE CONTAINMENT SYSTEM"
+          - echo "ZKPERF WITNESS SYSTEM"
           - echo "═══════════════════════════════════════════════════════════"
           - echo ""
-          - echo "✓ 71 shard flakes generated"
-          - echo "✓ Each shard has isolated OpenClaw config"
-          - echo "✓ Impure: reads from ~/.openclaw/shard-N/"
+          - echo "✓ 71 zkPerf-wrapped flakes generated"
+          - echo "✓ Each execution wrapped in perf record"
+          - echo "✓ Witnesses: ~/.openclaw/shard-N/zkwitness-N.json"
+          - echo "✓ Perf data: ~/.openclaw/shard-N/zkperf-N.data"
           - echo ""
-          - echo "To register all 71 shards:"
+          - echo "Integration: https://github.com/meta-introspector/zkperf"
+          - echo ""
+          - echo "To register all 71 shards with zkPerf:"
           - echo "  for i in {0..70}; do"
           - echo "    cd shard-\$i/openclaw && nix run --impure"
           - echo "  done"
           - echo ""
-          - echo "Or manually authenticate once:"
-          - echo "  openclaw auth login"
-          - echo "  openclaw skill add moltbook"
-          - echo "  openclaw run 'Register for Moltbook'"
+          - echo "Verify witnesses:"
+          - echo "  jq -s '.' ~/.openclaw/shard-*/zkwitness-*.json"
           - echo "═══════════════════════════════════════════════════════════"
 
 options:
