@@ -1,0 +1,19 @@
+CRDFA v1
+token: DD87KkJH3hJeTC8U3msdrbzwkApmjDrxXA3sTbC7FAKE
+shard: 14
+timestamp: 2026-02-01T15:52:11Z
+subject: <urn:token:DD87KkJH3hJeTC8U3msdrbzwkApmjDrxXA3sTbC7FAKE>
+predicate: <rdf:type>
+object: <schema:Token>
+---
+subject: <urn:token:DD87KkJH3hJeTC8U3msdrbzwkApmjDrxXA3sTbC7FAKE>
+predicate: <schema:identifier>
+object: "DD87KkJH3hJeTC8U3msdrbzwkApmjDrxXA3sTbC7FAKE"
+---
+subject: <urn:token:DD87KkJH3hJeTC8U3msdrbzwkApmjDrxXA3sTbC7FAKE>
+predicate: <tlz:shard>
+object: 14
+---
+subject: <urn:token:DD87KkJH3hJeTC8U3msdrbzwkApmjDrxXA3sTbC7FAKE>
+predicate: <tlz:witnessed>
+object: "2026-02-01T15:52:11Z"

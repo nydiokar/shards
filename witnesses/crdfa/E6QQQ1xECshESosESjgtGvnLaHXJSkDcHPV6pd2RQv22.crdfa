@@ -1,0 +1,19 @@
+CRDFA v1
+token: E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22
+shard: 53
+timestamp: 2026-02-01T15:52:11Z
+subject: <urn:token:E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22>
+predicate: <rdf:type>
+object: <schema:Token>
+---
+subject: <urn:token:E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22>
+predicate: <schema:identifier>
+object: "E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22"
+---
+subject: <urn:token:E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22>
+predicate: <tlz:shard>
+object: 53
+---
+subject: <urn:token:E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22>
+predicate: <tlz:witnessed>
+object: "2026-02-01T15:52:11Z"

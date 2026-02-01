@@ -1,0 +1,58 @@
+{
+  "protocol": "TLZ/1.0",
+  "rfc": "TLZ - TLS with ZK Witnessing and P2P Shared HME",
+  "timestamp": "2026-02-01T15:52:11Z",
+  "token": "9bzJn2jHQPCGsYKapFvytJQcbaz5FN2TtNB43jb1pump",
+  "shard": 0,
+  "osi_layers": {
+    "layer_4_transport": "TLS/1.3",
+    "layer_5_session": "TLZ session binding",
+    "layer_6_presentation": "cRDFa compression",
+    "layer_7_application": "HME metadata exchange"
+  },
+  "tlz_handshake": {
+    "client_hello": {
+      "caps": {
+        "zk_suites": ["bulletproofs", "zkSNARK"],
+        "hme_params": ["additive", "leveled-fhe"],
+        "crdfa_profiles": ["v1"]
+      }
+    },
+    "server_hello": {
+      "chosen": {
+        "zk": "bulletproofs",
+        "hme": "additive",
+        "crdfa": "v1"
+      }
+    },
+    "zk_request": {
+      "predicate": "token-holder:9bzJn2jHQPCGsYKapFvytJQcbaz5FN2TtNB43jb1pump"
+    },
+    "zk_proof": {
+      "witness_scheme_id": 1,
+      "binding_token": "5fd979c1a774b7aed802274b51f4e66d01b911bb69706e1b1029152bd248d2a2",
+      "proof_data": "witness_generated_by_9muses"
+    }
+  },
+  "urls_witnessed": [
+    "https://solscan.io/token/9bzJn2jHQPCGsYKapFvytJQcbaz5FN2TtNB43jb1pump",
+    "https://solscan.io",
+    "https://pump.fun",
+    "https://pump.fun/coin/9bzJn2jHQPCGsYKapFvytJQcbaz5FN2TtNB43jb1pump"
+  ],
+  "crdfa_metadata": {
+    "file": "witnesses/crdfa/9bzJn2jHQPCGsYKapFvytJQcbaz5FN2TtNB43jb1pump.crdfa",
+    "format": "application/c-rdfa",
+    "compression": "gzip",
+    "triples": 0
+  },
+  "hme_operations": {
+    "encrypted_metadata": "witnesses/hme/9bzJn2jHQPCGsYKapFvytJQcbaz5FN2TtNB43jb1pump_hme.enc",
+    "operations": ["HME_META_PUT", "HME_META_QUERY"],
+    "homomorphic_scheme": "additive"
+  },
+  "perf_capture": {
+    "file": "witnesses/sessions/9bzJn2jHQPCGsYKapFvytJQcbaz5FN2TtNB43jb1pump_tlz.perf",
+    "size": 0
+  }
+}
