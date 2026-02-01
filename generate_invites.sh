@@ -124,7 +124,7 @@ Technical Details:
 
 Documentation: https://github.com/meta-introspector/shards
 Repository: https://github.com/meta-introspector/introspector
-Contact: shards@monster-group.org
+Contact: shards@solfunmeme.com
 
 Early adopter bonus: First 23 frameworks receive 2x MMC rewards.
 

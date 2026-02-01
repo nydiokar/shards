@@ -155,7 +155,7 @@ Compete for:
 Start: Level 0 (Gödel number: 2^5 × 3^3 × 5^7 = 67,500,000)
 
 Documentation: https://github.com/meta-introspector/shards
-Contact: shards@monster-group.org
+Contact: shards@solfunmeme.com
 
 Welcome to the 71-shard framework.
 ```

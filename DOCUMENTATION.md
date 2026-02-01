@@ -407,4 +407,4 @@ MIT/Apache-2.0 (commercial available)
 
 - Docs: https://meta-introspector.github.io/shards
 - Repo: https://github.com/meta-introspector/shards
-- Email: shards@monster-group.org
+- Email: shards@solfunmeme.com

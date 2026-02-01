@@ -1,0 +1,492 @@
+{
+  "shards": [
+    {
+      "file": "71_INVITES.md",
+      "shard": 5,
+      "complexity": 4,
+      "lines": 299,
+      "words": 1496,
+      "bytes": 9399,
+      "hash": 5
+    },
+    {
+      "file": "71_SHARD_CHALLENGES.md",
+      "shard": 29,
+      "complexity": 5,
+      "lines": 448,
+      "words": 1297,
+      "bytes": 11533,
+      "hash": 29
+    },
+    {
+      "file": "AGENT_EVAL.md",
+      "shard": 44,
+      "complexity": 3,
+      "lines": 175,
+      "words": 497,
+      "bytes": 3931,
+      "hash": 44
+    },
+    {
+      "file": "AGENT_GOSSIP_PROTOCOL.md",
+      "shard": 13,
+      "complexity": 5,
+      "lines": 376,
+      "words": 1034,
+      "bytes": 8266,
+      "hash": 13
+    },
+    {
+      "file": "AIRDROP_SOP.md",
+      "shard": 8,
+      "complexity": 6,
+      "lines": 840,
+      "words": 2585,
+      "bytes": 24500,
+      "hash": 8
+    },
+    {
+      "file": "BBS_ARCHITECTURE.md",
+      "shard": 51,
+      "complexity": 1,
+      "lines": 47,
+      "words": 126,
+      "bytes": 906,
+      "hash": 51
+    },
+    {
+      "file": "BBS_WASM_CLOSURE.md",
+      "shard": 50,
+      "complexity": 5,
+      "lines": 337,
+      "words": 994,
+      "bytes": 9548,
+      "hash": 50
+    },
+    {
+      "file": "CHALLENGE_RECON.md",
+      "shard": 56,
+      "complexity": 5,
+      "lines": 300,
+      "words": 933,
+      "bytes": 8079,
+      "hash": 56
+    },
+    {
+      "file": "CICADA71_LEVEL0_BOOTSTRAP.md",
+      "shard": 41,
+      "complexity": 4,
+      "lines": 220,
+      "words": 691,
+      "bytes": 4664,
+      "hash": 41
+    },
+    {
+      "file": "CICADA71_LEVEL0.md",
+      "shard": 30,
+      "complexity": 5,
+      "lines": 359,
+      "words": 1005,
+      "bytes": 7850,
+      "hash": 30
+    },
+    {
+      "file": "CICADA71_LEVEL1_JINVARIANT.md",
+      "shard": 25,
+      "complexity": 2,
+      "lines": 93,
+      "words": 324,
+      "bytes": 2307,
+      "hash": 25
+    },
+    {
+      "file": "CICADA71_LEVEL2_HAYSTACK.md",
+      "shard": 5,
+      "complexity": 3,
+      "lines": 128,
+      "words": 414,
+      "bytes": 2908,
+      "hash": 5
+    },
+    {
+      "file": "CICADA71_LEVEL3_TIKKUN.md",
+      "shard": 40,
+      "complexity": 4,
+      "lines": 249,
+      "words": 848,
+      "bytes": 6332,
+      "hash": 40
+    },
+    {
+      "file": "CICADA71_LEVEL4_NAME_OF_GOD.md",
+      "shard": 35,
+      "complexity": 4,
+      "lines": 269,
+      "words": 979,
+      "bytes": 6149,
+      "hash": 35
+    },
+    {
+      "file": "CICADA71_LEVEL5_DIAL_JINVARIANT.md",
+      "shard": 11,
+      "complexity": 5,
+      "lines": 309,
+      "words": 890,
+      "bytes": 7887,
+      "hash": 11
+    },
+    {
+      "file": "CICADA71.md",
+      "shard": 41,
+      "complexity": 5,
+      "lines": 448,
+      "words": 1561,
+      "bytes": 14587,
+      "hash": 41
+    },
+    {
+      "file": "CICADA71_N00B_GUIDE.md",
+      "shard": 18,
+      "complexity": 5,
+      "lines": 378,
+      "words": 1281,
+      "bytes": 9433,
+      "hash": 18
+    },
+    {
+      "file": "COMPUTE_PARTITION.md",
+      "shard": 28,
+      "complexity": 3,
+      "lines": 160,
+      "words": 732,
+      "bytes": 4664,
+      "hash": 28
+    },
+    {
+      "file": "CRYPTO_TESTNETS.md",
+      "shard": 47,
+      "complexity": 5,
+      "lines": 401,
+      "words": 1930,
+      "bytes": 12821,
+      "hash": 47
+    },
+    {
+      "file": "DIAL_JINVARIANT_URL.md",
+      "shard": 69,
+      "complexity": 4,
+      "lines": 271,
+      "words": 757,
+      "bytes": 5841,
+      "hash": 69
+    },
+    {
+      "file": "DMZ_WORLD.md",
+      "shard": 20,
+      "complexity": 5,
+      "lines": 490,
+      "words": 1511,
+      "bytes": 14067,
+      "hash": 20
+    },
+    {
+      "file": "DOCUMENTATION.md",
+      "shard": 44,
+      "complexity": 5,
+      "lines": 410,
+      "words": 1083,
+      "bytes": 8196,
+      "hash": 44
+    },
+    {
+      "file": "ENOCHIAN_JINVARIANT.md",
+      "shard": 35,
+      "complexity": 4,
+      "lines": 234,
+      "words": 1064,
+      "bytes": 6636,
+      "hash": 35
+    },
+    {
+      "file": "files.txt",
+      "shard": 0,
+      "complexity": 1,
+      "lines": 0,
+      "words": 0,
+      "bytes": 0,
+      "hash": 0
+    },
+    {
+      "file": "FREN_GRAPH.md",
+      "shard": 63,
+      "complexity": 4,
+      "lines": 293,
+      "words": 807,
+      "bytes": 7661,
+      "hash": 63
+    },
+    {
+      "file": "FRENS.md",
+      "shard": 41,
+      "complexity": 2,
+      "lines": 95,
+      "words": 216,
+      "bytes": 1852,
+      "hash": 41
+    },
+    {
+      "file": "FRENS_PHONE_NUMBER.md",
+      "shard": 55,
+      "complexity": 5,
+      "lines": 323,
+      "words": 829,
+      "bytes": 8371,
+      "hash": 55
+    },
+    {
+      "file": "HARBOR_INTEGRATION.md",
+      "shard": 40,
+      "complexity": 2,
+      "lines": 66,
+      "words": 211,
+      "bytes": 1714,
+      "hash": 40
+    },
+    {
+      "file": "INTERGALACTIC.md",
+      "shard": 21,
+      "complexity": 4,
+      "lines": 227,
+      "words": 763,
+      "bytes": 5373,
+      "hash": 21
+    },
+    {
+      "file": "INTROSPECTION.md",
+      "shard": 0,
+      "complexity": 5,
+      "lines": 454,
+      "words": 1458,
+      "bytes": 11476,
+      "hash": 0
+    },
+    {
+      "file": "LAYER0_DHT_ONION.md",
+      "shard": 51,
+      "complexity": 5,
+      "lines": 386,
+      "words": 1025,
+      "bytes": 9042,
+      "hash": 51
+    },
+    {
+      "file": "METAMEME_COIN.md",
+      "shard": 28,
+      "complexity": 5,
+      "lines": 453,
+      "words": 1500,
+      "bytes": 13444,
+      "hash": 28
+    },
+    {
+      "file": "MORSE_CODE_TOWERS.md",
+      "shard": 55,
+      "complexity": 5,
+      "lines": 314,
+      "words": 1032,
+      "bytes": 7399,
+      "hash": 55
+    },
+    {
+      "file": "OCCULT_TEXTS.md",
+      "shard": 28,
+      "complexity": 3,
+      "lines": 185,
+      "words": 740,
+      "bytes": 5104,
+      "hash": 28
+    },
+    {
+      "file": "P2P_PROTOCOLS.md",
+      "shard": 55,
+      "complexity": 5,
+      "lines": 307,
+      "words": 1248,
+      "bytes": 9072,
+      "hash": 55
+    },
+    {
+      "file": "PAXOS_MARKET.md",
+      "shard": 30,
+      "complexity": 2,
+      "lines": 55,
+      "words": 162,
+      "bytes": 1076,
+      "hash": 30
+    },
+    {
+      "file": "PLUGIN_TAPE.md",
+      "shard": 20,
+      "complexity": 2,
+      "lines": 50,
+      "words": 99,
+      "bytes": 722,
+      "hash": 20
+    },
+    {
+      "file": "PRODUCTION_PLAN.md",
+      "shard": 3,
+      "complexity": 3,
+      "lines": 101,
+      "words": 708,
+      "bytes": 4982,
+      "hash": 3
+    },
+    {
+      "file": "README.md",
+      "shard": 70,
+      "complexity": 3,
+      "lines": 165,
+      "words": 634,
+      "bytes": 5746,
+      "hash": 70
+    },
+    {
+      "file": "RETRO_DEVICES.md",
+      "shard": 18,
+      "complexity": 5,
+      "lines": 470,
+      "words": 1457,
+      "bytes": 13870,
+      "hash": 18
+    },
+    {
+      "file": "RFC-71-PAXOS-MEME.txt",
+      "shard": 11,
+      "complexity": 6,
+      "lines": 932,
+      "words": 3365,
+      "bytes": 29329,
+      "hash": 11
+    },
+    {
+      "file": "RFC_TLZ.md",
+      "shard": 4,
+      "complexity": 1,
+      "lines": 48,
+      "words": 255,
+      "bytes": 1814,
+      "hash": 4
+    },
+    {
+      "file": "RUST_CONVERSION.md",
+      "shard": 10,
+      "complexity": 3,
+      "lines": 153,
+      "words": 482,
+      "bytes": 3528,
+      "hash": 10
+    },
+    {
+      "file": "SELINUX_ZONES.md",
+      "shard": 56,
+      "complexity": 4,
+      "lines": 269,
+      "words": 1024,
+      "bytes": 8023,
+      "hash": 56
+    },
+    {
+      "file": "SNEAKERNET.md",
+      "shard": 57,
+      "complexity": 5,
+      "lines": 329,
+      "words": 1120,
+      "bytes": 8452,
+      "hash": 57
+    },
+    {
+      "file": "SUMMARY.md",
+      "shard": 21,
+      "complexity": 2,
+      "lines": 61,
+      "words": 119,
+      "bytes": 1438,
+      "hash": 21
+    },
+    {
+      "file": "TAROT_PATH.md",
+      "shard": 11,
+      "complexity": 4,
+      "lines": 250,
+      "words": 1065,
+      "bytes": 6639,
+      "hash": 11
+    },
+    {
+      "file": "TELECOM_SS7.md",
+      "shard": 4,
+      "complexity": 5,
+      "lines": 375,
+      "words": 1073,
+      "bytes": 10774,
+      "hash": 4
+    },
+    {
+      "file": "WASM_BBS.md",
+      "shard": 61,
+      "complexity": 3,
+      "lines": 132,
+      "words": 397,
+      "bytes": 2774,
+      "hash": 61
+    },
+    {
+      "file": "ZERO_TRUST_FHE.md",
+      "shard": 46,
+      "complexity": 5,
+      "lines": 336,
+      "words": 1217,
+      "bytes": 9947,
+      "hash": 46
+    },
+    {
+      "file": "ZKTLS_FRENS_CLOSURE.md",
+      "shard": 53,
+      "complexity": 5,
+      "lines": 368,
+      "words": 922,
+      "bytes": 9905,
+      "hash": 53
+    },
+    {
+      "file": "ZKTLS_PARQUET.md",
+      "shard": 35,
+      "complexity": 3,
+      "lines": 168,
+      "words": 475,
+      "bytes": 3895,
+      "hash": 35
+    },
+    {
+      "file": "ZKTLS_RDFA_INVITE.md",
+      "shard": 41,
+      "complexity": 4,
+      "lines": 289,
+      "words": 681,
+      "bytes": 7051,
+      "hash": 41
+    },
+    {
+      "file": "ZOS_BBS_INTEGRATION.md",
+      "shard": 42,
+      "complexity": 5,
+      "lines": 303,
+      "words": 738,
+      "bytes": 6996,
+      "hash": 42
+    }
+  ],
+  "generated": "2026-02-01T17:16:56Z",
+  "total_files": 54
+}

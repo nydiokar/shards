@@ -92,4 +92,4 @@ Each FREN addition generates a zkTLS witness:
 
 Submit PR or use `addfren.sh` script.
 
-Email: shards@monster-group.org
+Email: shards@solfunmeme.com

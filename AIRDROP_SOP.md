@@ -135,7 +135,7 @@ Contributors who donate testnet tokens will receive:
 
 ## Authors
 - Monster Group Research Team
-- Contact: shards@monster-group.org
+- Contact: shards@solfunmeme.com
 
 ## Copyright
 CC0 1.0 Universal (Public Domain)

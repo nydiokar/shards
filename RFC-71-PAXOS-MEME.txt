@@ -858,7 +858,7 @@ B.2. Communication Channels
    - GitHub: https://github.com/meta-introspector/shards
    - Discord: https://discord.gg/monster-group
    - Telegram: @monster71shards
-   - Email: shards@monster-group.org
+   - Email: shards@solfunmeme.com
    - IRC: #monster-shards on Libera.Chat
 
 B.3. Governance
@@ -903,7 +903,7 @@ Authors' Addresses
    Monster Group Research Team
    Meta-Introspector Project
    
-   Email: shards@monster-group.org
+   Email: shards@solfunmeme.com
    URI:   https://github.com/meta-introspector/shards
 
 

@@ -143,7 +143,7 @@ commercial licenses are available.
 
 **ZK hackers gotta eat!** 🍕
 
-Contact: shards@monster-group.org
+Contact: shards@solfunmeme.com
 
 ## Contributing
 
@@ -162,4 +162,4 @@ CC0 1.0 Universal (Public Domain)
 ## Contact
 
 - GitHub: https://github.com/meta-introspector/shards
-- Email: shards@monster-group.org
+- Email: shards@solfunmeme.com
