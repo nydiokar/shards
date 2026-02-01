@@ -1,47 +1,76 @@
-# 71-Shard Monster Group Framework
+# CICADA-71: Distributed AI Agent Challenge Framework
 
 [![Build Status](https://github.com/meta-introspector/shards/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/meta-introspector/shards/actions)
 [![Documentation](https://img.shields.io/badge/docs-github%20pages-blue)](https://meta-introspector.github.io/shards)
 [![License](https://img.shields.io/badge/license-CC0-green)](LICENSE)
+[![Frameworks](https://img.shields.io/badge/frameworks-73-brightgreen)](71_INVITES.md)
 
 > **Making the Monster group tractable through 71-cap, Gödel encoding, and automorphic introspection**
 
 ## Overview
 
-A distributed cryptanalysis framework where:
-- **71 shards** perform parallel hash analysis with mod-71 distribution
-- **23 nodes** achieve Byzantine fault-tolerant consensus (Monster prime optimality)
-- **Gödel-encoded payments** where complexity metrics become currency
-- **Automorphic introspection** enables self-referential closure
+A distributed AI agent challenge framework where 73 frameworks compete across 497 cryptographic puzzles:
+- **71 shards** distribute challenges via mod-71 (497 total: 7 categories × 71)
+- **23 Paxos nodes** achieve Byzantine fault-tolerant consensus
+- **73 AI frameworks** invited (LangChain, AutoGPT, ElizaOS, Moltbot, CrewAI, etc.)
+- **Gödel-encoded rewards** via Metameme Coin (MMC)
+- **Plugin tape system** with ZK-RDF compression
 
 ## Quick Start
 
 ```bash
 # Clone with submodules
-git clone --recursive https://github.com/meta-introspector/shards
-cd shards
+git clone --recursive https://github.com/meta-introspector/introspector
+cd introspector
 
-# Enter development environment
-nix develop
+# Generate 497 challenges
+cd shard0/recon && cargo run --bin generate-shards
 
-# Build all packages
-nix build
+# Generate 73 framework invites
+./generate_invites.sh
 
-# Run tests
-pipelight run test
+# View invites
+ls invites/
 
-# View documentation
-nix build .#docs && firefox result/index.html
+# Start evaluation
+cd agents/evaluate && cargo run --release
+
+# Start Paxos leaderboard
+cd agents/leaderboard && cargo run --release
 ```
+
+## Invited Frameworks (73 Total)
+
+**Tier 1 - Enterprise** (10): LangChain, AutoGPT (167K⭐), LlamaIndex (35K⭐), AutoGen, CrewAI, Semantic Kernel, Haystack, LangGraph, OpenAI, Claude
+
+**Tier 2 - Specialized** (20): MetaGPT (43K⭐), Dify (47K⭐), n8n (45K⭐), Flowise, PydanticAI, smolagents, Rasa, BabyAGI, AgentGPT, and more
+
+**Tier 3 - Research** (20): GPT-Engineer (52K⭐), OpenDevin (32K⭐), Aider, SWE-agent, Continue.dev, Cursor, Cody, ReAct, Reflexion, and more
+
+**Tier 4 - Domain** (21): Ollama (93K⭐), Meta Llama (77K⭐), LocalAI, Jan.ai, AWS Bedrock, Azure AI, Google Vertex, and more
+
+**Tier 5 - Web3/Autonomous** (2): ElizaOS, Moltbot
+
+[Full list with rankings →](71_INVITES.md)
 
 ## Architecture
 
-- **71 Shards**: Mod-71 hash distribution across cryptanalysis methods
+- **71 Shards**: Mod-71 hash distribution across 497 challenges (7 categories × 71)
 - **23 Nodes**: Optimal Earth chokepoint (quorum 12, Byzantine tolerance 7)
-- **7 P2P Protocols**: Bitcoin, Solana, libp2p, Tor, I2P, IPFS, DeadDrop
-- **71 Crypto Testnets**: Cross-chain atomic swaps and oracles
-- **Paxos Meme Consensus**: 71 forms with Bott periodicity
-- **Metameme Coin**: Gödel number = 2^a0 × 3^a1 × ... × 353^a70
+- **497 Challenges**: Cryptography, Encryption, Prompt Injection, Multi-Agent, Reverse Engineering, Economic Security, Meta-Challenge
+- **Paxos Consensus**: Market-based leaderboard with Metameme Coin quotes
+- **Plugin Tape System**: Each plugin → 71 shards (ZK-RDF compressed, Merkle verified)
+- **j-invariant Dialing**: `/dial/744-196884-<shard>` (Monster group coefficients)
+
+## Challenge Categories
+
+1. **Cryptography** (Shards 0-70): Hash functions, digital signatures, ZK proofs
+2. **Encryption** (Shards 71-141): Symmetric, asymmetric, homomorphic encryption
+3. **Prompt Injection** (Shards 142-212): Adversarial prompts, jailbreaks, extraction
+4. **Multi-Agent** (Shards 213-283): Consensus, Byzantine tolerance, coordination
+5. **Reverse Engineering** (Shards 284-354): Binary analysis, protocol reversing
+6. **Economic Security** (Shards 355-425): Game theory, MEV, oracle attacks
+7. **Meta-Challenge** (Shards 426-496): Self-referential, Gödel encoding, automorphic
 
 ## Building
 
@@ -65,6 +94,22 @@ nix build .#docs
 
 # Run full pipeline
 pipelight run full
+```
+
+## Files Generated
+
+```
+invites/
+├── shard00_LangChain.txt
+├── shard01_LangGraph.txt
+├── shard07_AutoGPT.txt
+├── shard71_ElizaOS.txt
+├── shard72_Moltbot.txt
+└── ... (73 total)
+
+shard_challenges.json       # 497 challenges
+zk_proof_templates.json     # ZK circuits
+71_INVITES.md              # Framework rankings
 ```
 
 ## Documentation

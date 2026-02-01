@@ -1,0 +1,46 @@
+# Harbor - Shard 58 Contained
+
+pipelines:
+  # Build harbor in container
+  - name: harbor-build
+    steps:
+      - name: Enter Nix shell
+        commands:
+          - cd shard58/harbor
+          - nix develop
+      
+      - name: Install dependencies
+        commands:
+          - cd shard58/harbor
+          - nix develop -c npm install
+      
+      - name: Build container
+        commands:
+          - cd shard58/harbor
+          - nix build .#harbor-contained
+      
+      - name: Tag container
+        commands:
+          - cd shard58/harbor
+          - docker load < result
+          - docker tag harbor-shard58:latest meta-introspector/harbor-shard58:latest
+  
+  # Run harbor in security zone
+  - name: harbor-run
+    steps:
+      - name: Start container
+        commands:
+          - docker run -d \
+              --name harbor-shard58 \
+              --network none \
+              --security-opt no-new-privileges \
+              --cap-drop ALL \
+              --read-only \
+              --tmpfs /tmp \
+              -p 127.0.0.1:4001:4001 \
+              meta-introspector/harbor-shard58:latest
+      
+      - name: Connect to relay
+        commands:
+          - docker exec harbor-shard58 \
+              ipfs swarm connect /ip6/2001:569:7b51:5500:78a9:3c0e:2ec9:c682/tcp/4001/p2p/12D3KooWN88G5V8fTAHCwLnsbxiC9ZM6i982sno8bh3m7bvLMvvJ
