@@ -247,6 +247,12 @@ See [RFC-71 Appendix B](RFC-71-PAXOS-MEME.txt) for contribution guidelines.
 
 CC0 1.0 Universal (Public Domain)
 
+## Related Projects
+
+- **Meta-Meme**: https://github.com/meta-introspector/meta-meme (Origin - Human-AI collaboration)
+- **Hackathon Games**: https://github.com/meta-introspector/hackathon (Y Combinator games)
+- **SOLFUNMEME**: https://github.com/meta-introspector/SOLFUNMEME (Solana meme coin)
+
 ## Contact
 
 - GitHub: https://github.com/meta-introspector/shards
