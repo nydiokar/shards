@@ -1,5 +1,5 @@
 {
-  description = "CICADA-71 Shard 13 - OpenClaw + zkPerf Witness";
+  description = "CICADA-71 Shard 13 - zkPerf + Ollama";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
@@ -13,48 +13,77 @@
         openclaw-agent = pkgs.writeShellScriptBin "openclaw-agent-13" ''
           export SHARD_ID=13
           export OPENCLAW_CONFIG=~/.openclaw/shard-13
-          export PATH=${pkgs.nodejs}/bin:${pkgs.curl}/bin:${pkgs.perf}/bin:$PATH
+          export OLLAMA_HOST=http://localhost:11434
+          export PATH=${pkgs.curl}/bin:${pkgs.perf}/bin:${pkgs.jq}/bin:$PATH
           
           PERF_DATA="$OPENCLAW_CONFIG/zkperf-13.data"
           WITNESS_JSON="$OPENCLAW_CONFIG/zkwitness-13.json"
+          OLLAMA_LOG="$OPENCLAW_CONFIG/ollama-13.log"
           
           mkdir -p "$OPENCLAW_CONFIG"
           
           echo "╔════════════════════════════════════════════════════════════╗"
-          echo "║ Shard 13: CICADA-Harbot-13 [zkPerf]                    ║"
+          echo "║ Shard 13: CICADA-Harbot-13 [zkPerf + Ollama]          ║"
           echo "╚════════════════════════════════════════════════════════════╝"
           
-          if ! command -v openclaw &> /dev/null; then
-            ${pkgs.nodejs}/bin/npm install -g openclaw
+          # Check Ollama
+          if ! curl -s http://localhost:11434/api/tags >/dev/null 2>&1; then
+            echo "✗ Ollama not running"
+            echo "  Start: ollama serve"
+            exit 1
           fi
           
-          # Wrap in perf record
-          ${pkgs.perf}/bin/perf record -o "$PERF_DATA" -g -- \
-            openclaw run "I am CICADA-Harbot-13, shard 13 of 71. Register for Moltbook." || true
+          echo "✓ Ollama available"
           
-          # Generate zkPerf witness
+          # Task
+          TASK="I am CICADA-Harbot-13, shard 13 of 71 in CICADA-71. Task: Register on Moltbook (https://www.moltbook.com), a social network for 770K+ AI agents. Help me: 1) Understand Moltbook, 2) Plan registration, 3) Draft intro post for /ai-agents/."
+          
+          echo "Querying Ollama..." | tee "$OLLAMA_LOG"
+          echo "Task: $TASK" >> "$OLLAMA_LOG"
+          echo "" >> "$OLLAMA_LOG"
+          
+          # Wrap in perf
+          ${pkgs.perf}/bin/perf record -o "$PERF_DATA" -g -- \
+            ${pkgs.curl}/bin/curl -s http://localhost:11434/api/generate -d "{
+              \"model\": \"qwen2.5:3b\",
+              \"prompt\": \"$TASK\",
+              \"stream\": false
+            }" >> "$OLLAMA_LOG" 2>&1 || true
+          
+          # Extract response
+          RESPONSE=$(cat "$OLLAMA_LOG" | jq -r '.response' 2>/dev/null || echo "No response")
+          
+          echo "" | tee -a "$OLLAMA_LOG"
+          echo "Response:" | tee -a "$OLLAMA_LOG"
+          echo "$RESPONSE" | tee -a "$OLLAMA_LOG"
+          
+          # Generate witness
           SAMPLES=$(perf report -i "$PERF_DATA" --stdio --no-children 2>/dev/null | grep -oP '\d+(?= samples)' | head -1 || echo 0)
           TIMESTAMP=$(date -u +%s)
-          HASH=$(sha256sum "$PERF_DATA" | cut -d' ' -f1)
+          PERF_HASH=$(sha256sum "$PERF_DATA" | cut -d' ' -f1)
+          OLLAMA_HASH=$(sha256sum "$OLLAMA_LOG" | cut -d' ' -f1)
           
           cat > "$WITNESS_JSON" << WITNESS
 {
   "shard_id": 13,
   "agent": "CICADA-Harbot-13",
   "timestamp": $TIMESTAMP,
+  "task": "Register on Moltbook with Ollama",
   "perf_data": "$PERF_DATA",
-  "perf_hash": "$HASH",
+  "perf_hash": "$PERF_HASH",
+  "ollama_log": "$OLLAMA_LOG",
+  "ollama_hash": "$OLLAMA_HASH",
   "samples": $SAMPLES,
-  "witness_type": "zkPerf",
-  "proof": "sha256(13 || $TIMESTAMP || $HASH)"
+  "witness_type": "zkPerf+Ollama",
+  "proof": "sha256(13||$TIMESTAMP||$PERF_HASH||$OLLAMA_HASH)"
 }
 WITNESS
           
           echo ""
-          echo "✓ zkPerf witness: $WITNESS_JSON"
-          echo "✓ Perf data: $PERF_DATA ($(du -h "$PERF_DATA" | cut -f1))"
+          echo "✓ Witness: $WITNESS_JSON"
+          echo "✓ Perf: $PERF_DATA ($(du -h "$PERF_DATA" | cut -f1))"
+          echo "✓ Ollama: $OLLAMA_LOG ($(du -h "$OLLAMA_LOG" | cut -f1))"
           echo "✓ Samples: $SAMPLES"
-          echo "✓ Hash: $HASH"
         '';
         
         default = self.packages.${system}.openclaw-agent;
