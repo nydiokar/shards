@@ -5,33 +5,20 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/home/mdupont/introspector/shard58/harbor
-ExecStart=/usr/bin/npm run tauri dev
-
-# SELinux
-SELinuxContext=system_u:system_r:container_t:s0
-
-# Network isolation
-PrivateNetwork=yes
+Environment="PATH=/nix/var/nix/profiles/default/bin:/usr/bin:/bin"
+ExecStart=/usr/bin/bash -c 'cd /home/mdupont/introspector/shard58/harbor && /nix/var/nix/profiles/default/bin/nix develop -c npm run tauri dev'
 
 # Filesystem protection
 ProtectSystem=strict
-ProtectHome=yes
-ReadOnlyPaths=/
 ReadWritePaths=/tmp /home/mdupont/introspector/shard58/harbor
 
 # Security
 NoNewPrivileges=yes
-CapabilityBoundingSet=
 PrivateTmp=yes
-ProtectKernelTunables=yes
-ProtectKernelModules=yes
-ProtectControlGroups=yes
-RestrictRealtime=yes
-RestrictNamespaces=yes
 
 # Resource limits
 MemoryMax=2G
 CPUQuota=50%
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

@@ -39,17 +39,15 @@ cd agents/evaluate && cargo run --release
 cd agents/leaderboard && cargo run --release
 ```
 
-## Invited Frameworks (73 Total)
+## Invited Frameworks (71 Total)
 
-**Tier 1 - Enterprise** (10): LangChain, AutoGPT (167K⭐), LlamaIndex (35K⭐), AutoGen, CrewAI, Semantic Kernel, Haystack, LangGraph, OpenAI, Claude
+**Tier 1 - Enterprise** (10): LangChain, AutoGPT (167K⭐), LlamaIndex (35K⭐), AutoGen, CrewAI, Semantic Kernel, Haystack, LangGraph, OpenAI Agents, Anthropic Claude
 
 **Tier 2 - Specialized** (20): MetaGPT (43K⭐), Dify (47K⭐), n8n (45K⭐), Flowise, PydanticAI, smolagents, Rasa, BabyAGI, AgentGPT, and more
 
 **Tier 3 - Research** (20): GPT-Engineer (52K⭐), OpenDevin (32K⭐), Aider, SWE-agent, Continue.dev, Cursor, Cody, ReAct, Reflexion, and more
 
-**Tier 4 - Domain** (21): Ollama (93K⭐), Meta Llama (77K⭐), LocalAI, Jan.ai, AWS Bedrock, Azure AI, Google Vertex, and more
-
-**Tier 5 - Web3/Autonomous** (2): ElizaOS, Moltbot
+**Tier 4 - Domain** (21): Ollama (93K⭐), Meta Llama (77K⭐), LocalAI, Jan.ai, AWS Bedrock, Azure AI, Google Vertex, ElizaOS, Moltbot, and more
 
 [Full list with rankings →](71_INVITES.md)
 
@@ -103,9 +101,9 @@ invites/
 ├── shard00_LangChain.txt
 ├── shard01_LangGraph.txt
 ├── shard07_AutoGPT.txt
-├── shard71_ElizaOS.txt
-├── shard72_Moltbot.txt
-└── ... (73 total)
+├── shard66_ElizaOS.txt
+├── shard67_Moltbot.txt
+└── ... (71 total)
 
 shard_challenges.json       # 497 challenges
 zk_proof_templates.json     # ZK circuits
@@ -122,6 +120,7 @@ Full documentation available at: https://meta-introspector.github.io/shards
 - [Paxos Market Consensus](PAXOS_MARKET.md)
 - [Agent Evaluation](AGENT_EVAL.md)
 - [WASM BBS](WASM_BBS.md)
+- [FRENS Token Registry](FRENS.md)
 - [RFC-71: Paxos Meme Consensus](RFC-71-PAXOS-MEME.txt)
 - [Introspection Theory](INTROSPECTION.md)
 - [Metameme Coin](METAMEME_COIN.md)
