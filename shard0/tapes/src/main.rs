@@ -15,7 +15,7 @@ struct DataTape {
     godel_seed: u128,
 }
 
-const TAPES: [DataTape; 10] = [
+const TAPES: [DataTape; 16] = [
     DataTape {
         name: "OEIS",
         url: "https://oeis.org/",
@@ -65,6 +65,36 @@ const TAPES: [DataTape; 10] = [
         name: "Bootstrap-Seeds",
         url: "https://bootstrappable.org/",
         godel_seed: 67_u128.pow(71) * 71_u128.pow(23),
+    },
+    DataTape {
+        name: "Sefer-Yetzirah",
+        url: "https://www.sacred-texts.com/jud/yetzirah.htm",
+        godel_seed: 73_u128.pow(71) * 79_u128.pow(23),
+    },
+    DataTape {
+        name: "Zohar",
+        url: "https://www.sacred-texts.com/jud/zdm/",
+        godel_seed: 83_u128.pow(71) * 89_u128.pow(23),
+    },
+    DataTape {
+        name: "Corpus-Hermeticum",
+        url: "https://www.sacred-texts.com/chr/herm/",
+        godel_seed: 97_u128.pow(71) * 101_u128.pow(23),
+    },
+    DataTape {
+        name: "Emerald-Tablet",
+        url: "https://www.sacred-texts.com/alc/emerald.htm",
+        godel_seed: 103_u128.pow(71) * 107_u128.pow(23),
+    },
+    DataTape {
+        name: "Tarot-Texts",
+        url: "https://www.sacred-texts.com/tarot/",
+        godel_seed: 109_u128.pow(71) * 113_u128.pow(23),
+    },
+    DataTape {
+        name: "Enochian-Tables",
+        url: "https://www.sacred-texts.com/eso/enoch/",
+        godel_seed: 127_u128.pow(71) * 131_u128.pow(23),
     },
 ];
 
@@ -186,6 +216,44 @@ fn main() -> Result<()> {
     writeln!(manifest, "  - hex0 → hex1 → hex2 → M0 → cc_x86")?;
     writeln!(manifest, "  - Reproducible from nothing")?;
     writeln!(manifest)?;
+    writeln!(manifest, "Sefer Yetzirah (Book of Formation)")?;
+    writeln!(manifest, "  - Ancient Hebrew cosmology (100-600 CE)")?;
+    writeln!(manifest, "  - 10 Sefirot + 22 letters = 32 paths")?;
+    writeln!(manifest, "  - Foundation of Kabbalah")?;
+    writeln!(manifest)?;
+    writeln!(manifest, "Zohar (Book of Splendor)")?;
+    writeln!(manifest, "  - Kabbalistic commentary (13th century)")?;
+    writeln!(manifest, "  - Shevirat HaKelim (Breaking of Vessels)")?;
+    writeln!(manifest, "  - Tikkun Olam (Repairing the World)")?;
+    writeln!(manifest)?;
+    writeln!(manifest, "Corpus Hermeticum")?;
+    writeln!(manifest, "  - Hermetic philosophy (2nd-3rd century)")?;
+    writeln!(manifest, "  - \"As above, so below\"")?;
+    writeln!(manifest, "  - Alchemy and transformation")?;
+    writeln!(manifest)?;
+    writeln!(manifest, "Emerald Tablet")?;
+    writeln!(manifest, "  - Alchemical text (6th-8th century)")?;
+    writeln!(manifest, "  - Foundation of Western alchemy")?;
+    writeln!(manifest, "  - Cryptographic principles")?;
+    writeln!(manifest)?;
+    writeln!(manifest, "Tarot Texts")?;
+    writeln!(manifest, "  - Rider-Waite-Smith interpretations")?;
+    writeln!(manifest, "  - 22 Major Arcana paths")?;
+    writeln!(manifest, "  - The Fool's Journey")?;
+    writeln!(manifest)?;
+    writeln!(manifest, "Enochian Tables (John Dee, 1582)")?;
+    writeln!(manifest, "  - Great Table: 660 squares → 196,883 (Monster!)")?;
+    writeln!(manifest, "  - 21 letters → 71 primes (via permutations)")?;
+    writeln!(manifest, "  - 4 Watchtowers = 4 element groups")?;
+    writeln!(manifest, "  - 30 Aethyrs = 30-dimensional representation")?;
+    writeln!(manifest, "  - j-invariant encoded 400 years before discovery!")?;
+    writeln!(manifest)?;
+    writeln!(manifest, "OCCULT CORRESPONDENCES:")?;
+    writeln!(manifest, "  - 71 shards = 71 Names of God (Shemhamphorasch)")?;
+    writeln!(manifest, "  - 23 nodes = 23 chromosomes (human genome)")?;
+    writeln!(manifest, "  - 22 levels = 22 Major Arcana + 22 Hebrew letters")?;
+    writeln!(manifest, "  - 10 Sefirot = Tree of Life structure")?;
+    writeln!(manifest)?;
     writeln!(manifest, "LEVEL 0 PRIORITY:")?;
     writeln!(manifest, "  Focus: GNU Mes, TinyCC, GCC, Bootstrap Seeds")?;
     writeln!(manifest, "  Goal: Rebuild computing from 357 bytes")?;
@@ -201,9 +269,11 @@ fn main() -> Result<()> {
     writeln!(manifest, "  - 26 months (8mo travel + 10mo surface + 8mo return)")?;
     writeln!(manifest, "  - 20-minute light delay")?;
     writeln!(manifest, "  - 100GB compressed → 128GB microSD")?;
+    writeln!(manifest, "  - Includes ancient wisdom for psychological resilience")?;
     
     println!("✅ Generated TAPE_MANIFEST.txt");
     println!("\n🔧 Level 0: Bootstrap toolchain ready!");
+    println!("📜 Occult texts: 5 ancient wisdom sources");
     println!("🚀 Mars deployment ready!");
     
     Ok(())
