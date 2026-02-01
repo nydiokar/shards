@@ -1,9 +1,11 @@
 use std::fs::{self, File};
-use std::path::{Path, PathBuf};
+use std::path::Path;
 use std::io::Read;
 use std::sync::Arc;
 use walkdir::WalkDir;
 use parquet::arrow::ArrowWriter;
+use parquet::file::properties::WriterProperties;
+use parquet::basic::Compression;
 use arrow::array::{StringArray, UInt64Array, Int64Array};
 use arrow::record_batch::RecordBatch;
 use arrow::datatypes::{Schema, Field, DataType};
@@ -19,13 +21,18 @@ use whirlpool::Whirlpool;
 use groestl::{Groestl256, Groestl512};
 use streebog::{Streebog256, Streebog512};
 use xxhash_rust::xxh3::xxh3_64;
-use xxhash_rust::xxh64::xxh64;
-use std::hash::{Hash, Hasher};
-use seahash::SeaHasher;
-use fnv::FnvHasher;
-use ahash::AHasher;
-use siphasher::sip::SipHasher13;
-use rustc_hash::FxHasher;
+use rayon::prelude::*;
+use parking_lot::Mutex;
+use std::collections::HashMap;
+
+struct FileRecord {
+    path: String,
+    size: u64,
+    sha256: String,
+    hash_sum: u64,
+    shard: u8,
+    timestamp: i64,
+}
 
 fn hash_file_71(path: &Path) -> Result<Vec<u64>, std::io::Error> {
     let mut file = File::open(path)?;
@@ -33,11 +40,8 @@ fn hash_file_71(path: &Path) -> Result<Vec<u64>, std::io::Error> {
     file.read_to_end(&mut buffer)?;
     
     let mut hashes = Vec::with_capacity(71);
-    
-    // First 20 primes for n-gram sizes
     let primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71];
     
-    // Hash n-grams of prime sizes (20 hashes)
     for &prime in &primes {
         let mut ngram_hash = 0u64;
         for chunk in buffer.chunks(prime) {
@@ -46,7 +50,6 @@ fn hash_file_71(path: &Path) -> Result<Vec<u64>, std::io::Error> {
         hashes.push(ngram_hash);
     }
     
-    // Cryptographic hashes (21 hashes)
     hashes.push(u64::from_be_bytes(Sha224::digest(&buffer)[..8].try_into().unwrap()));
     hashes.push(u64::from_be_bytes(Sha256::digest(&buffer)[..8].try_into().unwrap()));
     hashes.push(u64::from_be_bytes(Sha384::digest(&buffer)[..8].try_into().unwrap()));
@@ -73,7 +76,6 @@ fn hash_file_71(path: &Path) -> Result<Vec<u64>, std::io::Error> {
     hashes.push(u64::from_be_bytes(Md5::digest(&buffer)[..8].try_into().unwrap()));
     hashes.push(u64::from_be_bytes(Sha1::digest(&buffer)[..8].try_into().unwrap()));
     
-    // Non-cryptographic hashes with different seeds (30 hashes)
     for seed in 0..30 {
         hashes.push(xxh3_64(&buffer).wrapping_add(seed));
     }
@@ -82,73 +84,58 @@ fn hash_file_71(path: &Path) -> Result<Vec<u64>, std::io::Error> {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let targets = vec![
-        "target".to_string(),
-        "/nix/store".to_string(),
-    ];
+    rayon::ThreadPoolBuilder::new().num_threads(23).build_global()?;
     
-    let mut paths = Vec::new();
-    let mut sizes = Vec::new();
-    let mut sha256_hashes = Vec::new();
-    let mut hash_sums = Vec::new();
-    let mut shards = Vec::new();
-    let mut timestamps = Vec::new();
-    
+    let targets = vec!["target".to_string(), "/nix/store".to_string()];
     let now = Utc::now().timestamp();
     
+    let shards: Arc<Mutex<HashMap<u8, Vec<FileRecord>>>> = Arc::new(Mutex::new(HashMap::new()));
+    
     for target in &targets {
-        if target.is_empty() || !Path::new(target).exists() {
+        if !Path::new(target).exists() {
             continue;
         }
         
         println!("Scanning: {}", target);
         
-        for entry in WalkDir::new(target)
+        let files: Vec<_> = WalkDir::new(target)
             .max_depth(if target.contains("nix/store") { 3 } else { 15 })
             .follow_links(false)
             .into_iter()
             .filter_map(|e| e.ok())
-        {
+            .filter(|e| e.path().is_file())
+            .filter(|e| e.metadata().map(|m| m.len() <= 100_000_000).unwrap_or(false))
+            .collect();
+        
+        println!("Processing {} files with 23 CPUs", files.len());
+        
+        files.par_iter().for_each(|entry| {
             let path = entry.path();
-            
-            if !path.is_file() {
-                continue;
-            }
-            
-            // Skip if too large (>100MB)
-            if let Ok(metadata) = entry.metadata() {
-                if metadata.len() > 100_000_000 {
-                    continue;
-                }
-            }
-            
             let path_str = path.to_string_lossy().to_string();
             
-            // Compute 71 hashes
-            let hashes = match hash_file_71(path) {
-                Ok(h) => h,
-                Err(_) => continue,
-            };
-            
-            let sum: u64 = hashes.iter().sum();
-            let shard = (sum % 71) as u8;
-            let size = entry.metadata().map(|m| m.len()).unwrap_or(0);
-            
-            paths.push(path_str);
-            sizes.push(size);
-            sha256_hashes.push(format!("{:x}", hashes[1])); // Use SHA256 as primary
-            hash_sums.push(sum);
-            shards.push(shard);
-            timestamps.push(now);
-            
-            if paths.len() % 1000 == 0 {
-                println!("Processed {} files", paths.len());
+            if let Ok(hashes) = hash_file_71(path) {
+                let sum: u64 = hashes.iter().sum();
+                let shard = (sum % 71) as u8;
+                let size = entry.metadata().map(|m| m.len()).unwrap_or(0);
+                
+                let record = FileRecord {
+                    path: path_str,
+                    size,
+                    sha256: format!("{:x}", hashes[21]),
+                    hash_sum: sum,
+                    shard,
+                    timestamp: now,
+                };
+                
+                let mut shards_lock = shards.lock();
+                shards_lock.entry(shard).or_insert_with(Vec::new).push(record);
             }
-        }
+        });
     }
     
-    println!("Total files: {}", paths.len());
+    println!("Writing shards to parquet...");
     
+    let shards_map = shards.lock();
     let schema = Arc::new(Schema::new(vec![
         Field::new("path", DataType::Utf8, false),
         Field::new("size", DataType::UInt64, false),
@@ -158,25 +145,40 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         Field::new("timestamp", DataType::Int64, false),
     ]));
     
-    let batch = RecordBatch::try_new(
-        schema.clone(),
-        vec![
-            Arc::new(StringArray::from(paths)),
-            Arc::new(UInt64Array::from(sizes)),
-            Arc::new(StringArray::from(sha256_hashes)),
-            Arc::new(UInt64Array::from(hash_sums)),
-            Arc::new(UInt64Array::from(shards.iter().map(|&s| s as u64).collect::<Vec<_>>())),
-            Arc::new(Int64Array::from(timestamps)),
-        ],
-    )?;
+    let props = WriterProperties::builder()
+        .set_compression(Compression::ZSTD(Default::default()))
+        .build();
     
     fs::create_dir_all("../data/parquet")?;
-    let file = File::create("../data/parquet/artifacts.parquet")?;
-    let mut writer = ArrowWriter::try_new(file, schema, None)?;
-    writer.write(&batch)?;
-    writer.close()?;
     
-    println!("Written to ../data/parquet/artifacts.parquet");
+    for (shard_id, records) in shards_map.iter() {
+        let paths: Vec<_> = records.iter().map(|r| r.path.clone()).collect();
+        let sizes: Vec<_> = records.iter().map(|r| r.size).collect();
+        let sha256s: Vec<_> = records.iter().map(|r| r.sha256.clone()).collect();
+        let hash_sums: Vec<_> = records.iter().map(|r| r.hash_sum).collect();
+        let shards: Vec<_> = records.iter().map(|r| r.shard as u64).collect();
+        let timestamps: Vec<_> = records.iter().map(|r| r.timestamp).collect();
+        
+        let batch = RecordBatch::try_new(
+            schema.clone(),
+            vec![
+                Arc::new(StringArray::from(paths)),
+                Arc::new(UInt64Array::from(sizes)),
+                Arc::new(StringArray::from(sha256s)),
+                Arc::new(UInt64Array::from(hash_sums)),
+                Arc::new(UInt64Array::from(shards)),
+                Arc::new(Int64Array::from(timestamps)),
+            ],
+        )?;
+        
+        let file = File::create(format!("../data/parquet/shard{:02}.parquet", shard_id))?;
+        let mut writer = ArrowWriter::try_new(file, schema.clone(), Some(props.clone()))?;
+        writer.write(&batch)?;
+        writer.close()?;
+        
+        println!("Shard {}: {} files", shard_id, records.len());
+    }
     
+    println!("Done!");
     Ok(())
 }
