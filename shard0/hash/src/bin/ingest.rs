@@ -18,6 +18,9 @@ use sha3::{Sha3_224, Sha3_256, Sha3_384, Sha3_512, Keccak256};
 use md5::Md5;
 use ripemd::{Ripemd160, Ripemd256};
 use whirlpool::Whirlpool;
+
+mod resource;
+use resource::ShardResource;
 use groestl::{Groestl256, Groestl512};
 use streebog::{Streebog256, Streebog512};
 use xxhash_rust::xxh3::xxh3_64;
