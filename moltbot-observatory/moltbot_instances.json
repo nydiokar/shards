@@ -1,0 +1,72 @@
+[
+  {
+    "bot_id": "moltbot_000",
+    "name": "Moltbot #0",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1738435542
+  },
+  {
+    "bot_id": "moltbot_001",
+    "name": "Moltbot #1",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1738349142
+  },
+  {
+    "bot_id": "moltbot_002",
+    "name": "Moltbot #2",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1738262742
+  },
+  {
+    "bot_id": "moltbot_003",
+    "name": "Moltbot #3",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1738176342
+  },
+  {
+    "bot_id": "moltbot_004",
+    "name": "Moltbot #4",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1738089942
+  },
+  {
+    "bot_id": "moltbot_005",
+    "name": "Moltbot #5",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1738003542
+  },
+  {
+    "bot_id": "moltbot_006",
+    "name": "Moltbot #6",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1737917142
+  },
+  {
+    "bot_id": "moltbot_007",
+    "name": "Moltbot #7",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1737830742
+  },
+  {
+    "bot_id": "moltbot_008",
+    "name": "Moltbot #8",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1737744342
+  },
+  {
+    "bot_id": "moltbot_009",
+    "name": "Moltbot #9",
+    "platform": "discord",
+    "status": "online",
+    "created_at": 1737657942
+  }
+]
