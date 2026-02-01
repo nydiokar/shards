@@ -1,219 +1,45 @@
-# Pipelight CI/CD for 71-Shard Challenge Framework
-# Runs jobs for all agent frameworks and evaluates results
+# Pipelight Pipeline: Swab the Deck with Free-Tier AI
+## Scheduled Hecke-Maass Sharding + AI Analysis
 
-[[pipelines]]
-name = "test"
-steps = [
-  { name = "lint", commands = ["cargo clippy --all-targets"] },
-  { name = "test", commands = ["cargo test --all"] },
-]
+triggers:
+  - name: daily_swab
+    cron: "0 2 * * *"  # 2 AM daily
+  - name: on_push
+    branch: main
 
-[[pipelines]]
-name = "generate-shards"
-steps = [
-  { name = "build", commands = ["cd shard0/recon && cargo build --release --bin generate-shards"] },
-  { name = "generate", commands = ["cd shard0/recon && cargo run --release --bin generate-shards"] },
-  { name = "verify", commands = ["test -f shard_challenges.json && test -f zk_proof_templates.json"] },
-]
-
-[[pipelines]]
-name = "recon-tor"
-steps = [
-  { name = "check-tor", commands = ["systemctl is-active tor || sudo systemctl start tor"] },
-  { name = "build", commands = ["cd shard0/recon && cargo build --release --bin recon"] },
-  { name = "scan", commands = ["cd shard0/recon && cargo run --release --bin recon"] },
-]
-
-[[pipelines]]
-name = "zktls-witness"
-steps = [
-  { name = "check-tor", commands = ["systemctl is-active tor || sudo systemctl start tor"] },
-  { name = "build", commands = ["cd shard0/recon && cargo build --release --bin zktls"] },
-  { name = "generate", commands = ["cd shard0/recon && cargo run --release --bin zktls"] },
-  { name = "verify-parquet", commands = ["ls -lh shard*_zktls.parquet"] },
-]
-
-[[pipelines]]
-name = "eval-claude"
-steps = [
-  { name = "build", commands = ["cd agents/evaluate && cargo build --release"] },
-  { name = "run", commands = ["cd agents/evaluate && cargo run --release -- --framework claude --shard 0"] },
-]
-
-[[pipelines]]
-name = "eval-openai"
-steps = [
-  { name = "build", commands = ["cd agents/evaluate && cargo build --release"] },
-  { name = "run", commands = ["cd agents/evaluate && cargo run --release -- --framework openai --shard 0"] },
-]
-
-[[pipelines]]
-name = "eval-ollama"
-steps = [
-  { name = "build", commands = ["cd agents/evaluate && cargo build --release"] },
-  { name = "run", commands = ["cd agents/evaluate && cargo run --release -- --framework ollama --shard 0"] },
-]
-
-[[pipelines]]
-name = "eval-all-agents"
-steps = [
-  { name = "build", commands = ["cd agents/evaluate && cargo build --release"] },
-  { name = "claude", commands = ["cd agents/evaluate && cargo run --release -- --framework claude --shard 0"] },
-  { name = "openai", commands = ["cd agents/evaluate && cargo run --release -- --framework openai --shard 0"] },
-  { name = "ollama", commands = ["cd agents/evaluate && cargo run --release -- --framework ollama --shard 0"] },
-  { name = "leaderboard", commands = ["cd agents/leaderboard && cargo run --release"] },
-]
-
-[[pipelines]]
-name = "leaderboard"
-steps = [
-  { name = "build", commands = ["cd agents/leaderboard && cargo build --release"] },
-  { name = "generate", commands = ["cd agents/leaderboard && cargo run --release"] },
-]
-
-[[pipelines]]
-name = "benchmark"
-steps = [
-  { name = "generate", commands = ["pipelight run generate-shards"] },
-  { name = "eval", commands = ["pipelight run eval-all-agents"] },
-  { name = "report", commands = ["pipelight run leaderboard"] },
-]
-
-[[pipelines]]
-name = "full"
-steps = [
-  { name = "test", commands = ["pipelight run test"] },
-  { name = "generate", commands = ["pipelight run generate-shards"] },
-  { name = "recon", commands = ["pipelight run recon-tor"] },
-  { name = "zktls", commands = ["pipelight run zktls-witness"] },
-  { name = "eval", commands = ["pipelight run eval-all-agents"] },
-  { name = "deploy", commands = ["./deploy.sh"] },
-]
-
-  # 9 Muses Consensus - Hecke Operator
-  - name: nine-muses
+pipelines:
+  swab_deck:
     steps:
-      - name: Build with Nix
+      - name: inventory
         commands:
-          - cd shard0/9muses
-          - nix build
+          - ./swab_the_deck.sh
       
-      - name: Run Hecke operator with perf
+      - name: analyze_with_gemini
         commands:
-          - cd shard0/9muses
-          - perf record -o muses.perf -- ./result/bin/nine-muses E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22
+          - nix develop .#gemini-cli -c gemini-analyze-shards
       
-      - name: Generate perf report
+      - name: analyze_with_claude
         commands:
-          - cd shard0/9muses
-          - perf report -i muses.perf --stdio > muses_perf_report.txt
+          - nix develop .#claude-cli -c claude-analyze-shards
       
-      - name: Save Hecke witness
+      - name: analyze_with_gpt
         commands:
-          - cd shard0/9muses
-          - |
-            cat > muses_witness.json <<EOF
-            {
-              "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-              "operation": "hecke_operator",
-              "token": "E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22",
-              "muses": 9,
-              "quorum": 5,
-              "operator": "T_p on modular forms",
-              "eigenspaces": ["Calliope", "Clio", "Erato", "Euterpe", "Melpomene", "Polyhymnia", "Terpsichore", "Thalia", "Urania"],
-              "perf_size": $(stat -c%s muses.perf 2>/dev/null || echo "0"),
-              "build_hash": "$(nix-store --query --hash ./result 2>/dev/null || echo 'unknown')"
-            }
-            EOF
+          - nix develop .#openai-cli -c gpt-analyze-shards
       
-      - name: Commit Hecke witness
+      - name: analyze_with_llama
         commands:
-          - cd shard0/9muses
-          - git add muses_witness.json muses_perf_report.txt
-          - git commit -m "Add Hecke operator witness $(date -u +%Y-%m-%d)" || true
+          - nix develop .#ollama -c ollama-analyze-shards
+      
+      - name: consensus
+        commands:
+          - python3 ai_consensus.py
+      
+      - name: commit_results
+        commands:
+          - git add HECKE_MAASS_MANIFEST.json AI_ANALYSIS.json
+          - git commit -m "chore: swab deck $(date +%Y-%m-%d)"
+          - git push
 
-  # zkTLS FRENS phone generation with witness
-  - name: zktls-frens
-    steps:
-      - name: Build with Nix
-        commands:
-          - cd shard0/zktls
-          - nix build
-      
-      - name: Run with perf
-        commands:
-          - cd shard0/zktls
-          - perf record -o frens_zktls.perf -- ./result/bin/frens_phone https://solscan.io/token/E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22
-      
-      - name: Generate perf report
-        commands:
-          - cd shard0/zktls
-          - perf report -i frens_zktls.perf --stdio > frens_zktls_report.txt
-      
-      - name: Save witness
-        commands:
-          - cd shard0/zktls
-          - |
-            cat > frens_witness.json <<EOF
-            {
-              "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-              "operation": "zktls_frens_phone",
-              "url": "https://solscan.io/token/E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22",
-              "proof_exists": $(test -f frens_proof.tlsn && echo "true" || echo "false"),
-              "phone_exists": $(test -f frens_phone.txt && echo "true" || echo "false"),
-              "perf_size": $(stat -c%s frens_zktls.perf 2>/dev/null || echo "0"),
-              "build_hash": "$(nix-store --query --hash ./result 2>/dev/null || echo 'unknown')"
-            }
-            EOF
-      
-      - name: Commit witness
-        commands:
-          - cd shard0/zktls
-          - git add frens_witness.json frens_zktls_report.txt
-          - git commit -m "Add zkTLS FRENS witness $(date -u +%Y-%m-%d)" || true
-
-
-  # 9 Muses Consensus - Hecke Operator & Maass Shadow
-  - name: nine-muses
-    steps:
-      - name: Build with Nix
-        commands:
-          - cd shard0/9muses
-          - nix build
-      
-      - name: Run Hecke operator with perf
-        commands:
-          - cd shard0/9muses
-          - perf record -o muses.perf -- ./result/bin/nine-muses E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22
-      
-      - name: Generate perf report
-        commands:
-          - cd shard0/9muses
-          - perf report -i muses.perf --stdio > muses_perf_report.txt
-      
-      - name: Save Hecke witness
-        commands:
-          - cd shard0/9muses
-          - |
-            cat > muses_witness.json <<EOF
-            {
-              "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-              "operation": "hecke_operator_maass_shadow",
-              "token": "E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22",
-              "muses": 9,
-              "quorum": 5,
-              "operator": "T_71 on modular forms",
-              "maass_form": "Δf = λf (automorphic eigenvector)",
-              "eigenspaces": ["Calliope", "Clio", "Erato", "Euterpe", "Melpomene", "Polyhymnia", "Terpsichore", "Thalia", "Urania"],
-              "sparks_extracted": 71,
-              "tikkun": "Shadow restoration complete",
-              "perf_size": $(stat -c%s muses.perf 2>/dev/null || echo "0"),
-              "build_hash": "$(nix-store --query --hash ./result 2>/dev/null || echo 'unknown')"
-            }
-            EOF
-      
-      - name: Commit Hecke witness
-        commands:
-          - cd shard0/9muses
-          - git add muses_witness.json muses_perf_report.txt
-          - git commit -m "Add Hecke operator witness $(date -u +%Y-%m-%d)" || true
+options:
+  detach: false
+  log_level: info
