@@ -3,7 +3,18 @@ name = "leaderboard"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "leaderboard"
+path = "src/main.rs"
+
+[[bin]]
+name = "paxos-market"
+path = "src/paxos.rs"
+
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 anyhow = "1.0"
+tokio = { version = "1.35", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+sha2 = "0.10"
