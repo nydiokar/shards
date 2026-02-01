@@ -8,6 +8,9 @@ echo "🦀 Building Rust for ZX81..."
 # Build cassette encoder
 cargo build --release --bin cassette_encoder
 
+# Build tape-to-URL encoder
+cargo build --release --bin tape_to_url
+
 # Build main program
 cargo build --release --target z80-unknown-none
 
@@ -29,11 +32,18 @@ fi
 echo "🔊 Converting to cassette tape audio..."
 ./target/release/cassette_encoder cicada-level0.p cicada-level0.wav
 
+# Encode to Gödel number URL
+echo "🔢 Encoding to Gödel number URL..."
+./target/release/tape_to_url cicada-level0.p
+
 echo "✅ Cassette tape created!"
 echo ""
 echo "Files generated:"
-echo "  cicada-level0.p    - ZX81 program file"
-echo "  cicada-level0.wav  - Cassette tape audio (44.1kHz)"
+echo "  cicada-level0.p      - ZX81 program file"
+echo "  cicada-level0.wav    - Cassette tape audio (44.1kHz)"
+echo "  cicada-level0.url    - Gödel-encoded URL with ZK proof"
+echo "  cicada-level0.rdfa   - RDFa metadata"
 echo ""
 echo "Load in emulator: zesarux --machine ZX81 cicada-level0.p"
 echo "Or play audio:    aplay cicada-level0.wav"
+echo "Or visit URL:     cat cicada-level0.url"

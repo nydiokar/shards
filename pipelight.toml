@@ -53,6 +53,7 @@ pipelines:
           - nix build .#shard0-cryptanalysis
           - nix build .#shard0-p2p
           - nix build .#shard0-fhe
+          - nix build .#shard0-tapes
 
       - name: Build Erlang telecom
         commands:
@@ -132,6 +133,14 @@ pipelines:
         commands:
           - cd shard0/zx81-rust
           - cargo build --release --target z80-unknown-none || echo "Requires nightly"
+          
+      - name: MMIX (Knuth)
+        commands:
+          - nix build .#mmix/shard-mmix
+          
+      - name: Slackware Floppy
+        commands:
+          - nix build .#slackware-floppy/floppy
 
   # Deploy pipeline
   - name: deploy

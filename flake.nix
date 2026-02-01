@@ -53,6 +53,14 @@
             buildInputs = [ pkgs.clang pkgs.llvm ];
           };
 
+          # Shard 0: Knowledge tapes
+          shard0-tapes = pkgs.rustPlatform.buildRustPackage {
+            pname = "shard0-tapes";
+            version = "0.1.0";
+            src = ./shard0/tapes;
+            cargoLock.lockFile = ./shard0/tapes/Cargo.lock;
+          };
+
           # Erlang telecom
           shard0-telecom = pkgs.stdenv.mkDerivation {
             pname = "shard0-telecom";

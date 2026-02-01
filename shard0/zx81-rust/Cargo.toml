@@ -7,7 +7,12 @@ edition = "2021"
 name = "cassette_encoder"
 path = "src/bin/cassette_encoder.rs"
 
+[[bin]]
+name = "tape_to_url"
+path = "src/bin/tape_to_url.rs"
+
 [dependencies]
+urlencoding = "2.1"
 
 [profile.release]
 opt-level = "z"
