@@ -1,0 +1,20 @@
+[package]
+name = "zx81-rust"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "cassette_encoder"
+path = "src/bin/cassette_encoder.rs"
+
+[dependencies]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[profile.release.package."*"]
+opt-level = "z"

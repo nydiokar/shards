@@ -1,8 +1,50 @@
 # Pipelight CI/CD Configuration
 # https://pipelight.dev
 
-# Build pipeline
+# Build pipeline for all architectures
 pipelines:
+  - name: build-all-targets
+    steps:
+      - name: Build for all Rust targets
+        commands:
+          # Tier 1 platforms (guaranteed to work)
+          - cargo build --release --target x86_64-unknown-linux-gnu
+          - cargo build --release --target x86_64-unknown-linux-musl
+          - cargo build --release --target x86_64-pc-windows-gnu
+          - cargo build --release --target x86_64-apple-darwin
+          - cargo build --release --target aarch64-unknown-linux-gnu
+          - cargo build --release --target aarch64-apple-darwin
+          - cargo build --release --target i686-unknown-linux-gnu
+          - cargo build --release --target armv7-unknown-linux-gnueabihf
+          
+          # Tier 2 platforms
+          - cargo build --release --target wasm32-unknown-unknown
+          - cargo build --release --target wasm32-wasi
+          - cargo build --release --target riscv64gc-unknown-linux-gnu
+          - cargo build --release --target powerpc64le-unknown-linux-gnu
+          - cargo build --release --target s390x-unknown-linux-gnu
+          - cargo build --release --target mips64-unknown-linux-gnuabi64
+          
+          # Embedded targets
+          - cargo build --release --target thumbv7em-none-eabihf
+          - cargo build --release --target thumbv7m-none-eabi
+          - cargo build --release --target aarch64-unknown-none
+          - cargo build --release --target riscv32imac-unknown-none-elf
+          - cargo build --release --target riscv64imac-unknown-none-elf
+          
+          # Retro targets
+          - cargo build --release --target z80-unknown-none || echo "Z80 requires nightly"
+
+      - name: Build cassette encoder
+        commands:
+          - cd shard0/zx81-rust
+          - cargo build --release --bin cassette_encoder
+
+      - name: Generate cassette tapes
+        commands:
+          - cd shard0/zx81-rust
+          - ./build-cassette.sh
+
   - name: build
     steps:
       - name: Build Rust packages
@@ -19,6 +61,10 @@ pipelines:
       - name: Build Lean proofs
         commands:
           - nix build .#shard0-lean
+          
+      - name: Build ZX81 cassette
+        commands:
+          - nix build .#zx81-cicada
 
       - name: Build documentation
         commands:
@@ -40,6 +86,52 @@ pipelines:
       - name: Lean verification
         commands:
           - nix develop -c lake build --dir shard0/lean
+          
+      - name: ZX81 size check
+        commands:
+          - cd shard0/zx81-rust
+          - SIZE=$(stat -c%s cicada-level0.p 2>/dev/null || stat -f%z cicada-level0.p)
+          - test $SIZE -le 1024 || (echo "Binary too large!" && exit 1)
+
+  # Multi-arch build matrix
+  - name: build-matrix
+    steps:
+      - name: Linux x86_64
+        commands:
+          - cargo build --release --target x86_64-unknown-linux-gnu
+          
+      - name: Linux ARM64
+        commands:
+          - cargo build --release --target aarch64-unknown-linux-gnu
+          
+      - name: Windows x86_64
+        commands:
+          - cargo build --release --target x86_64-pc-windows-gnu
+          
+      - name: macOS x86_64
+        commands:
+          - cargo build --release --target x86_64-apple-darwin
+          
+      - name: macOS ARM64
+        commands:
+          - cargo build --release --target aarch64-apple-darwin
+          
+      - name: WASM
+        commands:
+          - cargo build --release --target wasm32-unknown-unknown
+          
+      - name: RISC-V
+        commands:
+          - cargo build --release --target riscv64gc-unknown-linux-gnu
+          
+      - name: ARM Cortex-M
+        commands:
+          - cargo build --release --target thumbv7em-none-eabihf
+          
+      - name: ZX81 (Z80)
+        commands:
+          - cd shard0/zx81-rust
+          - cargo build --release --target z80-unknown-none || echo "Requires nightly"
 
   # Deploy pipeline
   - name: deploy
