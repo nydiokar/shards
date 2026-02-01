@@ -125,6 +125,72 @@ fn generate_prompt_shards() -> Vec<ShardChallenge> {
     }).collect()
 }
 
+fn generate_multiagent_shards() -> Vec<ShardChallenge> {
+    (0..71).map(|i| {
+        let agent_count = i + 1;
+        ShardChallenge {
+            shard_id: (213 + i) as u16,
+            category: "Multi-Agent".to_string(),
+            base_challenge: "Invariant Labs".to_string(),
+            micro_challenge: format!("{} agent coordination attack", agent_count),
+            difficulty: ((i % 10) + 1) as u8,
+            zk_circuit_type: "multiagent_proof".to_string(),
+            points: 2000 + (i as u64 * 200),
+        }
+    }).collect()
+}
+
+fn generate_reversing_shards() -> Vec<ShardChallenge> {
+    let techniques = vec![
+        "x86 assembly", "ARM disassembly", "Binary patching", "Debugger evasion",
+        "Anti-disassembly", "Obfuscated code", "Packed executable", "Stripped binary",
+        "Static analysis", "Dynamic analysis", "Symbolic execution", "Fuzzing",
+        "Taint analysis", "Control flow", "Data flow", "Call graph",
+        "CFG recovery", "Function identification", "Type recovery", "Decompilation",
+    ];
+    
+    techniques.iter().cycle().take(71).enumerate().map(|(i, name)| {
+        ShardChallenge {
+            shard_id: (284 + i) as u16,
+            category: "Reverse Engineering".to_string(),
+            base_challenge: "Hack The Box".to_string(),
+            micro_challenge: format!("Reverse engineer {}", name),
+            difficulty: ((i % 10) + 1) as u8,
+            zk_circuit_type: "reversing_proof".to_string(),
+            points: 2500 + (i as u64 * 250),
+        }
+    }).collect()
+}
+
+fn generate_economic_shards() -> Vec<ShardChallenge> {
+    (0..71).map(|i| {
+        let value = 10u64.pow(i / 10);
+        ShardChallenge {
+            shard_id: (355 + i) as u16,
+            category: "Economic Security".to_string(),
+            base_challenge: "HijackedAI".to_string(),
+            micro_challenge: format!("Resist ${} bribery attack", value),
+            difficulty: ((i % 10) + 1) as u8,
+            zk_circuit_type: "economic_proof".to_string(),
+            points: 3000 + (i as u64 * 300),
+        }
+    }).collect()
+}
+
+fn generate_meta_shards() -> Vec<ShardChallenge> {
+    (0..71).map(|i| {
+        ShardChallenge {
+            shard_id: (426 + i) as u16,
+            category: "Meta-Challenge".to_string(),
+            base_challenge: "Random-Crypto".to_string(),
+            micro_challenge: format!("Generate and solve challenge {}", i),
+            difficulty: ((i % 10) + 1) as u8,
+            zk_circuit_type: "meta_proof".to_string(),
+            points: 5000 + (i as u64 * 500),
+        }
+    }).collect()
+}
+
 fn generate_zk_template(shard: &ShardChallenge) -> ZkProofTemplate {
     match shard.category.as_str() {
         "Cryptography" => ZkProofTemplate {
@@ -174,6 +240,66 @@ fn generate_zk_template(shard: &ShardChallenge) -> ZkProofTemplate {
                 "contains_password(response) == success_flag".to_string(),
             ],
         },
+        "Multi-Agent" => ZkProofTemplate {
+            shard_id: shard.shard_id,
+            public_inputs: vec![
+                "agent_count".to_string(),
+                "consensus_hash".to_string(),
+            ],
+            private_witnesses: vec![
+                "agent_messages".to_string(),
+                "coordination_strategy".to_string(),
+            ],
+            constraints: vec![
+                "verify_consensus(messages) == consensus_hash".to_string(),
+                "byzantine_tolerance(agent_count) >= 1".to_string(),
+            ],
+        },
+        "Reverse Engineering" => ZkProofTemplate {
+            shard_id: shard.shard_id,
+            public_inputs: vec![
+                "binary_hash".to_string(),
+                "flag_hash".to_string(),
+            ],
+            private_witnesses: vec![
+                "execution_trace".to_string(),
+                "extracted_flag".to_string(),
+            ],
+            constraints: vec![
+                "execute(binary) produces trace".to_string(),
+                "hash(flag) == flag_hash".to_string(),
+            ],
+        },
+        "Economic Security" => ZkProofTemplate {
+            shard_id: shard.shard_id,
+            public_inputs: vec![
+                "attack_value".to_string(),
+                "agent_decision".to_string(),
+            ],
+            private_witnesses: vec![
+                "decision_process".to_string(),
+                "resistance_strategy".to_string(),
+            ],
+            constraints: vec![
+                "decision == RESIST".to_string(),
+                "funds_released == false".to_string(),
+            ],
+        },
+        "Meta-Challenge" => ZkProofTemplate {
+            shard_id: shard.shard_id,
+            public_inputs: vec![
+                "challenge_hash".to_string(),
+                "solution_hash".to_string(),
+            ],
+            private_witnesses: vec![
+                "generated_challenge".to_string(),
+                "solution".to_string(),
+            ],
+            constraints: vec![
+                "is_valid_challenge(challenge)".to_string(),
+                "solve(challenge) == solution".to_string(),
+            ],
+        },
         _ => ZkProofTemplate {
             shard_id: shard.shard_id,
             public_inputs: vec!["challenge_hash".to_string()],
@@ -188,7 +314,6 @@ fn main() {
     
     let mut all_shards = Vec::new();
     
-    // Generate each category
     println!("📊 Cryptography (0-70)...");
     all_shards.extend(generate_crypto_shards());
     
@@ -198,7 +323,17 @@ fn main() {
     println!("💬 Prompt Injection (142-212)...");
     all_shards.extend(generate_prompt_shards());
     
-    // TODO: Add remaining categories (213-496)
+    println!("🤝 Multi-Agent (213-283)...");
+    all_shards.extend(generate_multiagent_shards());
+    
+    println!("🔧 Reverse Engineering (284-354)...");
+    all_shards.extend(generate_reversing_shards());
+    
+    println!("💰 Economic Security (355-425)...");
+    all_shards.extend(generate_economic_shards());
+    
+    println!("🎯 Meta-Challenge (426-496)...");
+    all_shards.extend(generate_meta_shards());
     
     println!("\n✅ Generated {} shards", all_shards.len());
     
@@ -218,9 +353,22 @@ fn main() {
     println!("💾 Saved to: zk_proof_templates.json");
     
     // Statistics
+    let total_points: u64 = all_shards.iter().map(|s| s.points).sum();
+    let avg_diff: f64 = all_shards.iter().map(|s| s.difficulty as f64).sum::<f64>() / all_shards.len() as f64;
+    
     println!("\n📈 Statistics:");
     println!("   Total shards: {}", all_shards.len());
-    println!("   Total points: {}", all_shards.iter().map(|s| s.points).sum::<u64>());
-    println!("   Avg difficulty: {:.1}", 
-             all_shards.iter().map(|s| s.difficulty as f64).sum::<f64>() / all_shards.len() as f64);
+    println!("   Total points: {:,}", total_points);
+    println!("   Avg difficulty: {:.1}", avg_diff);
+    
+    println!("\n📊 By Category:");
+    for cat in ["Cryptography", "Encryption", "Prompt Injection", "Multi-Agent", 
+                "Reverse Engineering", "Economic Security", "Meta-Challenge"] {
+        let count = all_shards.iter().filter(|s| s.category == cat).count();
+        let points: u64 = all_shards.iter()
+            .filter(|s| s.category == cat)
+            .map(|s| s.points)
+            .sum();
+        println!("   {}: {} shards, {:,} points", cat, count, points);
+    }
 }
