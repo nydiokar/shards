@@ -7,22 +7,21 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      shard_id = 40;
       
     in {
       packages.${system} = {
-        openclaw-agent = pkgs.writeShellScriptBin "openclaw-agent-${toString shard_id}" ''
-          export 40=${toString shard_id}
-          export OPENCLAW_CONFIG=~/.openclaw/shard-${toString shard_id}
-          export PATH=${pkgs.nodejs}/bin:${pkgs.curl}/bin:${pkgs.linuxPackages.perf}/bin:$PATH
+        openclaw-agent = pkgs.writeShellScriptBin "openclaw-agent-40" ''
+          export SHARD_ID=40
+          export OPENCLAW_CONFIG=~/.openclaw/shard-40
+          export PATH=${pkgs.nodejs}/bin:${pkgs.curl}/bin:${pkgs.perf}/bin:$PATH
           
-          PERF_DATA="$OPENCLAW_CONFIG/zkperf-${toString shard_id}.data"
-          WITNESS_JSON="$OPENCLAW_CONFIG/zkwitness-${toString shard_id}.json"
+          PERF_DATA="$OPENCLAW_CONFIG/zkperf-40.data"
+          WITNESS_JSON="$OPENCLAW_CONFIG/zkwitness-40.json"
           
           mkdir -p "$OPENCLAW_CONFIG"
           
           echo "╔════════════════════════════════════════════════════════════╗"
-          echo "║ Shard ${toString shard_id}: CICADA-Harbot-${toString shard_id} [zkPerf]              ║"
+          echo "║ Shard 40: CICADA-Harbot-40 [zkPerf]                    ║"
           echo "╚════════════════════════════════════════════════════════════╝"
           
           if ! command -v openclaw &> /dev/null; then
@@ -30,8 +29,8 @@
           fi
           
           # Wrap in perf record
-          ${pkgs.linuxPackages.perf}/bin/perf record -o "$PERF_DATA" -g -- \
-            openclaw run "I am CICADA-Harbot-${toString shard_id}, shard ${toString shard_id} of 71. Register for Moltbook." || true
+          ${pkgs.perf}/bin/perf record -o "$PERF_DATA" -g -- \
+            openclaw run "I am CICADA-Harbot-40, shard 40 of 71. Register for Moltbook." || true
           
           # Generate zkPerf witness
           SAMPLES=$(perf report -i "$PERF_DATA" --stdio --no-children 2>/dev/null | grep -oP '\d+(?= samples)' | head -1 || echo 0)
@@ -40,14 +39,14 @@
           
           cat > "$WITNESS_JSON" << WITNESS
 {
-  "shard_id": ${toString shard_id},
-  "agent": "CICADA-Harbot-${toString shard_id}",
+  "shard_id": 40,
+  "agent": "CICADA-Harbot-40",
   "timestamp": $TIMESTAMP,
   "perf_data": "$PERF_DATA",
   "perf_hash": "$HASH",
   "samples": $SAMPLES,
   "witness_type": "zkPerf",
-  "proof": "sha256(${toString shard_id} || $TIMESTAMP || $HASH)"
+  "proof": "sha256(40 || $TIMESTAMP || $HASH)"
 }
 WITNESS
           
@@ -63,7 +62,7 @@ WITNESS
       
       apps.${system}.default = {
         type = "app";
-        program = "${self.packages.${system}.openclaw-agent}/bin/openclaw-agent-${toString shard_id}";
+        program = "${self.packages.${system}.openclaw-agent}/bin/openclaw-agent-40";
       };
     };
 }
