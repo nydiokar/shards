@@ -1,0 +1,36 @@
+[package]
+name = "cryptanalysis-71"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "shard-analyzer"
+path = "src/main.rs"
+
+[dependencies]
+aes = "0.8"
+sha2 = "0.10"
+sha1 = "0.10"
+sha3 = "0.10"
+md-5 = "0.10"
+blake2 = "0.10"
+blake3 = "1.5"
+ripemd = "0.1"
+whirlpool = "0.10"
+groestl = "0.10"
+streebog = "0.10"
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+rayon = "1.10"
+crossbeam = "0.8"
+parking_lot = "0.12"
+parquet = "53"
+arrow = "53"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+walkdir = "2"
+clap = { version = "4.5", features = ["derive"] }
+anyhow = "1.0"
+bitvec = "1.0"
+rand = "0.8"
+hex = "0.4"
+goblin = "0.8"
