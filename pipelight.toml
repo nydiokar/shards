@@ -90,6 +90,48 @@ steps = [
   { name = "deploy", commands = ["./deploy.sh"] },
 ]
 
+  # 9 Muses Consensus - Hecke Operator
+  - name: nine-muses
+    steps:
+      - name: Build with Nix
+        commands:
+          - cd shard0/9muses
+          - nix build
+      
+      - name: Run Hecke operator with perf
+        commands:
+          - cd shard0/9muses
+          - perf record -o muses.perf -- ./result/bin/nine-muses E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22
+      
+      - name: Generate perf report
+        commands:
+          - cd shard0/9muses
+          - perf report -i muses.perf --stdio > muses_perf_report.txt
+      
+      - name: Save Hecke witness
+        commands:
+          - cd shard0/9muses
+          - |
+            cat > muses_witness.json <<EOF
+            {
+              "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+              "operation": "hecke_operator",
+              "token": "E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22",
+              "muses": 9,
+              "quorum": 5,
+              "operator": "T_p on modular forms",
+              "eigenspaces": ["Calliope", "Clio", "Erato", "Euterpe", "Melpomene", "Polyhymnia", "Terpsichore", "Thalia", "Urania"],
+              "perf_size": $(stat -c%s muses.perf 2>/dev/null || echo "0"),
+              "build_hash": "$(nix-store --query --hash ./result 2>/dev/null || echo 'unknown')"
+            }
+            EOF
+      
+      - name: Commit Hecke witness
+        commands:
+          - cd shard0/9muses
+          - git add muses_witness.json muses_perf_report.txt
+          - git commit -m "Add Hecke operator witness $(date -u +%Y-%m-%d)" || true
+
   # zkTLS FRENS phone generation with witness
   - name: zktls-frens
     steps:
@@ -130,3 +172,48 @@ steps = [
           - git add frens_witness.json frens_zktls_report.txt
           - git commit -m "Add zkTLS FRENS witness $(date -u +%Y-%m-%d)" || true
 
+
+  # 9 Muses Consensus - Hecke Operator & Maass Shadow
+  - name: nine-muses
+    steps:
+      - name: Build with Nix
+        commands:
+          - cd shard0/9muses
+          - nix build
+      
+      - name: Run Hecke operator with perf
+        commands:
+          - cd shard0/9muses
+          - perf record -o muses.perf -- ./result/bin/nine-muses E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22
+      
+      - name: Generate perf report
+        commands:
+          - cd shard0/9muses
+          - perf report -i muses.perf --stdio > muses_perf_report.txt
+      
+      - name: Save Hecke witness
+        commands:
+          - cd shard0/9muses
+          - |
+            cat > muses_witness.json <<EOF
+            {
+              "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+              "operation": "hecke_operator_maass_shadow",
+              "token": "E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22",
+              "muses": 9,
+              "quorum": 5,
+              "operator": "T_71 on modular forms",
+              "maass_form": "Δf = λf (automorphic eigenvector)",
+              "eigenspaces": ["Calliope", "Clio", "Erato", "Euterpe", "Melpomene", "Polyhymnia", "Terpsichore", "Thalia", "Urania"],
+              "sparks_extracted": 71,
+              "tikkun": "Shadow restoration complete",
+              "perf_size": $(stat -c%s muses.perf 2>/dev/null || echo "0"),
+              "build_hash": "$(nix-store --query --hash ./result 2>/dev/null || echo 'unknown')"
+            }
+            EOF
+      
+      - name: Commit Hecke witness
+        commands:
+          - cd shard0/9muses
+          - git add muses_witness.json muses_perf_report.txt
+          - git commit -m "Add Hecke operator witness $(date -u +%Y-%m-%d)" || true

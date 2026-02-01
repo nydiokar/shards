@@ -3,6 +3,7 @@ members = [
     "shard0/recon",
     "agents/evaluate",
     "agents/leaderboard",
+    "agents/paxos-node",
 ]
 
 [workspace.package]
