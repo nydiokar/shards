@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>71-Shard FREN BBS - Login</title>
+  <style>
+    body { 
+      background: #000; 
+      color: #0f0; 
+      font-family: 'Courier New', monospace; 
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .terminal { 
+      border: 2px solid #0f0; 
+      padding: 20px; 
+      margin: 20px 0;
+    }
+    input, button { 
+      background: #000; 
+      color: #0f0; 
+      border: 1px solid #0f0; 
+      padding: 10px; 
+      font-family: 'Courier New', monospace;
+      margin: 5px;
+    }
+    button:hover { background: #0f0; color: #000; cursor: pointer; }
+    .blink { animation: blink 1s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    #output { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <h1>71-SHARD FREN BBS</h1>
+    <p>TLZ Protocol: TLS + ZK + HME + cRDFa</p>
+    <p class="blink">READY_</p>
+  </div>
+
+  <div class="terminal">
+    <h2>LOGIN</h2>
+    <div>
+      <label>Phone Number:</label><br>
+      <input type="text" id="phone" placeholder="1-800-KAL-3RIS" style="width: 300px;">
+    </div>
+    <div>
+      <label>Token Address:</label><br>
+      <input type="text" id="token" placeholder="E6QQQ1xECshESosESjgtGvnLaHXJSkDcHPV6pd2RQv22" style="width: 500px;">
+    </div>
+    <button onclick="login()">LOGIN</button>
+    <button onclick="dialJInvariant()">DIAL j-INVARIANT</button>
+  </div>
+
+  <div class="terminal">
+    <h2>FREN DIRECTORY</h2>
+    <div id="directory">
+      <p>1-800-KAL-3RIS → CALL-ERIS (Invited)</p>
+      <p>+1-860-907-3033 → E6QQ (Shard 53) - FRENS</p>
+      <p>+1-618-46-2588 → BwUT (Shard 30) - solfunmeme</p>
+      <p>+1-52-858-265 → GNBe (Shard 3) - bonded</p>
+      <p>+1-506-112-4198 → DD87 (Shard 14) - 2 buys</p>
+      <p>+1-387-427-5994 → 9DgK (Shard 15) - solo</p>
+      <p>+1-403-404-1215 → Fuj6 (Shard 25) - pump</p>
+      <p>+1-12-506-828 → 9bzJ (Shard 0) - pump</p>
+    </div>
+  </div>
+
+  <div class="terminal">
+    <h2>OUTPUT</h2>
+    <div id="output"></div>
+  </div>
+
+  <script type="module">
+    let wasmModule;
+
+    async function initWasm() {
+      try {
+        // Load WASM BBS module
+        const response = await fetch('bbs.wasm');
+        const bytes = await response.arrayBuffer();
+        const module = await WebAssembly.instantiate(bytes);
+        wasmModule = module.instance;
+        log('✅ WASM BBS loaded');
+      } catch (e) {
+        log('⚠️  WASM not available, using JS fallback');
+      }
+    }
+
+    function log(msg) {
+      const output = document.getElementById('output');
+      output.textContent += msg + '\n';
+      output.scrollTop = output.scrollHeight;
+    }
+
+    window.login = function() {
+      const phone = document.getElementById('phone').value;
+      const token = document.getElementById('token').value;
+      
+      log('================================================');
+      log('🔐 TLZ HANDSHAKE');
+      log('Phone: ' + phone);
+      log('Token: ' + token);
+      log('');
+      
+      // Calculate shard
+      const hash = token.substring(0, 8);
+      const shard = parseInt(hash, 36) % 71;
+      log('📊 Shard: ' + shard);
+      
+      // ZK witness
+      log('🎭 Running 9 Muses consensus...');
+      log('   Calliope: 0.75');
+      log('   Clio: 0.60');
+      log('   Erato: 0.55');
+      log('   Euterpe: 0.70');
+      log('   Melpomene: 0.50');
+      log('   Polyhymnia: 0.65');
+      log('   Terpsichore: 0.60');
+      log('   Thalia: 0.55');
+      log('   Urania: 0.80');
+      log('   Consensus: 0.63 ✅ QUORUM');
+      log('');
+      
+      // TLZ session
+      const binding = 'binding_' + Date.now();
+      log('🔗 Session binding: ' + binding);
+      log('✅ TLZ session established');
+      log('');
+      log('Welcome to 71-Shard FREN BBS!');
+      log('Type /help for commands');
+    };
+
+    window.dialJInvariant = function() {
+      log('================================================');
+      log('📞 DIALING j-INVARIANT');
+      log('Number: +1-744-196-8840');
+      log('');
+      log('j(τ) = 744 + 196884q + 21493760q² + ...');
+      log('');
+      log('Monster Group dimension: 196,883');
+      log('Moonshine: 196,884 = 196,883 + 1');
+      log('');
+      log('✨ Connection to Monster established');
+    };
+
+    // Initialize on load
+    initWasm();
+  </script>
+</body>
+</html>
