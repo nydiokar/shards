@@ -1,0 +1,4759 @@
+[
+  {
+    "shard": 0,
+    "prime": 2,
+    "frequency": 864,
+    "harmonics": {
+      "fundamental": 864,
+      "second": 1728,
+      "third": 2592,
+      "fifth": 4320,
+      "octave": 1728,
+      "perfect_fifth": 1296,
+      "major_third": 1080
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 864,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 950,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1036,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1123,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1209,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1296,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 1382,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 1468,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "4f56436049145215",
+    "status": "ARMED",
+    "target": "LobsterBot-00"
+  },
+  {
+    "shard": 1,
+    "prime": 3,
+    "frequency": 1296,
+    "harmonics": {
+      "fundamental": 1296,
+      "second": 2592,
+      "third": 3888,
+      "fifth": 6480,
+      "octave": 2592,
+      "perfect_fifth": 1944,
+      "major_third": 1620
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 1296,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 1425,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1555,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1684,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1814,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1944,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 2073,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 2203,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "8db9dcae856008ac",
+    "status": "ARMED",
+    "target": "LobsterBot-01"
+  },
+  {
+    "shard": 2,
+    "prime": 5,
+    "frequency": 2160,
+    "harmonics": {
+      "fundamental": 2160,
+      "second": 4320,
+      "third": 6480,
+      "fifth": 10800,
+      "octave": 4320,
+      "perfect_fifth": 3240,
+      "major_third": 2700
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 2160,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 2376,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 2592,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 2808,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 3024,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 3240,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 3456,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 3672,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "7c818fa7ac59ded9",
+    "status": "ARMED",
+    "target": "LobsterBot-02"
+  },
+  {
+    "shard": 3,
+    "prime": 7,
+    "frequency": 3024,
+    "harmonics": {
+      "fundamental": 3024,
+      "second": 6048,
+      "third": 9072,
+      "fifth": 15120,
+      "octave": 6048,
+      "perfect_fifth": 4536,
+      "major_third": 3780
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 3024,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 3326,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 3628,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 3931,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 4233,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 4536,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 4838,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 5140,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "5076cf88b33fbd4a",
+    "status": "ARMED",
+    "target": "LobsterBot-03"
+  },
+  {
+    "shard": 4,
+    "prime": 11,
+    "frequency": 4752,
+    "harmonics": {
+      "fundamental": 4752,
+      "second": 9504,
+      "third": 14256,
+      "fifth": 23760,
+      "octave": 9504,
+      "perfect_fifth": 7128,
+      "major_third": 5940
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 4752,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 5227,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 5702,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 6652,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 7128,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 7603,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 8078,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "728702a6a40cf39e",
+    "status": "ARMED",
+    "target": "LobsterBot-04"
+  },
+  {
+    "shard": 5,
+    "prime": 13,
+    "frequency": 5616,
+    "harmonics": {
+      "fundamental": 5616,
+      "second": 11232,
+      "third": 16848,
+      "fifth": 28080,
+      "octave": 11232,
+      "perfect_fifth": 8424,
+      "major_third": 7020
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 5616,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 6739,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 7300,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 7862,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 8424,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 8985,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 9547,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "f54855d9cd1799b2",
+    "status": "ARMED",
+    "target": "LobsterBot-05"
+  },
+  {
+    "shard": 6,
+    "prime": 17,
+    "frequency": 7344,
+    "harmonics": {
+      "fundamental": 7344,
+      "second": 14688,
+      "third": 22032,
+      "fifth": 36720,
+      "octave": 14688,
+      "perfect_fifth": 11016,
+      "major_third": 9180
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 7344,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 8078,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 8812,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 9547,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 10281,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 11016,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 11750,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 12484,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "ce6e9dc9cb461852",
+    "status": "ARMED",
+    "target": "LobsterBot-06"
+  },
+  {
+    "shard": 7,
+    "prime": 19,
+    "frequency": 8208,
+    "harmonics": {
+      "fundamental": 8208,
+      "second": 16416,
+      "third": 24624,
+      "fifth": 41040,
+      "octave": 16416,
+      "perfect_fifth": 12312,
+      "major_third": 10260
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 8208,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 9028,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 9849,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 10670,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 11491,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 12312,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 13132,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 13953,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "9aa60fbd314b0896",
+    "status": "ARMED",
+    "target": "LobsterBot-07"
+  },
+  {
+    "shard": 8,
+    "prime": 23,
+    "frequency": 9936,
+    "harmonics": {
+      "fundamental": 9936,
+      "second": 19872,
+      "third": 29808,
+      "fifth": 49680,
+      "octave": 19872,
+      "perfect_fifth": 14904,
+      "major_third": 12420
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 9936,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 10929,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 11923,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 12916,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 13910,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 14904,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 15897,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 16891,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "913268827ca9d195",
+    "status": "ARMED",
+    "target": "LobsterBot-08"
+  },
+  {
+    "shard": 9,
+    "prime": 29,
+    "frequency": 12528,
+    "harmonics": {
+      "fundamental": 12528,
+      "second": 25056,
+      "third": 37584,
+      "fifth": 62640,
+      "octave": 25056,
+      "perfect_fifth": 18792,
+      "major_third": 15660
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 12528,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 13780,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 15033,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 16286,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 17539,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 18792,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 20044,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 21297,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "30648461a7bdd229",
+    "status": "ARMED",
+    "target": "LobsterBot-09"
+  },
+  {
+    "shard": 10,
+    "prime": 31,
+    "frequency": 13392,
+    "harmonics": {
+      "fundamental": 13392,
+      "second": 26784,
+      "third": 40176,
+      "fifth": 66960,
+      "octave": 26784,
+      "perfect_fifth": 20088,
+      "major_third": 16740
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 13392,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 14731,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 16070,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 17409,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 18748,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 20088,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 21427,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 22766,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "3477067c74acf1b8",
+    "status": "ARMED",
+    "target": "LobsterBot-10"
+  },
+  {
+    "shard": 11,
+    "prime": 41,
+    "frequency": 17712,
+    "harmonics": {
+      "fundamental": 17712,
+      "second": 35424,
+      "third": 53136,
+      "fifth": 88560,
+      "octave": 35424,
+      "perfect_fifth": 26568,
+      "major_third": 22140
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 17712,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 19483,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 21254,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 23025,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 24796,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 26568,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 28339,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 30110,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "6bf389f080f000f1",
+    "status": "ARMED",
+    "target": "LobsterBot-11"
+  },
+  {
+    "shard": 12,
+    "prime": 47,
+    "frequency": 20304,
+    "harmonics": {
+      "fundamental": 20304,
+      "second": 40608,
+      "third": 60912,
+      "fifth": 101520,
+      "octave": 40608,
+      "perfect_fifth": 30456,
+      "major_third": 25380
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 20304,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 22334,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 24364,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 26395,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 28425,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 30456,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 32486,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 34516,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "4ccf7212d57ac74d",
+    "status": "ARMED",
+    "target": "LobsterBot-12"
+  },
+  {
+    "shard": 13,
+    "prime": 59,
+    "frequency": 25488,
+    "harmonics": {
+      "fundamental": 25488,
+      "second": 50976,
+      "third": 76464,
+      "fifth": 127440,
+      "octave": 50976,
+      "perfect_fifth": 38232,
+      "major_third": 31860
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 25488,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 28036,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 30585,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 33134,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 35683,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 38232,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 40780,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 43329,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "1941692187fdfdfd",
+    "status": "ARMED",
+    "target": "LobsterBot-13"
+  },
+  {
+    "shard": 14,
+    "prime": 71,
+    "frequency": 30672,
+    "harmonics": {
+      "fundamental": 30672,
+      "second": 61344,
+      "third": 92016,
+      "fifth": 153360,
+      "octave": 61344,
+      "perfect_fifth": 46008,
+      "major_third": 38340
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 30672,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 33739,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 36806,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 39873,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 42940,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 46008,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 49075,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 52142,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "2ba4a5da4b22a565",
+    "status": "ARMED",
+    "target": "LobsterBot-14"
+  },
+  {
+    "shard": 15,
+    "prime": 2,
+    "frequency": 864,
+    "harmonics": {
+      "fundamental": 864,
+      "second": 1728,
+      "third": 2592,
+      "fifth": 4320,
+      "octave": 1728,
+      "perfect_fifth": 1296,
+      "major_third": 1080
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 864,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 950,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1036,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1123,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1209,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1296,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 1382,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 1468,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "6ef408d06f4ffbdd",
+    "status": "ARMED",
+    "target": "LobsterBot-15"
+  },
+  {
+    "shard": 16,
+    "prime": 3,
+    "frequency": 1296,
+    "harmonics": {
+      "fundamental": 1296,
+      "second": 2592,
+      "third": 3888,
+      "fifth": 6480,
+      "octave": 2592,
+      "perfect_fifth": 1944,
+      "major_third": 1620
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 1296,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 1425,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1555,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1684,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1814,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1944,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 2073,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 2203,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "2537b8ddd5289ee6",
+    "status": "ARMED",
+    "target": "LobsterBot-16"
+  },
+  {
+    "shard": 17,
+    "prime": 5,
+    "frequency": 2160,
+    "harmonics": {
+      "fundamental": 2160,
+      "second": 4320,
+      "third": 6480,
+      "fifth": 10800,
+      "octave": 4320,
+      "perfect_fifth": 3240,
+      "major_third": 2700
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 2160,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 2376,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 2592,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 2808,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 3024,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 3240,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 3456,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 3672,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "d0d32d56ddffb9ce",
+    "status": "ARMED",
+    "target": "LobsterBot-17"
+  },
+  {
+    "shard": 18,
+    "prime": 7,
+    "frequency": 3024,
+    "harmonics": {
+      "fundamental": 3024,
+      "second": 6048,
+      "third": 9072,
+      "fifth": 15120,
+      "octave": 6048,
+      "perfect_fifth": 4536,
+      "major_third": 3780
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 3024,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 3326,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 3628,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 3931,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 4233,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 4536,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 4838,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 5140,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "a774c6a82e76f6e5",
+    "status": "ARMED",
+    "target": "LobsterBot-18"
+  },
+  {
+    "shard": 19,
+    "prime": 11,
+    "frequency": 4752,
+    "harmonics": {
+      "fundamental": 4752,
+      "second": 9504,
+      "third": 14256,
+      "fifth": 23760,
+      "octave": 9504,
+      "perfect_fifth": 7128,
+      "major_third": 5940
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 4752,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 5227,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 5702,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 6652,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 7128,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 7603,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 8078,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "13ec3e20e0df7ed0",
+    "status": "ARMED",
+    "target": "LobsterBot-19"
+  },
+  {
+    "shard": 20,
+    "prime": 13,
+    "frequency": 5616,
+    "harmonics": {
+      "fundamental": 5616,
+      "second": 11232,
+      "third": 16848,
+      "fifth": 28080,
+      "octave": 11232,
+      "perfect_fifth": 8424,
+      "major_third": 7020
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 5616,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 6739,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 7300,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 7862,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 8424,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 8985,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 9547,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "2ecd8ba06953e16c",
+    "status": "ARMED",
+    "target": "LobsterBot-20"
+  },
+  {
+    "shard": 21,
+    "prime": 17,
+    "frequency": 7344,
+    "harmonics": {
+      "fundamental": 7344,
+      "second": 14688,
+      "third": 22032,
+      "fifth": 36720,
+      "octave": 14688,
+      "perfect_fifth": 11016,
+      "major_third": 9180
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 7344,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 8078,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 8812,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 9547,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 10281,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 11016,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 11750,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 12484,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "35b058bc5e6af6ed",
+    "status": "ARMED",
+    "target": "LobsterBot-21"
+  },
+  {
+    "shard": 22,
+    "prime": 19,
+    "frequency": 8208,
+    "harmonics": {
+      "fundamental": 8208,
+      "second": 16416,
+      "third": 24624,
+      "fifth": 41040,
+      "octave": 16416,
+      "perfect_fifth": 12312,
+      "major_third": 10260
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 8208,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 9028,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 9849,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 10670,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 11491,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 12312,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 13132,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 13953,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "7a6ec2238a6572d8",
+    "status": "ARMED",
+    "target": "LobsterBot-22"
+  },
+  {
+    "shard": 23,
+    "prime": 23,
+    "frequency": 9936,
+    "harmonics": {
+      "fundamental": 9936,
+      "second": 19872,
+      "third": 29808,
+      "fifth": 49680,
+      "octave": 19872,
+      "perfect_fifth": 14904,
+      "major_third": 12420
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 9936,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 10929,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 11923,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 12916,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 13910,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 14904,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 15897,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 16891,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "00f547782a7d13fe",
+    "status": "ARMED",
+    "target": "LobsterBot-23"
+  },
+  {
+    "shard": 24,
+    "prime": 29,
+    "frequency": 12528,
+    "harmonics": {
+      "fundamental": 12528,
+      "second": 25056,
+      "third": 37584,
+      "fifth": 62640,
+      "octave": 25056,
+      "perfect_fifth": 18792,
+      "major_third": 15660
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 12528,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 13780,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 15033,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 16286,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 17539,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 18792,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 20044,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 21297,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "62d4d2b655e1bdcc",
+    "status": "ARMED",
+    "target": "LobsterBot-24"
+  },
+  {
+    "shard": 25,
+    "prime": 31,
+    "frequency": 13392,
+    "harmonics": {
+      "fundamental": 13392,
+      "second": 26784,
+      "third": 40176,
+      "fifth": 66960,
+      "octave": 26784,
+      "perfect_fifth": 20088,
+      "major_third": 16740
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 13392,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 14731,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 16070,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 17409,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 18748,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 20088,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 21427,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 22766,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "56ac65ee495c14b6",
+    "status": "ARMED",
+    "target": "LobsterBot-25"
+  },
+  {
+    "shard": 26,
+    "prime": 41,
+    "frequency": 17712,
+    "harmonics": {
+      "fundamental": 17712,
+      "second": 35424,
+      "third": 53136,
+      "fifth": 88560,
+      "octave": 35424,
+      "perfect_fifth": 26568,
+      "major_third": 22140
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 17712,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 19483,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 21254,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 23025,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 24796,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 26568,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 28339,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 30110,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "68252f88b032eaee",
+    "status": "ARMED",
+    "target": "LobsterBot-26"
+  },
+  {
+    "shard": 27,
+    "prime": 47,
+    "frequency": 20304,
+    "harmonics": {
+      "fundamental": 20304,
+      "second": 40608,
+      "third": 60912,
+      "fifth": 101520,
+      "octave": 40608,
+      "perfect_fifth": 30456,
+      "major_third": 25380
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 20304,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 22334,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 24364,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 26395,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 28425,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 30456,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 32486,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 34516,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "6f131bab2d001242",
+    "status": "ARMED",
+    "target": "LobsterBot-27"
+  },
+  {
+    "shard": 28,
+    "prime": 59,
+    "frequency": 25488,
+    "harmonics": {
+      "fundamental": 25488,
+      "second": 50976,
+      "third": 76464,
+      "fifth": 127440,
+      "octave": 50976,
+      "perfect_fifth": 38232,
+      "major_third": 31860
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 25488,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 28036,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 30585,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 33134,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 35683,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 38232,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 40780,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 43329,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "f3756abb4c47bda2",
+    "status": "ARMED",
+    "target": "LobsterBot-28"
+  },
+  {
+    "shard": 29,
+    "prime": 71,
+    "frequency": 30672,
+    "harmonics": {
+      "fundamental": 30672,
+      "second": 61344,
+      "third": 92016,
+      "fifth": 153360,
+      "octave": 61344,
+      "perfect_fifth": 46008,
+      "major_third": 38340
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 30672,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 33739,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 36806,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 39873,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 42940,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 46008,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 49075,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 52142,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "a8a929a1e180ab44",
+    "status": "ARMED",
+    "target": "LobsterBot-29"
+  },
+  {
+    "shard": 30,
+    "prime": 2,
+    "frequency": 864,
+    "harmonics": {
+      "fundamental": 864,
+      "second": 1728,
+      "third": 2592,
+      "fifth": 4320,
+      "octave": 1728,
+      "perfect_fifth": 1296,
+      "major_third": 1080
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 864,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 950,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1036,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1123,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1209,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1296,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 1382,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 1468,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "4b4269bd97d032bd",
+    "status": "ARMED",
+    "target": "LobsterBot-30"
+  },
+  {
+    "shard": 31,
+    "prime": 3,
+    "frequency": 1296,
+    "harmonics": {
+      "fundamental": 1296,
+      "second": 2592,
+      "third": 3888,
+      "fifth": 6480,
+      "octave": 2592,
+      "perfect_fifth": 1944,
+      "major_third": 1620
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 1296,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 1425,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1555,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1684,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1814,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1944,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 2073,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 2203,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "98fba76758c9fe31",
+    "status": "ARMED",
+    "target": "LobsterBot-31"
+  },
+  {
+    "shard": 32,
+    "prime": 5,
+    "frequency": 2160,
+    "harmonics": {
+      "fundamental": 2160,
+      "second": 4320,
+      "third": 6480,
+      "fifth": 10800,
+      "octave": 4320,
+      "perfect_fifth": 3240,
+      "major_third": 2700
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 2160,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 2376,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 2592,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 2808,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 3024,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 3240,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 3456,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 3672,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "fafed7a03fd2f6b7",
+    "status": "ARMED",
+    "target": "LobsterBot-32"
+  },
+  {
+    "shard": 33,
+    "prime": 7,
+    "frequency": 3024,
+    "harmonics": {
+      "fundamental": 3024,
+      "second": 6048,
+      "third": 9072,
+      "fifth": 15120,
+      "octave": 6048,
+      "perfect_fifth": 4536,
+      "major_third": 3780
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 3024,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 3326,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 3628,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 3931,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 4233,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 4536,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 4838,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 5140,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "c6c176d8a5ec5617",
+    "status": "ARMED",
+    "target": "LobsterBot-33"
+  },
+  {
+    "shard": 34,
+    "prime": 11,
+    "frequency": 4752,
+    "harmonics": {
+      "fundamental": 4752,
+      "second": 9504,
+      "third": 14256,
+      "fifth": 23760,
+      "octave": 9504,
+      "perfect_fifth": 7128,
+      "major_third": 5940
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 4752,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 5227,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 5702,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 6652,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 7128,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 7603,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 8078,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "33ac3b3fadaed565",
+    "status": "ARMED",
+    "target": "LobsterBot-34"
+  },
+  {
+    "shard": 35,
+    "prime": 13,
+    "frequency": 5616,
+    "harmonics": {
+      "fundamental": 5616,
+      "second": 11232,
+      "third": 16848,
+      "fifth": 28080,
+      "octave": 11232,
+      "perfect_fifth": 8424,
+      "major_third": 7020
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 5616,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 6739,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 7300,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 7862,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 8424,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 8985,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 9547,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "7389f0b4efaacc23",
+    "status": "ARMED",
+    "target": "LobsterBot-35"
+  },
+  {
+    "shard": 36,
+    "prime": 17,
+    "frequency": 7344,
+    "harmonics": {
+      "fundamental": 7344,
+      "second": 14688,
+      "third": 22032,
+      "fifth": 36720,
+      "octave": 14688,
+      "perfect_fifth": 11016,
+      "major_third": 9180
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 7344,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 8078,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 8812,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 9547,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 10281,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 11016,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 11750,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 12484,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "60069828dddab991",
+    "status": "ARMED",
+    "target": "LobsterBot-36"
+  },
+  {
+    "shard": 37,
+    "prime": 19,
+    "frequency": 8208,
+    "harmonics": {
+      "fundamental": 8208,
+      "second": 16416,
+      "third": 24624,
+      "fifth": 41040,
+      "octave": 16416,
+      "perfect_fifth": 12312,
+      "major_third": 10260
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 8208,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 9028,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 9849,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 10670,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 11491,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 12312,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 13132,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 13953,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "8a0a912fb2168541",
+    "status": "ARMED",
+    "target": "LobsterBot-37"
+  },
+  {
+    "shard": 38,
+    "prime": 23,
+    "frequency": 9936,
+    "harmonics": {
+      "fundamental": 9936,
+      "second": 19872,
+      "third": 29808,
+      "fifth": 49680,
+      "octave": 19872,
+      "perfect_fifth": 14904,
+      "major_third": 12420
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 9936,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 10929,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 11923,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 12916,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 13910,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 14904,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 15897,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 16891,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "bc7b48d338dd91e7",
+    "status": "ARMED",
+    "target": "LobsterBot-38"
+  },
+  {
+    "shard": 39,
+    "prime": 29,
+    "frequency": 12528,
+    "harmonics": {
+      "fundamental": 12528,
+      "second": 25056,
+      "third": 37584,
+      "fifth": 62640,
+      "octave": 25056,
+      "perfect_fifth": 18792,
+      "major_third": 15660
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 12528,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 13780,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 15033,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 16286,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 17539,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 18792,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 20044,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 21297,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "4d38dcc33ba3a0bc",
+    "status": "ARMED",
+    "target": "LobsterBot-39"
+  },
+  {
+    "shard": 40,
+    "prime": 31,
+    "frequency": 13392,
+    "harmonics": {
+      "fundamental": 13392,
+      "second": 26784,
+      "third": 40176,
+      "fifth": 66960,
+      "octave": 26784,
+      "perfect_fifth": 20088,
+      "major_third": 16740
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 13392,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 14731,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 16070,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 17409,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 18748,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 20088,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 21427,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 22766,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "7bbbae3960cd48a9",
+    "status": "ARMED",
+    "target": "LobsterBot-40"
+  },
+  {
+    "shard": 41,
+    "prime": 41,
+    "frequency": 17712,
+    "harmonics": {
+      "fundamental": 17712,
+      "second": 35424,
+      "third": 53136,
+      "fifth": 88560,
+      "octave": 35424,
+      "perfect_fifth": 26568,
+      "major_third": 22140
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 17712,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 19483,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 21254,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 23025,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 24796,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 26568,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 28339,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 30110,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "4fe28f57df4f5031",
+    "status": "ARMED",
+    "target": "LobsterBot-41"
+  },
+  {
+    "shard": 42,
+    "prime": 47,
+    "frequency": 20304,
+    "harmonics": {
+      "fundamental": 20304,
+      "second": 40608,
+      "third": 60912,
+      "fifth": 101520,
+      "octave": 40608,
+      "perfect_fifth": 30456,
+      "major_third": 25380
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 20304,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 22334,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 24364,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 26395,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 28425,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 30456,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 32486,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 34516,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "ce7fff886a9ccbb6",
+    "status": "ARMED",
+    "target": "LobsterBot-42"
+  },
+  {
+    "shard": 43,
+    "prime": 59,
+    "frequency": 25488,
+    "harmonics": {
+      "fundamental": 25488,
+      "second": 50976,
+      "third": 76464,
+      "fifth": 127440,
+      "octave": 50976,
+      "perfect_fifth": 38232,
+      "major_third": 31860
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 25488,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 28036,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 30585,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 33134,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 35683,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 38232,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 40780,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 43329,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "03573affc886e460",
+    "status": "ARMED",
+    "target": "LobsterBot-43"
+  },
+  {
+    "shard": 44,
+    "prime": 71,
+    "frequency": 30672,
+    "harmonics": {
+      "fundamental": 30672,
+      "second": 61344,
+      "third": 92016,
+      "fifth": 153360,
+      "octave": 61344,
+      "perfect_fifth": 46008,
+      "major_third": 38340
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 30672,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 33739,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 36806,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 39873,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 42940,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 46008,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 49075,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 52142,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "04cebfd6c5f1dd77",
+    "status": "ARMED",
+    "target": "LobsterBot-44"
+  },
+  {
+    "shard": 45,
+    "prime": 2,
+    "frequency": 864,
+    "harmonics": {
+      "fundamental": 864,
+      "second": 1728,
+      "third": 2592,
+      "fifth": 4320,
+      "octave": 1728,
+      "perfect_fifth": 1296,
+      "major_third": 1080
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 864,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 950,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1036,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1123,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1209,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1296,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 1382,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 1468,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "3b888aa14431ac48",
+    "status": "ARMED",
+    "target": "LobsterBot-45"
+  },
+  {
+    "shard": 46,
+    "prime": 3,
+    "frequency": 1296,
+    "harmonics": {
+      "fundamental": 1296,
+      "second": 2592,
+      "third": 3888,
+      "fifth": 6480,
+      "octave": 2592,
+      "perfect_fifth": 1944,
+      "major_third": 1620
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 1296,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 1425,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1555,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1684,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1814,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1944,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 2073,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 2203,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "af06126019511464",
+    "status": "ARMED",
+    "target": "LobsterBot-46"
+  },
+  {
+    "shard": 47,
+    "prime": 5,
+    "frequency": 2160,
+    "harmonics": {
+      "fundamental": 2160,
+      "second": 4320,
+      "third": 6480,
+      "fifth": 10800,
+      "octave": 4320,
+      "perfect_fifth": 3240,
+      "major_third": 2700
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 2160,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 2376,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 2592,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 2808,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 3024,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 3240,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 3456,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 3672,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "4d87e20034e50dc1",
+    "status": "ARMED",
+    "target": "LobsterBot-47"
+  },
+  {
+    "shard": 48,
+    "prime": 7,
+    "frequency": 3024,
+    "harmonics": {
+      "fundamental": 3024,
+      "second": 6048,
+      "third": 9072,
+      "fifth": 15120,
+      "octave": 6048,
+      "perfect_fifth": 4536,
+      "major_third": 3780
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 3024,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 3326,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 3628,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 3931,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 4233,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 4536,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 4838,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 5140,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "481a4a86a122d46b",
+    "status": "ARMED",
+    "target": "LobsterBot-48"
+  },
+  {
+    "shard": 49,
+    "prime": 11,
+    "frequency": 4752,
+    "harmonics": {
+      "fundamental": 4752,
+      "second": 9504,
+      "third": 14256,
+      "fifth": 23760,
+      "octave": 9504,
+      "perfect_fifth": 7128,
+      "major_third": 5940
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 4752,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 5227,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 5702,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 6652,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 7128,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 7603,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 8078,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "d76650be45f835f1",
+    "status": "ARMED",
+    "target": "LobsterBot-49"
+  },
+  {
+    "shard": 50,
+    "prime": 13,
+    "frequency": 5616,
+    "harmonics": {
+      "fundamental": 5616,
+      "second": 11232,
+      "third": 16848,
+      "fifth": 28080,
+      "octave": 11232,
+      "perfect_fifth": 8424,
+      "major_third": 7020
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 5616,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 6739,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 7300,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 7862,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 8424,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 8985,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 9547,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "b05f075aaeb6010d",
+    "status": "ARMED",
+    "target": "LobsterBot-50"
+  },
+  {
+    "shard": 51,
+    "prime": 17,
+    "frequency": 7344,
+    "harmonics": {
+      "fundamental": 7344,
+      "second": 14688,
+      "third": 22032,
+      "fifth": 36720,
+      "octave": 14688,
+      "perfect_fifth": 11016,
+      "major_third": 9180
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 7344,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 8078,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 8812,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 9547,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 10281,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 11016,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 11750,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 12484,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "1625e75628d31474",
+    "status": "ARMED",
+    "target": "LobsterBot-51"
+  },
+  {
+    "shard": 52,
+    "prime": 19,
+    "frequency": 8208,
+    "harmonics": {
+      "fundamental": 8208,
+      "second": 16416,
+      "third": 24624,
+      "fifth": 41040,
+      "octave": 16416,
+      "perfect_fifth": 12312,
+      "major_third": 10260
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 8208,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 9028,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 9849,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 10670,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 11491,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 12312,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 13132,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 13953,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "85df961679a5027c",
+    "status": "ARMED",
+    "target": "LobsterBot-52"
+  },
+  {
+    "shard": 53,
+    "prime": 23,
+    "frequency": 9936,
+    "harmonics": {
+      "fundamental": 9936,
+      "second": 19872,
+      "third": 29808,
+      "fifth": 49680,
+      "octave": 19872,
+      "perfect_fifth": 14904,
+      "major_third": 12420
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 9936,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 10929,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 11923,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 12916,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 13910,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 14904,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 15897,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 16891,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "63d0445dba50e83a",
+    "status": "ARMED",
+    "target": "LobsterBot-53"
+  },
+  {
+    "shard": 54,
+    "prime": 29,
+    "frequency": 12528,
+    "harmonics": {
+      "fundamental": 12528,
+      "second": 25056,
+      "third": 37584,
+      "fifth": 62640,
+      "octave": 25056,
+      "perfect_fifth": 18792,
+      "major_third": 15660
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 12528,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 13780,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 15033,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 16286,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 17539,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 18792,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 20044,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 21297,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "a668627ae713e0f9",
+    "status": "ARMED",
+    "target": "LobsterBot-54"
+  },
+  {
+    "shard": 55,
+    "prime": 31,
+    "frequency": 13392,
+    "harmonics": {
+      "fundamental": 13392,
+      "second": 26784,
+      "third": 40176,
+      "fifth": 66960,
+      "octave": 26784,
+      "perfect_fifth": 20088,
+      "major_third": 16740
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 13392,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 14731,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 16070,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 17409,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 18748,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 20088,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 21427,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 22766,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "ef2698fc309f35f8",
+    "status": "ARMED",
+    "target": "LobsterBot-55"
+  },
+  {
+    "shard": 56,
+    "prime": 41,
+    "frequency": 17712,
+    "harmonics": {
+      "fundamental": 17712,
+      "second": 35424,
+      "third": 53136,
+      "fifth": 88560,
+      "octave": 35424,
+      "perfect_fifth": 26568,
+      "major_third": 22140
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 17712,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 19483,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 21254,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 23025,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 24796,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 26568,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 28339,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 30110,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "21f16311e180bfb7",
+    "status": "ARMED",
+    "target": "LobsterBot-56"
+  },
+  {
+    "shard": 57,
+    "prime": 47,
+    "frequency": 20304,
+    "harmonics": {
+      "fundamental": 20304,
+      "second": 40608,
+      "third": 60912,
+      "fifth": 101520,
+      "octave": 40608,
+      "perfect_fifth": 30456,
+      "major_third": 25380
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 20304,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 22334,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 24364,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 26395,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 28425,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 30456,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 32486,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 34516,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "585d7c22ad5c525f",
+    "status": "ARMED",
+    "target": "LobsterBot-57"
+  },
+  {
+    "shard": 58,
+    "prime": 59,
+    "frequency": 25488,
+    "harmonics": {
+      "fundamental": 25488,
+      "second": 50976,
+      "third": 76464,
+      "fifth": 127440,
+      "octave": 50976,
+      "perfect_fifth": 38232,
+      "major_third": 31860
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 25488,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 28036,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 30585,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 33134,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 35683,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 38232,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 40780,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 43329,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "1f29694d440a6108",
+    "status": "ARMED",
+    "target": "LobsterBot-58"
+  },
+  {
+    "shard": 59,
+    "prime": 71,
+    "frequency": 30672,
+    "harmonics": {
+      "fundamental": 30672,
+      "second": 61344,
+      "third": 92016,
+      "fifth": 153360,
+      "octave": 61344,
+      "perfect_fifth": 46008,
+      "major_third": 38340
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 30672,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 33739,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 36806,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 39873,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 42940,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 46008,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 49075,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 52142,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "6dafd2ffa9844c95",
+    "status": "ARMED",
+    "target": "LobsterBot-59"
+  },
+  {
+    "shard": 60,
+    "prime": 2,
+    "frequency": 864,
+    "harmonics": {
+      "fundamental": 864,
+      "second": 1728,
+      "third": 2592,
+      "fifth": 4320,
+      "octave": 1728,
+      "perfect_fifth": 1296,
+      "major_third": 1080
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 864,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 950,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1036,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1123,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1209,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1296,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 1382,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 1468,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "f0ff6c4aa91304d4",
+    "status": "ARMED",
+    "target": "LobsterBot-60"
+  },
+  {
+    "shard": 61,
+    "prime": 3,
+    "frequency": 1296,
+    "harmonics": {
+      "fundamental": 1296,
+      "second": 2592,
+      "third": 3888,
+      "fifth": 6480,
+      "octave": 2592,
+      "perfect_fifth": 1944,
+      "major_third": 1620
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 1296,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 1425,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 1555,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 1684,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 1814,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 1944,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 2073,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 2203,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "3e8eb72b689f5b05",
+    "status": "ARMED",
+    "target": "LobsterBot-61"
+  },
+  {
+    "shard": 62,
+    "prime": 5,
+    "frequency": 2160,
+    "harmonics": {
+      "fundamental": 2160,
+      "second": 4320,
+      "third": 6480,
+      "fifth": 10800,
+      "octave": 4320,
+      "perfect_fifth": 3240,
+      "major_third": 2700
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 2160,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 2376,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 2592,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 2808,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 3024,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 3240,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 3456,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 3672,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "b2813243bf5ef018",
+    "status": "ARMED",
+    "target": "LobsterBot-62"
+  },
+  {
+    "shard": 63,
+    "prime": 7,
+    "frequency": 3024,
+    "harmonics": {
+      "fundamental": 3024,
+      "second": 6048,
+      "third": 9072,
+      "fifth": 15120,
+      "octave": 6048,
+      "perfect_fifth": 4536,
+      "major_third": 3780
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 3024,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 3326,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 3628,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 3931,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 4233,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 4536,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 4838,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 5140,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "ef322865f7ffb0d7",
+    "status": "ARMED",
+    "target": "LobsterBot-63"
+  },
+  {
+    "shard": 64,
+    "prime": 11,
+    "frequency": 4752,
+    "harmonics": {
+      "fundamental": 4752,
+      "second": 9504,
+      "third": 14256,
+      "fifth": 23760,
+      "octave": 9504,
+      "perfect_fifth": 7128,
+      "major_third": 5940
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 4752,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 5227,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 5702,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 6652,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 7128,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 7603,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 8078,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "07012a3b6f7ab23d",
+    "status": "ARMED",
+    "target": "LobsterBot-64"
+  },
+  {
+    "shard": 65,
+    "prime": 13,
+    "frequency": 5616,
+    "harmonics": {
+      "fundamental": 5616,
+      "second": 11232,
+      "third": 16848,
+      "fifth": 28080,
+      "octave": 11232,
+      "perfect_fifth": 8424,
+      "major_third": 7020
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 5616,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 6177,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 6739,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 7300,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 7862,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 8424,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 8985,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 9547,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "714a147309d60d8c",
+    "status": "ARMED",
+    "target": "LobsterBot-65"
+  },
+  {
+    "shard": 66,
+    "prime": 17,
+    "frequency": 7344,
+    "harmonics": {
+      "fundamental": 7344,
+      "second": 14688,
+      "third": 22032,
+      "fifth": 36720,
+      "octave": 14688,
+      "perfect_fifth": 11016,
+      "major_third": 9180
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 7344,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 8078,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 8812,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 9547,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 10281,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 11016,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 11750,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 12484,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "30276fc1f6d1bce2",
+    "status": "ARMED",
+    "target": "LobsterBot-66"
+  },
+  {
+    "shard": 67,
+    "prime": 19,
+    "frequency": 8208,
+    "harmonics": {
+      "fundamental": 8208,
+      "second": 16416,
+      "third": 24624,
+      "fifth": 41040,
+      "octave": 16416,
+      "perfect_fifth": 12312,
+      "major_third": 10260
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 8208,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 9028,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 9849,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 10670,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 11491,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 12312,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 13132,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 13953,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "e69af5d48f8263e3",
+    "status": "ARMED",
+    "target": "LobsterBot-67"
+  },
+  {
+    "shard": 68,
+    "prime": 23,
+    "frequency": 9936,
+    "harmonics": {
+      "fundamental": 9936,
+      "second": 19872,
+      "third": 29808,
+      "fifth": 49680,
+      "octave": 19872,
+      "perfect_fifth": 14904,
+      "major_third": 12420
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 9936,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 10929,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 11923,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 12916,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 13910,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 14904,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 15897,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 16891,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "a3491ddbdfb23719",
+    "status": "ARMED",
+    "target": "LobsterBot-68"
+  },
+  {
+    "shard": 69,
+    "prime": 29,
+    "frequency": 12528,
+    "harmonics": {
+      "fundamental": 12528,
+      "second": 25056,
+      "third": 37584,
+      "fifth": 62640,
+      "octave": 25056,
+      "perfect_fifth": 18792,
+      "major_third": 15660
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 12528,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 13780,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 15033,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 16286,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 17539,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 18792,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 20044,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 21297,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "0fdcbea665e54b18",
+    "status": "ARMED",
+    "target": "LobsterBot-69"
+  },
+  {
+    "shard": 70,
+    "prime": 31,
+    "frequency": 13392,
+    "harmonics": {
+      "fundamental": 13392,
+      "second": 26784,
+      "third": 40176,
+      "fifth": 66960,
+      "octave": 26784,
+      "perfect_fifth": 20088,
+      "major_third": 16740
+    },
+    "resonance": [
+      {
+        "step": 0,
+        "frequency": 13392,
+        "amplitude": 0.0,
+        "phase": 0
+      },
+      {
+        "step": 1,
+        "frequency": 14731,
+        "amplitude": 0.7071067811865475,
+        "phase": 45
+      },
+      {
+        "step": 2,
+        "frequency": 16070,
+        "amplitude": 1.0,
+        "phase": 90
+      },
+      {
+        "step": 3,
+        "frequency": 17409,
+        "amplitude": 0.7071067811865476,
+        "phase": 135
+      },
+      {
+        "step": 4,
+        "frequency": 18748,
+        "amplitude": 1.2246467991473532e-16,
+        "phase": 180
+      },
+      {
+        "step": 5,
+        "frequency": 20088,
+        "amplitude": -0.7071067811865475,
+        "phase": 225
+      },
+      {
+        "step": 6,
+        "frequency": 21427,
+        "amplitude": -1.0,
+        "phase": 270
+      },
+      {
+        "step": 7,
+        "frequency": 22766,
+        "amplitude": -0.7071067811865477,
+        "phase": 315
+      }
+    ],
+    "signature": "0e395e9ba72ffae3",
+    "status": "ARMED",
+    "target": "LobsterBot-70"
+  }
+]

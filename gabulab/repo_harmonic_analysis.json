@@ -1,0 +1,85 @@
+{
+  "total": 6,
+  "clean": [
+    {
+      "name": "llama.cpp",
+      "path": "/home/mdupont/experiments/llama.cpp",
+      "harmonic": 7,
+      "hecke": "T_7",
+      "is_sus": false,
+      "stats": {
+        "total_files": 0,
+        "code_files": 0,
+        "size_mb": 0.0
+      }
+    },
+    {
+      "name": "ollama-emacs",
+      "path": "/home/mdupont/experiments/ollama-emacs",
+      "harmonic": 53,
+      "hecke": "T_53",
+      "is_sus": false,
+      "stats": {
+        "total_files": 8,
+        "code_files": 0,
+        "size_mb": 0.17759990692138672
+      }
+    },
+    {
+      "name": "llama-cpp-ocaml",
+      "path": "/home/mdupont/experiments/llama-cpp-ocaml",
+      "harmonic": 47,
+      "hecke": "T_47",
+      "is_sus": false,
+      "stats": {
+        "total_files": 0,
+        "code_files": 0,
+        "size_mb": 0.0
+      }
+    },
+    {
+      "name": "langchain",
+      "path": "/home/mdupont/experiments/langchain",
+      "harmonic": 19,
+      "hecke": "T_19",
+      "is_sus": false,
+      "stats": {
+        "total_files": 26740,
+        "code_files": 8573,
+        "size_mb": 489.8614912033081
+      }
+    }
+  ],
+  "sus": [
+    {
+      "name": "ollama",
+      "path": "/home/mdupont/experiments/ollama",
+      "harmonic": 95,
+      "hecke": "QUARANTINED",
+      "is_sus": true,
+      "stats": {
+        "total_files": 0,
+        "code_files": 0,
+        "size_mb": 0.0
+      }
+    },
+    {
+      "name": "llm-ollama.el",
+      "path": "/home/mdupont/experiments/llm-ollama.el",
+      "harmonic": 80,
+      "hecke": "QUARANTINED",
+      "is_sus": true,
+      "stats": {
+        "total_files": 0,
+        "code_files": 0,
+        "size_mb": 0.0
+      }
+    }
+  ],
+  "hecke_distribution": {
+    "T_7": 1,
+    "T_53": 1,
+    "T_47": 1,
+    "T_19": 1
+  }
+}
