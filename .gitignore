@@ -1,0 +1,7 @@
+target/
+*.o
+*.so
+*.a
+*.exe
+*.dll
+shard-knowledge
