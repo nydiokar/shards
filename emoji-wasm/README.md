@@ -48,4 +48,40 @@ open http://localhost:8000
 - **Emscripten**: LLVM → WASM compiler
 - **Nix**: Reproducible builds
 
+## English ↔ Emoji Translator
+
+Bidirectional translation between English and emojis.
+
+### CLI Usage
+
+```bash
+./translate.js magic energy hole
+# Output: 🔮 ⚡ 🕳️
+
+./translate.js hecke operator eternal proof qed
+# Output: 🔮 ⚙️ ♾️ ✅ ✅
+```
+
+### Browser Usage
+
+```bash
+python -m http.server 8000
+open http://localhost:8000/translator.html
+```
+
+### Examples
+
+- `magic energy hole` → `🔮 ⚡ 🕳️`
+- `hecke operator eternal` → `🔮 ⚙️ ♾️`
+- `proof verify qed` → `✅ ✔️ ✅`
+- `compile build deploy` → `⚙️ 🔨 🚀`
+
+### Dictionary (71 words)
+
+Core: magic, energy, hole, ikea, spiral, sparkle, music, lock, math, wave
+
+Math: hecke, maass, mock, shadow, harmonic, zen, proof, shard, jail, sus, prime, gandalf, eternal, ephemeral, ontology, operator, form, modular, automorphic, moonshine, monster, group, supersingular, elliptic, curve, invariant, coefficient, theorem, lemma, conjecture, axiom, qed, verify, witness, groth16
+
+Actions: compile, build, deploy, test, run
+
 🔮⚡✨

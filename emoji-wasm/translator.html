@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English ↔ Emoji Translator</title>
+    <style>
+        body { 
+            font-family: monospace; 
+            background: #000; 
+            color: #0f0; 
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 { text-align: center; }
+        .translator {
+            background: #111;
+            border: 2px solid #0f0;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            background: #000;
+            color: #0f0;
+            border: 1px solid #0f0;
+            font-family: monospace;
+            font-size: 1.2em;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #0f0;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px 5px;
+            font-weight: bold;
+        }
+        button:hover { background: #0ff; }
+        .output {
+            background: #001100;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #0f0;
+            font-size: 1.5em;
+            min-height: 50px;
+        }
+        .examples {
+            background: #110011;
+            border: 1px solid #f0f;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .examples h3 { color: #f0f; }
+    </style>
+</head>
+<body>
+    <h1>🔮⚡ English ↔ Emoji Translator</h1>
+    <p style="text-align: center;">CICADA-71 Constraint-Based Translation</p>
+    
+    <div class="translator">
+        <h2>English → Emoji</h2>
+        <textarea id="englishInput" placeholder="Type English words: magic energy hole"></textarea>
+        <button onclick="translateToEmoji()">Translate to Emoji →</button>
+        <div class="output" id="emojiOutput"></div>
+    </div>
+    
+    <div class="translator">
+        <h2>Emoji → English</h2>
+        <textarea id="emojiInput" placeholder="Paste emojis: 🔮⚡🕳️"></textarea>
+        <button onclick="translateToEnglish()">← Translate to English</button>
+        <div class="output" id="englishOutput"></div>
+    </div>
+    
+    <div class="examples">
+        <h3>Examples:</h3>
+        <button onclick="example1()">magic energy hole</button>
+        <button onclick="example2()">hecke operator eternal</button>
+        <button onclick="example3()">proof verify qed</button>
+        <button onclick="example4()">compile build deploy</button>
+    </div>
+    
+    <script src="translator.js"></script>
+    <script>
+        function translateToEmoji() {
+            const input = document.getElementById('englishInput').value;
+            const output = EmojiTranslator.englishToEmoji(input);
+            document.getElementById('emojiOutput').textContent = output;
+        }
+        
+        function translateToEnglish() {
+            const input = document.getElementById('emojiInput').value;
+            const output = EmojiTranslator.emojiToEnglish(input);
+            document.getElementById('englishOutput').textContent = output;
+        }
+        
+        function example1() {
+            document.getElementById('englishInput').value = 'magic energy hole';
+            translateToEmoji();
+        }
+        
+        function example2() {
+            document.getElementById('englishInput').value = 'hecke operator eternal';
+            translateToEmoji();
+        }
+        
+        function example3() {
+            document.getElementById('englishInput').value = 'proof verify qed';
+            translateToEmoji();
+        }
+        
+        function example4() {
+            document.getElementById('englishInput').value = 'compile build deploy';
+            translateToEmoji();
+        }
+    </script>
+</body>
+</html>
