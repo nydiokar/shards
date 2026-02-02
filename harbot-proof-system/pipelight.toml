@@ -1,0 +1,51 @@
+triggers:
+  - on_push
+
+pipelines:
+  full_proof_system:
+    name: "CICADA-71 Complete Proof System"
+    steps:
+      - name: "Build Rust Core"
+        commands:
+          - nix build .#harbot-core
+          - echo "✓ Rust core built"
+      
+      - name: "Build WASM"
+        commands:
+          - nix build .#harbot-wasm
+          - echo "✓ WASM built"
+      
+      - name: "Verify Lean4 Proofs"
+        commands:
+          - nix build .#harbot-lean
+          - echo "✓ Lean4 proofs verified"
+      
+      - name: "Verify Coq Proofs"
+        commands:
+          - nix build .#harbot-coq
+          - echo "✓ Coq proofs verified"
+      
+      - name: "Run Prolog Proofs"
+        commands:
+          - nix build .#harbot-prolog
+          - echo "✓ Prolog proofs verified"
+      
+      - name: "Solve MiniZinc Models"
+        commands:
+          - nix build .#harbot-minizinc
+          - echo "✓ MiniZinc models solved"
+      
+      - name: "Generate zkPerf Witnesses"
+        commands:
+          - nix run .#zkperf-witness
+          - echo "✓ zkPerf witnesses generated"
+      
+      - name: "Run Tests"
+        commands:
+          - cd rust-core && cargo test
+          - echo "✓ All tests passed"
+      
+      - name: "Generate Final Witness"
+        commands:
+          - python3 generate_composite_witness.py
+          - echo "✓ Composite witness generated"
