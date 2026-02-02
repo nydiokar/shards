@@ -18,7 +18,15 @@
           "zkp": {
             "base_price": 71000,
             "proof_value": 351,
-            "zkp_price": 71351,
+            "system_costs": {
+              "zkp_generation": 5,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 11,
+              "power": 4,
+              "total": 24
+            },
+            "zkp_price": 71375,
             "reasoning_hash": "68f79d494199bd67",
             "reasoning": "71 games for 71 shards, Monster Group complete coverage"
           },
@@ -30,7 +38,15 @@
           "zkp": {
             "base_price": 5900,
             "proof_value": 198,
-            "zkp_price": 6098,
+            "system_costs": {
+              "zkp_generation": 5,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 10,
+              "power": 4,
+              "total": 23
+            },
+            "zkp_price": 6121,
             "reasoning_hash": "1dbd3c7690d4af2e",
             "reasoning": "59 Eagle Crown prime, entertainment for long journey"
           },
@@ -42,7 +58,15 @@
           "zkp": {
             "base_price": 4700,
             "proof_value": 891,
-            "zkp_price": 5591,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 8,
+              "power": 4,
+              "total": 20
+            },
+            "zkp_price": 5611,
             "reasoning_hash": "bcf1d055375e36ab",
             "reasoning": "47 Monster Crown prime, harmonic resonance"
           },
@@ -54,7 +78,15 @@
           "zkp": {
             "base_price": 47000,
             "proof_value": 444,
-            "zkp_price": 47444,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 9,
+              "power": 4,
+              "total": 21
+            },
+            "zkp_price": 47465,
             "reasoning_hash": "d4483f80bd3a0c14",
             "reasoning": "47 simulations for Monster Crown shard training"
           },
@@ -66,14 +98,22 @@
           "zkp": {
             "base_price": 1968,
             "proof_value": 41,
-            "zkp_price": 2009,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 9,
+              "power": 4,
+              "total": 21
+            },
+            "zkp_price": 2030,
             "reasoning_hash": "1f4edf5e53d4ec09",
             "reasoning": "196883 Monster dimension, complete knowledge base"
           },
           "priority": 3
         }
       ],
-      "total": 132493
+      "total": 132602
     },
     {
       "category": "EDUCATION",
@@ -84,7 +124,15 @@
           "zkp": {
             "base_price": 7100,
             "proof_value": 458,
-            "zkp_price": 7558,
+            "system_costs": {
+              "zkp_generation": 5,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 10,
+              "power": 4,
+              "total": 23
+            },
+            "zkp_price": 7581,
             "reasoning_hash": "b960719a1d43d65a",
             "reasoning": "71 Rooster Crown, essential for understanding mission"
           },
@@ -96,7 +144,15 @@
           "zkp": {
             "base_price": 5900,
             "proof_value": 754,
-            "zkp_price": 6654,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 9,
+              "power": 4,
+              "total": 21
+            },
+            "zkp_price": 6675,
             "reasoning_hash": "4839baceee613f82",
             "reasoning": "59 Eagle Crown, navigate galactic coordinates"
           },
@@ -108,7 +164,15 @@
           "zkp": {
             "base_price": 710,
             "proof_value": 817,
-            "zkp_price": 1527,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 9,
+              "power": 4,
+              "total": 21
+            },
+            "zkp_price": 1548,
             "reasoning_hash": "10d611be62b7ba99",
             "reasoning": "71 manuals for 71 cabinets, maintenance critical"
           },
@@ -120,7 +184,15 @@
           "zkp": {
             "base_price": 4700,
             "proof_value": 403,
-            "zkp_price": 5103,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 8,
+              "power": 4,
+              "total": 20
+            },
+            "zkp_price": 5123,
             "reasoning_hash": "f534400ca17bdedb",
             "reasoning": "47 Monster Crown, find planets near caf\u00e9"
           },
@@ -132,14 +204,22 @@
           "zkp": {
             "base_price": 2300,
             "proof_value": 759,
-            "zkp_price": 3059,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 8,
+              "power": 4,
+              "total": 20
+            },
+            "zkp_price": 3079,
             "reasoning_hash": "dc33bd537997469f",
             "reasoning": "23 Paxos nodes, consensus-based management"
           },
           "priority": 2
         }
       ],
-      "total": 23901
+      "total": 24006
     },
     {
       "category": "REFUELING",
@@ -152,7 +232,15 @@
           "zkp": {
             "base_price": 23530,
             "proof_value": 903,
-            "zkp_price": 24433,
+            "system_costs": {
+              "zkp_generation": 7,
+              "encryption": 3,
+              "decryption": 3,
+              "transmission": 14,
+              "power": 6,
+              "total": 33
+            },
+            "zkp_price": 24466,
             "reasoning_hash": "de2222f951218eb7",
             "reasoning": "Stop 1 at 2353 ly, Hecke operator h23=7, fuel calculated from distance"
           }
@@ -165,7 +253,15 @@
           "zkp": {
             "base_price": 23530,
             "proof_value": 949,
-            "zkp_price": 24479,
+            "system_costs": {
+              "zkp_generation": 7,
+              "encryption": 3,
+              "decryption": 3,
+              "transmission": 14,
+              "power": 6,
+              "total": 33
+            },
+            "zkp_price": 24512,
             "reasoning_hash": "aec0f99cba2d0d6d",
             "reasoning": "Stop 2 at 4706 ly, Hecke operator h23=14, fuel calculated from distance"
           }
@@ -178,7 +274,15 @@
           "zkp": {
             "base_price": 23530,
             "proof_value": 307,
-            "zkp_price": 23837,
+            "system_costs": {
+              "zkp_generation": 7,
+              "encryption": 3,
+              "decryption": 3,
+              "transmission": 14,
+              "power": 6,
+              "total": 33
+            },
+            "zkp_price": 23870,
             "reasoning_hash": "c7e6690e75fb7bf3",
             "reasoning": "Stop 3 at 7059 ly, Hecke operator h23=21, fuel calculated from distance"
           }
@@ -191,7 +295,15 @@
           "zkp": {
             "base_price": 23530,
             "proof_value": 61,
-            "zkp_price": 23591,
+            "system_costs": {
+              "zkp_generation": 7,
+              "encryption": 3,
+              "decryption": 3,
+              "transmission": 14,
+              "power": 6,
+              "total": 33
+            },
+            "zkp_price": 23624,
             "reasoning_hash": "460e0941c2c96b65",
             "reasoning": "Stop 4 at 9412 ly, Hecke operator h23=5, fuel calculated from distance"
           }
@@ -204,7 +316,15 @@
           "zkp": {
             "base_price": 23530,
             "proof_value": 891,
-            "zkp_price": 24421,
+            "system_costs": {
+              "zkp_generation": 7,
+              "encryption": 3,
+              "decryption": 3,
+              "transmission": 14,
+              "power": 6,
+              "total": 33
+            },
+            "zkp_price": 24454,
             "reasoning_hash": "06c3ec00ade24533",
             "reasoning": "Stop 5 at 11765 ly, Hecke operator h23=12, fuel calculated from distance"
           }
@@ -217,7 +337,15 @@
           "zkp": {
             "base_price": 23530,
             "proof_value": 423,
-            "zkp_price": 23953,
+            "system_costs": {
+              "zkp_generation": 7,
+              "encryption": 3,
+              "decryption": 3,
+              "transmission": 14,
+              "power": 6,
+              "total": 33
+            },
+            "zkp_price": 23986,
             "reasoning_hash": "017f6f2a172afe67",
             "reasoning": "Stop 6 at 14118 ly, Hecke operator h23=19, fuel calculated from distance"
           }
@@ -230,14 +358,22 @@
           "zkp": {
             "base_price": 23530,
             "proof_value": 340,
-            "zkp_price": 23870,
+            "system_costs": {
+              "zkp_generation": 7,
+              "encryption": 3,
+              "decryption": 3,
+              "transmission": 14,
+              "power": 6,
+              "total": 33
+            },
+            "zkp_price": 23903,
             "reasoning_hash": "4ddee8f71e3976fc",
             "reasoning": "Stop 7 at 16471 ly, Hecke operator h23=3, fuel calculated from distance"
           }
         }
       ],
       "total_fuel": 1647100,
-      "total_cost": 168584
+      "total_cost": 168815
     },
     {
       "category": "SUPPLIES",
@@ -248,7 +384,15 @@
           "zkp": {
             "base_price": 1647,
             "proof_value": 640,
-            "zkp_price": 2287,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 9,
+              "power": 4,
+              "total": 21
+            },
+            "zkp_price": 2308,
             "reasoning_hash": "1bb7a860eba67080",
             "reasoning": "164730 years travel time, 1 unit per year proven"
           },
@@ -260,7 +404,15 @@
           "zkp": {
             "base_price": 16473,
             "proof_value": 757,
-            "zkp_price": 17230,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 8,
+              "power": 4,
+              "total": 20
+            },
+            "zkp_price": 17250,
             "reasoning_hash": "08c45a55b417926d",
             "reasoning": "100 liters per year, 164730 years proven"
           },
@@ -272,7 +424,15 @@
           "zkp": {
             "base_price": 1647,
             "proof_value": 545,
-            "zkp_price": 2192,
+            "system_costs": {
+              "zkp_generation": 3,
+              "encryption": 1,
+              "decryption": 1,
+              "transmission": 7,
+              "power": 2,
+              "total": 14
+            },
+            "zkp_price": 2206,
             "reasoning_hash": "5a75d57b29d32a99",
             "reasoning": "1 unit per year, life support proven"
           },
@@ -284,7 +444,15 @@
           "zkp": {
             "base_price": 7100,
             "proof_value": 554,
-            "zkp_price": 7654,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 8,
+              "power": 4,
+              "total": 20
+            },
+            "zkp_price": 7674,
             "reasoning_hash": "28c2e27ff0b970d2",
             "reasoning": "71 agent shards, medical coverage proven"
           },
@@ -296,14 +464,22 @@
           "zkp": {
             "base_price": 7100,
             "proof_value": 446,
-            "zkp_price": 7546,
+            "system_costs": {
+              "zkp_generation": 3,
+              "encryption": 1,
+              "decryption": 1,
+              "transmission": 6,
+              "power": 2,
+              "total": 13
+            },
+            "zkp_price": 7559,
             "reasoning_hash": "25dbc62aea1f97fe",
             "reasoning": "71 cabinets, redundancy proven"
           },
           "priority": 2
         }
       ],
-      "total": 36909
+      "total": 36997
     },
     {
       "category": "ARCADE_HARDWARE",
@@ -314,7 +490,15 @@
           "zkp": {
             "base_price": 710000,
             "proof_value": 803,
-            "zkp_price": 710803,
+            "system_costs": {
+              "zkp_generation": 4,
+              "encryption": 2,
+              "decryption": 2,
+              "transmission": 9,
+              "power": 4,
+              "total": 21
+            },
+            "zkp_price": 710824,
             "reasoning_hash": "ce1d8e3bf314db23",
             "reasoning": "71 shards, complete Monster Group arcade proven"
           },
@@ -326,7 +510,15 @@
           "zkp": {
             "base_price": 71000,
             "proof_value": 395,
-            "zkp_price": 71395,
+            "system_costs": {
+              "zkp_generation": 2,
+              "encryption": 1,
+              "decryption": 1,
+              "transmission": 5,
+              "power": 2,
+              "total": 11
+            },
+            "zkp_price": 71406,
             "reasoning_hash": "70a46785641df44b",
             "reasoning": "1 per cabinet, display proven"
           },
@@ -338,7 +530,15 @@
           "zkp": {
             "base_price": 7100,
             "proof_value": 844,
-            "zkp_price": 7944,
+            "system_costs": {
+              "zkp_generation": 3,
+              "encryption": 1,
+              "decryption": 1,
+              "transmission": 6,
+              "power": 2,
+              "total": 13
+            },
+            "zkp_price": 7957,
             "reasoning_hash": "7a82bea325565074",
             "reasoning": "1 ROM per cabinet, software proven"
           },
@@ -350,7 +550,15 @@
           "zkp": {
             "base_price": 7100,
             "proof_value": 847,
-            "zkp_price": 7947,
+            "system_costs": {
+              "zkp_generation": 3,
+              "encryption": 1,
+              "decryption": 1,
+              "transmission": 6,
+              "power": 2,
+              "total": 13
+            },
+            "zkp_price": 7960,
             "reasoning_hash": "0b89a782cc5b782f",
             "reasoning": "1 PSU per cabinet, power proven"
           },
@@ -362,7 +570,15 @@
           "zkp": {
             "base_price": 1420,
             "proof_value": 676,
-            "zkp_price": 2096,
+            "system_costs": {
+              "zkp_generation": 3,
+              "encryption": 1,
+              "decryption": 1,
+              "transmission": 6,
+              "power": 2,
+              "total": 13
+            },
+            "zkp_price": 2109,
             "reasoning_hash": "d748926f9398b304",
             "reasoning": "2 per cabinet, 71*2=142 proven"
           },
@@ -374,17 +590,25 @@
           "zkp": {
             "base_price": 568,
             "proof_value": 985,
-            "zkp_price": 1553,
+            "system_costs": {
+              "zkp_generation": 3,
+              "encryption": 1,
+              "decryption": 1,
+              "transmission": 6,
+              "power": 2,
+              "total": 13
+            },
+            "zkp_price": 1566,
             "reasoning_hash": "e7ff6b3fbad989f9",
             "reasoning": "8 per cabinet, 71*8=568 proven"
           },
           "priority": 2
         }
       ],
-      "total": 801738
+      "total": 801822
     }
   ],
-  "grand_total": 1163625,
+  "grand_total": 1164242,
   "currency": "MMC (Metameme Coin)",
   "zkp_note": "All prices include ZK proof of reasoning. Price IS the proof."
 }

@@ -10,7 +10,7 @@ import json
 CROWN_PRIMES = [47, 59, 71]
 
 def calculate_zkp_price(base_price: int, reasoning: str) -> dict:
-    """Calculate price with ZK proof of reasoning embedded"""
+    """Calculate price with ZK proof of reasoning embedded + system costs"""
     import hashlib
     
     # Hash the reasoning
@@ -19,12 +19,35 @@ def calculate_zkp_price(base_price: int, reasoning: str) -> dict:
     # Extract proof components from hash (first 16 chars)
     proof_value = int(reasoning_hash[:16], 16) % 1000
     
-    # Price IS the proof
-    zkp_price = base_price + proof_value
+    # System costs
+    zkp_generation_cost = len(reasoning) // 10  # 1 MMC per 10 chars
+    encryption_cost = len(reasoning) // 20      # 1 MMC per 20 chars
+    decryption_cost = len(reasoning) // 20      # Same as encryption
+    transmission_cost = len(reasoning) // 5     # 1 MMC per 5 chars (bandwidth)
+    power_cost = (zkp_generation_cost + encryption_cost + decryption_cost) // 2  # Power for compute
+    
+    total_system_cost = (
+        zkp_generation_cost +
+        encryption_cost +
+        decryption_cost +
+        transmission_cost +
+        power_cost
+    )
+    
+    # Price IS the proof + system costs
+    zkp_price = base_price + proof_value + total_system_cost
     
     return {
         "base_price": base_price,
         "proof_value": proof_value,
+        "system_costs": {
+            "zkp_generation": zkp_generation_cost,
+            "encryption": encryption_cost,
+            "decryption": decryption_cost,
+            "transmission": transmission_cost,
+            "power": power_cost,
+            "total": total_system_cost
+        },
         "zkp_price": zkp_price,
         "reasoning_hash": reasoning_hash[:16],
         "reasoning": reasoning
@@ -285,14 +308,15 @@ def print_order_book(order_book):
                 priority = "⭐" * item["priority"]
                 zkp = item["zkp"]
                 print(f"  {item['name']:30s} x{item['quantity']:8,}")
-                print(f"    Base: {zkp['base_price']:8,} + Proof: {zkp['proof_value']:4,} = {zkp['zkp_price']:8,} MMC {priority}")
-                print(f"    Reasoning: {zkp['reasoning'][:60]}...")
+                print(f"    Base: {zkp['base_price']:8,} + Proof: {zkp['proof_value']:4,} + System: {zkp['system_costs']['total']:4,} = {zkp['zkp_price']:8,} MMC {priority}")
+                print(f"    System: ZKP={zkp['system_costs']['zkp_generation']}, Enc={zkp['system_costs']['encryption']}, Dec={zkp['system_costs']['decryption']}, TX={zkp['system_costs']['transmission']}, Pwr={zkp['system_costs']['power']}")
+                print(f"    Reasoning: {zkp['reasoning'][:50]}...")
             print(f"  {'SUBTOTAL':30s} {'':10s} = {po['total']:8,} MMC")
         elif "stops" in po:
             for stop in po["stops"]:
                 zkp = stop["zkp"]
                 print(f"  Stop {stop['stop']}: {stop['location']:20s} {stop['fuel']:8,} units")
-                print(f"    Base: {zkp['base_price']:8,} + Proof: {zkp['proof_value']:4,} = {zkp['zkp_price']:8,} MMC")
+                print(f"    Base: {zkp['base_price']:8,} + Proof: {zkp['proof_value']:4,} + System: {zkp['system_costs']['total']:4,} = {zkp['zkp_price']:8,} MMC")
             print(f"  {'TOTAL FUEL':30s} {po['total_fuel']:8,} units")
             print(f"  {'TOTAL COST':30s} {'':10s} = {po['total_cost']:8,} MMC")
         
