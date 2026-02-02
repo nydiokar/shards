@@ -127,6 +127,16 @@
         const p2p = new P2PGossip();
         await p2p.init();
         
+        // Check for gist parameter in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const gistUrl = urlParams.get('gist');
+        
+        if (gistUrl) {
+            document.getElementById('gistUrl').value = gistUrl;
+            p2p.addMessage(`🔗 Auto-loading gist from URL...`);
+            setTimeout(() => window.loadGist(), 1000);
+        }
+        
         // Make available globally
         window.p2p = p2p;
         window.shareState = () => {

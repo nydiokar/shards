@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TradeWars P2P - Auto Load Gist</title>
+    <script>
+        // Auto-load gist on page load
+        const GIST_URL = 'https://gist.github.com/jmikedupont2/0855d96fd1ab45d69b36e1223590e0f6';
+        
+        window.onload = () => {
+            // Redirect to p2p_gossip.html with gist parameter
+            window.location.href = `p2p_gossip.html?gist=${encodeURIComponent(GIST_URL)}`;
+        };
+    </script>
+</head>
+<body>
+    <h1>🔮⚡ Loading TradeWars with Gist... 📻🦞</h1>
+    <p>Redirecting to P2P gossip with auto-loaded gist state...</p>
+</body>
+</html>
