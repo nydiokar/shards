@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "🔷 Shard SimpleExpr → Monster via Crown Primes"
-echo "=============================================="
+echo "🔷 Shard File → Monster via Crown Primes"
+echo "========================================="
 echo
 
-# Shard the Lean4 proof file
-FILE="SimpleExprMonster.lean"
+# Get file from argument or default
+FILE="${1:-SimpleExprMonster.lean}"
 
 if [ ! -f "$FILE" ]; then
     echo "Error: $FILE not found"
