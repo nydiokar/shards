@@ -39,11 +39,28 @@ array[0..9] of string: emoji = array1d(0..9, ["☕", "🕳️", "🪟", "👁️
 array[0..9] of string: name = array1d(0..9, [
   "Real", "Cusp", "Quat", "Oct", "Clif", "Spin", "Vec", "Tens", "Bott", "Mons"
 ]);
+array[0..9] of string: algebra = array1d(0..9, [
+  "ℝ", "ℂ", "ℍ", "𝕆", "Cl", "S", "V", "T", "B₈", "M"
+]);
+array[0..9] of string: concept = array1d(0..9, [
+  "Bootstrap", "C(C)=C", "Spacetime", "Arrows", "Symmetry", 
+  "zkPerf", "Coords", "Compile", "Period-8", "Complete"
+]);
+array[0..9] of string: operation = array1d(0..9, [
+  "Init", "Self-Ref", "Transform", "Flow", "Classify",
+  "Prove", "Locate", "Build", "Cycle", "Integrate"
+]);
 
 output [
   "🌀 BIT FLOW MATRIX (10-Fold Way)\n",
   "=================================\n\n",
-  "ADJACENCY MATRIX (i→j):\n",
+  "FOLD LABELS:\n"
+] ++ [
+  show(i) ++ ". " ++ emoji[i] ++ " " ++ name[i] ++ " (" ++ algebra[i] ++ ") │ " ++ 
+  concept[i] ++ " │ " ++ operation[i] ++ "\n"
+  | i in 0..9
+] ++ [
+  "\nADJACENCY MATRIX (i→j):\n",
   "    "
 ] ++ [
   emoji[j] ++ " "
@@ -54,17 +71,17 @@ output [
   | i in 0..9
 ] ++ [
   "\nKEY FLOWS:\n",
-  "  ☕→🕳️  Bootstrap → Cusp\n",
+  "  ☕→🕳️  Bootstrap → Cusp (ℝ → ℂ)\n",
   "  🕳️→*  Cusp → Everything (self-reference spreads)\n",
   "  *→🕳️  Everything → Cusp (all flows to center)\n",
-  "  🌀→☕  Bott → Real (period-8 cycle)\n",
-  "  ⚡→*  Monster → All (complete)\n",
+  "  🌀→☕  Bott → Real (B₈ → ℝ, period-8 cycle)\n",
+  "  ⚡→*  Monster → All (M → *, complete)\n",
   "\nTOTAL ARROWS: ", show(total_flow), "\n",
   "\nBIT USAGE:\n"
 ] ++ [
-  "  " ++ emoji[i] ++ " " ++ name[i] ++ ": " ++ 
+  "  " ++ emoji[i] ++ " " ++ name[i] ++ " (" ++ algebra[i] ++ "): " ++ 
   show(lines[i]) ++ "L × 150 = " ++ 
-  show(lines[i] * 150) ++ " chars\n"
+  show(lines[i] * 150) ++ " chars │ " ++ operation[i] ++ "\n"
   | i in 0..9
 ] ++ [
   "\n☕🕳️🪟👁️👹🦅🐓🔄🌀⚡\n"
