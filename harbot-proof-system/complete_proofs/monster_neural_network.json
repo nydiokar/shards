@@ -1,0 +1,261 @@
+{
+  "architecture": [
+    {
+      "layer": 0,
+      "prime": 2,
+      "power": 46,
+      "size": 92,
+      "neurons": 92,
+      "activation": "relu",
+      "sylow_forms": 70368744177664
+    },
+    {
+      "layer": 1,
+      "prime": 3,
+      "power": 20,
+      "size": 60,
+      "neurons": 60,
+      "activation": "relu",
+      "sylow_forms": 3486784401
+    },
+    {
+      "layer": 2,
+      "prime": 5,
+      "power": 9,
+      "size": 45,
+      "neurons": 45,
+      "activation": "relu",
+      "sylow_forms": 1953125
+    },
+    {
+      "layer": 3,
+      "prime": 7,
+      "power": 6,
+      "size": 42,
+      "neurons": 42,
+      "activation": "relu",
+      "sylow_forms": 117649
+    },
+    {
+      "layer": 4,
+      "prime": 11,
+      "power": 2,
+      "size": 22,
+      "neurons": 22,
+      "activation": "relu",
+      "sylow_forms": 121
+    },
+    {
+      "layer": 5,
+      "prime": 13,
+      "power": 3,
+      "size": 39,
+      "neurons": 39,
+      "activation": "relu",
+      "sylow_forms": 2197
+    },
+    {
+      "layer": 6,
+      "prime": 17,
+      "power": 1,
+      "size": 17,
+      "neurons": 17,
+      "activation": "relu",
+      "sylow_forms": 17
+    },
+    {
+      "layer": 7,
+      "prime": 19,
+      "power": 1,
+      "size": 19,
+      "neurons": 19,
+      "activation": "relu",
+      "sylow_forms": 19
+    },
+    {
+      "layer": 8,
+      "prime": 23,
+      "power": 1,
+      "size": 23,
+      "neurons": 23,
+      "activation": "relu",
+      "sylow_forms": 23
+    },
+    {
+      "layer": 9,
+      "prime": 29,
+      "power": 1,
+      "size": 29,
+      "neurons": 29,
+      "activation": "relu",
+      "sylow_forms": 29
+    },
+    {
+      "layer": 10,
+      "prime": 31,
+      "power": 1,
+      "size": 31,
+      "neurons": 31,
+      "activation": "relu",
+      "sylow_forms": 31
+    },
+    {
+      "layer": 11,
+      "prime": 41,
+      "power": 1,
+      "size": 41,
+      "neurons": 41,
+      "activation": "relu",
+      "sylow_forms": 41
+    },
+    {
+      "layer": 12,
+      "prime": 47,
+      "power": 1,
+      "size": 47,
+      "neurons": 47,
+      "activation": "relu",
+      "sylow_forms": 47
+    },
+    {
+      "layer": 13,
+      "prime": 59,
+      "power": 1,
+      "size": 59,
+      "neurons": 59,
+      "activation": "relu",
+      "sylow_forms": 59
+    },
+    {
+      "layer": 14,
+      "prime": 71,
+      "power": 1,
+      "size": 71,
+      "neurons": 71,
+      "activation": "softmax",
+      "sylow_forms": 71
+    }
+  ],
+  "connections": [
+    {
+      "from_layer": 0,
+      "to_layer": 1,
+      "connections": 5520,
+      "strength": 0.3333333333333333,
+      "weight_init": "glorot_uniform_2_3"
+    },
+    {
+      "from_layer": 1,
+      "to_layer": 2,
+      "connections": 2700,
+      "strength": 0.2,
+      "weight_init": "glorot_uniform_3_5"
+    },
+    {
+      "from_layer": 2,
+      "to_layer": 3,
+      "connections": 1890,
+      "strength": 0.14285714285714285,
+      "weight_init": "glorot_uniform_5_7"
+    },
+    {
+      "from_layer": 3,
+      "to_layer": 4,
+      "connections": 924,
+      "strength": 0.09090909090909091,
+      "weight_init": "glorot_uniform_7_11"
+    },
+    {
+      "from_layer": 4,
+      "to_layer": 5,
+      "connections": 858,
+      "strength": 0.07692307692307693,
+      "weight_init": "glorot_uniform_11_13"
+    },
+    {
+      "from_layer": 5,
+      "to_layer": 6,
+      "connections": 663,
+      "strength": 0.058823529411764705,
+      "weight_init": "glorot_uniform_13_17"
+    },
+    {
+      "from_layer": 6,
+      "to_layer": 7,
+      "connections": 323,
+      "strength": 0.05263157894736842,
+      "weight_init": "glorot_uniform_17_19"
+    },
+    {
+      "from_layer": 7,
+      "to_layer": 8,
+      "connections": 437,
+      "strength": 0.043478260869565216,
+      "weight_init": "glorot_uniform_19_23"
+    },
+    {
+      "from_layer": 8,
+      "to_layer": 9,
+      "connections": 667,
+      "strength": 0.034482758620689655,
+      "weight_init": "glorot_uniform_23_29"
+    },
+    {
+      "from_layer": 9,
+      "to_layer": 10,
+      "connections": 899,
+      "strength": 0.03225806451612903,
+      "weight_init": "glorot_uniform_29_31"
+    },
+    {
+      "from_layer": 10,
+      "to_layer": 11,
+      "connections": 1271,
+      "strength": 0.024390243902439025,
+      "weight_init": "glorot_uniform_31_41"
+    },
+    {
+      "from_layer": 11,
+      "to_layer": 12,
+      "connections": 1927,
+      "strength": 0.02127659574468085,
+      "weight_init": "glorot_uniform_41_47"
+    },
+    {
+      "from_layer": 12,
+      "to_layer": 13,
+      "connections": 2773,
+      "strength": 0.01694915254237288,
+      "weight_init": "glorot_uniform_47_59"
+    },
+    {
+      "from_layer": 13,
+      "to_layer": 14,
+      "connections": 4189,
+      "strength": 0.014084507042253521,
+      "weight_init": "glorot_uniform_59_71"
+    }
+  ],
+  "strange_loop": {
+    "strange_loop": {
+      "source": 232,
+      "target": 323,
+      "source_layers": [
+        0,
+        9
+      ],
+      "target_layers": [
+        6,
+        7
+      ]
+    },
+    "path": "Layer [0, 9] \u2192 Layer [6, 7]",
+    "interpretation": "Strange loop maps to skip connection in network"
+  },
+  "statistics": {
+    "layers": 15,
+    "neurons": 637,
+    "connections": 25041,
+    "sylow_forms": 70372233035494
+  }
+}
