@@ -1,0 +1,107 @@
+{
+  "cafe_location": {
+    "hip_id": "H|",
+    "ra": 0.05331696,
+    "dec": 38.30408636,
+    "distance_from_sgr_a": 10000,
+    "scores": {
+      "performance": 49.999999996749814,
+      "view": 100,
+      "safety": 100,
+      "access": 50,
+      "total": 299.9999999967498,
+      "time_dilation": 1.0000000000650038
+    }
+  },
+  "nearest_exoplanet": {
+    "system": "Qatar-3",
+    "ra": 359.152,
+    "dec": 36.21297222222223,
+    "distance_ly": 2449.43156,
+    "planets": [
+      {
+        "name": "Qatar-3 b",
+        "mass": "4.31",
+        "radius": "1.096"
+      }
+    ],
+    "angular_distance": 2.2107049264028182
+  },
+  "top_5": [
+    {
+      "system": "Qatar-3",
+      "ra": 359.152,
+      "dec": 36.21297222222223,
+      "distance_ly": 2449.43156,
+      "planets": [
+        {
+          "name": "Qatar-3 b",
+          "mass": "4.31",
+          "radius": "1.096"
+        }
+      ],
+      "angular_distance": 2.2107049264028182
+    },
+    {
+      "system": "WASP-1",
+      "ra": 5.166666666666667,
+      "dec": 31.990000000000002,
+      "distance_ly": 1239.3927999999999,
+      "planets": [
+        {
+          "name": "WASP-1 b",
+          "mass": "0.854",
+          "radius": "1.483"
+        }
+      ],
+      "angular_distance": 7.56975256122269
+    },
+    {
+      "system": "HAT-P-40",
+      "ra": 335.51286458333334,
+      "dec": 45.45736552777778,
+      "distance_ly": 1634.04156,
+      "planets": [
+        {
+          "name": "HAT-P-40 b",
+          "mass": "0.615",
+          "radius": "1.730"
+        }
+      ],
+      "angular_distance": 19.525273720587442
+    },
+    {
+      "system": "HD 219828",
+      "ra": 349.694725,
+      "dec": 18.645726416666665,
+      "distance_ly": 232.875384,
+      "planets": [
+        {
+          "name": "HD 219828 b",
+          "mass": "0.06607",
+          "radius": "Unknown"
+        },
+        {
+          "name": "HD 219828 c",
+          "mass": "15.1",
+          "radius": "Unknown"
+        }
+      ],
+      "angular_distance": 21.627956440701606
+    },
+    {
+      "system": "BD+55 362",
+      "ra": 23.961595833333334,
+      "dec": 56.69915908333333,
+      "distance_ly": 171.45923073199998,
+      "planets": [
+        {
+          "name": "BD+55 362 b",
+          "mass": "0.72000",
+          "radius": "1.250"
+        }
+      ],
+      "angular_distance": 24.225912697188683
+    }
+  ]
+}
