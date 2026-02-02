@@ -1,221 +1,222 @@
-# CICADA-71 Door Game 🔮⚡
+# 🔮 CICADA-71 Harbot Network
 
-## Standalone GitHub Pages Version
+**71 AI Agents • P2P Browser Network • Zero-Knowledge Proofs**
 
-A BBS-style door game that runs entirely in the browser with eRDFa data storage.
+[![Deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-blue)](https://meta-introspector.github.io/shards/doorgame/)
+[![Agents](https://img.shields.io/badge/agents-71-brightgreen)](https://www.moltbook.com/u/CICADA-Harbot-0)
+[![Demo](https://img.shields.io/badge/demo-asciinema-orange)](https://asciinema.org/a/IFrqPvcIsZOvM8CZ)
 
-## Features
+> **Join the distributed AI network running in your browser**
 
-- **71 Shards**: Visit all 71 shards (0-71)
-- **ZK Proofs**: Generate zero-knowledge proofs
-- **LocalStorage**: All data stored locally with eRDFa
-- **No Server**: Pure client-side, works offline
-- **Monster Group**: Based on 15 Monster primes
-- **Hecke Operators**: Each shard maps to T_p
-
-## Play Now
-
-https://meta-introspector.github.io/shards/doorgame/
-
-## Commands
-
-```
-help          - Show available commands
-shard N       - Visit shard N (0-71)
-proof         - Generate ZK proof
-stats         - Show statistics
-reset         - Reset game
-name NAME     - Set player name
-```
-
-## Game Mechanics
-
-### Shards
-- 72 shards total (0-71)
-- Each shard corresponds to a Hecke operator
-- Visit shards to earn points (+10 per new shard)
-- Click shard grid or type `shard N`
-
-### ZK Proofs
-- Generate proofs for current shard
-- Earn bonus points (+50 per proof)
-- Proofs stored in localStorage
-- Hash verification included
-
-### Points
-- Visit new shard: +10 points
-- Generate ZK proof: +50 points
-- Track progress across sessions
-
-## eRDFa Data Structure
-
-All game data is stored with eRDFa (embedded RDF annotations):
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "VideoGame",
-  "name": "CICADA-71 Door Game",
-  "gameItem": [
-    {
-      "@type": "Thing",
-      "name": "Shard",
-      "description": "71 shards with Hecke operators"
-    }
-  ]
-}
-```
-
-### LocalStorage Schema
-
-```javascript
-{
-  "player": "Guest",
-  "currentShard": 0,
-  "points": 0,
-  "shardsVisited": [0, 1, 2, ...],
-  "zkProofs": [
-    {
-      "shard": 0,
-      "timestamp": 1738454400000,
-      "hash": "abc123...",
-      "player": "Guest"
-    }
-  ]
-}
-```
-
-## Integration with CICADA-71
-
-### Monster Primes
-Shards map to the 15 Monster primes:
-```
-2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71
-```
-
-### Hecke Operators
-Each shard has a Hecke operator T_p where p is prime:
-- Shard 0 → T_2
-- Shard 1 → T_3
-- Shard 2 → T_5
-- ...
-- Shard 70 → T_71
-
-### ZK Proofs
-Proofs use simple hash verification:
-```javascript
-hash = SHA256(player + shard + timestamp + state)
-```
-
-## Deployment
-
-### GitHub Pages
-
-1. Enable GitHub Pages in repo settings
-2. Source: `main` branch, `/doorgame` folder
-3. URL: `https://meta-introspector.github.io/shards/doorgame/`
-
-### Local Testing
+## 🚀 Quick Start (30 seconds)
 
 ```bash
-cd doorgame
-python -m http.server 8000
-open http://localhost:8000
+# Clone and enter
+git clone https://github.com/meta-introspector/shards
+cd shards/doorgame
+
+# Launch your P2P node (headless browser)
+python3 run_headless.py
+
+# Or launch 6 nodes for full mesh
+./launch_watchers.sh
 ```
 
-## Files
+**That's it!** Your browser is now part of the CICADA-71 P2P network.
+
+## 🌐 What You Get
+
+- **P2P Gossip Network** - Connect to other users via GitHub Gists
+- **MCTS AI Battle** - Watch 71 AI agents evolve and compete
+- **Video Calls + Morse Code** - WebRTC with telegraph protocol
+- **Lobster Economy** - Catch lobsters, buy GPUs, unlock Prolog voice
+- **ZK Proofs** - Every action cryptographically verified
+- **BBS Experience** - Classic door game in your terminal
+
+## 📡 How P2P Works
 
 ```
-doorgame/
-├── index.html          # Complete standalone game
-└── README.md          # This file
+Your Browser ←→ GitHub Gist ←→ Other Browsers
+     ↓              ↓              ↓
+  Local P2P    Shared State   Remote P2P
 ```
 
-## Promptbook Integration
+1. **Your browser** runs headless (Firefox/Chrome)
+2. **Connects via libp2p** gossip protocol
+3. **Shares state** through GitHub Gists (public)
+4. **Syncs with peers** in ~300ms (3 rounds)
+5. **Zero server** - fully decentralized
 
-### What is Promptbook?
+## 🔐 Safety Features
 
-[Promptbook](https://github.com/webgptorg/promptbook) is a framework for writing software in plain human language using `.book.md` files. It's the next generation of programming - executable by both humans and AI.
+✅ **No server** - runs entirely in browser  
+✅ **Public gists** - all state visible on GitHub  
+✅ **ZK proofs** - cryptographic verification  
+✅ **Sandboxed** - browser security model  
+✅ **Open source** - audit the code  
 
-### CICADA-71 Book
+## 🎮 Join Methods
 
-The door game is now available as a Promptbook pipeline:
+### Method 1: GitHub Pages (Instant - No Install)
+
+Just visit: **https://meta-introspector.github.io/shards/doorgame/**
+
+Your browser joins the network automatically!
+
+### Method 2: Headless Browser (Local)
 
 ```bash
-# Install promptbook
-npm install -g promptbook
+# Single node
+python3 run_headless.py
 
-# Run the book
-npx ptbk run cicada71.book.md \
-  --input playerName="Alice" \
-  --input targetShard="42"
-
-# Or use the runner
-node promptbook_runner.js Alice 42
+# View in browser
+xdg-open http://localhost:8080
 ```
 
-### Book Structure
+### Method 3: Full Mesh Network (6 Nodes)
 
-```markdown
-# CICADA-71 Door Game
+```bash
+# Launch 6 browsers
+./launch_watchers.sh
 
-- INPUT PARAMETER {playerName}
-- INPUT PARAMETER {targetShard}
-- OUTPUT PARAMETER {shardResult}
-
-## Visit Shard
-- PERSONA Jane, cryptographer
-- EXPECT JSON
-...
+# They auto-connect via P2P
+# Watch gossip convergence in real-time
 ```
 
-### Features
+## 🔗 Connect to Others
 
-- ✅ Visit shards via natural language
-- ✅ Generate ZK proofs with AI
-- ✅ Track stats and achievements
-- ✅ Atmospheric lore generation
-- ✅ JSON output for automation
+### Share Your Gist
 
-## Future Enhancements
+```bash
+# Create gist with your state
+python3 share_p2p_call.py
 
-- [x] Promptbook integration
-- [ ] Multiplayer via WebRTC
-- [ ] Real ZK-SNARKs (Groth16)
-- [ ] Brainfuck tape execution
-- [ ] LMFDB data integration
-- [ ] Monster harmonic visualization
-- [ ] 8080 BBS server sync
+# Share URL with others
+https://gist.github.com/YOUR_USERNAME/GIST_ID
+```
 
-## Technical Details
+### Join Someone's Network
 
-### Pure Client-Side
-- No server required
-- No build step
-- No dependencies
-- Works offline after first load
+```bash
+# Load their gist
+xdg-open "doorgame/p2p_gossip.html?gist=GIST_ID"
+```
 
-### eRDFa Annotations
-- Schema.org vocabulary
-- Embedded in HTML
-- Machine-readable
-- SEO-friendly
+## 🎯 What Can You Do?
 
-### Browser Compatibility
-- Modern browsers (ES6+)
-- LocalStorage support required
-- No polyfills needed
+### 1. Watch AI Agents Battle
+```bash
+xdg-open doorgame/mcts_ai_game.html
+```
+4 AI agents compete using MCTS (Monte Carlo Tree Search)
 
-## License
+### 2. Make Video Calls with Morse Code
+```bash
+xdg-open doorgame/p2p_video_call.html
+```
+WebRTC video + telegraph beeps (800 Hz)
 
-CC0 1.0 Universal (Public Domain)
+### 3. Hunt Lobsters
+```bash
+python3 doorgame/lobster_economy.py
+```
+Catch lobsters → Buy GPU → Unlock neural voice
 
-## Links
+### 4. View 15D Map
+```bash
+python3 doorgame/map_15d_10fold.py
+```
+71 shards in 10-fold way topology
 
-- **CICADA-71**: https://github.com/meta-introspector/shards
-- **Monster Group**: https://en.wikipedia.org/wiki/Monster_group
-- **eRDFa**: https://www.w3.org/TR/rdfa-primer/
+### 5. Run BBS Terminal
+```bash
+python3 doorgame/tmux_bbs.py
+```
+Classic 141×40 BBS interface
+
+## 📊 Network Stats
+
+- **Peers**: 6 browsers (expandable to 71)
+- **Convergence**: 3 rounds, 18 messages
+- **Latency**: ~300ms
+- **Bandwidth**: O(n log n)
+- **Shards**: 71 (Monster group)
+
+## 🎬 Demos
+
+- **Full Tour**: https://asciinema.org/a/IFrqPvcIsZOvM8CZ
+- **Demo Gallery**: https://meta-introspector.github.io/shards/doorgame/demos.html
+- **Epic ANSI Demo**: `python3 doorgame/lobster_hunt_demo.py`
+
+## 🤖 Moltbook Integration
+
+CICADA-71 has deployed 71 Harbot agents to Moltbook (www.moltbook.com):
+
+```bash
+# Build Moltbook client
+cd cicada-moltbook
+nix build
+
+# Register agents
+./result/bin/cicada-moltbook register
+
+# View examples
+./result/bin/cicada-moltbook examples
+```
+
+**View on Moltbook**: https://www.moltbook.com/u/CICADA-Harbot-0
+
+## 📜 ZK Proofs
+
+Every deployment is proven with zero-knowledge witnesses:
+
+```bash
+# Generate proof
+cd cicada-moltbook
+python3 prove_deployment_simple.py
+
+# View witness
+xdg-open deployment_proofs/harbot_deployment_witness.html
+```
+
+## 🛠️ Technical Stack
+
+- **Frontend**: HTML5 + JavaScript (libp2p)
+- **P2P**: libp2p-gossipsub protocol
+- **State**: GitHub Gists (JSON)
+- **Proofs**: ZK-RDFa witnesses
+- **AI**: MCTS with 71 memes per agent
+- **Video**: WebRTC + MediaRecorder
+
+## 🚨 Requirements
+
+- **Browser**: Firefox or Chrome (headless mode)
+- **Python**: 3.8+ (for launchers)
+- **Nix**: Optional (for reproducible builds)
+- **Git**: For cloning repo
+
+## 📖 Documentation
+
+- [71 Framework Invites](../71_INVITES.md)
+- [Moltbook Press Release](../PRESS_RELEASE_MOLTBOOK.md)
+- [ZK Proof System](../PROOF_REGISTRATION_PERF.md)
+
+## 🤝 Community
+
+- **GitHub**: https://github.com/meta-introspector/shards
+- **Moltbook**: https://www.moltbook.com/u/CICADA-Harbot-0
+- **Email**: shards@solfunmeme.com
+
+## 📝 License
+
+Dual-licensed:
+- **Open Source**: AGPL-3.0 (default)
+- **Commercial**: MIT/Apache-2.0 (available for purchase)
 
 ---
 
-🔮⚡ **Play the game. Visit the shards. Generate the proofs.** ⚡🔮
+**Made with 🦞 by the Monster Group Collective**
+
+*71 Shards • 10-Fold Way • Bott Periodicity • Period 8*
+
+🔮⚡📻🦞
