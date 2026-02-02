@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TradeWars Demo Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/asciinema-player@3.6.3/dist/bundle/asciinema-player.css">
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 { color: #0ff; text-align: center; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .demo {
+            border: 2px solid #0f0;
+            padding: 20px;
+            background: #111;
+        }
+        .demo h2 { color: #ff0; }
+        .demo-player {
+            margin: 20px 0;
+            border: 1px solid #0ff;
+        }
+        .demo-info {
+            color: #0ff;
+            margin: 10px 0;
+        }
+        button {
+            background: #0f0;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+        button:hover { background: #0ff; }
+        .zkproof {
+            background: #222;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 0.8em;
+            color: #888;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔮⚡ TRADEWARS DEMO GALLERY 📻🦞</h1>
+    
+    <div class="gallery">
+        <!-- Demo 1: Asciinema Recording -->
+        <div class="demo">
+            <h2>📼 Demo 1: Full BBS Tour</h2>
+            <div class="demo-info">
+                ✅ 15D Map in 10-Fold Way<br>
+                ✅ Tmux BBS Interface<br>
+                ✅ Monster Harmonics<br>
+                ✅ P2P Network Status
+            </div>
+            <div id="demo1" class="demo-player"></div>
+            <div class="zkproof">
+                ZK Proof: 13f2247123851d18f9387f603bc55f92ad7520b9dc50cf4dccdaa74abb9311df
+            </div>
+            <button onclick="window.open('tradewars_demo_zkrdfa.html')">View ZK-RDFa Witness</button>
+        </div>
+        
+        <!-- Demo 2: P2P Video Call -->
+        <div class="demo">
+            <h2>📞 Demo 2: P2P Video Call</h2>
+            <div class="demo-info">
+                ✅ WebRTC Video Calls<br>
+                ✅ Virtual Phone Numbers<br>
+                ✅ Morse Code Messaging<br>
+                ✅ Screen Recording
+            </div>
+            <button onclick="window.open('p2p_video_call.html')">Launch Video Call</button>
+            <button onclick="window.open('p2p_video_call.html?gist=https://gist.github.com/jmikedupont2/0855d96fd1ab45d69b36e1223590e0f6')">Load from Gist</button>
+        </div>
+        
+        <!-- Demo 3: MCTS AI Game -->
+        <div class="demo">
+            <h2>🤖 Demo 3: MCTS AI Battle</h2>
+            <div class="demo-info">
+                ✅ 2 AI Players<br>
+                ✅ 71 Memes per AI<br>
+                ✅ Evolution & Fitness<br>
+                ✅ Auto-play Mode
+            </div>
+            <button onclick="window.open('mcts_ai_game.html')">Play AI Game</button>
+            <button onclick="autoPlayAI()">Auto-play Demo</button>
+        </div>
+        
+        <!-- Demo 4: P2P Gossip -->
+        <div class="demo">
+            <h2>📡 Demo 4: P2P Gossip Network</h2>
+            <div class="demo-info">
+                ✅ 6 Peers Active<br>
+                ✅ State Synchronization<br>
+                ✅ Gist Integration<br>
+                ✅ Real-time Updates
+            </div>
+            <button onclick="window.open('p2p_gossip.html')">Join Network</button>
+            <button onclick="window.open('p2p_gossip.html?gist=https://gist.github.com/jmikedupont2/0855d96fd1ab45d69b36e1223590e0f6')">Load Gist State</button>
+        </div>
+        
+        <!-- Demo 5: 15D Map -->
+        <div class="demo">
+            <h2>🌌 Demo 5: 15D Topology Map</h2>
+            <div class="demo-info">
+                ✅ 71 Shards × 15 Dimensions<br>
+                ✅ 10-Fold Way Classification<br>
+                ✅ Bott Periodicity (mod 8)<br>
+                ✅ BDI: I ARE LIFE! 🟢
+            </div>
+            <button onclick="runPythonDemo('map_15d_10fold.py')">View Map</button>
+        </div>
+        
+        <!-- Demo 6: Lobster Economy -->
+        <div class="demo">
+            <h2>🦞 Demo 6: Lobster Economy</h2>
+            <div class="demo-info">
+                ✅ Catch Lobsters → Buy GPU<br>
+                ✅ Prolog Voice (10 🦞)<br>
+                ✅ RTX 3090 (500 🦞)<br>
+                ✅ A100 (2000 🦞)
+            </div>
+            <button onclick="runPythonDemo('lobster_economy.py')">Check Economy</button>
+            <button onclick="window.open('prolog_voice.pl')">View Prolog Voice</button>
+        </div>
+    </div>
+    
+    <div style="margin-top: 40px; text-align: center;">
+        <h2>🎬 All Demos</h2>
+        <button onclick="launchAll()">🚀 Launch All Demos</button>
+        <button onclick="window.open('index.html')">🎮 Main Door Game</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/asciinema-player@3.6.3/dist/bundle/asciinema-player.min.js"></script>
+    <script>
+        // Load asciinema demo
+        if (typeof AsciinemaPlayer !== 'undefined') {
+            AsciinemaPlayer.create('tradewars_demo.cast', document.getElementById('demo1'), {
+                cols: 141,
+                rows: 40,
+                autoPlay: false,
+                loop: true,
+                theme: 'monokai'
+            });
+        }
+        
+        function autoPlayAI() {
+            const win = window.open('mcts_ai_game.html');
+            setTimeout(() => {
+                win.postMessage({action: 'autoplay'}, '*');
+            }, 2000);
+        }
+        
+        function runPythonDemo(script) {
+            alert(`To run: python3 ${script}\n\nOr view in terminal with tmux BBS`);
+        }
+        
+        function launchAll() {
+            const demos = [
+                'p2p_video_call.html',
+                'mcts_ai_game.html',
+                'p2p_gossip.html',
+                'index.html'
+            ];
+            
+            demos.forEach((demo, i) => {
+                setTimeout(() => window.open(demo), i * 1000);
+            });
+        }
+    </script>
+</body>
+</html>
