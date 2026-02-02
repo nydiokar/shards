@@ -136,7 +136,8 @@ function render() {
   print('COMMANDS:');
   print('  [1-15] Toggle prime   [T] Add tunnel   [S] Sidechannel');
   print('  [C] Clear tunnels     [E] Export tape  [L] Load local');
-  print('  [G] Save to Gist      [P] Show proof  [Q] Quit');
+  print('  [G] Save to Gist      [P] Show proof  [X] Trade offer');
+  print('  [Q] Quit');
   print('');
   print('> <span class="blink">_</span>');
   
@@ -192,6 +193,8 @@ document.addEventListener('keydown', e => {
     saveGist();
   } else if (key === 'P') {
     showProof();
+  } else if (key === 'X') {
+    exportTrade();
   } else if (key === 'Q') {
     print('');
     print('Disconnecting from BBS...');
@@ -374,6 +377,186 @@ async function showProof() {
   print('');
 }
 
+// Selective disclosure for trading
+function createTradeOffer(disclosureLevel) {
+  const primes = Array.from(ship.primes);
+  
+  let disclosed = {};
+  
+  if (disclosureLevel === 'minimal') {
+    // Only public stats
+    disclosed = {
+      type: 'minimal',
+      primeCount: primes.length,
+      hasBDI: primes.some(p => p % 10 === 3),
+      hasRooster: primes.includes(71)
+    };
+  } else if (disclosureLevel === 'partial') {
+    // Reveal some primes, hide others
+    const revealed = primes.slice(0, Math.floor(primes.length / 2));
+    disclosed = {
+      type: 'partial',
+      revealedPrimes: revealed,
+      hiddenCount: primes.length - revealed.length,
+      totalFlow: primes.reduce((s, p) => {
+        const pr = PRIMES.find(x => x.p === p);
+        return s + (pr ? pr.f : 0);
+      }, 0)
+    };
+  } else if (disclosureLevel === 'tunnels') {
+    // Reveal tunnel structure but not endpoints
+    disclosed = {
+      type: 'tunnels',
+      tunnelCount: ship.tunnels.length,
+      sidechannelCount: ship.sidechannels.length,
+      tunnelStrengths: ship.tunnels.map(t => {
+        const p1 = PRIMES.find(x => x.p === t[0]);
+        const p2 = PRIMES.find(x => x.p === t[1]);
+        return (p1?.f || 0) + (p2?.f || 0);
+      })
+    };
+  } else if (disclosureLevel === 'full') {
+    // Full disclosure for trusted trades
+    disclosed = {
+      type: 'full',
+      primes: primes,
+      tunnels: ship.tunnels,
+      sidechannels: ship.sidechannels
+    };
+  }
+  
+  return {
+    version: '1.0',
+    type: 'MonsterTradeOffer',
+    disclosure: disclosureLevel,
+    data: disclosed,
+    timestamp: new Date().toISOString()
+  };
+}
+
+async function exportTrade() {
+  print('');
+  print('TRADE OFFER DISCLOSURE LEVELS:');
+  print('');
+  print('  [1] Minimal - Stats only (safe for public)');
+  print('  [2] Partial - Reveal half your primes');
+  print('  [3] Tunnels - Show tunnel structure only');
+  print('  [4] Full - Complete loadout (trusted only)');
+  print('');
+  print('Select level (1-4): ');
+  
+  // Wait for input
+  const handler = (e) => {
+    const key = e.key;
+    if (key >= '1' && key <= '4') {
+      document.removeEventListener('keydown', handler);
+      
+      const levels = ['minimal', 'partial', 'tunnels', 'full'];
+      const level = levels[parseInt(key) - 1];
+      const offer = createTradeOffer(level);
+      
+      const encoded = btoa(JSON.stringify(offer));
+      const url = window.location.origin + window.location.pathname + '?trade=' + encoded;
+      
+      print('');
+      print('TRADE OFFER CREATED:');
+      print('');
+      print('Disclosure: ' + level.toUpperCase());
+      print('');
+      print(url);
+      print('');
+      
+      if (level === 'minimal') {
+        print('✓ Safe to share publicly');
+        print('  Only stats revealed, no primes');
+      } else if (level === 'partial') {
+        print('⚠ Partial disclosure');
+        print('  ' + offer.data.revealedPrimes.length + ' primes revealed, ' + offer.data.hiddenCount + ' hidden');
+      } else if (level === 'tunnels') {
+        print('⚠ Tunnel structure revealed');
+        print('  Endpoints hidden, strengths shown');
+      } else {
+        print('⚠️ FULL DISCLOSURE - trusted trades only!');
+      }
+      
+      print('');
+      navigator.clipboard.writeText(url).then(() => {
+        print('✓ Copied to clipboard!');
+      });
+      
+      render();
+    }
+  };
+  
+  document.addEventListener('keydown', handler);
+}
+
+// Load trade offer
+function loadTradeOffer() {
+  const params = new URLSearchParams(window.location.search);
+  const trade = params.get('trade');
+  
+  if (trade) {
+    try {
+      const offer = JSON.parse(atob(trade));
+      
+      print('');
+      print('╔════════════════════════════════════════════════════════════╗');
+      print('║                  TRADE OFFER RECEIVED                     ║');
+      print('╚════════════════════════════════════════════════════════════╝');
+      print('');
+      print('Disclosure Level: ' + offer.disclosure.toUpperCase());
+      print('Timestamp: ' + offer.timestamp);
+      print('');
+      
+      if (offer.disclosure === 'minimal') {
+        print('Stats:');
+        print('  Prime Count: ' + offer.data.primeCount);
+        print('  Has BDI: ' + (offer.data.hasBDI ? 'YES' : 'NO'));
+        print('  Has Rooster: ' + (offer.data.hasRooster ? 'YES' : 'NO'));
+      } else if (offer.disclosure === 'partial') {
+        print('Revealed Primes: ' + offer.data.revealedPrimes.join(', '));
+        print('Hidden: ' + offer.data.hiddenCount + ' primes');
+        print('Total Flow: ' + offer.data.totalFlow + 'M');
+      } else if (offer.disclosure === 'tunnels') {
+        print('Tunnels: ' + offer.data.tunnelCount);
+        print('Sidechannels: ' + offer.data.sidechannelCount);
+        print('Strengths: ' + offer.data.tunnelStrengths.join('M, ') + 'M');
+      } else if (offer.disclosure === 'full') {
+        print('Primes: ' + offer.data.primes.join(', '));
+        print('Tunnels: ' + offer.data.tunnels.length);
+        print('Sidechannels: ' + offer.data.sidechannels.length);
+        print('');
+        print('[A] Accept loadout  [R] Reject');
+      }
+      
+      print('');
+      
+      // Accept trade
+      if (offer.disclosure === 'full') {
+        const acceptHandler = (e) => {
+          if (e.key.toUpperCase() === 'A') {
+            document.removeEventListener('keydown', acceptHandler);
+            ship.primes = new Set(offer.data.primes);
+            ship.tunnels = offer.data.tunnels;
+            ship.sidechannels = offer.data.sidechannels;
+            print('✓ Loadout accepted!');
+            saveLocal();
+            render();
+          } else if (e.key.toUpperCase() === 'R') {
+            document.removeEventListener('keydown', acceptHandler);
+            print('✗ Trade rejected');
+            render();
+          }
+        };
+        document.addEventListener('keydown', acceptHandler);
+      }
+    } catch (e) {
+      print('✗ Invalid trade offer');
+    }
+  }
+}
+
 // WASM stub (would load actual 8080/ZX81 emulator)
 async function loadWasm() {
   print('Loading WASM emulator...');
@@ -396,6 +579,9 @@ loadWasm().then(() => {
     } catch (e) {}
   }
   
+  // Check for trade offer
+  loadTradeOffer();
+  
   render();
 });
 
@@ -403,6 +589,7 @@ console.log('🐓 Monster BBS Door Game initialized');
 console.log('📼 ZK-RDF tape loading enabled');
 console.log('🔀 Sidechannel tunneling: yo dawg mode active');
 console.log('🔒 ZK proof: Monster conformance without revealing data');
+console.log('💱 Trade offers: selective disclosure enabled');
 </script>
 </body>
 </html>
