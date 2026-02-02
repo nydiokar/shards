@@ -75,7 +75,8 @@ Sacred texts integrated into the knowledge base for Mars deployment and cryptana
 **Content**:
 - 22 Major Arcana
 - The Fool's Journey (0-21)
-- 4 Minor Arcana suits
+- 4 Minor Arcana suits (56 cards)
+- **78 total cards** → **71 blessed + 7 cursed**
 - Divination and path working
 
 **Relevance**:
@@ -83,6 +84,35 @@ Sacred texts integrated into the knowledge base for Mars deployment and cryptana
 - The Fool's Journey = User's journey
 - Tarot as map of consciousness
 - Archetypal patterns in cryptanalysis
+
+**The Seven Cursed Cards**:
+
+When mapping 78 tarot cards to 71 Monster shards, **7 cards overflow** beyond Shard 71 (the Rooster):
+
+```
+Cards 0-70:  Blessed (genus 0, no holes)
+Cards 72-77: Cursed (genus > 0, with topological holes)
+```
+
+The cursed cards are the last 7 Pentacles:
+- **Card 72** (9 of Pentacles): Genus 1 (1 hole)
+- **Card 73** (10 of Pentacles): Genus 1 - **Devil's first prime!**
+- **Card 74** (Page of Pentacles): Genus 2 (contains 37, first excluded prime)
+- **Card 75** (Knight of Pentacles): Genus 3
+- **Card 76** (Queen of Pentacles): Genus 4
+- **Card 77** (King of Pentacles): Genus 7 - **MOST CURSED! (7 × 11)**
+
+**Topological Curse**:
+- Cards within Monster boundary (≤71): Genus 0 (sphere, complete)
+- Cards beyond Monster boundary (>71): Genus > 0 (torus with holes, incomplete)
+- Each hole represents a "missing piece" of the Monster symmetry
+
+**BBS Door Game**: `tarot_bbs_door.py`
+- Single card draws
+- Three card spread (Past/Present/Future)
+- Celtic Cross (10 cards)
+- Detects cursed cards and counts topological holes
+- Warns when reading enters Devil's territory
 
 ## Sacred Correspondences
 

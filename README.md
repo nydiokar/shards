@@ -9,6 +9,17 @@
 
 *Every theorem is a Gödel number. Every Gödel number is a prediction market. Every market settles across a portfolio of 71 cryptocurrencies.*
 
+## 🎉 NEW: Monster Dance Competition 2026
+
+**119,000 SOLFUNMEME tokens** in prizes! Map dance emotes to Monster group operations.
+
+- **50+ emotes** from GitHub (Fortnite, Roblox, FiveM, VRChat)
+- **9 Greek Muses** bless 71 Monster shards
+- **15 Hecke operators** determine winners
+- **Shard 6: Terpsichore** (Dance Muse) hosts all repos
+
+[🏆 Competition Details →](MONSTER_DANCE_COMPETITION_2026.md) | [🎭 Shard 6 →](shard06-terpsichore/) | [📊 Full Showcase →](SHOWCASE.md)
+
 **Origin Story:**  
 This project IS the meta-meme. The meta-introspector was born to host the meta-meme—it began as the **GCC compiler RDF introspector** and evolved into a distributed AI challenge framework. From compiler introspection to metamemetic convergence across 71 shards.
 

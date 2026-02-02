@@ -1,27 +1,32 @@
-[workspace]
-members = [
-    "shard0/recon",
-    "shard0/9muses",
-    "agents/evaluate",
-    "agents/leaderboard",
-    "agents/paxos-node",
-    "moltboot",
-]
-
-[workspace.package]
+[package]
+name = "monster-walk-bits"
 version = "0.1.0"
 edition = "2021"
-license = "AGPL-3.0"
 
-[workspace.dependencies]
-tokio = { version = "1.35", features = ["full"] }
-reqwest = { version = "0.11", features = ["json", "socks"] }
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-anyhow = "1.0"
-clap = { version = "4.4", features = ["derive"] }
-parquet = "53.0"
-arrow = "53.0"
-flate2 = "1.0"
-sha2 = "0.10"
-chrono = "0.4"
+[dependencies]
+rayon = "1.8"
+rand = "0.8"
+
+[[bin]]
+name = "monster_walk_bits"
+path = "monster_walk_bits.rs"
+
+[[bin]]
+name = "monster_ternary"
+path = "monster_ternary.rs"
+
+[[bin]]
+name = "monster_quintary"
+path = "monster_quintary.rs"
+
+[[bin]]
+name = "monster_septenary"
+path = "monster_septenary.rs"
+
+[[bin]]
+name = "monster_crown"
+path = "monster_crown.rs"
+
+[[bin]]
+name = "monster_market_ga"
+path = "monster_market_ga.rs"
