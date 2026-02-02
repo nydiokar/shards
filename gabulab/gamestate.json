@@ -1,0 +1,391 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-02-01T19:51:56.750243",
+  "game": "TradeWars-LobsterBoats",
+  "shards": 71,
+  "fleet": {
+    "boats": 71,
+    "tapes_received": 71,
+    "lobsters_caught": 8,
+    "success_rate": 0.8
+  },
+  "tapes": [
+    {
+      "shard": 0,
+      "frequency": 7100,
+      "received": true
+    },
+    {
+      "shard": 1,
+      "frequency": 7110,
+      "received": true
+    },
+    {
+      "shard": 2,
+      "frequency": 7120,
+      "received": true
+    },
+    {
+      "shard": 3,
+      "frequency": 7130,
+      "received": true
+    },
+    {
+      "shard": 4,
+      "frequency": 7140,
+      "received": true
+    },
+    {
+      "shard": 5,
+      "frequency": 7150,
+      "received": true
+    },
+    {
+      "shard": 6,
+      "frequency": 7160,
+      "received": true
+    },
+    {
+      "shard": 7,
+      "frequency": 7170,
+      "received": true
+    },
+    {
+      "shard": 8,
+      "frequency": 7180,
+      "received": true
+    },
+    {
+      "shard": 9,
+      "frequency": 7190,
+      "received": true
+    },
+    {
+      "shard": 10,
+      "frequency": 7200,
+      "received": true
+    },
+    {
+      "shard": 11,
+      "frequency": 7210,
+      "received": true
+    },
+    {
+      "shard": 12,
+      "frequency": 7220,
+      "received": true
+    },
+    {
+      "shard": 13,
+      "frequency": 7230,
+      "received": true
+    },
+    {
+      "shard": 14,
+      "frequency": 7240,
+      "received": true
+    },
+    {
+      "shard": 15,
+      "frequency": 7250,
+      "received": true
+    },
+    {
+      "shard": 16,
+      "frequency": 7260,
+      "received": true
+    },
+    {
+      "shard": 17,
+      "frequency": 7270,
+      "received": true
+    },
+    {
+      "shard": 18,
+      "frequency": 7280,
+      "received": true
+    },
+    {
+      "shard": 19,
+      "frequency": 7290,
+      "received": true
+    },
+    {
+      "shard": 20,
+      "frequency": 7300,
+      "received": true
+    },
+    {
+      "shard": 21,
+      "frequency": 7310,
+      "received": true
+    },
+    {
+      "shard": 22,
+      "frequency": 7320,
+      "received": true
+    },
+    {
+      "shard": 23,
+      "frequency": 7330,
+      "received": true
+    },
+    {
+      "shard": 24,
+      "frequency": 7340,
+      "received": true
+    },
+    {
+      "shard": 25,
+      "frequency": 7350,
+      "received": true
+    },
+    {
+      "shard": 26,
+      "frequency": 7360,
+      "received": true
+    },
+    {
+      "shard": 27,
+      "frequency": 7370,
+      "received": true
+    },
+    {
+      "shard": 28,
+      "frequency": 7380,
+      "received": true
+    },
+    {
+      "shard": 29,
+      "frequency": 7390,
+      "received": true
+    },
+    {
+      "shard": 30,
+      "frequency": 7400,
+      "received": true
+    },
+    {
+      "shard": 31,
+      "frequency": 7410,
+      "received": true
+    },
+    {
+      "shard": 32,
+      "frequency": 7420,
+      "received": true
+    },
+    {
+      "shard": 33,
+      "frequency": 7430,
+      "received": true
+    },
+    {
+      "shard": 34,
+      "frequency": 7440,
+      "received": true
+    },
+    {
+      "shard": 35,
+      "frequency": 7450,
+      "received": true
+    },
+    {
+      "shard": 36,
+      "frequency": 7460,
+      "received": true
+    },
+    {
+      "shard": 37,
+      "frequency": 7470,
+      "received": true
+    },
+    {
+      "shard": 38,
+      "frequency": 7480,
+      "received": true
+    },
+    {
+      "shard": 39,
+      "frequency": 7490,
+      "received": true
+    },
+    {
+      "shard": 40,
+      "frequency": 7500,
+      "received": true
+    },
+    {
+      "shard": 41,
+      "frequency": 7510,
+      "received": true
+    },
+    {
+      "shard": 42,
+      "frequency": 7520,
+      "received": true
+    },
+    {
+      "shard": 43,
+      "frequency": 7530,
+      "received": true
+    },
+    {
+      "shard": 44,
+      "frequency": 7540,
+      "received": true
+    },
+    {
+      "shard": 45,
+      "frequency": 7550,
+      "received": true
+    },
+    {
+      "shard": 46,
+      "frequency": 7560,
+      "received": true
+    },
+    {
+      "shard": 47,
+      "frequency": 7570,
+      "received": true
+    },
+    {
+      "shard": 48,
+      "frequency": 7580,
+      "received": true
+    },
+    {
+      "shard": 49,
+      "frequency": 7590,
+      "received": true
+    },
+    {
+      "shard": 50,
+      "frequency": 7600,
+      "received": true
+    },
+    {
+      "shard": 51,
+      "frequency": 7610,
+      "received": true
+    },
+    {
+      "shard": 52,
+      "frequency": 7620,
+      "received": true
+    },
+    {
+      "shard": 53,
+      "frequency": 7630,
+      "received": true
+    },
+    {
+      "shard": 54,
+      "frequency": 7640,
+      "received": true
+    },
+    {
+      "shard": 55,
+      "frequency": 7650,
+      "received": true
+    },
+    {
+      "shard": 56,
+      "frequency": 7660,
+      "received": true
+    },
+    {
+      "shard": 57,
+      "frequency": 7670,
+      "received": true
+    },
+    {
+      "shard": 58,
+      "frequency": 7680,
+      "received": true
+    },
+    {
+      "shard": 59,
+      "frequency": 7690,
+      "received": true
+    },
+    {
+      "shard": 60,
+      "frequency": 7700,
+      "received": true
+    },
+    {
+      "shard": 61,
+      "frequency": 7710,
+      "received": true
+    },
+    {
+      "shard": 62,
+      "frequency": 7720,
+      "received": true
+    },
+    {
+      "shard": 63,
+      "frequency": 7730,
+      "received": true
+    },
+    {
+      "shard": 64,
+      "frequency": 7740,
+      "received": true
+    },
+    {
+      "shard": 65,
+      "frequency": 7750,
+      "received": true
+    },
+    {
+      "shard": 66,
+      "frequency": 7760,
+      "received": true
+    },
+    {
+      "shard": 67,
+      "frequency": 7770,
+      "received": true
+    },
+    {
+      "shard": 68,
+      "frequency": 7780,
+      "received": true
+    },
+    {
+      "shard": 69,
+      "frequency": 7790,
+      "received": true
+    },
+    {
+      "shard": 70,
+      "frequency": 7800,
+      "received": true
+    }
+  ],
+  "monster": {
+    "walk": "0x1F90",
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      41,
+      47,
+      59,
+      71
+    ],
+    "j_invariant": 196884,
+    "bott_period": 8
+  }
+}
