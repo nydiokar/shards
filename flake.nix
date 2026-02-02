@@ -41,6 +41,33 @@
           };
         };
         
+        # Meme detector - Rust library with WASM
+        meme-detector-rust = pkgs.rustPlatform.buildRustPackage {
+          pname = "meme-detector";
+          version = "0.1.0";
+          src = ./meme-detector;
+          cargoLock.lockFile = ./meme-detector/Cargo.lock;
+          nativeBuildInputs = [ rustToolchain ];
+        };
+        
+        meme-detector-wasm = pkgs.stdenv.mkDerivation {
+          pname = "meme-detector-wasm";
+          version = "0.1.0";
+          src = ./meme-detector;
+          nativeBuildInputs = [ 
+            rustToolchain 
+            pkgs.wasm-pack
+            pkgs.binaryen
+          ];
+          buildPhase = ''
+            wasm-pack build --target web --out-dir pkg
+          '';
+          installPhase = ''
+            mkdir -p $out/www
+            cp -r pkg/* $out/www/
+          '';
+        };
+        
         # Universal Coordinates implementations
         universal-coords-rust = pkgs.rustPlatform.buildRustPackage {
           pname = "universal-coords";

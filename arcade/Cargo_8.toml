@@ -1,0 +1,19 @@
+[package]
+name = "game-shard-8"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "game_8"
+path = "src/game_8.rs"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+path = "src/game_8.rs"
+
+[dependencies]
+wasm-bindgen = "0.2"
+
+[profile.release]
+opt-level = 3
+lto = true

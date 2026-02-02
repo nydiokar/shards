@@ -43,3 +43,6 @@
 [submodule "astronomy_submodules/shard_00/poliastro"]
 	path = astronomy_submodules/shard_00/poliastro
 	url = https://github.com/poliastro/poliastro.git
+[submodule "erdfa-namespace"]
+	path = erdfa-namespace
+	url = https://github.com/Escaped-RDFa/namespace.git

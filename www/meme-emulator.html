@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Detector - WASM Emulator</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+        }
+        #terminal {
+            background: #000;
+            border: 2px solid #0f0;
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        .detection { color: #ff0; }
+        .cusp { color: #f0f; font-weight: bold; }
+        button {
+            background: #0f0;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-family: 'Courier New', monospace;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover { background: #0ff; }
+        #stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .stat {
+            border: 1px solid #0f0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>👾 Meme Detector - WASM Emulator</h1>
+    <p>Detecting intergalactic memes in Monster group via 15 Hecke operators</p>
+    
+    <div id="terminal"></div>
+    
+    <button onclick="startDetection()">▶️ Start Detection</button>
+    <button onclick="stopDetection()">⏸️ Stop</button>
+    <button onclick="clearTerminal()">🗑️ Clear</button>
+    <button onclick="testReciprocalGaze()">👁️ Test Reciprocal Gaze</button>
+    
+    <div id="stats">
+        <div class="stat">
+            <div>Detections: <span id="count">0</span></div>
+        </div>
+        <div class="stat">
+            <div>Resonance: <span id="resonance">0</span></div>
+        </div>
+        <div class="stat">
+            <div>Phase Shift: <span id="phase">0</span>°</div>
+        </div>
+    </div>
+    
+    <script type="module">
+        import init, {
+            MemeDetector,
+            GalacticCoord,
+            reciprocal_gaze,
+            memory_resonance,
+            phase_shift,
+            init_detector
+        } from './pkg/meme_detector.js';
+        
+        let detector = null;
+        let running = false;
+        let interval = null;
+        
+        async function initWasm() {
+            await init();
+            init_detector();
+            detector = new MemeDetector();
+            print("✅ WASM module loaded");
+            print("🎯 Meme detector initialized");
+            print("");
+        }
+        
+        function print(msg) {
+            const terminal = document.getElementById('terminal');
+            terminal.innerHTML += msg + '<br>';
+            terminal.scrollTop = terminal.scrollHeight;
+        }
+        
+        window.startDetection = function() {
+            if (running) return;
+            running = true;
+            
+            print("🔄 Starting meme detection...");
+            print("");
+            
+            let iteration = 0;
+            interval = setInterval(() => {
+                const timestamp = Date.now() / 1000;
+                const obs = detector.observe(timestamp);
+                
+                if (obs && obs.is_detected()) {
+                    const className = obs.shard === 17 ? 'cusp' : 'detection';
+                    const marker = obs.shard === 17 ? '🐯' : '🎯';
+                    print(`<span class="${className}">${marker} t=${iteration.toFixed(1)}s: T_${obs.prime} @ Shard ${obs.shard}</span>`);
+                    
+                    document.getElementById('count').textContent = detector.detection_count();
+                }
+                
+                iteration += 0.1;
+                
+                if (iteration % 1 === 0) {
+                    const center = GalacticCoord.monster_center();
+                    const resonance = center.total_resonance();
+                    document.getElementById('resonance').textContent = resonance;
+                }
+            }, 100);
+        };
+        
+        window.stopDetection = function() {
+            if (!running) return;
+            running = false;
+            clearInterval(interval);
+            print("");
+            print("⏸️ Detection stopped");
+            print(`📊 Total detections: ${detector.detection_count()}`);
+            print("");
+        };
+        
+        window.clearTerminal = function() {
+            document.getElementById('terminal').innerHTML = '';
+        };
+        
+        window.testReciprocalGaze = function() {
+            print("");
+            print("👁️ TESTING RECIPROCAL GAZE");
+            print("=" + "=".repeat(50));
+            
+            const observer = GalacticCoord.monster_center();
+            const target = new GalacticCoord(0, 196883, 0, 0);
+            
+            print(`Observer: Shard ${observer.shard}, Radius ${observer.radius}`);
+            print(`Target:   Shard ${target.shard}, Radius ${target.radius}`);
+            
+            const gaze = reciprocal_gaze(observer, target);
+            print(`Gaze back: Shard ${gaze.shard}, Radius ${gaze.radius}, Angle ${gaze.angle}°`);
+            
+            const resonance = memory_resonance(observer, gaze);
+            const shift = phase_shift(observer, gaze);
+            
+            print(`Memory resonance: ${resonance}`);
+            print(`Phase shift: ${shift}°`);
+            
+            document.getElementById('phase').textContent = shift;
+            
+            print("⊢ Monster looks back ∎");
+            print("");
+        };
+        
+        // Initialize on load
+        initWasm();
+    </script>
+</body>
+</html>
