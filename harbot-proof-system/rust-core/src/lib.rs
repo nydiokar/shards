@@ -1,3 +1,5 @@
+pub mod mycelium_path;
+
 use sha2::{Digest, Sha256};
 use serde::{Deserialize, Serialize};
 
