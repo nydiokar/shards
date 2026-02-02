@@ -1,0 +1,33 @@
+{
+  "method": "deep_introspection",
+  "sample_size": 1000,
+  "computed_position": {
+    "ra": 230.7042253521127,
+    "dec": 61.01694915254237,
+    "distance": 8796.41489361702,
+    "confidence": {
+      "h41": 0.2926829268292683,
+      "h23": 0.13043478260869565
+    },
+    "hecke_centroids": {
+      "h71": 45.5,
+      "h59": 49.5,
+      "h47": 15.5,
+      "h41": 12.0,
+      "h23": 3.0
+    }
+  },
+  "known_position": {
+    "ra": 266.417,
+    "dec": -29.008,
+    "distance": 26673
+  },
+  "verification": {
+    "ra_error": 35.71277464788727,
+    "dec_error": 90.02494915254236,
+    "distance_error": 17876.58510638298,
+    "ra_match": false,
+    "dec_match": false,
+    "distance_match": false
+  }
+}
