@@ -1,0 +1,129 @@
+{
+  "monster_simple_expr": {
+    "description": "Simple expressions mapped to Monster tower",
+    "metavars": {
+      "$CUSP": "🕳️",
+      "$FOLD": 1,
+      "$FIELD": "GF(71)",
+      "$PRIME": 71
+    },
+    "expressions": [
+      {
+        "name": "bootstrap",
+        "emoji": "☕",
+        "fold": 0,
+        "field": "GF(2)",
+        "expr": "$X + $Y",
+        "brainfuck": "++",
+        "scheme": "(lambda (x y) (+ x y))"
+      },
+      {
+        "name": "cusp",
+        "emoji": "🕳️",
+        "fold": 1,
+        "field": "GF(71)",
+        "expr": "$X($X)",
+        "brainfuck": "+><",
+        "scheme": "(define (f x) (f x))"
+      },
+      {
+        "name": "spacetime",
+        "emoji": "🪟",
+        "fold": 2,
+        "field": "GF(47)",
+        "expr": "if $X then $Y else $Z",
+        "brainfuck": "[>+<]",
+        "scheme": "(if x y z)"
+      },
+      {
+        "name": "arrows",
+        "emoji": "👁️",
+        "fold": 3,
+        "field": "GF(59)",
+        "expr": "'$X",
+        "brainfuck": "+++",
+        "scheme": "(quote x)"
+      },
+      {
+        "name": "symmetry",
+        "emoji": "👹",
+        "fold": 4,
+        "field": "GF(41)",
+        "expr": "$X := $Y",
+        "brainfuck": "->+<",
+        "scheme": "(set! x y)"
+      },
+      {
+        "name": "zkperf",
+        "emoji": "🦅",
+        "fold": 5,
+        "field": "GF(31)",
+        "expr": "$X; $Y",
+        "brainfuck": ">+>+",
+        "scheme": "(begin x y)"
+      },
+      {
+        "name": "coords",
+        "emoji": "🐓",
+        "fold": 6,
+        "field": "GF(29)",
+        "expr": "$F($X)",
+        "brainfuck": "[>>+]",
+        "scheme": "(apply f x)"
+      },
+      {
+        "name": "compile",
+        "emoji": "🔄",
+        "fold": 7,
+        "field": "GF(23)",
+        "expr": "call/cc $K",
+        "brainfuck": "[<->]",
+        "scheme": "(call/cc k)"
+      },
+      {
+        "name": "bott",
+        "emoji": "🌀",
+        "fold": 8,
+        "field": "GF(19)",
+        "expr": "eval($X)",
+        "brainfuck": "[[+]]",
+        "scheme": "(eval x)"
+      },
+      {
+        "name": "monster",
+        "emoji": "⚡",
+        "fold": 9,
+        "field": "GF(17)",
+        "expr": "macro $X => $Y",
+        "brainfuck": "[>++<]",
+        "scheme": "(syntax x y)"
+      }
+    ],
+    "tower_properties": {
+      "total_folds": 10,
+      "total_primes": 15,
+      "total_shards": 71,
+      "dimension": 196883,
+      "crown_primes": [47, 59, 71],
+      "cusp_prime": 71,
+      "bott_period": 8,
+      "monster_complete": true
+    },
+    "compilation_chain": {
+      "source": "simple_expr",
+      "intermediate": "monster_tower",
+      "target": "brainfuck",
+      "proof": "zkperf",
+      "encoding": "zkrdfa_emoji"
+    },
+    "example_compilation": {
+      "input": "(define (fact n) (if (= n 0) 1 (* n (fact (- n 1)))))",
+      "parsed": ["DEFINE", "LAMBDA", "IF", "APPLY"],
+      "emoji": ["🕳️", "☕", "🪟", "🐓"],
+      "brainfuck": "+><++[>+<][>>+]",
+      "field_ops": ["GF(71)", "GF(2)", "GF(47)", "GF(29)"],
+      "zkperf_cycles": 1234,
+      "zkrdfa_proof": "zkrdfa://🕳️☕🪟🐓/compile/1234"
+    }
+  }
+}
