@@ -37,17 +37,19 @@ solve maximize total_bits;
 output [
   "🌀 EXACT TMUX PACKING (150x38)\n",
   "===============================\n",
-  "FOLD │ LINES │ CHARS │ BITS/L │ TOTAL_BITS\n",
-  "─────┼───────┼───────┼────────┼───────────\n"
-] ++ [
-  show(f) ++ ".   │ " ++ 
-  show_int(5, lines[f]) ++ " │ " ++ 
-  show_int(5, lines[f] * W) ++ " │ " ++ 
-  show_int(6, bits_per_line[f]) ++ " │ " ++
-  show_int(9, lines[f] * bits_per_line[f] * weight[f]) ++ "\n"
-  | f in 0..9
-] ++ [
-  "─────┴───────┴───────┴────────┴───────────\n",
+  "FOLD │ EMOJI │ LINES │ CHARS │ BITS/L │ TOTAL_BITS\n",
+  "─────┼───────┼───────┼───────┼────────┼───────────\n",
+  "0.   │  ☕   │ " ++ show_int(5, lines[0]) ++ " │ " ++ show_int(5, lines[0] * W) ++ " │ " ++ show_int(6, bits_per_line[0]) ++ " │ " ++ show_int(9, lines[0] * bits_per_line[0] * weight[0]) ++ "\n",
+  "1.   │  🕳️   │ " ++ show_int(5, lines[1]) ++ " │ " ++ show_int(5, lines[1] * W) ++ " │ " ++ show_int(6, bits_per_line[1]) ++ " │ " ++ show_int(9, lines[1] * bits_per_line[1] * weight[1]) ++ "\n",
+  "2.   │  🪟   │ " ++ show_int(5, lines[2]) ++ " │ " ++ show_int(5, lines[2] * W) ++ " │ " ++ show_int(6, bits_per_line[2]) ++ " │ " ++ show_int(9, lines[2] * bits_per_line[2] * weight[2]) ++ "\n",
+  "3.   │  👁️   │ " ++ show_int(5, lines[3]) ++ " │ " ++ show_int(5, lines[3] * W) ++ " │ " ++ show_int(6, bits_per_line[3]) ++ " │ " ++ show_int(9, lines[3] * bits_per_line[3] * weight[3]) ++ "\n",
+  "4.   │  👹   │ " ++ show_int(5, lines[4]) ++ " │ " ++ show_int(5, lines[4] * W) ++ " │ " ++ show_int(6, bits_per_line[4]) ++ " │ " ++ show_int(9, lines[4] * bits_per_line[4] * weight[4]) ++ "\n",
+  "5.   │  🦅   │ " ++ show_int(5, lines[5]) ++ " │ " ++ show_int(5, lines[5] * W) ++ " │ " ++ show_int(6, bits_per_line[5]) ++ " │ " ++ show_int(9, lines[5] * bits_per_line[5] * weight[5]) ++ "\n",
+  "6.   │  🐓   │ " ++ show_int(5, lines[6]) ++ " │ " ++ show_int(5, lines[6] * W) ++ " │ " ++ show_int(6, bits_per_line[6]) ++ " │ " ++ show_int(9, lines[6] * bits_per_line[6] * weight[6]) ++ "\n",
+  "7.   │  🔄   │ " ++ show_int(5, lines[7]) ++ " │ " ++ show_int(5, lines[7] * W) ++ " │ " ++ show_int(6, bits_per_line[7]) ++ " │ " ++ show_int(9, lines[7] * bits_per_line[7] * weight[7]) ++ "\n",
+  "8.   │  🌀   │ " ++ show_int(5, lines[8]) ++ " │ " ++ show_int(5, lines[8] * W) ++ " │ " ++ show_int(6, bits_per_line[8]) ++ " │ " ++ show_int(9, lines[8] * bits_per_line[8] * weight[8]) ++ "\n",
+  "9.   │  ⚡   │ " ++ show_int(5, lines[9]) ++ " │ " ++ show_int(5, lines[9] * W) ++ " │ " ++ show_int(6, bits_per_line[9]) ++ " │ " ++ show_int(9, lines[9] * bits_per_line[9] * weight[9]) ++ "\n",
+  "─────┴───────┴───────┴───────┴────────┴───────────\n",
   "TOTAL: ", show(sum(f in 0..9)(lines[f])), "/", show(H), " lines ✓\n",
   "CHARS: ", show(sum(f in 0..9)(lines[f] * W)), "/", show(TOTAL), " ✓\n",
   "VALUE: ", show(total_bits), " weighted bits\n",
