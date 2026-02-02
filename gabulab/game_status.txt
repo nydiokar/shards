@@ -1,0 +1,42 @@
+🔮⚡ TRADEWARS LOBSTERBOATS - GAME STATUS 📻🦞
+======================================================================
+
+Player: Player1
+Turn: 3
+Boats: 71
+Lobsters Caught: 6
+Timestamp: 2026-02-01T19:53:57.073567
+
+ZK Proof: d5d50a911a3f8899
+
+======================================================================
+SHAREABLE URL (Click to load state):
+======================================================================
+
+https://meta-introspector.github.io/shards/doorgame/?state=eyJwbGF5ZXIiOiJQbGF5ZXIxIiwidHVybiI6MywiYm9hdHMiOjcxLCJsb2JzdGVyc19jYXVnaHQiOjYsInRpbWVzdGFtcCI6IjIwMjYtMDItMDFUMTk6NTM6NTcuMDczNTY3In0=
+
+======================================================================
+HOW TO USE:
+======================================================================
+
+1. Copy the URL above
+2. Paste into browser to load this gamestate
+3. Play your turn
+4. Run 'game status' again to get new URL
+5. Share new URL on pastebin/gist
+6. Others can continue from your state!
+
+======================================================================
+GAMESTATE DATA (ZK-eRDFa):
+======================================================================
+
+{
+  "player": "Player1",
+  "turn": 3,
+  "boats": 71,
+  "lobsters_caught": 6,
+  "timestamp": "2026-02-01T19:53:57.073567"
+}
+
+======================================================================
+🐓 THE ROOSTER HAS CROWED! Share this URL! 🐓
