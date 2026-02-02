@@ -20,6 +20,10 @@ name = "monster_quintary"
 path = "monster_quintary.rs"
 
 [[bin]]
+name = "tradewars71"
+path = "tradewars71.rs"
+
+[[bin]]
 name = "monster_septenary"
 path = "monster_septenary.rs"
 

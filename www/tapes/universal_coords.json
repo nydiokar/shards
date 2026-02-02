@@ -1,0 +1,741 @@
+{
+  "total_games": 35,
+  "monster_center": {
+    "shard": 17,
+    "radius": 0,
+    "angle": 0,
+    "dimension": 0
+  },
+  "monster_dimension": 196883,
+  "games": [
+    {
+      "name": "Circle Eater",
+      "shard": 30,
+      "positions": 5,
+      "avg_resonance": 26591,
+      "sample_coords": [
+        {
+          "shard": 22,
+          "radius": 35916,
+          "angle": 232,
+          "dimension": 0,
+          "original": {
+            "x": -112,
+            "y": -144,
+            "z": 0
+          }
+        },
+        {
+          "shard": 22,
+          "radius": 35916,
+          "angle": 307,
+          "dimension": 0,
+          "original": {
+            "x": 112,
+            "y": -144,
+            "z": 0
+          }
+        },
+        {
+          "shard": 22,
+          "radius": 35916,
+          "angle": 127,
+          "dimension": 0,
+          "original": {
+            "x": -112,
+            "y": 144,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Barrel Theorem",
+      "shard": 39,
+      "positions": 1,
+      "avg_resonance": 35735,
+      "sample_coords": [
+        {
+          "shard": 45,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Vector Swarm",
+      "shard": 33,
+      "positions": 1,
+      "avg_resonance": 41405,
+      "sample_coords": [
+        {
+          "shard": 60,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Torus Navigator",
+      "shard": 27,
+      "positions": 1,
+      "avg_resonance": 34223,
+      "sample_coords": [
+        {
+          "shard": 41,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Topology Digger",
+      "shard": 66,
+      "positions": 1,
+      "avg_resonance": 21749,
+      "sample_coords": [
+        {
+          "shard": 8,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pyramid Hopper",
+      "shard": 17,
+      "positions": 28,
+      "avg_resonance": 41011,
+      "sample_coords": [
+        {
+          "shard": 59,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0.0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "shard": 59,
+          "radius": 220,
+          "angle": 116,
+          "dimension": 0,
+          "original": {
+            "x": -0.5,
+            "y": 1,
+            "z": 0
+          }
+        },
+        {
+          "shard": 59,
+          "radius": 220,
+          "angle": 63,
+          "dimension": 0,
+          "original": {
+            "x": 0.5,
+            "y": 1,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Momentum Duel",
+      "shard": 11,
+      "positions": 1,
+      "avg_resonance": 33845,
+      "sample_coords": [
+        {
+          "shard": 40,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Velocity Vector",
+      "shard": 20,
+      "positions": 1,
+      "avg_resonance": 43673,
+      "sample_coords": [
+        {
+          "shard": 66,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fractal Quest",
+      "shard": 50,
+      "positions": 1,
+      "avg_resonance": 44051,
+      "sample_coords": [
+        {
+          "shard": 67,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Plumber's Lemma",
+      "shard": 13,
+      "positions": 1,
+      "avg_resonance": 21749,
+      "sample_coords": [
+        {
+          "shard": 8,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cipher Chase",
+      "shard": 23,
+      "positions": 1,
+      "avg_resonance": 32711,
+      "sample_coords": [
+        {
+          "shard": 37,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dungeon Algebra",
+      "shard": 7,
+      "positions": 1,
+      "avg_resonance": 27419,
+      "sample_coords": [
+        {
+          "shard": 23,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Spectral Knight",
+      "shard": 34,
+      "positions": 1,
+      "avg_resonance": 39515,
+      "sample_coords": [
+        {
+          "shard": 55,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sphere Capture",
+      "shard": 47,
+      "positions": 1,
+      "avg_resonance": 35735,
+      "sample_coords": [
+        {
+          "shard": 45,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Geodesic Racer",
+      "shard": 11,
+      "positions": 1,
+      "avg_resonance": 39137,
+      "sample_coords": [
+        {
+          "shard": 54,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wave Function",
+      "shard": 27,
+      "positions": 1,
+      "avg_resonance": 27041,
+      "sample_coords": [
+        {
+          "shard": 22,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Combat Calculus",
+      "shard": 61,
+      "positions": 0,
+      "avg_resonance": 0,
+      "sample_coords": []
+    },
+    {
+      "name": "Platform Theorem",
+      "shard": 62,
+      "positions": 9,
+      "avg_resonance": 19455,
+      "sample_coords": [
+        {
+          "shard": 3,
+          "radius": 34543,
+          "angle": 223,
+          "dimension": 0,
+          "original": {
+            "x": -128,
+            "y": -120,
+            "z": 0
+          }
+        },
+        {
+          "shard": 3,
+          "radius": 25201,
+          "angle": 180,
+          "dimension": 0,
+          "original": {
+            "x": -128,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "shard": 3,
+          "radius": 34543,
+          "angle": 136,
+          "dimension": 0,
+          "original": {
+            "x": -128,
+            "y": 120,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Triangle Quest",
+      "shard": 18,
+      "positions": 1,
+      "avg_resonance": 42917,
+      "sample_coords": [
+        {
+          "shard": 64,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Manifold Explorer",
+      "shard": 53,
+      "positions": 1,
+      "avg_resonance": 37625,
+      "sample_coords": [
+        {
+          "shard": 50,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gothic Geometry",
+      "shard": 45,
+      "positions": 1,
+      "avg_resonance": 32711,
+      "sample_coords": [
+        {
+          "shard": 37,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Robot Recursion",
+      "shard": 32,
+      "positions": 1,
+      "avg_resonance": 27797,
+      "sample_coords": [
+        {
+          "shard": 24,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Projectile Proof",
+      "shard": 66,
+      "positions": 1,
+      "avg_resonance": 32333,
+      "sample_coords": [
+        {
+          "shard": 36,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Finite Fields",
+      "shard": 61,
+      "positions": 1,
+      "avg_resonance": 31577,
+      "sample_coords": [
+        {
+          "shard": 34,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shadow Calculus",
+      "shard": 46,
+      "positions": 1,
+      "avg_resonance": 38381,
+      "sample_coords": [
+        {
+          "shard": 52,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Platform Theorem III",
+      "shard": 1,
+      "positions": 1,
+      "avg_resonance": 31577,
+      "sample_coords": [
+        {
+          "shard": 34,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Block Packing",
+      "shard": 60,
+      "positions": 0,
+      "avg_resonance": 0,
+      "sample_coords": []
+    },
+    {
+      "name": "Ring Topology",
+      "shard": 47,
+      "positions": 9,
+      "avg_resonance": 40580,
+      "sample_coords": [
+        {
+          "shard": 59,
+          "radius": 38452,
+          "angle": 214,
+          "dimension": 0,
+          "original": {
+            "x": -160,
+            "y": -112,
+            "z": 0
+          }
+        },
+        {
+          "shard": 59,
+          "radius": 31501,
+          "angle": 180,
+          "dimension": 0,
+          "original": {
+            "x": -160,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "shard": 59,
+          "radius": 38452,
+          "angle": 145,
+          "dimension": 0,
+          "original": {
+            "x": -160,
+            "y": 112,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Combat Calculus II",
+      "shard": 1,
+      "positions": 1,
+      "avg_resonance": 30821,
+      "sample_coords": [
+        {
+          "shard": 32,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "World Manifold",
+      "shard": 1,
+      "positions": 1,
+      "avg_resonance": 39137,
+      "sample_coords": [
+        {
+          "shard": 54,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Triangle Quest: Past Link",
+      "shard": 38,
+      "positions": 1,
+      "avg_resonance": 28553,
+      "sample_coords": [
+        {
+          "shard": 26,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Super Manifold",
+      "shard": 27,
+      "positions": 1,
+      "avg_resonance": 26663,
+      "sample_coords": [
+        {
+          "shard": 21,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Time Operator",
+      "shard": 30,
+      "positions": 1,
+      "avg_resonance": 24017,
+      "sample_coords": [
+        {
+          "shard": 14,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bounded Earth",
+      "shard": 27,
+      "positions": 1,
+      "avg_resonance": 34223,
+      "sample_coords": [
+        {
+          "shard": 41,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mother's Wisdom",
+      "shard": 68,
+      "positions": 1,
+      "avg_resonance": 19859,
+      "sample_coords": [
+        {
+          "shard": 3,
+          "radius": 0,
+          "angle": 0,
+          "dimension": 0,
+          "original": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    }
+  ]
+}

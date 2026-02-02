@@ -1,0 +1,73 @@
+{
+  "total_repos": 80,
+  "monster_prime_repos": 19,
+  "feature_names": [
+    "shard",
+    "log_stars",
+    "name_len",
+    "is_python",
+    "desc_len"
+  ],
+  "top_shards": [
+    {
+      "shard": 18,
+      "total_stars": 10555,
+      "count": 3,
+      "is_monster_prime": false
+    },
+    {
+      "shard": 23,
+      "total_stars": 2302,
+      "count": 2,
+      "is_monster_prime": true
+    },
+    {
+      "shard": 63,
+      "total_stars": 1948,
+      "count": 2,
+      "is_monster_prime": false
+    },
+    {
+      "shard": 26,
+      "total_stars": 1660,
+      "count": 1,
+      "is_monster_prime": false
+    },
+    {
+      "shard": 6,
+      "total_stars": 1604,
+      "count": 6,
+      "is_monster_prime": false
+    },
+    {
+      "shard": 7,
+      "total_stars": 1286,
+      "count": 3,
+      "is_monster_prime": true
+    },
+    {
+      "shard": 16,
+      "total_stars": 1137,
+      "count": 2,
+      "is_monster_prime": false
+    },
+    {
+      "shard": 48,
+      "total_stars": 1059,
+      "count": 3,
+      "is_monster_prime": false
+    },
+    {
+      "shard": 55,
+      "total_stars": 1037,
+      "count": 2,
+      "is_monster_prime": false
+    },
+    {
+      "shard": 24,
+      "total_stars": 1030,
+      "count": 2,
+      "is_monster_prime": false
+    }
+  ]
+}

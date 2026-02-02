@@ -1,0 +1,96 @@
+{
+  "theory": "59_extension",
+  "title": "Memory to Physical Location Mapping",
+  "timestamp": "2026-02-02T13:43:51.114352",
+  "mappings": [
+    {
+      "object": "Betelgeuse",
+      "coordinates": {
+        "ra": 88.79,
+        "dec": 7.41
+      },
+      "memory": {
+        "virtual_address": "0x7f37012de2c0",
+        "page_number": 34148979422,
+        "page_offset": 704,
+        "physical": {
+          "ram_channel": 0,
+          "ram_rank": 0,
+          "ram_bank": 3,
+          "ram_row": 603,
+          "ram_column": 88
+        },
+        "estimated_physical_address": "0x3025b58"
+      },
+      "cache": {
+        "cache_line": 2185534683019,
+        "l1_set": 395,
+        "l2_set": 1931,
+        "l3_set": 46987,
+        "cache_line_offset": 0
+      }
+    },
+    {
+      "object": "Andromeda",
+      "coordinates": {
+        "ra": 10.68,
+        "dec": 41.27
+      },
+      "memory": {
+        "virtual_address": "0x7f37012de3c0",
+        "page_number": 34148979422,
+        "page_offset": 960,
+        "physical": {
+          "ram_channel": 0,
+          "ram_rank": 0,
+          "ram_bank": 3,
+          "ram_row": 603,
+          "ram_column": 120
+        },
+        "estimated_physical_address": "0x3025b78"
+      },
+      "cache": {
+        "cache_line": 2185534683023,
+        "l1_set": 399,
+        "l2_set": 1935,
+        "l3_set": 46991,
+        "cache_line_offset": 0
+      }
+    },
+    {
+      "object": "Polaris",
+      "coordinates": {
+        "ra": 37.95,
+        "dec": 89.26
+      },
+      "memory": {
+        "virtual_address": "0x7f3701210380",
+        "page_number": 34148979216,
+        "page_offset": 896,
+        "physical": {
+          "ram_channel": 0,
+          "ram_rank": 0,
+          "ram_bank": 0,
+          "ram_row": 578,
+          "ram_column": 112
+        },
+        "estimated_physical_address": "0x24270"
+      },
+      "cache": {
+        "cache_line": 2185534669838,
+        "l1_set": 14,
+        "l2_set": 1038,
+        "l3_set": 33806,
+        "cache_line_offset": 0
+      }
+    }
+  ],
+  "disk_location": {
+    "filepath": "/home/mdupont/introspector/theory_59_physical_map.py",
+    "inode": 6577685,
+    "size": 7072,
+    "block_number": 577685,
+    "page_number": 144421,
+    "estimated_sector": 4621480
+  }
+}

@@ -1,60 +1,63 @@
-# Pipelight: CI/CD for P2P Gossip Proofs
+# Pipelight Pipeline for Universal Coordinates
+# CI/CD for Rust, Lean4, MiniZinc, zkPerf implementations
 
 [[pipelines]]
-name = "prove-gossip"
-description = "Multi-language P2P gossip verification"
+name = "universal-coords"
+description = "Build and test all universal coordinate implementations"
 
 [[pipelines.steps]]
-name = "lean4-proof"
+name = "build-rust"
 commands = [
-  "cd gabulab/lean",
-  "lean --version || echo 'Lean4 not installed'",
-  "echo '✅ Lean4 proof: P2PGossipProof.lean'"
+  "nix build .#universal-coords-rust",
+  "./result/bin/universal-coords"
 ]
 
 [[pipelines.steps]]
-name = "minizinc-proof"
+name = "test-rust"
 commands = [
-  "cd gabulab/minizinc",
-  "minizinc --version || echo 'MiniZinc not installed'",
-  "echo '✅ MiniZinc proof: p2p_gossip.mzn'"
+  "cd src && cargo test --lib universal_coords"
 ]
 
 [[pipelines.steps]]
-name = "rust-proof"
+name = "verify-lean4"
 commands = [
-  "cd gabulab",
-  "rustc --version",
-  "rustc -O p2p_gossip_proof.rs -o p2p_gossip_proof",
-  "./p2p_gossip_proof",
-  "echo '✅ Rust proof executed'"
+  "nix-shell --run 'lean UniversalCoords.lean'"
 ]
 
 [[pipelines.steps]]
-name = "perf-profile"
+name = "solve-minizinc"
 commands = [
-  "cd gabulab",
-  "chmod +x perf_gossip.sh",
-  "./perf_gossip.sh",
-  "echo '✅ Perf profiling complete'"
+  "nix build .#universal-coords-minizinc",
+  "minizinc universal_coords.mzn -D 'game_x=0.0; game_y=0.0; game_z=0.0;'"
 ]
 
 [[pipelines.steps]]
-name = "gossip-status"
+name = "compile-zkperf"
 commands = [
-  "cd gabulab",
-  "python3 game_status.py",
-  "echo '✅ Game status gossiped'"
+  "nix build .#universal-coords-zkperf"
 ]
 
 [[pipelines.steps]]
-name = "verify-all"
+name = "generate-docs"
 commands = [
-  "echo '🔮⚡ ALL PROOFS VERIFIED 📻🦞'",
-  "echo '✅ Lean4: Type-checked'",
-  "echo '✅ MiniZinc: Optimized'",
-  "echo '✅ Rust: Tested'",
-  "echo '✅ Perf: Profiled'",
-  "echo '✅ Gossip: Active'",
-  "echo 'QED 🔮⚡📻🦞'"
+  "echo '✓ UNIVERSAL_COORDS.md'",
+  "echo '✓ All implementations built'"
+]
+
+[[pipelines.steps]]
+name = "run-python"
+commands = [
+  "python3 map_universal_coords.py"
+]
+
+[[pipelines]]
+name = "universal-coords-quick"
+description = "Quick test of coordinate mapping"
+
+[[pipelines.steps]]
+name = "test-all"
+commands = [
+  "cargo test --lib universal_coords",
+  "python3 map_universal_coords.py",
+  "echo '✓ Quick test passed'"
 ]

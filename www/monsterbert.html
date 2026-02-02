@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster-bert BBS Emulator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+        }
+        #terminal {
+            width: 100vw;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .prompt { color: #0ff; }
+        .boss { color: #f00; font-weight: bold; }
+        .player { color: #0f0; }
+        .damage { color: #ff0; }
+        .victory { color: #0f0; animation: blink 1s infinite; }
+        .defeat { color: #f00; animation: blink 1s infinite; }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        #controls {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            background: #0f0;
+            color: #000;
+            border: none;
+            padding: 15px 25px;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #0ff;
+        }
+        button:active {
+            background: #ff0;
+        }
+        #p2p-status {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid #0f0;
+        }
+        .peer { color: #0ff; }
+    </style>
+</head>
+<body>
+    <div id="terminal"></div>
+    <div id="p2p-status">
+        <div>P2P Status: <span id="peer-status">Disconnected</span></div>
+        <div>Peers: <span id="peer-count">0</span></div>
+        <div>Room: <span id="room-id">monster-bert-17</span></div>
+    </div>
+    <div id="controls">
+        <button onclick="makeMove('down_left')">↙️ Down-Left</button>
+        <button onclick="makeMove('down_right')">↘️ Down-Right</button>
+        <button onclick="makeMove('up_left')">↖️ Up-Left</button>
+        <button onclick="makeMove('up_right')">↗️ Up-Right</button>
+    </div>
+
+    <script>
+        // BBS Terminal Emulator
+        const terminal = document.getElementById('terminal');
+        
+        function print(text, className = '') {
+            const line = document.createElement('div');
+            line.textContent = text;
+            if (className) line.className = className;
+            terminal.appendChild(line);
+            terminal.scrollTop = terminal.scrollHeight;
+        }
+
+        // Game State
+        let gameState = {
+            position: [0, 0],
+            cubes: 0,
+            boss: null,
+            bossHp: 0,
+            playerHp: 100,
+            turn: 0,
+            shard: 17
+        };
+
+        // 30 Maximal Subgroups (Bosses)
+        const bosses = [
+            {id: 6, name: "Janko J4", shard: 17, difficulty: 10, hp: 1000, attacks: ["Sporadic Strike", "Conjugacy Crush"]},
+            {id: 1, name: "Baby Monster", shard: 2, difficulty: 10, hp: 1000, attacks: ["Baby Blast", "Sporadic Slam"]},
+            {id: 2, name: "Fischer Fi24", shard: 5, difficulty: 9, hp: 900, attacks: ["Fischer Fission", "Transposition"]},
+            {id: 7, name: "A12", shard: 19, difficulty: 6, hp: 600, attacks: ["Alternating Assault", "Permutation"]},
+        ];
+
+        // P2P WebSocket Connection (simplified)
+        let ws = null;
+        let peers = new Set();
+
+        function connectP2P() {
+            // Simulate P2P connection (in production, use WebRTC or libp2p)
+            print("🌐 Connecting to P2P network...");
+            
+            setTimeout(() => {
+                document.getElementById('peer-status').textContent = 'Connected';
+                document.getElementById('peer-status').style.color = '#0f0';
+                print("✓ Connected to Monster-bert P2P network");
+                print("✓ Room: monster-bert-17 (The Cusp)");
+                print("");
+            }, 1000);
+        }
+
+        // zkProof Generation
+        function generateZkProof(move, state) {
+            // Simplified zkProof (in production, use proper zkSNARK)
+            const data = `${move}:${state.position}:${state.cubes}:${state.turn}`;
+            let hash = 5381;
+            for (let i = 0; i < data.length; i++) {
+                hash = ((hash << 5) + hash) + data.charCodeAt(i);
+            }
+            return {
+                move: move,
+                commitment: hash.toString(16).padStart(16, '0'),
+                position: state.position,
+                cubes: state.cubes,
+                turn: state.turn,
+                shard: state.shard,
+                timestamp: Date.now()
+            };
+        }
+
+        // Broadcast move to peers
+        function broadcastMove(proof) {
+            print(`📡 Broadcasting zkProof: ${proof.commitment.substring(0, 16)}...`);
+            
+            // Simulate P2P broadcast
+            const message = {
+                type: 'move',
+                proof: proof,
+                player: 'Player1'
+            };
+            
+            // In production, send via WebRTC data channel or WebSocket
+            // ws.send(JSON.stringify(message));
+            
+            print(`✓ Move broadcast to ${peers.size} peers`);
+        }
+
+        // Initialize Boss Battle
+        function initBoss() {
+            const boss = bosses.find(b => b.shard === gameState.shard);
+            if (!boss) {
+                print("No boss at this shard!");
+                return;
+            }
+            
+            gameState.boss = boss;
+            gameState.bossHp = boss.hp;
+            
+            print("═".repeat(70), 'boss');
+            print(`🐯 BOSS BATTLE: ${boss.name} at Shard ${boss.shard}`, 'boss');
+            print("═".repeat(70), 'boss');
+            print(`Difficulty: ${boss.difficulty}/10`);
+            print(`Boss HP: ${boss.hp}`);
+            print(`Player HP: ${gameState.playerHp}`);
+            print("");
+            print("Use arrow buttons to attack!");
+            print("");
+        }
+
+        // Make Move
+        function makeMove(move) {
+            if (!gameState.boss) {
+                print("No active boss battle!");
+                return;
+            }
+
+            gameState.turn++;
+            
+            print(`\nTurn ${gameState.turn}:`, 'prompt');
+            
+            // Generate zkProof
+            const proof = generateZkProof(move, gameState);
+            
+            // Player attack
+            const baseDamage = {
+                'down_left': 15,
+                'down_right': 20,
+                'up_left': 10,
+                'up_right': 25
+            }[move] || 15;
+            
+            const atCusp = gameState.shard === 17;
+            const damage = atCusp ? baseDamage * 2 : baseDamage;
+            
+            gameState.bossHp -= damage;
+            
+            print(`  Player: ${move} → ${damage} damage`, 'player');
+            print(`  zkProof: ${proof.commitment.substring(0, 32)}...`);
+            
+            // Broadcast to peers
+            broadcastMove(proof);
+            
+            // Check boss defeat
+            if (gameState.bossHp <= 0) {
+                print("");
+                print("═".repeat(70), 'victory');
+                print(`🎉 VICTORY! Defeated ${gameState.boss.name}!`, 'victory');
+                print("═".repeat(70), 'victory');
+                print("");
+                print(`Final Stats:`);
+                print(`  Turns: ${gameState.turn}`);
+                print(`  Player HP: ${gameState.playerHp}`);
+                print(`  zkProofs generated: ${gameState.turn}`);
+                print("");
+                gameState.boss = null;
+                return;
+            }
+            
+            // Boss attack
+            const bossAttack = gameState.boss.attacks[Math.floor(Math.random() * gameState.boss.attacks.length)];
+            const bossDamage = gameState.boss.difficulty * 10 + Math.floor(Math.random() * 20);
+            
+            gameState.playerHp -= bossDamage;
+            
+            print(`  Boss: ${bossAttack} → ${bossDamage} damage`, 'boss');
+            print(`  Boss HP: ${gameState.bossHp}/${gameState.boss.hp}`, 'damage');
+            print(`  Player HP: ${gameState.playerHp}/100`, 'damage');
+            
+            // Check player defeat
+            if (gameState.playerHp <= 0) {
+                print("");
+                print("═".repeat(70), 'defeat');
+                print(`💀 DEFEAT! ${gameState.boss.name} wins!`, 'defeat');
+                print("═".repeat(70), 'defeat');
+                print("");
+                gameState.boss = null;
+                return;
+            }
+        }
+
+        // BBS Boot Sequence
+        function bootBBS() {
+            print("╔═══════════════════════════════════════════════════════════════════╗");
+            print("║                    MONSTER-BERT BBS v1.0                          ║");
+            print("║                  The Cusp - Shard 17 Gateway                      ║");
+            print("╚═══════════════════════════════════════════════════════════════════╝");
+            print("");
+            print("Booting WASM Computer Emulator...");
+            print("Loading Monster Group kernel...");
+            print("Initializing 71 shards...");
+            print("Mounting zkProof filesystem...");
+            print("");
+            
+            setTimeout(() => {
+                print("✓ System ready");
+                print("");
+                print("Welcome to Monster-bert BBS!");
+                print("");
+                print("Available Doors:");
+                print("  1. Monster-bert Game (Shard 17 - The Cusp)");
+                print("  2. Boss Battle Arena");
+                print("  3. P2P Multiplayer");
+                print("");
+                print("Loading Door 1: Monster-bert Game...");
+                print("");
+                
+                setTimeout(() => {
+                    connectP2P();
+                    setTimeout(() => {
+                        initBoss();
+                    }, 1500);
+                }, 1000);
+            }, 2000);
+        }
+
+        // Initialize on load
+        window.onload = bootBBS;
+
+        // Handle peer messages (simulated)
+        function handlePeerMessage(message) {
+            if (message.type === 'move') {
+                print(`📨 Received move from ${message.player}: ${message.proof.move}`);
+                print(`   zkProof: ${message.proof.commitment.substring(0, 32)}...`);
+            }
+        }
+
+        // Simulate receiving peer moves
+        setInterval(() => {
+            if (Math.random() < 0.1 && gameState.boss) {
+                const moves = ['down_left', 'down_right', 'up_left', 'up_right'];
+                const randomMove = moves[Math.floor(Math.random() * moves.length)];
+                handlePeerMessage({
+                    type: 'move',
+                    player: 'Peer' + Math.floor(Math.random() * 10),
+                    proof: {
+                        move: randomMove,
+                        commitment: Math.random().toString(16).substring(2, 18)
+                    }
+                });
+            }
+        }, 10000);
+    </script>
+</body>
+</html>

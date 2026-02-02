@@ -1,0 +1,166 @@
+{
+  "glory_prime": 53,
+  "is_excluded": true,
+  "total_repos": 80,
+  "shards_used": 39,
+  "glory_shards": {
+    "5": [
+      "astropy/astropy",
+      "astropy/astropy",
+      "bwinkel/pycraf"
+    ],
+    "27": [
+      "skyfielders/python-skyfield",
+      "BSoDium/The-PyOS-Project",
+      "rodluger/planetplanet",
+      "Jammy2211/PyAutoLens"
+    ],
+    "21": [
+      "astroML/astroML",
+      "yt-project/yt",
+      "astroML/astroML",
+      "yt-project/yt",
+      "arda-guler/orbitSim3D",
+      "qsantos/spyce",
+      "arda-guler/orbitSim3D",
+      "RashmikaDushan/GalaNor-ExoSky",
+      "lenstronomy/lenstronomy",
+      "MPoL-dev/MPoL"
+    ],
+    "47": [
+      "sunpy/sunpy",
+      "liulei/gaia_ship"
+    ],
+    "10": [
+      "nasa/apod-api",
+      "vortex-exoplanet/VIP"
+    ],
+    "45": [
+      "astropy/astroquery",
+      "adxorg/astrodynx",
+      "OpenExoplanetCatalogue/open_exoplanet_catalogue"
+    ],
+    "35": [
+      "PlasmaPy/PlasmaPy",
+      "PlasmaPy/PlasmaPy"
+    ],
+    "43": [
+      "spacetelescope/jwst"
+    ],
+    "30": [
+      "asdf-format/asdf",
+      "pytroll/pyorbital"
+    ],
+    "9": [
+      "lightkurve/lightkurve",
+      "minaskar/pocomc"
+    ],
+    "46": [
+      "Yu-Yang-Li/StarWhisper"
+    ],
+    "18": [
+      "radis/radis",
+      "jewels86/Axinite"
+    ],
+    "3": [
+      "jobovy/galpy",
+      "panoptes/POCS"
+    ],
+    "11": [
+      "exoplanet-dev/exoplanet",
+      "exoplanet-dev/exoplanet"
+    ],
+    "2": [
+      "tardis-sn/tardis",
+      "rzellem/EXOTIC"
+    ],
+    "14": [
+      "poliastro/poliastro",
+      "shadden/celmech",
+      "poliastro/poliastro",
+      "esa/dSGP4"
+    ],
+    "52": [
+      "bluescarni/heyoka.py"
+    ],
+    "20": [
+      "astronomy/SolTrack"
+    ],
+    "49": [
+      "krmerdem/Astro-Observer-Plan",
+      "tedcline/ezRA",
+      "caracal-pipeline/caracal"
+    ],
+    "17": [
+      "freevariable/Sydneus-Serverless-Astrophysics"
+    ],
+    "44": [
+      "EOS3D/eos3d-mpl",
+      "RadioAstronomySoftwareGroup/pyuvdata"
+    ],
+    "29": [
+      "alfonsogonzalez/AWP"
+    ],
+    "22": [
+      "RazerM/orbital",
+      "jonathansick/starplex",
+      "EdoardoCarlesi/PyRCODIO"
+    ],
+    "31": [
+      "sammmlow/ORBITM",
+      "bccp/nbodykit"
+    ],
+    "38": [
+      "TruSat/trusat-orbit",
+      "athob/py-ananke"
+    ],
+    "15": [
+      "subvertmacrocosm/StarCatalogue",
+      "lcx366/STARQUERY"
+    ],
+    "4": [
+      "mkelley/calviacat"
+    ],
+    "8": [
+      "slhale/kapao-wds",
+      "3fon3fonov/exostriker"
+    ],
+    "48": [
+      "SamWeise/SatelliteSim",
+      "jcfitzpatrick12/spectre"
+    ],
+    "7": [
+      "uiucsn/ztf-dr-vars",
+      "WVURAIL/gr-radio_astro"
+    ],
+    "40": [
+      "google-research/exoplanet-ml",
+      "astropy/halotools"
+    ],
+    "0": [
+      "pearsonkyle/Exoplanet-Artificial-Intelligence"
+    ],
+    "24": [
+      "MartianColonist/POSEIDON"
+    ],
+    "33": [
+      "DifferentiableUniverseInitiative/jax_cosmo"
+    ],
+    "19": [
+      "skypyproject/skypy"
+    ],
+    "37": [
+      "franciscovillaescusa/Quijote-simulations"
+    ],
+    "42": [
+      "eelregit/pmwd"
+    ],
+    "16": [
+      "0xCoto/Virgo",
+      "casacore/python-casacore"
+    ],
+    "50": [
+      "lwa-project/bifrost"
+    ]
+  }
+}

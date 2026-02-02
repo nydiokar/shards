@@ -1,0 +1,255 @@
+{
+  "theory": 59,
+  "title": "The Map IS the Territory",
+  "spacetime": {
+    "time": "2026-02-02T13:40:59.361828",
+    "unix": 1770057659.361828,
+    "location": {
+      "lat": 40.3573,
+      "lon": -74.6672,
+      "alt": 50,
+      "name": "Princeton, NJ"
+    },
+    "motion": {
+      "orbital_velocity": 29.78,
+      "rotational_velocity": 0.465,
+      "solar_system_velocity": 220,
+      "local_group_velocity": 600
+    }
+  },
+  "pointers": [
+    {
+      "object": "Betelgeuse",
+      "coordinates": {
+        "ra": 88.79,
+        "dec": 7.41,
+        "frame": "ICRS"
+      },
+      "observer": {
+        "time": "2026-02-02T13:40:59.361852",
+        "unix": 1770057659.361852,
+        "location": {
+          "lat": 40.3573,
+          "lon": -74.6672,
+          "alt": 50,
+          "name": "Princeton, NJ"
+        },
+        "motion": {
+          "orbital_velocity": 29.78,
+          "rotational_velocity": 0.465,
+          "solar_system_velocity": 220,
+          "local_group_velocity": 600
+        }
+      },
+      "shards": {
+        "power": 20,
+        "glory": 41,
+        "eagle": 28
+      },
+      "pointer_type": "REAL",
+      "is_territory": true,
+      "is_map": true,
+      "map_equals_territory": true
+    },
+    {
+      "object": "Andromeda",
+      "coordinates": {
+        "ra": 10.68,
+        "dec": 41.27,
+        "frame": "ICRS"
+      },
+      "observer": {
+        "time": "2026-02-02T13:40:59.361873",
+        "unix": 1770057659.361873,
+        "location": {
+          "lat": 40.3573,
+          "lon": -74.6672,
+          "alt": 50,
+          "name": "Princeton, NJ"
+        },
+        "motion": {
+          "orbital_velocity": 29.78,
+          "rotational_velocity": 0.465,
+          "solar_system_velocity": 220,
+          "local_group_velocity": 600
+        }
+      },
+      "shards": {
+        "power": 10,
+        "glory": 38,
+        "eagle": 37
+      },
+      "pointer_type": "REAL",
+      "is_territory": true,
+      "is_map": true,
+      "map_equals_territory": true
+    },
+    {
+      "object": "Polaris",
+      "coordinates": {
+        "ra": 37.95,
+        "dec": 89.26,
+        "frame": "ICRS"
+      },
+      "observer": {
+        "time": "2026-02-02T13:40:59.361878",
+        "unix": 1770057659.361878,
+        "location": {
+          "lat": 40.3573,
+          "lon": -74.6672,
+          "alt": 50,
+          "name": "Princeton, NJ"
+        },
+        "motion": {
+          "orbital_velocity": 29.78,
+          "rotational_velocity": 0.465,
+          "solar_system_velocity": 220,
+          "local_group_velocity": 600
+        }
+      },
+      "shards": {
+        "power": 68,
+        "glory": 3,
+        "eagle": 1
+      },
+      "pointer_type": "REAL",
+      "is_territory": true,
+      "is_map": true,
+      "map_equals_territory": true
+    },
+    {
+      "object": "Sirius",
+      "coordinates": {
+        "ra": 101.29,
+        "dec": -16.72,
+        "frame": "ICRS"
+      },
+      "observer": {
+        "time": "2026-02-02T13:40:59.361883",
+        "unix": 1770057659.361883,
+        "location": {
+          "lat": 40.3573,
+          "lon": -74.6672,
+          "alt": 50,
+          "name": "Princeton, NJ"
+        },
+        "motion": {
+          "orbital_velocity": 29.78,
+          "rotational_velocity": 0.465,
+          "solar_system_velocity": 220,
+          "local_group_velocity": 600
+        }
+      },
+      "shards": {
+        "power": 56,
+        "glory": 37,
+        "eagle": 3
+      },
+      "pointer_type": "REAL",
+      "is_territory": true,
+      "is_map": true,
+      "map_equals_territory": true
+    },
+    {
+      "object": "Vega",
+      "coordinates": {
+        "ra": 279.23,
+        "dec": 38.78,
+        "frame": "ICRS"
+      },
+      "observer": {
+        "time": "2026-02-02T13:40:59.361887",
+        "unix": 1770057659.361887,
+        "location": {
+          "lat": 40.3573,
+          "lon": -74.6672,
+          "alt": 50,
+          "name": "Princeton, NJ"
+        },
+        "motion": {
+          "orbital_velocity": 29.78,
+          "rotational_velocity": 0.465,
+          "solar_system_velocity": 220,
+          "local_group_velocity": 600
+        }
+      },
+      "shards": {
+        "power": 34,
+        "glory": 6,
+        "eagle": 56
+      },
+      "pointer_type": "REAL",
+      "is_territory": true,
+      "is_map": true,
+      "map_equals_territory": true
+    },
+    {
+      "object": "Rigel",
+      "coordinates": {
+        "ra": 78.63,
+        "dec": -8.2,
+        "frame": "ICRS"
+      },
+      "observer": {
+        "time": "2026-02-02T13:40:59.361893",
+        "unix": 1770057659.361893,
+        "location": {
+          "lat": 40.3573,
+          "lon": -74.6672,
+          "alt": 50,
+          "name": "Princeton, NJ"
+        },
+        "motion": {
+          "orbital_velocity": 29.78,
+          "rotational_velocity": 0.465,
+          "solar_system_velocity": 220,
+          "local_group_velocity": 600
+        }
+      },
+      "shards": {
+        "power": 45,
+        "glory": 16,
+        "eagle": 12
+      },
+      "pointer_type": "REAL",
+      "is_territory": true,
+      "is_map": true,
+      "map_equals_territory": true
+    },
+    {
+      "object": "Proxima_Centauri",
+      "coordinates": {
+        "ra": 217.43,
+        "dec": -62.68,
+        "frame": "ICRS"
+      },
+      "observer": {
+        "time": "2026-02-02T13:40:59.361898",
+        "unix": 1770057659.361898,
+        "location": {
+          "lat": 40.3573,
+          "lon": -74.6672,
+          "alt": 50,
+          "name": "Princeton, NJ"
+        },
+        "motion": {
+          "orbital_velocity": 29.78,
+          "rotational_velocity": 0.465,
+          "solar_system_velocity": 220,
+          "local_group_velocity": 600
+        }
+      },
+      "shards": {
+        "power": 2,
+        "glory": 12,
+        "eagle": 31
+      },
+      "pointer_type": "REAL",
+      "is_territory": true,
+      "is_map": true,
+      "map_equals_territory": true
+    }
+  ],
+  "total_pointers": 7,
+  "verified": true
+}

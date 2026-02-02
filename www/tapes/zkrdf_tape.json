@@ -1,0 +1,90 @@
+{
+  "tape_id": "TAPE-17-QBERT-ZKRDF",
+  "format": "zkRDF",
+  "encoding": "emoji-url",
+  "namespace": "http://monster.group/qbert#",
+  "shard": 17,
+  "triples": [
+    [
+      "http://monster.group/qbert#qbert",
+      "game",
+      "Q*bert"
+    ],
+    [
+      "http://monster.group/qbert#qbert",
+      "shard",
+      "17"
+    ],
+    [
+      "http://monster.group/qbert#qbert",
+      "monster",
+      "196883"
+    ],
+    [
+      "http://monster.group/qbert#qbert",
+      "hecke",
+      "578"
+    ],
+    [
+      "http://monster.group/qbert#qbert/state/0",
+      "position",
+      "(0,0)"
+    ],
+    [
+      "http://monster.group/qbert#qbert/state/0",
+      "cubes",
+      "0"
+    ],
+    [
+      "http://monster.group/qbert#qbert/state/0",
+      "monster",
+      "1000"
+    ],
+    [
+      "http://monster.group/qbert#qbert/move/1",
+      "move",
+      "down_left"
+    ],
+    [
+      "http://monster.group/qbert#qbert/move/2",
+      "move",
+      "down_right"
+    ],
+    [
+      "http://monster.group/qbert#qbert/move/3",
+      "move",
+      "up_left"
+    ],
+    [
+      "http://monster.group/qbert#qbert/move/4",
+      "move",
+      "up_right"
+    ],
+    [
+      "http://monster.group/qbert#qbert/goal",
+      "cubes",
+      "28"
+    ],
+    [
+      "http://monster.group/qbert#qbert/goal",
+      "proof",
+      "optimal_path_wins"
+    ]
+  ],
+  "emoji_urls": [
+    "http%3A//monster.group/qbert%23qbert\ud83c\udfaeQ%2Abert",
+    "http%3A//monster.group/qbert%23qbert\ud83d\udc2f17",
+    "http%3A//monster.group/qbert%23qbert\ud83d\udc7e196883",
+    "http%3A//monster.group/qbert%23qbert\ud83c\udfb5578",
+    "http%3A//monster.group/qbert%23qbert/state/0\ud83d\udccd%280%2C0%29",
+    "http%3A//monster.group/qbert%23qbert/state/0\ud83d\udd370",
+    "http%3A//monster.group/qbert%23qbert/state/0\ud83d\udc7e1000",
+    "http%3A//monster.group/qbert%23qbert/move/1\ud83c\udfb2down_left",
+    "http%3A//monster.group/qbert%23qbert/move/2\ud83c\udfb2down_right",
+    "http%3A//monster.group/qbert%23qbert/move/3\ud83c\udfb2up_left",
+    "http%3A//monster.group/qbert%23qbert/move/4\ud83c\udfb2up_right",
+    "http%3A//monster.group/qbert%23qbert/goal\ud83d\udd3728",
+    "http%3A//monster.group/qbert%23qbert/goal\u2705optimal_path_wins"
+  ],
+  "hash": "1b28af3d7e122b16029ad0a446c1e743048ac492b6e8c9ca42c213c9ca78090b"
+}

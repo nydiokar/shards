@@ -1,0 +1,41 @@
+{
+  "theorem": 71,
+  "title": "j-Invariant as Galactic Center Pointer",
+  "timestamp": "2026-02-02T13:50:16.705469",
+  "sgr_a_star": {
+    "name": "Sagittarius A*",
+    "type": "Supermassive Black Hole",
+    "coordinates": {
+      "ra": 266.417,
+      "dec": -29.008,
+      "distance_ly": 26673,
+      "distance_parsec": 8178
+    },
+    "properties": {
+      "mass_solar": 4154000.0,
+      "schwarzschild_radius_km": 12000000.0,
+      "schwarzschild_radius_au": 0.08,
+      "event_horizon_area_km2": 1800000000000000.0
+    },
+    "our_orbit": {
+      "velocity_km_s": 220,
+      "period_years": 230000000.0,
+      "radius_ly": 26673
+    }
+  },
+  "orbital_phase": {
+    "orbits_completed": 20.0,
+    "current_phase": 0.0,
+    "tau": 0.0,
+    "orbital_period_years": 230000000.0,
+    "solar_system_age_years": 4600000000.0
+  },
+  "j_invariant": {
+    "tau": 0.0,
+    "q_real": 1.0,
+    "q_imag": 0.0,
+    "j_real": 21691389.0,
+    "j_imag": 0.0,
+    "j_magnitude": 21691389.0
+  }
+}

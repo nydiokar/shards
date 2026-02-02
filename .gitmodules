@@ -22,3 +22,24 @@
 [submodule "shard06-terpsichore/rpemotes-reborn"]
 	path = shard06-terpsichore/rpemotes-reborn
 	url = https://github.com/alberttheprince/rpemotes-reborn.git
+[submodule "astronomy_submodules/shard_00/astropy"]
+	path = astronomy_submodules/shard_00/astropy
+	url = https://github.com/astropy/astropy.git
+[submodule "astronomy_submodules/shard_00/python-skyfield"]
+	path = astronomy_submodules/shard_00/python-skyfield
+	url = https://github.com/skyfielders/python-skyfield.git
+[submodule "astronomy_submodules/shard_00/astroML"]
+	path = astronomy_submodules/shard_00/astroML
+	url = https://github.com/astroML/astroML.git
+[submodule "astronomy_submodules/shard_00/open_exoplanet_catalogue"]
+	path = astronomy_submodules/shard_00/open_exoplanet_catalogue
+	url = https://github.com/OpenExoplanetCatalogue/open_exoplanet_catalogue.git
+[submodule "astronomy_submodules/shard_00/sunpy"]
+	path = astronomy_submodules/shard_00/sunpy
+	url = https://github.com/sunpy/sunpy.git
+[submodule "astronomy_submodules/shard_00/apod-api"]
+	path = astronomy_submodules/shard_00/apod-api
+	url = https://github.com/nasa/apod-api.git
+[submodule "astronomy_submodules/shard_00/poliastro"]
+	path = astronomy_submodules/shard_00/poliastro
+	url = https://github.com/poliastro/poliastro.git

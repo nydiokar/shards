@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monster Coordinate Visualizer</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+        }
+        #canvas {
+            display: block;
+            margin: 0 auto;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border: 1px solid #0f0;
+        }
+        .cusp { color: #ff0; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="info">
+        <div>Monster Galactic Coordinates</div>
+        <div>Center: <span class="cusp">Shard 17 (The Cusp)</span></div>
+        <div>Radius: 0 - 196,883</div>
+        <div id="hover"></div>
+    </div>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const scale = Math.min(canvas.width, canvas.height) / 400000;
+        
+        // Load coordinate data
+        fetch('tapes/universal_coords.json')
+            .then(r => r.json())
+            .then(data => {
+                drawGalaxy(data);
+            });
+        
+        function drawGalaxy(data) {
+            // Draw Monster center
+            ctx.fillStyle = '#ff0';
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, 10, 0, Math.PI * 2);
+            ctx.fill();
+            
+            ctx.fillStyle = '#ff0';
+            ctx.font = '14px Courier New';
+            ctx.fillText('Shard 17 (Cusp)', centerX + 15, centerY);
+            
+            // Draw concentric circles (shards)
+            ctx.strokeStyle = '#0f0';
+            ctx.globalAlpha = 0.2;
+            for (let r = 50000; r <= 196883; r += 50000) {
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, r * scale, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+            ctx.globalAlpha = 1;
+            
+            // Draw game positions
+            data.games.forEach(game => {
+                game.sample_coords.forEach(coord => {
+                    const x = centerX + coord.radius * scale * Math.cos(coord.angle * Math.PI / 180);
+                    const y = centerY + coord.radius * scale * Math.sin(coord.angle * Math.PI / 180);
+                    
+                    ctx.fillStyle = game.shard === 17 ? '#ff0' : '#0f0';
+                    ctx.beginPath();
+                    ctx.arc(x, y, 3, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+            });
+            
+            console.log(`Rendered ${data.total_games} games`);
+        }
+    </script>
+</body>
+</html>

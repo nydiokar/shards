@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     rust-overlay.url = "github:oxalica/rust-overlay";
-    metarocq.url = "github:MetaRocq/metarocq";
+    metarocq.url = "github:meta-introspector/metacoq";
   };
 
   outputs = { self, nixpkgs, flake-utils, rust-overlay }:
@@ -39,6 +39,47 @@
             description = "CICADA-71 Moltbook Registration - Containing the Molting Lobster";
             license = pkgs.lib.licenses.agpl3Plus;
           };
+        };
+        
+        # Universal Coordinates implementations
+        universal-coords-rust = pkgs.rustPlatform.buildRustPackage {
+          pname = "universal-coords";
+          version = "0.1.0";
+          src = ./.;
+          cargoLock.lockFile = ./Cargo.lock;
+          nativeBuildInputs = [ rustToolchain ];
+        };
+        
+        universal-coords-lean = pkgs.stdenv.mkDerivation {
+          pname = "universal-coords-lean";
+          version = "0.1.0";
+          src = ./.;
+          buildInputs = [ pkgs.lean4 ];
+          buildPhase = "lean UniversalCoords.lean";
+          installPhase = "mkdir -p $out && cp .lake/build/lib/*.olean $out/";
+        };
+        
+        universal-coords-minizinc = pkgs.stdenv.mkDerivation {
+          pname = "universal-coords-minizinc";
+          version = "0.1.0";
+          src = ./.;
+          buildInputs = [ pkgs.minizinc ];
+          installPhase = ''
+            mkdir -p $out/bin
+            cp universal_coords.mzn $out/bin/
+          '';
+        };
+        
+        universal-coords-zkperf = pkgs.stdenv.mkDerivation {
+          pname = "universal-coords-zkperf";
+          version = "0.1.0";
+          src = ./.;
+          buildInputs = [ pkgs.circom ];
+          buildPhase = "circom circuits/universal_coords.circom --r1cs --wasm --sym";
+          installPhase = ''
+            mkdir -p $out/circuits
+            cp universal_coords_js/* $out/circuits/
+          '';
         };
         
         # Free-tier AI CLIs

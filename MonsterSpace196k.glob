@@ -1,0 +1,62 @@
+DIGEST 339d23c011ed45f1af8a5fde5a05926a
+FMonsterSpace196k
+def 86:96 <> MONSTER_DIM
+R100:102 Corelib.Init.Datatypes <> nat ind
+def 126:139 <> MONSTER_IRREPS
+R143:145 Corelib.Init.Datatypes <> nat ind
+def 166:172 <> ROOSTER
+R176:178 Corelib.Init.Datatypes <> nat ind
+def 198:206 <> HYPERCUBE
+R210:212 Corelib.Init.Datatypes <> nat ind
+def 248:259 <> UMBRAL_COUNT
+R263:265 Corelib.Init.Datatypes <> nat ind
+rec 309:320 <> MonsterCoord
+proj 329:334 <> primes
+proj 350:361 <> valid_length
+R338:341 Corelib.Init.Datatypes <> list ind
+R343:345 Corelib.Init.Datatypes <> nat ind
+R378:380 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R365:370 Corelib.Init.Datatypes <> length def
+R372:377 MonsterSpace196k <> primes:2 meth
+rec 425:437 <> MonsterBridge
+proj 446:450 <> nodeA
+proj 461:465 <> nodeB
+proj 476:482 <> irrep_a
+proj 493:499 <> irrep_b
+proj 510:514 <> coord
+proj 534:546 <> valid_irrep_a
+proj 578:590 <> valid_irrep_b
+R454:456 Corelib.Init.Datatypes <> nat ind
+R469:471 Corelib.Init.Datatypes <> nat ind
+R486:488 Corelib.Init.Datatypes <> nat ind
+R503:505 Corelib.Init.Datatypes <> nat ind
+R518:529 MonsterSpace196k <> MonsterCoord rec
+R557:559 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R550:556 MonsterSpace196k <> irrep_a:7 meth
+R560:573 MonsterSpace196k <> MONSTER_IRREPS def
+R601:603 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R594:600 MonsterSpace196k <> irrep_b:8 meth
+R604:617 MonsterSpace196k <> MONSTER_IRREPS def
+ax 670:683 <> spectral_probe
+R687:694 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R712:716 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R699:711 MonsterSpace196k <> MonsterBridge rec
+binder 695:695 <> b:12
+R730:733 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R724:726 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R717:721 MonsterSpace196k <> nodeA proj
+R723:723 MonsterSpace196k <> b:12 var
+R741:743 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R734:738 MonsterSpace196k <> nodeB proj
+R740:740 MonsterSpace196k <> b:12 var
+prf 802:817 <> total_symmetries
+R850:852 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R835:837 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R821:834 MonsterSpace196k <> MONSTER_IRREPS def
+R838:849 MonsterSpace196k <> UMBRAL_COUNT def
+prf 933:954 <> hypercube_overcapacity
+R967:969 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R958:966 MonsterSpace196k <> HYPERCUBE def
+R970:980 MonsterSpace196k <> MONSTER_DIM def
+R999:1007 MonsterSpace196k <> HYPERCUBE def
+R1010:1020 MonsterSpace196k <> MONSTER_DIM def

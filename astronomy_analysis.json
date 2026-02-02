@@ -1,0 +1,43 @@
+{
+  "total_repos": 7,
+  "total_files": 1933,
+  "total_lines": 563471,
+  "total_tokens": 1990289,
+  "repos": {
+    "python-skyfield": {
+      "files": 137,
+      "lines": 28026,
+      "tokens": 123721
+    },
+    "open_exoplanet_catalogue": {
+      "files": 2,
+      "lines": 880,
+      "tokens": 3265
+    },
+    "astropy": {
+      "files": 978,
+      "lines": 406750,
+      "tokens": 1429286
+    },
+    "astroML": {
+      "files": 146,
+      "lines": 14834,
+      "tokens": 50607
+    },
+    "poliastro": {
+      "files": 189,
+      "lines": 32031,
+      "tokens": 101728
+    },
+    "apod-api": {
+      "files": 8,
+      "lines": 957,
+      "tokens": 3525
+    },
+    "sunpy": {
+      "files": 473,
+      "lines": 79993,
+      "tokens": 278157
+    }
+  }
+}
