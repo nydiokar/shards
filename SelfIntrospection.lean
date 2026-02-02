@@ -80,8 +80,64 @@ def formatTypeDistance : TypeDistance → String
   | TypeDistance.MonsterPrime d => s!"MONSTER PRIME ({d} Planck) ⭐"
   | TypeDistance.FarField d => s!"FAR FIELD ({d} Planck)"
 
--- Main introspection
-def main : IO Unit := do
+-- Function as vector from cusp
+structure FunctionVector where
+  name : String
+  start_addr : Nat  -- Where function begins
+  end_addr : Nat    -- Where function ends (predicted)
+  start_distance : Nat  -- Distance from cusp to start
+  end_distance : Nat    -- Distance from cusp to end
+  vector_length : Nat   -- Length of function vector
+
+-- Calculate function vector
+def makeFunctionVector (name : String) (start : Nat) (end_pred : Nat) : FunctionVector :=
+  let start_dist := distanceFromCusp start
+  let end_dist := distanceFromCusp end_pred
+  let vec_len := end_dist - start_dist
+  { name := name
+  , start_addr := start
+  , end_addr := end_pred
+  , start_distance := start_dist
+  , end_distance := end_dist
+  , vector_length := vec_len
+  }
+
+-- Function map: all functions as vectors from cusp
+def functionMap : List FunctionVector := [
+  -- Simple functions (near cusp)
+  makeFunctionVector "id" 1 2,
+  makeFunctionVector "not" 2 3,
+  makeFunctionVector "succ" 3 5,
+  
+  -- Medium functions
+  makeFunctionVector "add" 5 11,
+  makeFunctionVector "mul" 11 23,
+  
+  -- Monster prime functions
+  makeFunctionVector "paxos_consensus" 23 47,
+  makeFunctionVector "monster_crown" 47 71,
+  makeFunctionVector "rooster_crown" 71 100,
+  
+  -- Complex functions (far field)
+  makeFunctionVector "map" 100 196,
+  makeFunctionVector "fold" 196 883,
+  makeFunctionVector "monster_group_op" 883 196883
+]
+
+-- Introspect functions
+def introspectFunctions : IO Unit := do
+  IO.println ""
+  IO.println "📐 FUNCTION VECTORS FROM CUSP"
+  IO.println "=============================="
+  IO.println ""
+  
+  for func in functionMap do
+    IO.println s!"Function: {func.name}"
+    IO.println s!"  Start: {func.start_addr} (distance: {func.start_distance} ℏ from cusp)"
+    IO.println s!"  End:   {func.end_addr} (distance: {func.end_distance} ℏ from cusp)"
+    IO.println s!"  Vector: {func.start_distance} ℏ → {func.end_distance} ℏ"
+    IO.println s!"  Length: {func.vector_length} ℏ"
+    IO.println ""
   IO.println "🌀 SELF-INTROSPECTION: MEMORY MAP FROM CUSP"
   IO.println "============================================"
   IO.println ""
