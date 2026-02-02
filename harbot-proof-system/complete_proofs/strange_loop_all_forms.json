@@ -1,0 +1,482 @@
+{
+  "monster_order": "808017424794512875886459904961710757005754368000000000",
+  "sylow_subgroups": {
+    "2": {
+      "size": 70368744177664,
+      "sample": [
+        {
+          "group_element": 0,
+          "prime": 2,
+          "coordinates": [
+            232,
+            323
+          ],
+          "sum": 555,
+          "involution": false
+        },
+        {
+          "group_element": 703687441776,
+          "prime": 2,
+          "coordinates": [
+            1101,
+            1192
+          ],
+          "sum": 2293,
+          "involution": false
+        },
+        {
+          "group_element": 1407374883552,
+          "prime": 2,
+          "coordinates": [
+            1970,
+            2061
+          ],
+          "sum": 4031,
+          "involution": false
+        },
+        {
+          "group_element": 2111062325328,
+          "prime": 2,
+          "coordinates": [
+            2839,
+            2930
+          ],
+          "sum": 5769,
+          "involution": false
+        },
+        {
+          "group_element": 2814749767104,
+          "prime": 2,
+          "coordinates": [
+            3708,
+            3799
+          ],
+          "sum": 7507,
+          "involution": false
+        },
+        {
+          "group_element": 3518437208880,
+          "prime": 2,
+          "coordinates": [
+            4577,
+            4668
+          ],
+          "sum": 9245,
+          "involution": false
+        },
+        {
+          "group_element": 4222124650656,
+          "prime": 2,
+          "coordinates": [
+            405,
+            496
+          ],
+          "sum": 901,
+          "involution": false
+        },
+        {
+          "group_element": 4925812092432,
+          "prime": 2,
+          "coordinates": [
+            1274,
+            1365
+          ],
+          "sum": 2639,
+          "involution": false
+        },
+        {
+          "group_element": 5629499534208,
+          "prime": 2,
+          "coordinates": [
+            2143,
+            2234
+          ],
+          "sum": 4377,
+          "involution": false
+        },
+        {
+          "group_element": 6333186975984,
+          "prime": 2,
+          "coordinates": [
+            3012,
+            3103
+          ],
+          "sum": 6115,
+          "involution": false
+        }
+      ]
+    },
+    "3": {
+      "size": 3486784401,
+      "sample": [
+        {
+          "group_element": 0,
+          "prime": 3,
+          "coordinates": [
+            232,
+            323
+          ],
+          "sum": 555,
+          "involution": false
+        },
+        {
+          "group_element": 104603532,
+          "prime": 3,
+          "coordinates": [
+            3014,
+            3105
+          ],
+          "sum": 6119,
+          "involution": false
+        },
+        {
+          "group_element": 209207064,
+          "prime": 3,
+          "coordinates": [
+            755,
+            846
+          ],
+          "sum": 1601,
+          "involution": false
+        },
+        {
+          "group_element": 313810596,
+          "prime": 3,
+          "coordinates": [
+            3537,
+            3628
+          ],
+          "sum": 7165,
+          "involution": false
+        },
+        {
+          "group_element": 418414128,
+          "prime": 3,
+          "coordinates": [
+            1278,
+            1369
+          ],
+          "sum": 2647,
+          "involution": false
+        },
+        {
+          "group_element": 523017660,
+          "prime": 3,
+          "coordinates": [
+            4060,
+            4151
+          ],
+          "sum": 8211,
+          "involution": false
+        },
+        {
+          "group_element": 627621192,
+          "prime": 3,
+          "coordinates": [
+            1801,
+            1892
+          ],
+          "sum": 3693,
+          "involution": false
+        },
+        {
+          "group_element": 732224724,
+          "prime": 3,
+          "coordinates": [
+            4583,
+            4674
+          ],
+          "sum": 9257,
+          "involution": false
+        },
+        {
+          "group_element": 836828256,
+          "prime": 3,
+          "coordinates": [
+            2324,
+            2415
+          ],
+          "sum": 4739,
+          "involution": false
+        },
+        {
+          "group_element": 941431788,
+          "prime": 3,
+          "coordinates": [
+            65,
+            156
+          ],
+          "sum": 221,
+          "involution": false
+        }
+      ]
+    },
+    "5": {
+      "size": 1953125,
+      "sample": [
+        {
+          "group_element": 0,
+          "prime": 5,
+          "coordinates": [
+            232,
+            323
+          ],
+          "sum": 555,
+          "involution": false
+        },
+        {
+          "group_element": 97655,
+          "prime": 5,
+          "coordinates": [
+            2108,
+            2199
+          ],
+          "sum": 4307,
+          "involution": false
+        },
+        {
+          "group_element": 195310,
+          "prime": 5,
+          "coordinates": [
+            3984,
+            4075
+          ],
+          "sum": 8059,
+          "involution": false
+        },
+        {
+          "group_element": 292965,
+          "prime": 5,
+          "coordinates": [
+            819,
+            910
+          ],
+          "sum": 1729,
+          "involution": false
+        },
+        {
+          "group_element": 390620,
+          "prime": 5,
+          "coordinates": [
+            2695,
+            2786
+          ],
+          "sum": 5481,
+          "involution": false
+        },
+        {
+          "group_element": 488275,
+          "prime": 5,
+          "coordinates": [
+            4571,
+            4662
+          ],
+          "sum": 9233,
+          "involution": false
+        },
+        {
+          "group_element": 585930,
+          "prime": 5,
+          "coordinates": [
+            1406,
+            1497
+          ],
+          "sum": 2903,
+          "involution": false
+        },
+        {
+          "group_element": 683585,
+          "prime": 5,
+          "coordinates": [
+            3282,
+            3373
+          ],
+          "sum": 6655,
+          "involution": false
+        },
+        {
+          "group_element": 781240,
+          "prime": 5,
+          "coordinates": [
+            117,
+            208
+          ],
+          "sum": 325,
+          "involution": false
+        },
+        {
+          "group_element": 878895,
+          "prime": 5,
+          "coordinates": [
+            1993,
+            2084
+          ],
+          "sum": 4077,
+          "involution": false
+        }
+      ]
+    }
+  },
+  "all_forms_sample": [
+    {
+      "group_element": 0,
+      "coordinates": [
+        232,
+        323
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 50,
+      "coordinates": [
+        282,
+        373
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 100,
+      "coordinates": [
+        332,
+        423
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 150,
+      "coordinates": [
+        382,
+        473
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 200,
+      "coordinates": [
+        432,
+        523
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 250,
+      "coordinates": [
+        482,
+        573
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 300,
+      "coordinates": [
+        532,
+        623
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 350,
+      "coordinates": [
+        582,
+        673
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 400,
+      "coordinates": [
+        632,
+        723
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 450,
+      "coordinates": [
+        682,
+        773
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 500,
+      "coordinates": [
+        732,
+        823
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 550,
+      "coordinates": [
+        782,
+        873
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 600,
+      "coordinates": [
+        832,
+        923
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 650,
+      "coordinates": [
+        882,
+        973
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 700,
+      "coordinates": [
+        932,
+        1023
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 750,
+      "coordinates": [
+        982,
+        1073
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 800,
+      "coordinates": [
+        1032,
+        1123
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 850,
+      "coordinates": [
+        1082,
+        1173
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 900,
+      "coordinates": [
+        1132,
+        1223
+      ],
+      "involution": false
+    },
+    {
+      "group_element": 950,
+      "coordinates": [
+        1182,
+        1273
+      ],
+      "involution": false
+    }
+  ]
+}
