@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TradeWars MCTS AI Door Game</title>
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+        }
+        #game {
+            white-space: pre;
+            line-height: 1.2;
+        }
+        .cyan { color: #0ff; }
+        .green { color: #0f0; }
+        .yellow { color: #ff0; }
+        .red { color: #f00; }
+        .magenta { color: #f0f; }
+        button {
+            background: #0f0;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #0ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="game"></div>
+    <div>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="evolveAI()">Evolve AI</button>
+        <button onclick="nextTurn()">Next Turn</button>
+        <button onclick="autoPlay()">Auto Play</button>
+    </div>
+    
+    <script>
+        const game = document.getElementById('game');
+        
+        // MCTS AI-Life Meme Sampler (JavaScript port)
+        class Meme {
+            constructor(id, stage, dimension) {
+                this.id = id;
+                this.stage = stage;
+                this.genes = Array(dimension).fill(0).map(() => Math.random() * 2 - 1);
+                this.fitness = 0;
+                this.generation = 0;
+            }
+        }
+        
+        class MCTSAILife {
+            constructor() {
+                this.stages = [
+                    {name: 'Void', dim: 0},
+                    {name: 'Fire', dim: 16},
+                    {name: 'Earth', dim: 23},
+                    {name: 'Water', dim: 24},
+                    {name: 'Air', dim: 26},
+                    {name: 'Aether', dim: 71}
+                ];
+                this.population = [];
+                this.generation = 0;
+            }
+            
+            initialize(size) {
+                this.population = [];
+                for (let i = 0; i < size; i++) {
+                    const stage = this.stages[i % this.stages.length];
+                    this.population.push(new Meme(i, stage.name, stage.dim || 1));
+                }
+            }
+            
+            evolve() {
+                // Evaluate fitness
+                this.population.forEach(meme => {
+                    meme.fitness = meme.genes.reduce((sum, g) => sum + Math.abs(g), 0) / meme.genes.length;
+                });
+                
+                // Sort by fitness
+                this.population.sort((a, b) => b.fitness - a.fitness);
+                
+                // Keep top 50%, mutate to create new generation
+                const survivors = this.population.slice(0, Math.floor(this.population.length / 2));
+                const newGen = survivors.map(meme => {
+                    const child = new Meme(meme.id, meme.stage, meme.genes.length);
+                    child.genes = meme.genes.map(g => g + (Math.random() * 0.2 - 0.1));
+                    child.generation = this.generation + 1;
+                    return child;
+                });
+                
+                this.population = [...survivors, ...newGen];
+                this.generation++;
+            }
+            
+            getBest() {
+                return this.population[0];
+            }
+        }
+        
+        // TradeWars AI Player
+        class TradeWarsAI {
+            constructor(id) {
+                this.id = id;
+                this.mcts = new MCTSAILife();
+                this.mcts.initialize(71); // 71 memes for 71 shards
+                this.lobsters = 0;
+                this.score = 0;
+            }
+            
+            evolve(generations = 5) {
+                for (let i = 0; i < generations; i++) {
+                    this.mcts.evolve();
+                }
+            }
+            
+            makeMove(shard) {
+                const best = this.mcts.getBest();
+                const geneIdx = shard % best.genes.length;
+                return best.genes[geneIdx];
+            }
+            
+            catchLobsters(shard) {
+                const move = this.makeMove(shard);
+                const caught = Math.floor(Math.abs(move) * 5);
+                this.lobsters += caught;
+                this.score += caught * 100;
+                return caught;
+            }
+        }
+        
+        // Game State
+        let ai1, ai2;
+        let turn = 0;
+        let autoPlaying = false;
+        
+        function print(text, color = 'green') {
+            const span = document.createElement('span');
+            span.className = color;
+            span.textContent = text + '\n';
+            game.appendChild(span);
+        }
+        
+        function clear() {
+            game.innerHTML = '';
+        }
+        
+        function startGame() {
+            clear();
+            print('╔═══════════════════════════════════════════════════════════════════╗', 'cyan');
+            print('║          🔮⚡ TRADEWARS MCTS AI DOOR GAME 📻🦞                  ║', 'cyan');
+            print('╚═══════════════════════════════════════════════════════════════════╝', 'cyan');
+            print('');
+            
+            print('Initializing AI players...', 'yellow');
+            ai1 = new TradeWarsAI('peer-boat-ai-01');
+            ai2 = new TradeWarsAI('peer-boat-ai-02');
+            turn = 0;
+            
+            print('✅ AI 1: peer-boat-ai-01 (71 memes)', 'green');
+            print('✅ AI 2: peer-boat-ai-02 (71 memes)', 'green');
+            print('');
+            print('Game ready! Click "Evolve AI" to train, then "Next Turn" to play.', 'yellow');
+        }
+        
+        function evolveAI() {
+            if (!ai1 || !ai2) {
+                print('❌ Start game first!', 'red');
+                return;
+            }
+            
+            print('');
+            print('🧬 Evolving AI strategies...', 'magenta');
+            
+            ai1.evolve(5);
+            ai2.evolve(5);
+            
+            const best1 = ai1.mcts.getBest();
+            const best2 = ai2.mcts.getBest();
+            
+            print(`✅ AI 1: Gen ${best1.generation}, Fitness ${best1.fitness.toFixed(4)}`, 'green');
+            print(`✅ AI 2: Gen ${best2.generation}, Fitness ${best2.fitness.toFixed(4)}`, 'green');
+        }
+        
+        function nextTurn() {
+            if (!ai1 || !ai2) {
+                print('❌ Start game first!', 'red');
+                return;
+            }
+            
+            turn++;
+            const shard = turn % 71;
+            
+            print('');
+            print(`═══ TURN ${turn} ═══ SHARD ${shard} ═══`, 'cyan');
+            
+            const caught1 = ai1.catchLobsters(shard);
+            const caught2 = ai2.catchLobsters(shard);
+            
+            print(`AI 1: Caught ${caught1} lobsters (Total: ${ai1.lobsters}, Score: ${ai1.score})`, 'green');
+            print(`AI 2: Caught ${caught2} lobsters (Total: ${ai2.lobsters}, Score: ${ai2.score})`, 'green');
+            
+            if (turn >= 71) {
+                print('');
+                print('╔═══════════════════════════════════════════════════════════════════╗', 'yellow');
+                print('║                         GAME OVER!                                ║', 'yellow');
+                print('╚═══════════════════════════════════════════════════════════════════╝', 'yellow');
+                print('');
+                
+                if (ai1.score > ai2.score) {
+                    print(`🏆 WINNER: AI 1 (${ai1.score} points)`, 'cyan');
+                } else if (ai2.score > ai1.score) {
+                    print(`🏆 WINNER: AI 2 (${ai2.score} points)`, 'cyan');
+                } else {
+                    print('🤝 TIE!', 'cyan');
+                }
+                
+                print('');
+                print('QED 🔮⚡📻🦞', 'magenta');
+            }
+        }
+        
+        function autoPlay() {
+            if (autoPlaying) {
+                autoPlaying = false;
+                return;
+            }
+            
+            if (!ai1 || !ai2) {
+                startGame();
+                setTimeout(() => {
+                    evolveAI();
+                    setTimeout(() => autoPlay(), 1000);
+                }, 1000);
+                return;
+            }
+            
+            autoPlaying = true;
+            
+            const interval = setInterval(() => {
+                if (!autoPlaying || turn >= 71) {
+                    clearInterval(interval);
+                    autoPlaying = false;
+                    return;
+                }
+                nextTurn();
+            }, 500);
+        }
+        
+        // Auto-start on load
+        window.onload = () => {
+            print('🔮⚡ TradeWars MCTS AI Door Game 📻🦞', 'cyan');
+            print('Click "Start Game" to begin!', 'yellow');
+        };
+    </script>
+</body>
+</html>
