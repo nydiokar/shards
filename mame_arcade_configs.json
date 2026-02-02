@@ -1,0 +1,1706 @@
+[
+  {
+    "shard": 0,
+    "mame_driver": "arcade_0",
+    "cpu_type": "Z80",
+    "cpu_bits": 8,
+    "address_space": 16,
+    "rom_region": "shard_00",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "z80"
+  },
+  {
+    "shard": 1,
+    "mame_driver": "arcade_1",
+    "cpu_type": "6502",
+    "cpu_bits": 8,
+    "address_space": 16,
+    "rom_region": "shard_01",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "6502"
+  },
+  {
+    "shard": 2,
+    "mame_driver": "arcade_2",
+    "cpu_type": "6809",
+    "cpu_bits": 8,
+    "address_space": 16,
+    "rom_region": "shard_02",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "6809"
+  },
+  {
+    "shard": 3,
+    "mame_driver": "arcade_3",
+    "cpu_type": "8080",
+    "cpu_bits": 8,
+    "address_space": 16,
+    "rom_region": "shard_03",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "8080"
+  },
+  {
+    "shard": 4,
+    "mame_driver": "arcade_4",
+    "cpu_type": "6800",
+    "cpu_bits": 8,
+    "address_space": 16,
+    "rom_region": "shard_04",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "6800"
+  },
+  {
+    "shard": 5,
+    "mame_driver": "arcade_5",
+    "cpu_type": "8085",
+    "cpu_bits": 8,
+    "address_space": 16,
+    "rom_region": "shard_05",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "8085"
+  },
+  {
+    "shard": 6,
+    "mame_driver": "arcade_6",
+    "cpu_type": "6502C",
+    "cpu_bits": 8,
+    "address_space": 16,
+    "rom_region": "shard_06",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "6502c"
+  },
+  {
+    "shard": 7,
+    "mame_driver": "arcade_7",
+    "cpu_type": "Z80A",
+    "cpu_bits": 8,
+    "address_space": 16,
+    "rom_region": "shard_07",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "z80a"
+  },
+  {
+    "shard": 8,
+    "mame_driver": "arcade_8",
+    "cpu_type": "6502B",
+    "cpu_bits": 8,
+    "address_space": 16,
+    "rom_region": "shard_08",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "6502b"
+  },
+  {
+    "shard": 9,
+    "mame_driver": "arcade_9",
+    "cpu_type": "8086",
+    "cpu_bits": 16,
+    "address_space": 20,
+    "rom_region": "shard_09",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "8086"
+  },
+  {
+    "shard": 10,
+    "mame_driver": "arcade_10",
+    "cpu_type": "8088",
+    "cpu_bits": 16,
+    "address_space": 20,
+    "rom_region": "shard_10",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "8088"
+  },
+  {
+    "shard": 11,
+    "mame_driver": "arcade_11",
+    "cpu_type": "68000-11",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_11",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_11"
+  },
+  {
+    "shard": 12,
+    "mame_driver": "arcade_12",
+    "cpu_type": "68000-12",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_12",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_12"
+  },
+  {
+    "shard": 13,
+    "mame_driver": "arcade_13",
+    "cpu_type": "68000-13",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_13",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_13"
+  },
+  {
+    "shard": 14,
+    "mame_driver": "arcade_14",
+    "cpu_type": "68000-14",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_14",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_14"
+  },
+  {
+    "shard": 15,
+    "mame_driver": "arcade_15",
+    "cpu_type": "68000-15",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_15",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_15"
+  },
+  {
+    "shard": 16,
+    "mame_driver": "arcade_16",
+    "cpu_type": "68000-16",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_16",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_16"
+  },
+  {
+    "shard": 17,
+    "mame_driver": "arcade_17",
+    "cpu_type": "68000-17",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_17",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_17"
+  },
+  {
+    "shard": 18,
+    "mame_driver": "arcade_18",
+    "cpu_type": "68000-18",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_18",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_18"
+  },
+  {
+    "shard": 19,
+    "mame_driver": "arcade_19",
+    "cpu_type": "68000-19",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_19",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_19"
+  },
+  {
+    "shard": 20,
+    "mame_driver": "arcade_20",
+    "cpu_type": "68000-20",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_20",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_20"
+  },
+  {
+    "shard": 21,
+    "mame_driver": "arcade_21",
+    "cpu_type": "68000-21",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_21",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_21"
+  },
+  {
+    "shard": 22,
+    "mame_driver": "arcade_22",
+    "cpu_type": "68000-22",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_22",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_22"
+  },
+  {
+    "shard": 23,
+    "mame_driver": "arcade_23",
+    "cpu_type": "68000-23",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_23",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_23"
+  },
+  {
+    "shard": 24,
+    "mame_driver": "arcade_24",
+    "cpu_type": "68000-24",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_24",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_24"
+  },
+  {
+    "shard": 25,
+    "mame_driver": "arcade_25",
+    "cpu_type": "68000-25",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_25",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_25"
+  },
+  {
+    "shard": 26,
+    "mame_driver": "arcade_26",
+    "cpu_type": "68000-26",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_26",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_26"
+  },
+  {
+    "shard": 27,
+    "mame_driver": "arcade_27",
+    "cpu_type": "68000-27",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_27",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_27"
+  },
+  {
+    "shard": 28,
+    "mame_driver": "arcade_28",
+    "cpu_type": "68000-28",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_28",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_28"
+  },
+  {
+    "shard": 29,
+    "mame_driver": "arcade_29",
+    "cpu_type": "68000-29",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_29",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_29"
+  },
+  {
+    "shard": 30,
+    "mame_driver": "arcade_30",
+    "cpu_type": "68000-30",
+    "cpu_bits": 16,
+    "address_space": 24,
+    "rom_region": "shard_30",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "68000_30"
+  },
+  {
+    "shard": 31,
+    "mame_driver": "arcade_31",
+    "cpu_type": "ARM-31",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_31",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_31"
+  },
+  {
+    "shard": 32,
+    "mame_driver": "arcade_32",
+    "cpu_type": "ARM-32",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_32",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_32"
+  },
+  {
+    "shard": 33,
+    "mame_driver": "arcade_33",
+    "cpu_type": "ARM-33",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_33",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_33"
+  },
+  {
+    "shard": 34,
+    "mame_driver": "arcade_34",
+    "cpu_type": "ARM-34",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_34",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_34"
+  },
+  {
+    "shard": 35,
+    "mame_driver": "arcade_35",
+    "cpu_type": "ARM-35",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_35",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_35"
+  },
+  {
+    "shard": 36,
+    "mame_driver": "arcade_36",
+    "cpu_type": "ARM-36",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_36",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_36"
+  },
+  {
+    "shard": 37,
+    "mame_driver": "arcade_37",
+    "cpu_type": "ARM-37",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_37",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_37"
+  },
+  {
+    "shard": 38,
+    "mame_driver": "arcade_38",
+    "cpu_type": "ARM-38",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_38",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_38"
+  },
+  {
+    "shard": 39,
+    "mame_driver": "arcade_39",
+    "cpu_type": "ARM-39",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_39",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_39"
+  },
+  {
+    "shard": 40,
+    "mame_driver": "arcade_40",
+    "cpu_type": "ARM-40",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_40",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_40"
+  },
+  {
+    "shard": 41,
+    "mame_driver": "arcade_41",
+    "cpu_type": "ARM-41",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_41",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_41"
+  },
+  {
+    "shard": 42,
+    "mame_driver": "arcade_42",
+    "cpu_type": "ARM-42",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_42",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_42"
+  },
+  {
+    "shard": 43,
+    "mame_driver": "arcade_43",
+    "cpu_type": "ARM-43",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_43",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_43"
+  },
+  {
+    "shard": 44,
+    "mame_driver": "arcade_44",
+    "cpu_type": "ARM-44",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_44",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_44"
+  },
+  {
+    "shard": 45,
+    "mame_driver": "arcade_45",
+    "cpu_type": "ARM-45",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_45",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_45"
+  },
+  {
+    "shard": 46,
+    "mame_driver": "arcade_46",
+    "cpu_type": "ARM-46",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_46",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_46"
+  },
+  {
+    "shard": 47,
+    "mame_driver": "arcade_47",
+    "cpu_type": "ARM-47",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_47",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_47"
+  },
+  {
+    "shard": 48,
+    "mame_driver": "arcade_48",
+    "cpu_type": "ARM-48",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_48",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_48"
+  },
+  {
+    "shard": 49,
+    "mame_driver": "arcade_49",
+    "cpu_type": "ARM-49",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_49",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_49"
+  },
+  {
+    "shard": 50,
+    "mame_driver": "arcade_50",
+    "cpu_type": "ARM-50",
+    "cpu_bits": 32,
+    "address_space": 32,
+    "rom_region": "shard_50",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "arm_50"
+  },
+  {
+    "shard": 51,
+    "mame_driver": "arcade_51",
+    "cpu_type": "x86_64-51",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_51",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_51"
+  },
+  {
+    "shard": 52,
+    "mame_driver": "arcade_52",
+    "cpu_type": "x86_64-52",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_52",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_52"
+  },
+  {
+    "shard": 53,
+    "mame_driver": "arcade_53",
+    "cpu_type": "x86_64-53",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_53",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_53"
+  },
+  {
+    "shard": 54,
+    "mame_driver": "arcade_54",
+    "cpu_type": "x86_64-54",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_54",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_54"
+  },
+  {
+    "shard": 55,
+    "mame_driver": "arcade_55",
+    "cpu_type": "x86_64-55",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_55",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_55"
+  },
+  {
+    "shard": 56,
+    "mame_driver": "arcade_56",
+    "cpu_type": "x86_64-56",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_56",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_56"
+  },
+  {
+    "shard": 57,
+    "mame_driver": "arcade_57",
+    "cpu_type": "x86_64-57",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_57",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_57"
+  },
+  {
+    "shard": 58,
+    "mame_driver": "arcade_58",
+    "cpu_type": "x86_64-58",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_58",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_58"
+  },
+  {
+    "shard": 59,
+    "mame_driver": "arcade_59",
+    "cpu_type": "x86_64-59",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_59",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_59"
+  },
+  {
+    "shard": 60,
+    "mame_driver": "arcade_60",
+    "cpu_type": "x86_64-60",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_60",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_60"
+  },
+  {
+    "shard": 61,
+    "mame_driver": "arcade_61",
+    "cpu_type": "x86_64-61",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_61",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_61"
+  },
+  {
+    "shard": 62,
+    "mame_driver": "arcade_62",
+    "cpu_type": "x86_64-62",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_62",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_62"
+  },
+  {
+    "shard": 63,
+    "mame_driver": "arcade_63",
+    "cpu_type": "x86_64-63",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_63",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_63"
+  },
+  {
+    "shard": 64,
+    "mame_driver": "arcade_64",
+    "cpu_type": "x86_64-64",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_64",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_64"
+  },
+  {
+    "shard": 65,
+    "mame_driver": "arcade_65",
+    "cpu_type": "x86_64-65",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_65",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_65"
+  },
+  {
+    "shard": 66,
+    "mame_driver": "arcade_66",
+    "cpu_type": "x86_64-66",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_66",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_66"
+  },
+  {
+    "shard": 67,
+    "mame_driver": "arcade_67",
+    "cpu_type": "x86_64-67",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_67",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_67"
+  },
+  {
+    "shard": 68,
+    "mame_driver": "arcade_68",
+    "cpu_type": "x86_64-68",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_68",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_68"
+  },
+  {
+    "shard": 69,
+    "mame_driver": "arcade_69",
+    "cpu_type": "x86_64-69",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_69",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_69"
+  },
+  {
+    "shard": 70,
+    "mame_driver": "arcade_70",
+    "cpu_type": "x86_64-70",
+    "cpu_bits": 64,
+    "address_space": 64,
+    "rom_region": "shard_70",
+    "memory_map": {
+      "rom": {
+        "start": 0,
+        "end": 32767
+      },
+      "ram": {
+        "start": 32768,
+        "end": 65535
+      },
+      "io": {
+        "start": 65536,
+        "end": 131071
+      }
+    },
+    "binary_compatible": true,
+    "cross_compile_target": "x86_64_70"
+  }
+]

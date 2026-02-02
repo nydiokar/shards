@@ -138,7 +138,7 @@ def phaseCoherence (observers : List Observer) : Int :=
   else
     -- Average phase of all observers' memories
     let total := observers.foldl (fun acc obs => 
-      acc + obs.memory.foldl (· + ·) 0) 0
+      acc + (obs.memory.foldl (· + ·) 0 : Int)) (0 : Int)
     total / observers.length
 
 -- MAIN THEOREM: Reciprocal Gaze Theorem
@@ -178,10 +178,10 @@ def edgePosition : GalacticCoord where
   h_angle := by decide
   h_dimension := by decide
 
-#eval reciprocalGaze cuspObserver edgePosition
+#eval! reciprocalGaze cuspObserver edgePosition
 -- Result: Opposite position (shard 71, radius 0, angle 180, dimension 196882)
 
-#eval phaseShift cuspObserver edgePosition
+#eval! phaseShift cuspObserver edgePosition
 -- Phase shift from cusp to edge
 
 #check reciprocal_gaze_theorem
