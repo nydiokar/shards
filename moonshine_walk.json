@@ -1,0 +1,37 @@
+{
+  "moonshine_gap": 1,
+  "factors_196883": [
+    47,
+    59,
+    71
+  ],
+  "factors_196884": [
+    2,
+    2,
+    3,
+    3,
+    3,
+    1823
+  ],
+  "is_71_anchor": true,
+  "leading_digits": [
+    1,
+    1
+  ],
+  "supersingular_resonance": [
+    [
+      47,
+      59,
+      71
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "topo_classes": [
+    "BDI",
+    "D"
+  ],
+  "trivial_rep": 1
+}

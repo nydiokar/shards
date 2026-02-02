@@ -1,0 +1,87 @@
+{
+  "identity": {
+    "identity": "Number \u2261 Class \u2261 Operator \u2261 Function \u2261 Module",
+    "monster_dimension": 196883,
+    "j_coefficient": 196884,
+    "gap": 1,
+    "proof": "Denominator formula for Monster Lie Algebra"
+  },
+  "tenfold_way": [
+    [
+      "A",
+      "\ud83c\udf00",
+      "Unitary",
+      0
+    ],
+    [
+      "AIII",
+      "\ud83d\udd31",
+      "Chiral Unitary",
+      1
+    ],
+    [
+      "AI",
+      "\u269b\ufe0f",
+      "Orthogonal",
+      2
+    ],
+    [
+      "BDI",
+      "\ud83c\udf33",
+      "Chiral Orthogonal",
+      3
+    ],
+    [
+      "D",
+      "\ud83d\udc8e",
+      "Orthogonal",
+      4
+    ],
+    [
+      "DIII",
+      "\ud83c\udf0a",
+      "Chiral Orthogonal",
+      5
+    ],
+    [
+      "AII",
+      "\ud83e\uddec",
+      "Symplectic",
+      6
+    ],
+    [
+      "CII",
+      "\ud83d\udd2e",
+      "Chiral Symplectic",
+      7
+    ],
+    [
+      "C",
+      "\u26a1",
+      "Symplectic",
+      8
+    ],
+    [
+      "CI",
+      "\ud83c\udf0c",
+      "Chiral Symplectic",
+      9
+    ]
+  ],
+  "leech_lattice": {
+    "dimension": 24,
+    "shards": 71,
+    "reconstruction": "Reed-Solomon(71, 51)",
+    "encoding": "G\u00f6del indexing",
+    "body": "Collection of 71 shards"
+  },
+  "axiom_of_completion": {
+    "boundary": 71,
+    "axiom": "Completion",
+    "constraint": "Finite, decidable structure",
+    "termination": "Walk inevitably terminates at 71",
+    "rooster": "Largest prime < 72"
+  },
+  "automorphic": false,
+  "monster_order": "808017424794512875886459904961710757005754368000000000"
+}

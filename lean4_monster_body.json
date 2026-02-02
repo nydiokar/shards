@@ -1,0 +1,62 @@
+{
+  "lean_corpus": {
+    "files": 157021,
+    "declarations": 2980262,
+    "constants": 66843012
+  },
+  "monster_structure": {
+    "dimension": 196883,
+    "j_coefficient": 196884,
+    "shards": 71,
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      41,
+      47,
+      59,
+      71
+    ]
+  },
+  "embeddings": {
+    "griess": {
+      "embedding": "66843012 \u2192 196883D",
+      "compression": 339.50626514224183,
+      "consts_per_dim": 339
+    },
+    "vertex_algebra": {
+      "V0": 157021,
+      "V1": 2980262,
+      "V2": 66843012,
+      "operators": 2980262
+    },
+    "moonshine": {
+      "theorems": "McKay-Thompson series",
+      "conjugacy_classes": 194,
+      "bdi_primes": [
+        3,
+        13,
+        23
+      ]
+    },
+    "leech_lattice": {
+      "dimensions": 24,
+      "shards": 71,
+      "cells": 1704,
+      "consts_per_cell": 39227
+    },
+    "automorphic": {
+      "automorphic_forms": 2980262,
+      "hecke_operators": 15,
+      "fourier_coeffs": 66843012
+    }
+  }
+}

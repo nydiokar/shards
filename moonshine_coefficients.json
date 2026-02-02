@@ -1,0 +1,151 @@
+{
+  "j_coefficients": {
+    "-1": 1,
+    "0": 744,
+    "1": 196884,
+    "2": 21493760,
+    "3": 864299970
+  },
+  "mckay_decompositions": {
+    "1": [
+      1,
+      196883
+    ],
+    "2": [
+      1,
+      196883,
+      21296876
+    ],
+    "3": [
+      1,
+      196883,
+      21296876,
+      842609326
+    ]
+  },
+  "analysis": [
+    {
+      "n": 0,
+      "c_n": 744,
+      "factors": [
+        2,
+        2,
+        2,
+        3,
+        31
+      ],
+      "decomposition": [],
+      "topo_class": "D",
+      "bott_level": 0,
+      "resonance": [
+        2,
+        3,
+        31
+      ],
+      "is_71_anchor": false,
+      "entropy": 20.0
+    },
+    {
+      "n": 1,
+      "c_n": 196884,
+      "factors": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        1823
+      ],
+      "decomposition": [
+        1,
+        196883
+      ],
+      "topo_class": "D",
+      "bott_level": 4,
+      "resonance": [
+        2,
+        3
+      ],
+      "is_71_anchor": false,
+      "entropy": 36.0
+    },
+    {
+      "n": 2,
+      "c_n": 21493760,
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        5,
+        2099
+      ],
+      "decomposition": [
+        1,
+        196883,
+        21296876
+      ],
+      "topo_class": "A",
+      "bott_level": 0,
+      "resonance": [
+        2,
+        5
+      ],
+      "is_71_anchor": false,
+      "entropy": 50.0
+    },
+    {
+      "n": 3,
+      "c_n": 864299970,
+      "factors": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        355679
+      ],
+      "decomposition": [
+        1,
+        196883,
+        21296876,
+        842609326
+      ],
+      "topo_class": "A",
+      "bott_level": 2,
+      "resonance": [
+        2,
+        3,
+        5
+      ],
+      "is_71_anchor": false,
+      "entropy": 60.0
+    }
+  ],
+  "supersingular_primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    41,
+    47,
+    59,
+    71
+  ]
+}
