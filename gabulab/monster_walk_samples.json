@@ -1,0 +1,1905 @@
+{
+  "hex_walk": [
+    {
+      "step": 1,
+      "nibble": 1,
+      "value": 4096,
+      "decimal": 4096,
+      "binary": "0001",
+      "meaning": "The One"
+    },
+    {
+      "step": 2,
+      "nibble": 15,
+      "value": 3840,
+      "decimal": 3840,
+      "binary": "1111",
+      "meaning": "The Fifteen"
+    },
+    {
+      "step": 3,
+      "nibble": 9,
+      "value": 144,
+      "decimal": 144,
+      "binary": "1001",
+      "meaning": "The Nine"
+    },
+    {
+      "step": 4,
+      "nibble": 0,
+      "value": 0,
+      "decimal": 0,
+      "binary": "0000",
+      "meaning": "The Zero"
+    }
+  ],
+  "monster_primes_hex": [
+    {
+      "prime": 2,
+      "hex": "0x2",
+      "binary": "0010",
+      "nibbles": 1
+    },
+    {
+      "prime": 3,
+      "hex": "0x3",
+      "binary": "0011",
+      "nibbles": 1
+    },
+    {
+      "prime": 5,
+      "hex": "0x5",
+      "binary": "0101",
+      "nibbles": 1
+    },
+    {
+      "prime": 7,
+      "hex": "0x7",
+      "binary": "0111",
+      "nibbles": 1
+    },
+    {
+      "prime": 11,
+      "hex": "0xB",
+      "binary": "1011",
+      "nibbles": 1
+    },
+    {
+      "prime": 13,
+      "hex": "0xD",
+      "binary": "1101",
+      "nibbles": 1
+    },
+    {
+      "prime": 17,
+      "hex": "0x11",
+      "binary": "00010001",
+      "nibbles": 2
+    },
+    {
+      "prime": 19,
+      "hex": "0x13",
+      "binary": "00010011",
+      "nibbles": 2
+    },
+    {
+      "prime": 23,
+      "hex": "0x17",
+      "binary": "00010111",
+      "nibbles": 2
+    },
+    {
+      "prime": 29,
+      "hex": "0x1D",
+      "binary": "00011101",
+      "nibbles": 2
+    },
+    {
+      "prime": 31,
+      "hex": "0x1F",
+      "binary": "00011111",
+      "nibbles": 2
+    },
+    {
+      "prime": 41,
+      "hex": "0x29",
+      "binary": "00101001",
+      "nibbles": 2
+    },
+    {
+      "prime": 47,
+      "hex": "0x2F",
+      "binary": "00101111",
+      "nibbles": 2
+    },
+    {
+      "prime": 59,
+      "hex": "0x3B",
+      "binary": "00111011",
+      "nibbles": 2
+    },
+    {
+      "prime": 71,
+      "hex": "0x47",
+      "binary": "01000111",
+      "nibbles": 2
+    }
+  ],
+  "walk_samples": [
+    {
+      "step": 1,
+      "nibble": "0x1",
+      "value": 4096,
+      "binary": "0001",
+      "meaning": "The One",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "primes_below": 15
+    },
+    {
+      "step": 2,
+      "nibble": "0xF",
+      "value": 3840,
+      "binary": "1111",
+      "meaning": "The Fifteen",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "primes_below": 15
+    },
+    {
+      "step": 3,
+      "nibble": "0x9",
+      "value": 144,
+      "binary": "1001",
+      "meaning": "The Nine",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "primes_below": 15
+    },
+    {
+      "step": 4,
+      "nibble": "0x0",
+      "value": 0,
+      "binary": "0000",
+      "meaning": "The Zero",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "primes_below": 0
+    }
+  ],
+  "shard_walk_mapping": {
+    "0": {
+      "shard": 0,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 0,
+      "rdf_triple_range": [
+        0,
+        49109639
+      ],
+      "triple_count": 49109639
+    },
+    "1": {
+      "shard": 1,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 0,
+      "rdf_triple_range": [
+        49109639,
+        98219278
+      ],
+      "triple_count": 49109639
+    },
+    "2": {
+      "shard": 2,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 0,
+      "rdf_triple_range": [
+        98219278,
+        147328917
+      ],
+      "triple_count": 49109639
+    },
+    "3": {
+      "shard": 3,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 0,
+      "rdf_triple_range": [
+        147328917,
+        196438556
+      ],
+      "triple_count": 49109639
+    },
+    "4": {
+      "shard": 4,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 0,
+      "rdf_triple_range": [
+        196438556,
+        245548195
+      ],
+      "triple_count": 49109639
+    },
+    "5": {
+      "shard": 5,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 1,
+      "rdf_triple_range": [
+        245548195,
+        294657834
+      ],
+      "triple_count": 49109639
+    },
+    "6": {
+      "shard": 6,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 1,
+      "rdf_triple_range": [
+        294657834,
+        343767473
+      ],
+      "triple_count": 49109639
+    },
+    "7": {
+      "shard": 7,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 1,
+      "rdf_triple_range": [
+        343767473,
+        392877112
+      ],
+      "triple_count": 49109639
+    },
+    "8": {
+      "shard": 8,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 1,
+      "rdf_triple_range": [
+        392877112,
+        441986751
+      ],
+      "triple_count": 49109639
+    },
+    "9": {
+      "shard": 9,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 2,
+      "rdf_triple_range": [
+        441986751,
+        491096390
+      ],
+      "triple_count": 49109639
+    },
+    "10": {
+      "shard": 10,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 2,
+      "rdf_triple_range": [
+        491096390,
+        540206029
+      ],
+      "triple_count": 49109639
+    },
+    "11": {
+      "shard": 11,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 2,
+      "rdf_triple_range": [
+        540206029,
+        589315668
+      ],
+      "triple_count": 49109639
+    },
+    "12": {
+      "shard": 12,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 2,
+      "rdf_triple_range": [
+        589315668,
+        638425307
+      ],
+      "triple_count": 49109639
+    },
+    "13": {
+      "shard": 13,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 2,
+      "rdf_triple_range": [
+        638425307,
+        687534946
+      ],
+      "triple_count": 49109639
+    },
+    "14": {
+      "shard": 14,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 3,
+      "rdf_triple_range": [
+        687534946,
+        736644585
+      ],
+      "triple_count": 49109639
+    },
+    "15": {
+      "shard": 15,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 3,
+      "rdf_triple_range": [
+        736644585,
+        785754224
+      ],
+      "triple_count": 49109639
+    },
+    "16": {
+      "shard": 16,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 3,
+      "rdf_triple_range": [
+        785754224,
+        834863863
+      ],
+      "triple_count": 49109639
+    },
+    "17": {
+      "shard": 17,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 3,
+      "rdf_triple_range": [
+        834863863,
+        883973502
+      ],
+      "triple_count": 49109639
+    },
+    "18": {
+      "shard": 18,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 4,
+      "rdf_triple_range": [
+        883973502,
+        933083141
+      ],
+      "triple_count": 49109639
+    },
+    "19": {
+      "shard": 19,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 4,
+      "rdf_triple_range": [
+        933083141,
+        982192780
+      ],
+      "triple_count": 49109639
+    },
+    "20": {
+      "shard": 20,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 4,
+      "rdf_triple_range": [
+        982192780,
+        1031302419
+      ],
+      "triple_count": 49109639
+    },
+    "21": {
+      "shard": 21,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 4,
+      "rdf_triple_range": [
+        1031302419,
+        1080412058
+      ],
+      "triple_count": 49109639
+    },
+    "22": {
+      "shard": 22,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 4,
+      "rdf_triple_range": [
+        1080412058,
+        1129521697
+      ],
+      "triple_count": 49109639
+    },
+    "23": {
+      "shard": 23,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 5,
+      "rdf_triple_range": [
+        1129521697,
+        1178631336
+      ],
+      "triple_count": 49109639
+    },
+    "24": {
+      "shard": 24,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 5,
+      "rdf_triple_range": [
+        1178631336,
+        1227740975
+      ],
+      "triple_count": 49109639
+    },
+    "25": {
+      "shard": 25,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 5,
+      "rdf_triple_range": [
+        1227740975,
+        1276850614
+      ],
+      "triple_count": 49109639
+    },
+    "26": {
+      "shard": 26,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 5,
+      "rdf_triple_range": [
+        1276850614,
+        1325960253
+      ],
+      "triple_count": 49109639
+    },
+    "27": {
+      "shard": 27,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 6,
+      "rdf_triple_range": [
+        1325960253,
+        1375069892
+      ],
+      "triple_count": 49109639
+    },
+    "28": {
+      "shard": 28,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 6,
+      "rdf_triple_range": [
+        1375069892,
+        1424179531
+      ],
+      "triple_count": 49109639
+    },
+    "29": {
+      "shard": 29,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 6,
+      "rdf_triple_range": [
+        1424179531,
+        1473289170
+      ],
+      "triple_count": 49109639
+    },
+    "30": {
+      "shard": 30,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 6,
+      "rdf_triple_range": [
+        1473289170,
+        1522398809
+      ],
+      "triple_count": 49109639
+    },
+    "31": {
+      "shard": 31,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 6,
+      "rdf_triple_range": [
+        1522398809,
+        1571508448
+      ],
+      "triple_count": 49109639
+    },
+    "32": {
+      "shard": 32,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 7,
+      "rdf_triple_range": [
+        1571508448,
+        1620618087
+      ],
+      "triple_count": 49109639
+    },
+    "33": {
+      "shard": 33,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 7,
+      "rdf_triple_range": [
+        1620618087,
+        1669727726
+      ],
+      "triple_count": 49109639
+    },
+    "34": {
+      "shard": 34,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 7,
+      "rdf_triple_range": [
+        1669727726,
+        1718837365
+      ],
+      "triple_count": 49109639
+    },
+    "35": {
+      "shard": 35,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 7,
+      "rdf_triple_range": [
+        1718837365,
+        1767947004
+      ],
+      "triple_count": 49109639
+    },
+    "36": {
+      "shard": 36,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 8,
+      "rdf_triple_range": [
+        1767947004,
+        1817056643
+      ],
+      "triple_count": 49109639
+    },
+    "37": {
+      "shard": 37,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 8,
+      "rdf_triple_range": [
+        1817056643,
+        1866166282
+      ],
+      "triple_count": 49109639
+    },
+    "38": {
+      "shard": 38,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 8,
+      "rdf_triple_range": [
+        1866166282,
+        1915275921
+      ],
+      "triple_count": 49109639
+    },
+    "39": {
+      "shard": 39,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 8,
+      "rdf_triple_range": [
+        1915275921,
+        1964385560
+      ],
+      "triple_count": 49109639
+    },
+    "40": {
+      "shard": 40,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 9,
+      "rdf_triple_range": [
+        1964385560,
+        2013495199
+      ],
+      "triple_count": 49109639
+    },
+    "41": {
+      "shard": 41,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 9,
+      "rdf_triple_range": [
+        2013495199,
+        2062604838
+      ],
+      "triple_count": 49109639
+    },
+    "42": {
+      "shard": 42,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 9,
+      "rdf_triple_range": [
+        2062604838,
+        2111714477
+      ],
+      "triple_count": 49109639
+    },
+    "43": {
+      "shard": 43,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 9,
+      "rdf_triple_range": [
+        2111714477,
+        2160824116
+      ],
+      "triple_count": 49109639
+    },
+    "44": {
+      "shard": 44,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 9,
+      "rdf_triple_range": [
+        2160824116,
+        2209933755
+      ],
+      "triple_count": 49109639
+    },
+    "45": {
+      "shard": 45,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 10,
+      "rdf_triple_range": [
+        2209933755,
+        2259043394
+      ],
+      "triple_count": 49109639
+    },
+    "46": {
+      "shard": 46,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 10,
+      "rdf_triple_range": [
+        2259043394,
+        2308153033
+      ],
+      "triple_count": 49109639
+    },
+    "47": {
+      "shard": 47,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 10,
+      "rdf_triple_range": [
+        2308153033,
+        2357262672
+      ],
+      "triple_count": 49109639
+    },
+    "48": {
+      "shard": 48,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 10,
+      "rdf_triple_range": [
+        2357262672,
+        2406372311
+      ],
+      "triple_count": 49109639
+    },
+    "49": {
+      "shard": 49,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 11,
+      "rdf_triple_range": [
+        2406372311,
+        2455481950
+      ],
+      "triple_count": 49109639
+    },
+    "50": {
+      "shard": 50,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 11,
+      "rdf_triple_range": [
+        2455481950,
+        2504591589
+      ],
+      "triple_count": 49109639
+    },
+    "51": {
+      "shard": 51,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 11,
+      "rdf_triple_range": [
+        2504591589,
+        2553701228
+      ],
+      "triple_count": 49109639
+    },
+    "52": {
+      "shard": 52,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 11,
+      "rdf_triple_range": [
+        2553701228,
+        2602810867
+      ],
+      "triple_count": 49109639
+    },
+    "53": {
+      "shard": 53,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 11,
+      "rdf_triple_range": [
+        2602810867,
+        2651920506
+      ],
+      "triple_count": 49109639
+    },
+    "54": {
+      "shard": 54,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 12,
+      "rdf_triple_range": [
+        2651920506,
+        2701030145
+      ],
+      "triple_count": 49109639
+    },
+    "55": {
+      "shard": 55,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 12,
+      "rdf_triple_range": [
+        2701030145,
+        2750139784
+      ],
+      "triple_count": 49109639
+    },
+    "56": {
+      "shard": 56,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 12,
+      "rdf_triple_range": [
+        2750139784,
+        2799249423
+      ],
+      "triple_count": 49109639
+    },
+    "57": {
+      "shard": 57,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 12,
+      "rdf_triple_range": [
+        2799249423,
+        2848359062
+      ],
+      "triple_count": 49109639
+    },
+    "58": {
+      "shard": 58,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 13,
+      "rdf_triple_range": [
+        2848359062,
+        2897468701
+      ],
+      "triple_count": 49109639
+    },
+    "59": {
+      "shard": 59,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 13,
+      "rdf_triple_range": [
+        2897468701,
+        2946578340
+      ],
+      "triple_count": 49109639
+    },
+    "60": {
+      "shard": 60,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 13,
+      "rdf_triple_range": [
+        2946578340,
+        2995687979
+      ],
+      "triple_count": 49109639
+    },
+    "61": {
+      "shard": 61,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 13,
+      "rdf_triple_range": [
+        2995687979,
+        3044797618
+      ],
+      "triple_count": 49109639
+    },
+    "62": {
+      "shard": 62,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 13,
+      "rdf_triple_range": [
+        3044797618,
+        3093907257
+      ],
+      "triple_count": 49109639
+    },
+    "63": {
+      "shard": 63,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 14,
+      "rdf_triple_range": [
+        3093907257,
+        3143016896
+      ],
+      "triple_count": 49109639
+    },
+    "64": {
+      "shard": 64,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 14,
+      "rdf_triple_range": [
+        3143016896,
+        3192126535
+      ],
+      "triple_count": 49109639
+    },
+    "65": {
+      "shard": 65,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 14,
+      "rdf_triple_range": [
+        3192126535,
+        3241236174
+      ],
+      "triple_count": 49109639
+    },
+    "66": {
+      "shard": 66,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 14,
+      "rdf_triple_range": [
+        3241236174,
+        3290345813
+      ],
+      "triple_count": 49109639
+    },
+    "67": {
+      "shard": 67,
+      "walk_step": 4,
+      "nibble": "0x0",
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "popcount": 0,
+      "bit_position": 15,
+      "rdf_triple_range": [
+        3290345813,
+        3339455452
+      ],
+      "triple_count": 49109639
+    },
+    "68": {
+      "shard": 68,
+      "walk_step": 1,
+      "nibble": "0x1",
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "popcount": 1,
+      "bit_position": 15,
+      "rdf_triple_range": [
+        3339455452,
+        3388565091
+      ],
+      "triple_count": 49109639
+    },
+    "69": {
+      "shard": 69,
+      "walk_step": 2,
+      "nibble": "0xF",
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "popcount": 4,
+      "bit_position": 15,
+      "rdf_triple_range": [
+        3388565091,
+        3437674730
+      ],
+      "triple_count": 49109639
+    },
+    "70": {
+      "shard": 70,
+      "walk_step": 3,
+      "nibble": "0x9",
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "popcount": 2,
+      "bit_position": 15,
+      "rdf_triple_range": [
+        3437674730,
+        3486784369
+      ],
+      "triple_count": 49109639
+    }
+  },
+  "rdf_triples": {
+    "0": {
+      "subject": "shard:0",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:0-49109639",
+      "zkproof": "groth16:shard_0"
+    },
+    "1": {
+      "subject": "shard:1",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:49109639-98219278",
+      "zkproof": "groth16:shard_1"
+    },
+    "2": {
+      "subject": "shard:2",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:98219278-147328917",
+      "zkproof": "groth16:shard_2"
+    },
+    "3": {
+      "subject": "shard:3",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:147328917-196438556",
+      "zkproof": "groth16:shard_3"
+    },
+    "4": {
+      "subject": "shard:4",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:196438556-245548195",
+      "zkproof": "groth16:shard_4"
+    },
+    "5": {
+      "subject": "shard:5",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:245548195-294657834",
+      "zkproof": "groth16:shard_5"
+    },
+    "6": {
+      "subject": "shard:6",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:294657834-343767473",
+      "zkproof": "groth16:shard_6"
+    },
+    "7": {
+      "subject": "shard:7",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:343767473-392877112",
+      "zkproof": "groth16:shard_7"
+    },
+    "8": {
+      "subject": "shard:8",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:392877112-441986751",
+      "zkproof": "groth16:shard_8"
+    },
+    "9": {
+      "subject": "shard:9",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:441986751-491096390",
+      "zkproof": "groth16:shard_9"
+    },
+    "10": {
+      "subject": "shard:10",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:491096390-540206029",
+      "zkproof": "groth16:shard_10"
+    },
+    "11": {
+      "subject": "shard:11",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:540206029-589315668",
+      "zkproof": "groth16:shard_11"
+    },
+    "12": {
+      "subject": "shard:12",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:589315668-638425307",
+      "zkproof": "groth16:shard_12"
+    },
+    "13": {
+      "subject": "shard:13",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:638425307-687534946",
+      "zkproof": "groth16:shard_13"
+    },
+    "14": {
+      "subject": "shard:14",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:687534946-736644585",
+      "zkproof": "groth16:shard_14"
+    },
+    "15": {
+      "subject": "shard:15",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:736644585-785754224",
+      "zkproof": "groth16:shard_15"
+    },
+    "16": {
+      "subject": "shard:16",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:785754224-834863863",
+      "zkproof": "groth16:shard_16"
+    },
+    "17": {
+      "subject": "shard:17",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:834863863-883973502",
+      "zkproof": "groth16:shard_17"
+    },
+    "18": {
+      "subject": "shard:18",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:883973502-933083141",
+      "zkproof": "groth16:shard_18"
+    },
+    "19": {
+      "subject": "shard:19",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:933083141-982192780",
+      "zkproof": "groth16:shard_19"
+    },
+    "20": {
+      "subject": "shard:20",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:982192780-1031302419",
+      "zkproof": "groth16:shard_20"
+    },
+    "21": {
+      "subject": "shard:21",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:1031302419-1080412058",
+      "zkproof": "groth16:shard_21"
+    },
+    "22": {
+      "subject": "shard:22",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:1080412058-1129521697",
+      "zkproof": "groth16:shard_22"
+    },
+    "23": {
+      "subject": "shard:23",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:1129521697-1178631336",
+      "zkproof": "groth16:shard_23"
+    },
+    "24": {
+      "subject": "shard:24",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:1178631336-1227740975",
+      "zkproof": "groth16:shard_24"
+    },
+    "25": {
+      "subject": "shard:25",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:1227740975-1276850614",
+      "zkproof": "groth16:shard_25"
+    },
+    "26": {
+      "subject": "shard:26",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:1276850614-1325960253",
+      "zkproof": "groth16:shard_26"
+    },
+    "27": {
+      "subject": "shard:27",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:1325960253-1375069892",
+      "zkproof": "groth16:shard_27"
+    },
+    "28": {
+      "subject": "shard:28",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:1375069892-1424179531",
+      "zkproof": "groth16:shard_28"
+    },
+    "29": {
+      "subject": "shard:29",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:1424179531-1473289170",
+      "zkproof": "groth16:shard_29"
+    },
+    "30": {
+      "subject": "shard:30",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:1473289170-1522398809",
+      "zkproof": "groth16:shard_30"
+    },
+    "31": {
+      "subject": "shard:31",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:1522398809-1571508448",
+      "zkproof": "groth16:shard_31"
+    },
+    "32": {
+      "subject": "shard:32",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:1571508448-1620618087",
+      "zkproof": "groth16:shard_32"
+    },
+    "33": {
+      "subject": "shard:33",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:1620618087-1669727726",
+      "zkproof": "groth16:shard_33"
+    },
+    "34": {
+      "subject": "shard:34",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:1669727726-1718837365",
+      "zkproof": "groth16:shard_34"
+    },
+    "35": {
+      "subject": "shard:35",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:1718837365-1767947004",
+      "zkproof": "groth16:shard_35"
+    },
+    "36": {
+      "subject": "shard:36",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:1767947004-1817056643",
+      "zkproof": "groth16:shard_36"
+    },
+    "37": {
+      "subject": "shard:37",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:1817056643-1866166282",
+      "zkproof": "groth16:shard_37"
+    },
+    "38": {
+      "subject": "shard:38",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:1866166282-1915275921",
+      "zkproof": "groth16:shard_38"
+    },
+    "39": {
+      "subject": "shard:39",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:1915275921-1964385560",
+      "zkproof": "groth16:shard_39"
+    },
+    "40": {
+      "subject": "shard:40",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:1964385560-2013495199",
+      "zkproof": "groth16:shard_40"
+    },
+    "41": {
+      "subject": "shard:41",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:2013495199-2062604838",
+      "zkproof": "groth16:shard_41"
+    },
+    "42": {
+      "subject": "shard:42",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:2062604838-2111714477",
+      "zkproof": "groth16:shard_42"
+    },
+    "43": {
+      "subject": "shard:43",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:2111714477-2160824116",
+      "zkproof": "groth16:shard_43"
+    },
+    "44": {
+      "subject": "shard:44",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:2160824116-2209933755",
+      "zkproof": "groth16:shard_44"
+    },
+    "45": {
+      "subject": "shard:45",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:2209933755-2259043394",
+      "zkproof": "groth16:shard_45"
+    },
+    "46": {
+      "subject": "shard:46",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:2259043394-2308153033",
+      "zkproof": "groth16:shard_46"
+    },
+    "47": {
+      "subject": "shard:47",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:2308153033-2357262672",
+      "zkproof": "groth16:shard_47"
+    },
+    "48": {
+      "subject": "shard:48",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:2357262672-2406372311",
+      "zkproof": "groth16:shard_48"
+    },
+    "49": {
+      "subject": "shard:49",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:2406372311-2455481950",
+      "zkproof": "groth16:shard_49"
+    },
+    "50": {
+      "subject": "shard:50",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:2455481950-2504591589",
+      "zkproof": "groth16:shard_50"
+    },
+    "51": {
+      "subject": "shard:51",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:2504591589-2553701228",
+      "zkproof": "groth16:shard_51"
+    },
+    "52": {
+      "subject": "shard:52",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:2553701228-2602810867",
+      "zkproof": "groth16:shard_52"
+    },
+    "53": {
+      "subject": "shard:53",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:2602810867-2651920506",
+      "zkproof": "groth16:shard_53"
+    },
+    "54": {
+      "subject": "shard:54",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:2651920506-2701030145",
+      "zkproof": "groth16:shard_54"
+    },
+    "55": {
+      "subject": "shard:55",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:2701030145-2750139784",
+      "zkproof": "groth16:shard_55"
+    },
+    "56": {
+      "subject": "shard:56",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:2750139784-2799249423",
+      "zkproof": "groth16:shard_56"
+    },
+    "57": {
+      "subject": "shard:57",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:2799249423-2848359062",
+      "zkproof": "groth16:shard_57"
+    },
+    "58": {
+      "subject": "shard:58",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:2848359062-2897468701",
+      "zkproof": "groth16:shard_58"
+    },
+    "59": {
+      "subject": "shard:59",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:2897468701-2946578340",
+      "zkproof": "groth16:shard_59"
+    },
+    "60": {
+      "subject": "shard:60",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:2946578340-2995687979",
+      "zkproof": "groth16:shard_60"
+    },
+    "61": {
+      "subject": "shard:61",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:2995687979-3044797618",
+      "zkproof": "groth16:shard_61"
+    },
+    "62": {
+      "subject": "shard:62",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:3044797618-3093907257",
+      "zkproof": "groth16:shard_62"
+    },
+    "63": {
+      "subject": "shard:63",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:3093907257-3143016896",
+      "zkproof": "groth16:shard_63"
+    },
+    "64": {
+      "subject": "shard:64",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:3143016896-3192126535",
+      "zkproof": "groth16:shard_64"
+    },
+    "65": {
+      "subject": "shard:65",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:3192126535-3241236174",
+      "zkproof": "groth16:shard_65"
+    },
+    "66": {
+      "subject": "shard:66",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:3241236174-3290345813",
+      "zkproof": "groth16:shard_66"
+    },
+    "67": {
+      "subject": "shard:67",
+      "predicate": "monster:walk_step_4",
+      "object": "triple:3290345813-3339455452",
+      "zkproof": "groth16:shard_67"
+    },
+    "68": {
+      "subject": "shard:68",
+      "predicate": "monster:walk_step_1",
+      "object": "triple:3339455452-3388565091",
+      "zkproof": "groth16:shard_68"
+    },
+    "69": {
+      "subject": "shard:69",
+      "predicate": "monster:walk_step_2",
+      "object": "triple:3388565091-3437674730",
+      "zkproof": "groth16:shard_69"
+    },
+    "70": {
+      "subject": "shard:70",
+      "predicate": "monster:walk_step_3",
+      "object": "triple:3437674730-3486784369",
+      "zkproof": "groth16:shard_70"
+    }
+  },
+  "perfect_placement": {
+    "total_shards": 71,
+    "monster_exponent": "3^20",
+    "triples_per_shard": 49109639,
+    "walk_bits": 16,
+    "method": "bitwise_walk_order"
+  }
+}
