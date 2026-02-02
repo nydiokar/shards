@@ -1,0 +1,258 @@
+{
+  "title": "Monster Gaming Timeline",
+  "description": "Gaming history as Monster Walk through 71 shards",
+  "total_shards": 71,
+  "base_frequency": 432,
+  "events": [
+    {
+      "year": 1958,
+      "game": "Tennis for Two",
+      "platform": "Oscilloscope",
+      "shard": 41,
+      "frequency": 17712,
+      "topo_class": "AIII",
+      "hecke_operator": "T_41",
+      "bott_level": 1
+    },
+    {
+      "year": 1962,
+      "game": "Spacewar!",
+      "platform": "PDP-1",
+      "shard": 45,
+      "frequency": 19440,
+      "topo_class": "DIII",
+      "hecke_operator": "T_45",
+      "bott_level": 5
+    },
+    {
+      "year": 1972,
+      "game": "Pong",
+      "platform": "Arcade",
+      "shard": 55,
+      "frequency": 23760,
+      "topo_class": "DIII",
+      "hecke_operator": "T_55",
+      "bott_level": 7
+    },
+    {
+      "year": 1977,
+      "game": "Atari 2600",
+      "platform": "Console",
+      "shard": 60,
+      "frequency": 25920,
+      "topo_class": "A",
+      "hecke_operator": "T_60",
+      "bott_level": 4
+    },
+    {
+      "year": 1980,
+      "game": "Pac-Man",
+      "platform": "Arcade",
+      "shard": 63,
+      "frequency": 27216,
+      "topo_class": "BDI",
+      "hecke_operator": "T_63",
+      "bott_level": 7
+    },
+    {
+      "year": 1981,
+      "game": "Donkey Kong",
+      "platform": "Arcade",
+      "shard": 64,
+      "frequency": 27648,
+      "topo_class": "D",
+      "hecke_operator": "T_64",
+      "bott_level": 0
+    },
+    {
+      "year": 1983,
+      "game": "NES",
+      "platform": "Console",
+      "shard": 66,
+      "frequency": 28512,
+      "topo_class": "AII",
+      "hecke_operator": "T_66",
+      "bott_level": 2
+    },
+    {
+      "year": 1985,
+      "game": "Super Mario Bros",
+      "platform": "NES",
+      "shard": 68,
+      "frequency": 29376,
+      "topo_class": "C",
+      "hecke_operator": "T_68",
+      "bott_level": 4
+    },
+    {
+      "year": 1989,
+      "game": "Game Boy",
+      "platform": "Handheld",
+      "shard": 1,
+      "frequency": 432,
+      "topo_class": "AIII",
+      "hecke_operator": "T_1",
+      "bott_level": 1
+    },
+    {
+      "year": 1990,
+      "game": "SNES",
+      "platform": "Console",
+      "shard": 2,
+      "frequency": 864,
+      "topo_class": "AI",
+      "hecke_operator": "T_2",
+      "bott_level": 2
+    },
+    {
+      "year": 1991,
+      "game": "Sonic",
+      "platform": "Genesis",
+      "shard": 3,
+      "frequency": 1296,
+      "topo_class": "BDI",
+      "hecke_operator": "T_3",
+      "bott_level": 3
+    },
+    {
+      "year": 1993,
+      "game": "Doom",
+      "platform": "PC",
+      "shard": 5,
+      "frequency": 2160,
+      "topo_class": "DIII",
+      "hecke_operator": "T_5",
+      "bott_level": 5
+    },
+    {
+      "year": 1994,
+      "game": "PlayStation",
+      "platform": "Console",
+      "shard": 6,
+      "frequency": 2592,
+      "topo_class": "AII",
+      "hecke_operator": "T_6",
+      "bott_level": 6
+    },
+    {
+      "year": 1996,
+      "game": "N64",
+      "platform": "Console",
+      "shard": 8,
+      "frequency": 3456,
+      "topo_class": "C",
+      "hecke_operator": "T_8",
+      "bott_level": 0
+    },
+    {
+      "year": 1998,
+      "game": "Half-Life",
+      "platform": "PC",
+      "shard": 10,
+      "frequency": 4320,
+      "topo_class": "A",
+      "hecke_operator": "T_10",
+      "bott_level": 2
+    },
+    {
+      "year": 2000,
+      "game": "The Sims",
+      "platform": "PC",
+      "shard": 12,
+      "frequency": 5184,
+      "topo_class": "AI",
+      "hecke_operator": "T_12",
+      "bott_level": 4
+    },
+    {
+      "year": 2001,
+      "game": "Xbox",
+      "platform": "Console",
+      "shard": 13,
+      "frequency": 5616,
+      "topo_class": "BDI",
+      "hecke_operator": "T_13",
+      "bott_level": 5
+    },
+    {
+      "year": 2004,
+      "game": "World of Warcraft",
+      "platform": "PC",
+      "shard": 16,
+      "frequency": 6912,
+      "topo_class": "AII",
+      "hecke_operator": "T_16",
+      "bott_level": 0
+    },
+    {
+      "year": 2006,
+      "game": "Wii",
+      "platform": "Console",
+      "shard": 18,
+      "frequency": 7776,
+      "topo_class": "C",
+      "hecke_operator": "T_18",
+      "bott_level": 2
+    },
+    {
+      "year": 2007,
+      "game": "Portal",
+      "platform": "PC",
+      "shard": 19,
+      "frequency": 8208,
+      "topo_class": "CI",
+      "hecke_operator": "T_19",
+      "bott_level": 3
+    },
+    {
+      "year": 2009,
+      "game": "Minecraft",
+      "platform": "PC",
+      "shard": 21,
+      "frequency": 9072,
+      "topo_class": "AIII",
+      "hecke_operator": "T_21",
+      "bott_level": 5
+    },
+    {
+      "year": 2011,
+      "game": "Skyrim",
+      "platform": "Multi",
+      "shard": 23,
+      "frequency": 9936,
+      "topo_class": "BDI",
+      "hecke_operator": "T_23",
+      "bott_level": 7
+    },
+    {
+      "year": 2013,
+      "game": "PS4",
+      "platform": "Console",
+      "shard": 25,
+      "frequency": 10800,
+      "topo_class": "DIII",
+      "hecke_operator": "T_25",
+      "bott_level": 1
+    },
+    {
+      "year": 2017,
+      "game": "Nintendo Switch",
+      "platform": "Hybrid",
+      "shard": 29,
+      "frequency": 12528,
+      "topo_class": "CI",
+      "hecke_operator": "T_29",
+      "bott_level": 5
+    },
+    {
+      "year": 2020,
+      "game": "PS5",
+      "platform": "Console",
+      "shard": 32,
+      "frequency": 13824,
+      "topo_class": "AI",
+      "hecke_operator": "T_32",
+      "bott_level": 0
+    }
+  ]
+}

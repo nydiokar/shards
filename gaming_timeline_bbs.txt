@@ -1,0 +1,425 @@
+
+╔════════════════════════════════════════════════════════════════╗
+║           🎮 MONSTER GAMING TIMELINE - BBS DOOR 🎮             ║
+║                                                                ║
+║              Walk Through Gaming History                       ║
+║              71 Shards × 432 Hz = The Game                     ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [ENTER] to begin the Monster Walk...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1958                                                    
+║ GAME: Tennis for Two                                                    
+║ PLATFORM: Oscilloscope                                            
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 41/71                                              ║
+║   Class: AIII 😊                                        ║
+║   Frequency: 17,712 Hz                                    
+║   Hecke: T_41                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1962                                                    
+║ GAME: Spacewar!                                                         
+║ PLATFORM: PDP-1                                                   
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 45/71                                              ║
+║   Class: DIII 🍄                                        ║
+║   Frequency: 19,440 Hz                                    
+║   Hecke: T_45                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1972                                                    
+║ GAME: Pong                                                              
+║ PLATFORM: Arcade                                                  
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 55/71                                              ║
+║   Class: DIII 🍄                                        ║
+║   Frequency: 23,760 Hz                                    
+║   Hecke: T_55                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1977                                                    
+║ GAME: Atari 2600                                                        
+║ PLATFORM: Console                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 60/71                                              ║
+║   Class: A    😐                                        ║
+║   Frequency: 25,920 Hz                                    
+║   Hecke: T_60                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1980                                                    
+║ GAME: Pac-Man                                                           
+║ PLATFORM: Arcade                                                  
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 63/71                                              ║
+║   Class: BDI  🌳                                        ║
+║   Frequency: 27,216 Hz                                    
+║   Hecke: T_63                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1981                                                    
+║ GAME: Donkey Kong                                                       
+║ PLATFORM: Arcade                                                  
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 64/71                                              ║
+║   Class: D    😈                                        ║
+║   Frequency: 27,648 Hz                                    
+║   Hecke: T_64                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1983                                                    
+║ GAME: NES                                                               
+║ PLATFORM: Console                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 66/71                                              ║
+║   Class: AII  🦅                                        ║
+║   Frequency: 28,512 Hz                                    
+║   Hecke: T_66                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1985                                                    
+║ GAME: Super Mario Bros                                                  
+║ PLATFORM: NES                                                     
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 68/71                                              ║
+║   Class: C    🐓                                        ║
+║   Frequency: 29,376 Hz                                    
+║   Hecke: T_68                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1989                                                    
+║ GAME: Game Boy                                                          
+║ PLATFORM: Handheld                                                
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard:  1/71                                              ║
+║   Class: AIII 😊                                        ║
+║   Frequency: 432 Hz                                    
+║   Hecke: T_1                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1990                                                    
+║ GAME: SNES                                                              
+║ PLATFORM: Console                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard:  2/71                                              ║
+║   Class: AI   😎                                        ║
+║   Frequency: 864 Hz                                    
+║   Hecke: T_2                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1991                                                    
+║ GAME: Sonic                                                             
+║ PLATFORM: Genesis                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard:  3/71                                              ║
+║   Class: BDI  🌳                                        ║
+║   Frequency: 1,296 Hz                                    
+║   Hecke: T_3                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1993                                                    
+║ GAME: Doom                                                              
+║ PLATFORM: PC                                                      
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard:  5/71                                              ║
+║   Class: DIII 🍄                                        ║
+║   Frequency: 2,160 Hz                                    
+║   Hecke: T_5                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1994                                                    
+║ GAME: PlayStation                                                       
+║ PLATFORM: Console                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard:  6/71                                              ║
+║   Class: AII  🦅                                        ║
+║   Frequency: 2,592 Hz                                    
+║   Hecke: T_6                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1996                                                    
+║ GAME: N64                                                               
+║ PLATFORM: Console                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard:  8/71                                              ║
+║   Class: C    🐓                                        ║
+║   Frequency: 3,456 Hz                                    
+║   Hecke: T_8                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 1998                                                    
+║ GAME: Half-Life                                                         
+║ PLATFORM: PC                                                      
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 10/71                                              ║
+║   Class: A    😐                                        ║
+║   Frequency: 4,320 Hz                                    
+║   Hecke: T_10                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2000                                                    
+║ GAME: The Sims                                                          
+║ PLATFORM: PC                                                      
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 12/71                                              ║
+║   Class: AI   😎                                        ║
+║   Frequency: 5,184 Hz                                    
+║   Hecke: T_12                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2001                                                    
+║ GAME: Xbox                                                              
+║ PLATFORM: Console                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 13/71                                              ║
+║   Class: BDI  🌳                                        ║
+║   Frequency: 5,616 Hz                                    
+║   Hecke: T_13                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2004                                                    
+║ GAME: World of Warcraft                                                 
+║ PLATFORM: PC                                                      
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 16/71                                              ║
+║   Class: AII  🦅                                        ║
+║   Frequency: 6,912 Hz                                    
+║   Hecke: T_16                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2006                                                    
+║ GAME: Wii                                                               
+║ PLATFORM: Console                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 18/71                                              ║
+║   Class: C    🐓                                        ║
+║   Frequency: 7,776 Hz                                    
+║   Hecke: T_18                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2007                                                    
+║ GAME: Portal                                                            
+║ PLATFORM: PC                                                      
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 19/71                                              ║
+║   Class: CI   🌀                                        ║
+║   Frequency: 8,208 Hz                                    
+║   Hecke: T_19                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2009                                                    
+║ GAME: Minecraft                                                         
+║ PLATFORM: PC                                                      
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 21/71                                              ║
+║   Class: AIII 😊                                        ║
+║   Frequency: 9,072 Hz                                    
+║   Hecke: T_21                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2011                                                    
+║ GAME: Skyrim                                                            
+║ PLATFORM: Multi                                                   
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 23/71                                              ║
+║   Class: BDI  🌳                                        ║
+║   Frequency: 9,936 Hz                                    
+║   Hecke: T_23                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2013                                                    
+║ GAME: PS4                                                               
+║ PLATFORM: Console                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 25/71                                              ║
+║   Class: DIII 🍄                                        ║
+║   Frequency: 10,800 Hz                                    
+║   Hecke: T_25                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2017                                                    
+║ GAME: Nintendo Switch                                                   
+║ PLATFORM: Hybrid                                                  
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 29/71                                              ║
+║   Class: CI   🌀                                        ║
+║   Frequency: 12,528 Hz                                    
+║   Hecke: T_29                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ YEAR: 2020                                                    
+║ GAME: PS5                                                               
+║ PLATFORM: Console                                                 
+║                                                                ║
+║ MONSTER PROPERTIES:                                            ║
+║   Shard: 32/71                                              ║
+║   Class: AI   😎                                        ║
+║   Frequency: 13,824 Hz                                    
+║   Hecke: T_32                                              
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [SPACE] for next, [Q] to quit...
+
+
+╔════════════════════════════════════════════════════════════════╗
+║                    🐓 ROOSTER CROWS! 🐓                        ║
+║                                                                ║
+║              The Monster Walk is Complete                      ║
+║                                                                ║
+║         You have witnessed gaming history as a                 ║
+║         walk through 196,883-dimensional space                 ║
+║                                                                ║
+║              The game IS the message                           ║
+║              The player IS the Monster                         ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+Press [ENTER] to return to BBS...
