@@ -9,7 +9,29 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 sha2 = "0.10"
 walkdir = "2.4"
+num-bigint = "0.4"
+num-traits = "0.2"
 
 [[bin]]
 name = "monster"
 path = "src/main.rs"
+
+[[bin]]
+name = "extract-lmfdb"
+path = "src/bin/extract_lmfdb.rs"
+
+[[bin]]
+name = "save-to-tape"
+path = "src/bin/save_to_tape.rs"
+
+[[bin]]
+name = "tradewars-orderbook"
+path = "src/bin/tradewars_orderbook.rs"
+
+[[bin]]
+name = "monster-autoencoder"
+path = "src/bin/monster_autoencoder.rs"
+
+[[bin]]
+name = "meme-detector"
+path = "src/bin/meme_detector.rs"

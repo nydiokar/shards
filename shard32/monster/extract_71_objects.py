@@ -1,1 +1,0 @@
-../../monster/./extract_71_objects.py

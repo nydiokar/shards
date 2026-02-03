@@ -1,1 +1,0 @@
-../../monster/./prove_zk_rdfa.py

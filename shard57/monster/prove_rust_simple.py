@@ -1,1 +1,0 @@
-../../monster/./prove_rust_simple.py
