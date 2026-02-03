@@ -1,287 +1,183 @@
 {
-  description = "CICADA-71 with scheduled Hecke-Maass sharding and free-tier AI";
+  description = "TradeWars Science Lab - Reproducible Monster Group Analysis";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    rust-overlay.url = "github:oxalica/rust-overlay";
-    metarocq.url = "github:meta-introspector/metacoq";
   };
 
-  outputs = { self, nixpkgs, flake-utils, rust-overlay }:
+  outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = import nixpkgs {
-          inherit system;
-          overlays = [ rust-overlay.overlays.default ];
-        };
+        pkgs = nixpkgs.legacyPackages.${system};
         
-        rustToolchain = pkgs.rust-bin.stable.latest.default;
+        # Python with science packages
+        pythonEnv = pkgs.python311.withPackages (ps: with ps; [
+          numpy scipy matplotlib pandas
+          sympy networkx igraph
+          z3-solver
+          pytest hypothesis
+        ]);
         
-        # Moltbook registration (SERIOUS CONTAINMENT)
-        moltbook-register = pkgs.rustPlatform.buildRustPackage {
-          pname = "cicada-moltbook";
-          version = "0.1.0";
-          src = ./cicada-moltbook;
-          
-          cargoLock = {
-            lockFile = ./cicada-moltbook/Cargo.lock;
-            outputHashes = {};
-          };
-          
-          nativeBuildInputs = [ rustToolchain pkgs.pkg-config ];
-          buildInputs = [ pkgs.openssl ];
-          
-          # CONTAINMENT: Impure for API keys
-          __impure = true;
-          
-          meta = {
-            description = "CICADA-71 Moltbook Registration - Containing the Molting Lobster";
-            license = pkgs.lib.licenses.agpl3Plus;
-          };
-        };
-        
-        # Meme detector - Rust library with WASM
-        meme-detector-rust = pkgs.rustPlatform.buildRustPackage {
-          pname = "meme-detector";
-          version = "0.1.0";
-          src = ./meme-detector;
-          cargoLock.lockFile = ./meme-detector/Cargo.lock;
-          nativeBuildInputs = [ rustToolchain ];
-        };
-        
-        meme-detector-wasm = pkgs.stdenv.mkDerivation {
-          pname = "meme-detector-wasm";
-          version = "0.1.0";
-          src = ./meme-detector;
-          nativeBuildInputs = [ 
-            rustToolchain 
-            pkgs.wasm-pack
-            pkgs.binaryen
-          ];
-          buildPhase = ''
-            wasm-pack build --target web --out-dir pkg
-          '';
-          installPhase = ''
-            mkdir -p $out/www
-            cp -r pkg/* $out/www/
-          '';
-        };
-        
-        # Universal Coordinates implementations
-        universal-coords-rust = pkgs.rustPlatform.buildRustPackage {
-          pname = "universal-coords";
+        # Rust with science crates
+        rustEnv = pkgs.rustPlatform.buildRustPackage rec {
+          pname = "monster-tools";
           version = "0.1.0";
           src = ./.;
           cargoLock.lockFile = ./Cargo.lock;
-          nativeBuildInputs = [ rustToolchain ];
         };
-        
-        universal-coords-lean = pkgs.stdenv.mkDerivation {
-          pname = "universal-coords-lean";
-          version = "0.1.0";
-          src = ./.;
-          buildInputs = [ pkgs.lean4 ];
-          buildPhase = "lean UniversalCoords.lean";
-          installPhase = "mkdir -p $out && cp .lake/build/lib/*.olean $out/";
-        };
-        
-        universal-coords-minizinc = pkgs.stdenv.mkDerivation {
-          pname = "universal-coords-minizinc";
-          version = "0.1.0";
-          src = ./.;
-          buildInputs = [ pkgs.minizinc ];
-          installPhase = ''
-            mkdir -p $out/bin
-            cp universal_coords.mzn $out/bin/
-          '';
-        };
-        
-        universal-coords-zkperf = pkgs.stdenv.mkDerivation {
-          pname = "universal-coords-zkperf";
-          version = "0.1.0";
-          src = ./.;
-          buildInputs = [ pkgs.circom ];
-          buildPhase = "circom circuits/universal_coords.circom --r1cs --wasm --sym";
-          installPhase = ''
-            mkdir -p $out/circuits
-            cp universal_coords_js/* $out/circuits/
-          '';
-        };
-        
-        # Free-tier AI CLIs
-        gemini-cli = pkgs.writeShellScriptBin "gemini-analyze-shards" ''
-          export GEMINI_API_KEY=$(cat ~/.config/gemini/api_key 2>/dev/null || echo "")
-          
-          if [ -z "$GEMINI_API_KEY" ]; then
-            echo "Warning: GEMINI_API_KEY not set"
-            exit 0
-          fi
-          
-          ${pkgs.curl}/bin/curl -s https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent \
-            -H "Content-Type: application/json" \
-            -H "x-goog-api-key: $GEMINI_API_KEY" \
-            -d @- << EOF | ${pkgs.jq}/bin/jq -r '.candidates[0].content.parts[0].text' > gemini_analysis.json
-          {
-            "contents": [{
-              "parts": [{
-                "text": "Analyze this Hecke-Maass shard manifest and identify: 1) Imbalanced shards, 2) Files that should be grouped together, 3) Optimization suggestions. Manifest: $(cat HECKE_MAASS_MANIFEST.json)"
-              }]
-            }]
-          }
-          EOF
-          
-          echo "Gemini analysis complete"
-        '';
-        
-        claude-cli = pkgs.writeShellScriptBin "claude-analyze-shards" ''
-          export ANTHROPIC_API_KEY=$(cat ~/.config/anthropic/api_key 2>/dev/null || echo "")
-          
-          if [ -z "$ANTHROPIC_API_KEY" ]; then
-            echo "Warning: ANTHROPIC_API_KEY not set"
-            exit 0
-          fi
-          
-          ${pkgs.curl}/bin/curl -s https://api.anthropic.com/v1/messages \
-            -H "Content-Type: application/json" \
-            -H "x-api-key: $ANTHROPIC_API_KEY" \
-            -H "anthropic-version: 2023-06-01" \
-            -d @- << EOF | ${pkgs.jq}/bin/jq -r '.content[0].text' > claude_analysis.json
-          {
-            "model": "claude-3-haiku-20240307",
-            "max_tokens": 1024,
-            "messages": [{
-              "role": "user",
-              "content": "Analyze this Hecke-Maass shard manifest for mathematical correctness and distribution quality: $(cat HECKE_MAASS_MANIFEST.json | head -c 4000)"
-            }]
-          }
-          EOF
-          
-          echo "Claude analysis complete"
-        '';
-        
-        openai-cli = pkgs.writeShellScriptBin "gpt-analyze-shards" ''
-          export OPENAI_API_KEY=$(cat ~/.config/openai/api_key 2>/dev/null || echo "")
-          
-          if [ -z "$OPENAI_API_KEY" ]; then
-            echo "Warning: OPENAI_API_KEY not set"
-            exit 0
-          fi
-          
-          ${pkgs.curl}/bin/curl -s https://api.openai.com/v1/chat/completions \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer $OPENAI_API_KEY" \
-            -d @- << EOF | ${pkgs.jq}/bin/jq -r '.choices[0].message.content' > gpt_analysis.json
-          {
-            "model": "gpt-3.5-turbo",
-            "messages": [{
-              "role": "user",
-              "content": "Analyze Hecke eigenvalue distribution: $(cat HECKE_MAASS_MANIFEST.json | ${pkgs.jq}/bin/jq -c '.shards[] | {shard_id, file_count, total_weighted_norm}')"
-            }],
-            "max_tokens": 500
-          }
-          EOF
-          
-          echo "GPT analysis complete"
-        '';
-        
-        ollama-cli = pkgs.writeShellScriptBin "ollama-analyze-shards" ''
-          # Check if Ollama is running
-          if ! ${pkgs.curl}/bin/curl -s http://localhost:11434/api/tags >/dev/null 2>&1; then
-            echo "Warning: Ollama not running"
-            exit 0
-          fi
-          
-          ${pkgs.curl}/bin/curl -s http://localhost:11434/api/generate \
-            -d @- << EOF | ${pkgs.jq}/bin/jq -r '.response' > ollama_analysis.json
-          {
-            "model": "llama3.2",
-            "prompt": "Analyze this shard distribution for balance and correctness: $(cat HECKE_MAASS_MANIFEST.json | ${pkgs.jq}/bin/jq -c '.shards[0:10]')",
-            "stream": false
-          }
-          EOF
-          
-          echo "Ollama analysis complete"
-        '';
-        
-        ai-consensus = pkgs.writeShellScriptBin "ai-consensus" ''
-          ${pkgs.python3}/bin/python3 ${./ai_consensus.py}
-        '';
         
       in {
-        packages = {
-          moltbook-register = moltbook-register;
-          gemini-cli = gemini-cli;
-          claude-cli = claude-cli;
-          openai-cli = openai-cli;
-          ollama-cli = ollama-cli;
-          ai-consensus = ai-consensus;
-          
-          # Paxos consensus node
-          paxos-node = pkgs.rustPlatform.buildRustPackage {
-            pname = "paxos-node";
-            version = "0.1.0";
-            src = ./agents/paxos-node;
-            
-            cargoLock = {
-              lockFile = ./agents/paxos-node/Cargo.lock;
-            };
-            
-            nativeBuildInputs = [ rustToolchain ];
-            
-            meta = {
-              description = "Paxos consensus node for CICADA-71";
-              license = pkgs.lib.licenses.agpl3Plus;
-            };
-          };
-          
-          default = moltbook-register;
-        };
-        
+        # Development shells
         devShells = {
+          # Full science lab
           default = pkgs.mkShell {
+            name = "science-lab";
             buildInputs = with pkgs; [
-              rustToolchain
-              python3
-              curl
-              jq
-              git
-              openssl
-              pkg-config
+              # Core tools
+              bc jq graphviz imagemagick
+              
+              # Math systems
+              gap pari maxima
+              
+              # Proof assistants
+              lean4 coq z3 cvc5
+              
+              # Logic programming
+              swiProlog
+              
+              # Lisp
+              sbcl
+              
+              # Constraint solving
+              minizinc
+              
+              # Languages
+              pythonEnv
+              rustc cargo
+              
+              # Build tools
+              cmake pkg-config
             ];
             
             shellHook = ''
-              echo "╔════════════════════════════════════════════════════════════╗"
-              echo "║     CICADA-71 - Containing the Molting Lobster            ║"
-              echo "╚════════════════════════════════════════════════════════════╝"
+              echo "🔬 TradeWars Science Lab Loaded 🔬"
+              echo "=================================="
               echo ""
-              echo "Available commands:"
-              echo "  nix run .#moltbook-register -- register"
-              echo "  nix run .#moltbook-register -- examples"
+              echo "Available tools:"
+              echo "  Math: gap, pari, maxima"
+              echo "  Proof: lean4, coq, z3, cvc5"
+              echo "  Logic: swipl"
+              echo "  Constraint: minizinc"
+              echo "  Python: numpy, scipy, sympy, networkx"
+              echo ""
+              echo "∴ Reproducible science environment ✓"
             '';
           };
           
-          gemini-cli = pkgs.mkShell {
-            buildInputs = [ gemini-cli pkgs.curl pkgs.jq ];
+          # Minimal (proof + constraint only)
+          minimal = pkgs.mkShell {
+            buildInputs = with pkgs; [
+              lean4 z3 minizinc
+              bc jq
+            ];
           };
           
-          claude-cli = pkgs.mkShell {
-            buildInputs = [ claude-cli pkgs.curl pkgs.jq ];
-          };
-          
-          openai-cli = pkgs.mkShell {
-            buildInputs = [ openai-cli pkgs.curl pkgs.jq ];
-          };
-          
-          ollama = pkgs.mkShell {
-            buildInputs = [ ollama-cli pkgs.curl pkgs.jq ];
+          # Monster-specific (GAP + Lean4 + MiniZinc)
+          monster = pkgs.mkShell {
+            buildInputs = with pkgs; [
+              gap lean4 minizinc z3
+              pythonEnv
+              bc jq graphviz
+            ];
+            
+            shellHook = ''
+              echo "🔷 Monster Group Analysis Environment 🔷"
+              echo "GAP: Monster group computations"
+              echo "Lean4: Formal proofs"
+              echo "MiniZinc: Symmetry optimization"
+              echo "Z3: SMT solving"
+            '';
           };
         };
         
+        # Packages
+        packages = {
+          # Science lab container
+          scienceLabContainer = pkgs.dockerTools.buildImage {
+            name = "tradewars-science-lab";
+            tag = "latest";
+            
+            contents = with pkgs; [
+              gap pari maxima
+              lean4 coq z3 cvc5
+              swiProlog sbcl
+              minizinc
+              pythonEnv
+              bc jq graphviz
+            ];
+            
+            config = {
+              Cmd = [ "${pkgs.bash}/bin/bash" ];
+              Env = [
+                "PATH=/bin"
+              ];
+            };
+          };
+          
+          # Buildkite pipeline
+          buildkitePipeline = pkgs.writeText "pipeline.yml" ''
+            steps:
+              - label: "🔬 Science Lab Tests"
+                command: |
+                  nix develop .#default --command bash -c "
+                    echo 'Testing GAP...'
+                    gap --version
+                    
+                    echo 'Testing Lean4...'
+                    lean --version
+                    
+                    echo 'Testing MiniZinc...'
+                    minizinc --version
+                    
+                    echo 'Testing Z3...'
+                    z3 --version
+                    
+                    echo '∴ All tools operational ✓'
+                  "
+              
+              - label: "🔷 Monster Proofs"
+                command: |
+                  nix develop .#monster --command bash -c "
+                    lake build
+                    ./run_monster_tests.sh
+                  "
+              
+              - label: "🌈 Maass Spectrum"
+                command: |
+                  nix develop .#default --command bash -c "
+                    ./maass_spectrum_quick.sh
+                    ./maass_spectrogram.sh
+                  "
+          '';
+        };
+        
+        # Apps
         apps = {
-          moltbook-register = {
+          # Science lab shell
+          lab = {
             type = "app";
-            program = "${moltbook-register}/bin/moltbook";
+            program = "${pkgs.writeShellScript "lab" ''
+              exec ${pkgs.nix}/bin/nix develop ${self}#default
+            ''}";
+          };
+          
+          # Monster shell
+          monster = {
+            type = "app";
+            program = "${pkgs.writeShellScript "monster" ''
+              exec ${pkgs.nix}/bin/nix develop ${self}#monster
+            ''}";
           };
         };
       }
