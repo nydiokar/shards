@@ -1,0 +1,212 @@
+{
+  "total_shards": 196883,
+  "occupied_shards": 3971,
+  "occupancy_percent": 2.0169339150663084,
+  "file_shards_used": 71,
+  "line_shards_used": 59,
+  "token_shards_used": 47,
+  "duplicates_by_shard": 161,
+  "top_duplicates": [
+    {
+      "shard": 44878,
+      "count": 8,
+      "files": [
+        "monster/monster-shards/shard-19/code/src/lib.rs",
+        "monster/monster-shards/shard-21/code/src/lib.rs",
+        "monster/monster-shards/shard-34/code/src/lib.rs",
+        "monster/monster-shards/shard-47/code/src/lib.rs",
+        "monster/shards/shard_57/monster-shards/shard-12/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 169663,
+      "count": 5,
+      "files": [
+        "monster/monster-shards/shard-29/code/src/lib.rs",
+        "monster/monster-shards/shard-31/code/src/lib.rs",
+        "monster/shards/shard_03/monster-shards/shard-36/code/src/lib.rs",
+        "monster/shards/shard_20/monster-shards/shard-41/code/src/lib.rs",
+        "astronomy_submodules/shard_00/sunpy/tools/update_zenodo.py"
+      ]
+    },
+    {
+      "shard": 193994,
+      "count": 5,
+      "files": [
+        "astronomy_submodules/shard_00/astropy/astropy/nddata/mixins/tests/__init__.py",
+        "astronomy_submodules/shard_00/astropy/astropy/utils/metadata/tests/__init__.py",
+        "astronomy_submodules/shard_00/astroML/astroML/dimensionality/tests/__init__.py",
+        "astronomy_submodules/shard_00/astroML/astroML/utils/tests/__init__.py",
+        "astronomy_submodules/shard_00/sunpy/sunpy/net/hek/tests/__init__.py"
+      ]
+    },
+    {
+      "shard": 17148,
+      "count": 5,
+      "files": [
+        "monster/monster-shards/shard-40/code/src/lib.rs",
+        "monster/monster-shards/shard-41/code/src/lib.rs",
+        "monster/monster-shards/shard-65/code/src/lib.rs",
+        "monster/shards/shard_27/monster-shards/shard-27/code/src/lib.rs",
+        "monster/shards/shard_03/monster-shards/shard-66/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 114203,
+      "count": 4,
+      "files": [
+        "monster/monster-shards/shard-45/code/src/lib.rs",
+        "monster/monster-shards/shard-55/code/src/lib.rs",
+        "monster/shards/shard_45/monster-shards/shard-56/code/src/lib.rs",
+        "monster/shards/shard_52/monster-shards/shard-14/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 110804,
+      "count": 4,
+      "files": [
+        "astronomy_submodules/shard_00/astropy/astropy/uncertainty/tests/__init__.py",
+        "astronomy_submodules/shard_00/astropy/astropy/cosmology/_src/tests/parameter/__init__.py",
+        "astronomy_submodules/shard_00/astropy/astropy/utils/xml/__init__.py",
+        "astronomy_submodules/shard_00/sunpy/sunpy/net/dataretriever/sources/tests/__init__.py"
+      ]
+    },
+    {
+      "shard": 61516,
+      "count": 4,
+      "files": [
+        "monster/monster-shards/shard-12/code/src/lib.rs",
+        "monster/monster-shards/shard-13/code/src/lib.rs",
+        "monster/monster-shards/shard-54/code/src/lib.rs",
+        "monster/shards/shard_25/monster-shards/shard-05/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 64289,
+      "count": 4,
+      "files": [
+        "monster/shards/shard_69/monster-shards/shard-40/code/src/lib.rs",
+        "monster/shards/shard_22/monster-shards/shard-33/code/src/lib.rs",
+        "monster/shards/shard_26/monster-shards/shard-17/code/src/lib.rs",
+        "monster/shards/shard_61/monster-shards/shard-53/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 8203,
+      "count": 4,
+      "files": [
+        "astronomy_submodules/shard_00/astropy/astropy/timeseries/periodograms/lombscargle_multiband/tests/__init__.py",
+        "astronomy_submodules/shard_00/astroML/astroML/stats/tests/__init__.py",
+        "astronomy_submodules/shard_00/sunpy/sunpy/map/tests/__init__.py",
+        "astronomy_submodules/shard_00/sunpy/sunpy/net/cdaweb/test/__init__.py"
+      ]
+    },
+    {
+      "shard": 42105,
+      "count": 4,
+      "files": [
+        "monster/monster-shards/shard-16/code/src/lib.rs",
+        "monster/monster-shards/shard-02/code/src/lib.rs",
+        "monster/shards/shard_27/monster-shards/shard-39/code/src/lib.rs",
+        "monster/shards/shard_29/monster-shards/shard-51/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 58743,
+      "count": 4,
+      "files": [
+        "monster/monster-shards/shard-53/code/src/lib.rs",
+        "monster/shards/shard_55/monster-shards/shard-29/code/src/lib.rs",
+        "monster/shards/shard_30/monster-shards/shard-68/code/src/lib.rs",
+        "monster/shards/shard_03/monster-shards/shard-18/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 171810,
+      "count": 4,
+      "files": [
+        "astronomy_submodules/shard_00/sunpy/sunpy/coordinates/tests/__init__.py",
+        "astronomy_submodules/shard_00/sunpy/sunpy/visualization/colormaps/tests/__init__.py",
+        "astronomy_submodules/shard_00/sunpy/sunpy/visualization/tests/__init__.py",
+        "astronomy_submodules/shard_00/sunpy/sunpy/sun/tests/__init__.py"
+      ]
+    },
+    {
+      "shard": 180755,
+      "count": 4,
+      "files": [
+        "monster/monster-shards/shard-63/code/src/lib.rs",
+        "monster/monster-shards/shard-33/code/src/lib.rs",
+        "monster/shards/shard_43/monster-shards/shard-21/code/src/lib.rs",
+        "monster/shards/shard_34/monster-shards/shard-52/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 191847,
+      "count": 4,
+      "files": [
+        "monster/monster-shards/shard-60/code/src/lib.rs",
+        "monster/shards/shard_09/monster-shards/shard-49/code/src/lib.rs",
+        "monster/shards/shard_05/monster-shards/shard-08/code/src/lib.rs",
+        "monster/shards/shard_38/monster-shards/shard-65/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 188448,
+      "count": 4,
+      "files": [
+        "harbot-proof-system/map_rust_to_monster.py",
+        "astronomy_submodules/shard_00/astropy/astropy/io/registry/tests/__init__.py",
+        "astronomy_submodules/shard_00/sunpy/sunpy/timeseries/tests/__init__.py",
+        "astronomy_submodules/shard_00/sunpy/sunpy/net/jsoc/data/__init__.py"
+      ]
+    },
+    {
+      "shard": 166890,
+      "count": 4,
+      "files": [
+        "monster/monster-shards/shard-59/code/src/lib.rs",
+        "monster/monster-shards/shard-20/code/src/lib.rs",
+        "monster/monster-shards/shard-38/code/src/lib.rs",
+        "monster/monster-shards/shard-61/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 130841,
+      "count": 4,
+      "files": [
+        "monster/monster-shards/shard-48/code/src/lib.rs",
+        "monster/shards/shard_23/monster-shards/shard-35/code/src/lib.rs",
+        "monster/shards/shard_65/monster-shards/shard-31/code/src/lib.rs",
+        "monster/shards/shard_46/monster-shards/shard-16/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 119749,
+      "count": 3,
+      "files": [
+        "monster/shards/shard_35/monster-shards/shard-61/code/src/lib.rs",
+        "monster/shards/shard_65/monster-shards/shard-11/code/src/lib.rs",
+        "monster/shards/shard_33/monster-shards/shard-59/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 111430,
+      "count": 3,
+      "files": [
+        "monster/monster-shards/shard-37/code/src/lib.rs",
+        "monster/monster-shards/shard-32/code/src/lib.rs",
+        "monster/shards/shard_41/monster-shards/shard-55/code/src/lib.rs"
+      ]
+    },
+    {
+      "shard": 80927,
+      "count": 3,
+      "files": [
+        "monster/monster-shards/shard-36/code/src/lib.rs",
+        "monster/shards/shard_11/monster-shards/shard-70/code/src/lib.rs",
+        "monster/shards/shard_51/monster-shards/shard-01/code/src/lib.rs"
+      ]
+    }
+  ]
+}

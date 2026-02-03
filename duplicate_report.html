@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Duplicate Code Analysis</title>
+    <style>
+        body { font-family: monospace; background: #1a1a2e; color: #eee; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: #16213e; padding: 30px; border-radius: 10px; }
+        h1 { color: #0f3460; text-align: center; }
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 30px 0; }
+        .stat { background: #0f3460; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-num { font-size: 2em; color: #e94560; font-weight: bold; }
+        .stat-label { color: #aaa; margin-top: 10px; }
+        .section { margin: 40px 0; }
+        h2 { color: #e94560; border-bottom: 2px solid #e94560; padding-bottom: 10px; }
+        .dup { background: #0f3460; padding: 15px; margin: 15px 0; border-radius: 5px; border-left: 4px solid #e94560; }
+        .dup-header { color: #e94560; font-weight: bold; margin-bottom: 10px; }
+        .file { color: #aaa; padding: 5px 0; padding-left: 20px; }
+        .badge { background: #e94560; color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Duplicate Code Analysis</h1>
+        <p style="text-align: center; color: #aaa;">Monster Group Symmetry Detection</p>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-num">434</div>
+                <div class="stat-label">Duplicate Groups</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">985</div>
+                <div class="stat-label">Duplicate Files</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">839 KB</div>
+                <div class="stat-label">Wasted Space</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">196883</div>
+                <div class="stat-label">Total Shards</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🌑 Maass Shadow (71×59×47 = 196,883)</h2>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-num">3971</div>
+                    <div class="stat-label">Occupied Shards</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">2.02%</div>
+                    <div class="stat-label">Occupancy</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">71</div>
+                    <div class="stat-label">File Shards (71)</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">59</div>
+                    <div class="stat-label">Line Shards (59)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🏆 Top 10 Duplicates</h2>
+            <div class="dup">
+                <div class="dup-header">
+                    #1 - 100 files <span class="badge">0 KB wasted</span>
+                </div>
+                <div class="file">📄 astronomy_submodules/shard_00/astroML/astroML/clustering/tests/__init__.py</div>
+                <div class="file">📄 astronomy_submodules/shard_00/sunpy/sunpy/util/tests/__init__.py</div>
+                <div class="file">📄 astronomy_submodules/shard_00/astroML/astroML/time_series/tests/__init__.py</div>
+                <div class="file">... and 97 more</div>
+            </div>
+            <div class="dup">
+                <div class="dup-header">
+                    #2 - 10 files <span class="badge">0 KB wasted</span>
+                </div>
+                <div class="file">📄 astronomy_submodules/shard_00/astropy/astropy/visualization/scripts/tests/__init__.py</div>
+                <div class="file">📄 astronomy_submodules/shard_00/astropy/astropy/io/misc/tests/__init__.py</div>
+                <div class="file">📄 astronomy_submodules/shard_00/astropy/astropy/visualization/scripts/__init__.py</div>
+                <div class="file">... and 7 more</div>
+            </div>
+            <div class="dup">
+                <div class="dup-header">
+                    #3 - 3 files <span class="badge">0 KB wasted</span>
+                </div>
+                <div class="file">📄 monster/chunk_1.py</div>
+                <div class="file">📄 shard15/monster/chunk_1.py</div>
+                <div class="file">📄 monster/shards/shard_17/chunk_1.py</div>
+            </div>
+            <div class="dup">
+                <div class="dup-header">
+                    #4 - 3 files <span class="badge">21 KB wasted</span>
+                </div>
+                <div class="file">📄 monster/multi_level_review.py</div>
+                <div class="file">📄 monster/shards/shard_39/multi_level_review.py</div>
+                <div class="file">📄 shard38/monster/multi_level_review.py</div>
+            </div>
+            <div class="dup">
+                <div class="dup-header">
+                    #5 - 3 files <span class="badge">20 KB wasted</span>
+                </div>
+                <div class="file">📄 monster/create_monster_autoencoder.py</div>
+                <div class="file">📄 shard16/monster/create_monster_autoencoder.py</div>
+                <div class="file">📄 monster/shards/shard_36/create_monster_autoencoder.py</div>
+            </div>
+            <div class="dup">
+                <div class="dup-header">
+                    #6 - 3 files <span class="badge">14 KB wasted</span>
+                </div>
+                <div class="file">📄 monster/shards/shard_57/extract_71_objects.py</div>
+                <div class="file">📄 shard32/monster/extract_71_objects.py</div>
+                <div class="file">📄 monster/extract_71_objects.py</div>
+            </div>
+            <div class="dup">
+                <div class="dup-header">
+                    #7 - 3 files <span class="badge">17 KB wasted</span>
+                </div>
+                <div class="file">📄 monster/shards/shard_66/prove_zk_rdfa.py</div>
+                <div class="file">📄 monster/prove_zk_rdfa.py</div>
+                <div class="file">📄 shard37/monster/prove_zk_rdfa.py</div>
+            </div>
+            <div class="dup">
+                <div class="dup-header">
+                    #8 - 3 files <span class="badge">16 KB wasted</span>
+                </div>
+                <div class="file">📄 monster/convert_paper_to_visual.py</div>
+                <div class="file">📄 shard8/monster/convert_paper_to_visual.py</div>
+                <div class="file">📄 monster/shards/shard_11/convert_paper_to_visual.py</div>
+            </div>
+            <div class="dup">
+                <div class="dup-header">
+                    #9 - 3 files <span class="badge">6 KB wasted</span>
+                </div>
+                <div class="file">📄 monster/translate-hilbert-lean4.py</div>
+                <div class="file">📄 shard7/monster/translate-hilbert-lean4.py</div>
+                <div class="file">📄 monster/shards/shard_02/translate-hilbert-lean4.py</div>
+            </div>
+            <div class="dup">
+                <div class="dup-header">
+                    #10 - 3 files <span class="badge">19 KB wasted</span>
+                </div>
+                <div class="file">📄 shard18/monster/prove_nn_compression.py</div>
+                <div class="file">📄 monster/prove_nn_compression.py</div>
+                <div class="file">📄 monster/shards/shard_70/prove_nn_compression.py</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
