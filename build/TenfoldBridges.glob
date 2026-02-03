@@ -1,0 +1,129 @@
+DIGEST c8dae2ab17153fcc9a3976d30f6697aa
+FTenfoldBridges
+ax 80:89 <> topo_class
+R96:99 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R93:95 Corelib.Init.Datatypes <> nat ind
+R100:102 Corelib.Init.Datatypes <> nat ind
+ax 111:124 <> topo_class_232
+R142:144 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R128:137 TenfoldBridges <> topo_class defax
+ax 154:167 <> topo_class_323
+R185:187 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R171:180 TenfoldBridges <> topo_class defax
+rec 223:228 <> Bridge
+proj 237:241 <> nodeA
+proj 252:256 <> nodeB
+proj 267:270 <> diff
+R245:247 Corelib.Init.Datatypes <> nat ind
+R260:262 Corelib.Init.Datatypes <> nat ind
+R290:293 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R274:283 TenfoldBridges <> topo_class defax
+R285:289 TenfoldBridges <> nodeA:8 meth
+R294:303 TenfoldBridges <> topo_class defax
+R305:309 TenfoldBridges <> nodeB:9 meth
+ax 342:357 <> bridge_symmetric
+R373:378 TenfoldBridges <> Bridge rec
+binder 369:369 <> b:11
+R384:390 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R402:403 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R396:401 TenfoldBridges <> Bridge rec
+binder 391:392 <> b':12
+R422:425 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R412:414 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R404:408 TenfoldBridges <> nodeA proj
+R410:411 TenfoldBridges <> b':12 var
+R415:419 TenfoldBridges <> nodeB proj
+R421:421 TenfoldBridges <> b:11 var
+R434:436 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R426:430 TenfoldBridges <> nodeB proj
+R432:433 TenfoldBridges <> b':12 var
+R437:441 TenfoldBridges <> nodeA proj
+R443:443 TenfoldBridges <> b:11 var
+ax 480:491 <> diff_232_323
+R509:512 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R495:504 TenfoldBridges <> topo_class defax
+R513:522 TenfoldBridges <> topo_class defax
+def 541:554 <> bridge_232_323
+R558:563 TenfoldBridges <> Bridge rec
+R573:577 TenfoldBridges <> nodeA proj
+R573:577 TenfoldBridges <> nodeA proj
+R573:577 TenfoldBridges <> nodeA proj
+R589:593 TenfoldBridges <> nodeB proj
+R589:593 TenfoldBridges <> nodeB proj
+R605:608 TenfoldBridges <> diff proj
+R605:608 TenfoldBridges <> diff proj
+R613:624 TenfoldBridges <> diff_232_323 prfax
+prf 670:679 <> bridge_sym
+R697:699 Corelib.Init.Datatypes <> nat ind
+binder 691:691 <> a:17
+binder 693:693 <> b:18
+R733:738 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R717:720 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R705:714 TenfoldBridges <> topo_class defax
+R716:716 TenfoldBridges <> a:17 var
+R721:730 TenfoldBridges <> topo_class defax
+R732:732 TenfoldBridges <> b:18 var
+R751:754 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R739:748 TenfoldBridges <> topo_class defax
+R750:750 TenfoldBridges <> b:18 var
+R755:764 TenfoldBridges <> topo_class defax
+R766:766 TenfoldBridges <> a:17 var
+ax 840:855 <> tenfold_complete
+R873:875 Corelib.Init.Datatypes <> nat ind
+binder 867:867 <> i:19
+binder 869:869 <> j:20
+R887:890 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R882:884 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R881:881 TenfoldBridges <> i:19 var
+R897:900 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R892:894 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R891:891 TenfoldBridges <> j:20 var
+R907:912 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R902:905 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R901:901 TenfoldBridges <> i:19 var
+R906:906 TenfoldBridges <> j:20 var
+R913:920 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R930:936 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R927:929 Corelib.Init.Datatypes <> nat ind
+binder 921:921 <> a:21
+R927:929 Corelib.Init.Datatypes <> nat ind
+binder 923:923 <> b:22
+R953:960 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R949:951 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R937:946 TenfoldBridges <> topo_class defax
+R948:948 TenfoldBridges <> a:21 var
+R952:952 TenfoldBridges <> i:19 var
+R973:975 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R961:970 TenfoldBridges <> topo_class defax
+R972:972 TenfoldBridges <> b:22 var
+R976:976 TenfoldBridges <> j:20 var
+prf 1030:1046 <> bridges_symmetric
+R1062:1067 TenfoldBridges <> Bridge rec
+binder 1058:1058 <> b:25
+R1073:1079 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1091:1096 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1085:1090 TenfoldBridges <> Bridge rec
+binder 1080:1081 <> b':26
+R1115:1118 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1105:1107 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1097:1101 TenfoldBridges <> nodeA proj
+R1103:1104 TenfoldBridges <> b':26 var
+R1108:1112 TenfoldBridges <> nodeB proj
+R1114:1114 TenfoldBridges <> b:25 var
+R1127:1129 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1119:1123 TenfoldBridges <> nodeB proj
+R1125:1126 TenfoldBridges <> b':26 var
+R1130:1134 TenfoldBridges <> nodeA proj
+R1136:1136 TenfoldBridges <> b:25 var
+R1165:1180 TenfoldBridges <> bridge_symmetric prfax
+R1165:1180 TenfoldBridges <> bridge_symmetric prfax
+def 1218:1231 <> verify_232_323
+R1253:1256 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1249:1251 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1235:1244 TenfoldBridges <> topo_class defax
+R1271:1273 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1257:1266 TenfoldBridges <> topo_class defax
+R1303:1316 TenfoldBridges <> topo_class_232 prfax
+R1303:1316 TenfoldBridges <> topo_class_232 prfax
+R1329:1342 TenfoldBridges <> topo_class_323 prfax
+R1329:1342 TenfoldBridges <> topo_class_323 prfax

@@ -5,5 +5,4 @@ target/
 *.exe
 *.dll
 shard-knowledge
-data
 bin/
