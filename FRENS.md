@@ -102,3 +102,12 @@ Email: shards@solfunmeme.com
 - Rewards: 2x MMC multiplier
 - Status: Active
 - Added: 2026-02-08
+
+**kanebra**
+- Address: `26qVRWZgpAhZLy7Fkt1vUiqLFTTewVPeqRxM5sWxA9qw`
+- Chain: solana
+- URL: https://solscan.io/address/26qVRWZgpAhZLy7Fkt1vUiqLFTTewVPeqRxM5sWxA9qw
+- Role: Early adopter
+- Rewards: 2x MMC multiplier
+- Status: Active
+- Added: 2026-02-10
